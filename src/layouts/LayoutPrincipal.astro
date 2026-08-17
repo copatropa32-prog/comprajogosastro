@@ -1,0 +1,108 @@
+---
+interface Props {
+  titulo?: string;
+  descricao?: string;
+}
+
+const { 
+  titulo = "CompraJogos - Keys, Ofertas e Jogos Gratuitos", 
+  descricao = "Explore centenas de jogos gratuitos (F2P) e descontos imbatíveis em chaves de PC." 
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{titulo}</title>
+    <meta name="description" content={descricao} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9710931146430417" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans selection:bg-emerald-500 selection:text-slate-950">
+    
+    <!-- Cabeçalho / Navbar -->
+    <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur-md sticky top-0 z-40">
+      <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2 group">
+          <div class="flex flex-col">
+            <span class="text-xl font-black tracking-tight text-white flex items-center gap-1">
+              Compra<span class="text-emerald-400">Jogos</span><span class="text-xs text-slate-500 font-normal">.com.br</span>
+            </span>
+            <span class="text-[10px] tracking-widest uppercase font-bold text-slate-400">Keys & Ofertas</span>
+          </div>
+        </a>
+
+        <!-- Barra de Pesquisa Rápida -->
+        <div class="relative max-w-xs w-full hidden sm:block">
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Pesquisar jogos..." 
+            class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition"
+            oninput="filtrarPorTexto(this.value)"
+          />
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="flex-1">
+      <slot />
+    </div>
+
+    <script>
+      // Função global de busca rápida na navbar
+      window.filtrarPorTexto = function(termo) {
+        if (typeof catalogoGlobal === 'undefined') return;
+        const container = document.getElementById('catalog');
+        if (!container) return;
+
+        const termoLower = termo.toLowerCase().trim();
+        const filtrados = catalogoGlobal.filter(jogo => 
+          jogo.title.toLowerCase().includes(termoLower) || 
+          jogo.genre.toLowerCase().includes(termoLower)
+        );
+
+        if (filtrados.length === 0) {
+          container.innerHTML = `<div class="col-span-full bg-slate-900 border border-slate-800 p-12 rounded-2xl text-center text-slate-400">Nenhum jogo encontrado para "${termo}".</div>`;
+          return;
+        }
+
+        container.innerHTML = filtrados.map(item => `
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-slate-700 hover:shadow-2xl hover:-translate-y-1">
+            <div class="relative bg-slate-950 h-44 overflow-hidden flex items-center justify-center">
+              <img src="${item.image}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+              <span class="absolute top-3 left-3 bg-slate-900/90 text-slate-300 text-[10px] font-bold px-2.5 py-1 rounded-md border border-slate-800 uppercase tracking-wider">${item.genre}</span>
+              ${item.savings > 0 && item.type === 'paid' ? `<span class="absolute top-3 right-3 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-1 rounded-md shadow">-${item.savings}%</span>` : ''}
+              ${item.type === 'free' ? `<span class="absolute top-3 right-3 bg-indigo-600 text-white font-bold text-xs px-2 py-1 rounded-md shadow">Grátis</span>` : ''}
+            </div>
+            <div class="p-5 flex flex-col flex-1 justify-between gap-4">
+              <h4 class="font-bold text-white text-sm line-clamp-2 leading-snug">${item.title}</h4>
+              <div class="flex justify-between items-end border-t border-slate-800 pt-4">
+                <div>
+                  ${item.type === 'paid' ? `
+                    <span class="text-xs text-slate-500 line-through block">${item.normalFormatted}</span>
+                    <span class="text-lg font-black text-emerald-400">${item.saleFormatted}</span>
+                  ` : `
+                    <span class="text-xs text-slate-500 block">Plataforma PC</span>
+                    <span class="text-sm font-extrabold text-indigo-400">Free-to-Play</span>
+                  `}
+                </div>
+                <button onclick='abrirModalJogo(${JSON.stringify(item)})' class="font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-lg cursor-pointer ${item.type === 'free' ? 'bg-indigo-600 hover:bg-indigo-500 text-white' : 'bg-emerald-500 hover:bg-emerald-400 text-slate-950'}">
+                  ${item.type === 'paid' ? 'Ver Oferta' : 'Jogar Grátis'}
+                </button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    </script>
+  </body>
+</html>

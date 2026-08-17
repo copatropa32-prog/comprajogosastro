@@ -1,0 +1,28 @@
+---
+interface Props {
+  nome: string;
+  preco: string;
+  sku: string;
+  url: string;
+  imagem: string;
+}
+
+const { nome, preco, sku, url, imagem } = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": nome,
+  "image": imagem,
+  "sku": sku,
+  "offers": {
+    "@type": "Offer",
+    "url": url,
+    "priceCurrency": "BRL",
+    "price": preco,
+    "availability": "https://schema.org/InStock"
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

@@ -1,0 +1,97 @@
+---
+import '../../styles/global.css';
+import LayoutPrincipal from '../../layouts/LayoutPrincipal.astro';
+import ProductSchema from '../../components/ProductSchema.astro';
+
+export async function getStaticPaths() {
+  try {
+    const cotacaoRes = await fetch('https://economia.awesomeapi.com.br/json/last/USD-BRL');
+    const cotacaoData = await cotacaoRes.json();
+    const dolarTaxa = parseFloat(cotacaoData?.USDBRL?.bid) || 5.50;
+
+    const resPaid = await fetch('https://www.cheapshark.com/api/1.0/deals?storeID=1&pageSize=50&sortBy=Reviews');
+    const paidData = await resPaid.json();
+    
+    let paidFormatted = [];
+    if (Array.isArray(paidData)) {
+      paidFormatted = paidData.map((item: any) => {
+        const rawPrice = parseFloat(item.salePrice || 0);
+        const saleBRL = (rawPrice * dolarTaxa).toFixed(2);
+        return {
+          slug: (item.title || 'jogo').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+          title: item.title || 'Jogo',
+          type: 'paid',
+          genre: 'PC Key / Oferta',
+          image: item.thumb || '',
+          rawPrice: rawPrice > 0 ? saleBRL : "0.00",
+          saleFormatted: `R$ ${saleBRL.replace('.', ',')}`,
+          dealID: item.dealID || '1',
+          url: `https://www.cheapshark.com/redirect?dealID=${item.dealID}`
+        };
+      });
+    }
+
+    const resFree = await fetch('https://www.freetogame.com/api/games');
+    const freeData = await resFree.json();
+    
+    let freeFormatted = [];
+    if (Array.isArray(freeData)) {
+      freeFormatted = freeData.slice(0, 50).map((item: any, index: number) => ({
+        slug: (item.title || 'jogo').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+        title: item.title || 'Jogo Gratuito',
+        type: 'free',
+        genre: item.genre || 'Free-to-Play',
+        image: item.thumbnail || '',
+        rawPrice: "0.00",
+        saleFormatted: 'Gratuito',
+        dealID: `free-${index}`,
+        url: item.game_url
+      }));
+    }
+
+    const todosJogos = [...freeFormatted, ...paidFormatted];
+
+    return todosJogos.map((jogo) => ({
+      params: { slug: jogo.slug },
+      props: { jogo },
+    }));
+  } catch (e) {
+    return [];
+  }
+}
+
+const { jogo } = Astro.props;
+
+if (!jogo) {
+  return Astro.redirect('/404');
+}
+
+const isFree = jogo.type === 'free';
+---
+
+<LayoutPrincipal titulo={`${jogo.title} - Compre na CompraJogos`} descricao={`Garanta ${jogo.title} pelo melhor preço. Confira na CompraJogos.`}>
+  <ProductSchema 
+    nome={jogo.title}
+    preco={jogo.rawPrice || "0.00"}
+    sku={jogo.dealID}
+    url={`https://comprajogos.com.br/jogo/${jogo.slug}`}
+    imagem={jogo.image}
+  />
+  <main class="container mx-auto px-4 py-10 max-w-4xl">
+    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl flex flex-col md:flex-row gap-8 items-center">
+      <img src={jogo.image} alt={jogo.title} class="w-full md:w-1/2 h-72 object-cover rounded-xl shadow-lg border border-slate-800" />
+      <div class="flex flex-col gap-4 w-full md:w-1/2">
+        <span class={`text-xs font-bold px-3 py-1 rounded-full border w-max uppercase tracking-wider ${isFree ? 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20' : 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20'}`}>{jogo.genre}</span>
+        <h2 class="text-3xl font-black text-white leading-tight">{jogo.title}</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">Disponível para PC. Acesse o site oficial parceiro para garantir sua chave ou iniciar o jogo com segurança.</p>
+        <div class={`text-2xl font-black my-2 ${isFree ? 'text-indigo-400' : 'text-emerald-400'}`}>{jogo.saleFormatted}</div>
+        
+        <a href={jogo.url} target={isFree ? "_blank" : "_blank"} rel="noopener noreferrer" class={`w-full font-bold py-3.5 rounded-xl text-center transition shadow-lg block ${isFree ? 'bg-indigo-600 hover:bg-indigo-500 text-white' : 'bg-emerald-500 hover:bg-emerald-400 text-slate-950'}`}>
+          {isFree ? 'Jogar Grátis' : 'Ver Oferta'}
+        </a>
+
+        <a href="/" class="text-xs text-slate-400 hover:text-white text-center mt-2 transition">&larr; Voltar para o catálogo completo</a>
+      </div>
+    </div>
+  </main>
+</LayoutPrincipal>
