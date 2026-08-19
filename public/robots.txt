@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /jogo/
-Disallow: /api/
-Allow: /
-
-Sitemap: https://www.comprajogos.com.br/sitemap.xml
