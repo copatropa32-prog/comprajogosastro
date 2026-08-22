@@ -9,17 +9,30 @@ interface Props {
 
 const { nome, preco, sku, url, imagem } = Astro.props;
 
+// Limpa o preço para o formato numérico exigido pelo Schema.org (ex: "179.78")
+const cleanPrice = preco
+  .replace('R$', '')
+  .trim()
+  .replace(/\./g, '')
+  .replace(',', '.');
+
+// Garante que a URL da imagem seja absoluta
+const siteUrl = Astro.site ? Astro.site.toString() : 'https://comprajogos.com.br/';
+const absoluteImage = imagem.startsWith('http') 
+  ? imagem 
+  : `${siteUrl.replace(/\/$/, '')}${imagem}`;
+
 const schema = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": nome,
-  "image": imagem,
+  "image": absoluteImage,
   "sku": sku,
   "offers": {
     "@type": "Offer",
     "url": url,
     "priceCurrency": "BRL",
-    "price": preco,
+    "price": cleanPrice,
     "availability": "https://schema.org/InStock"
   }
 };

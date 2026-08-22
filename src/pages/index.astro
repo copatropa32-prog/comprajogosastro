@@ -2,9 +2,23 @@
 import '../styles/global.css';
 import LayoutPrincipal from '../layouts/LayoutPrincipal.astro';
 import jogosLocais from '../data/jogos.json'; 
+import ProductSchema from '../components/ProductSchema.astro';
 ---
 
 <LayoutPrincipal titulo="CompraJogos - Top Jogos e Ofertas" descricao="Os jogos mais famosos do mundo, grátis e com os melhores preços.">
+  <head slot="head">
+    <!-- Schema.org gerado no servidor para cada jogo do catálogo (perfeito para o Google) -->
+    {jogosLocais.map((jogo) => (
+      <ProductSchema 
+        nome={jogo.nome}
+        preco={jogo.preco}
+        sku={jogo.nome}
+        url={jogo.linkBase}
+        imagem={jogo.image}
+      />
+    ))}
+  </head>
+
   <main class="container mx-auto px-4 py-8">
     
     <!-- Filtros e Barra de Gêneros -->
@@ -87,10 +101,8 @@ import jogosLocais from '../data/jogos.json';
     let tipoAtual = 'all';
     let generoAtual = 'Todos os Gêneros';
 
-    // Helper para converter preço string para float
     function parsePrice(priceStr) {
         if (!priceStr) return 0;
-        // Remove "R$", remove separador de milhar ".", substitui vírgula decimal "," por ponto
         let clean = priceStr.replace('R$', '').replace(/\./g, '').replace(',', '.').trim();
         return parseFloat(clean) || 0;
     }
@@ -177,15 +189,12 @@ import jogosLocais from '../data/jogos.json';
       const container = document.getElementById('catalog');
       if (!container) return;
 
-      // Pegar valores dos inputs de preço
       const minVal = parseFloat(document.getElementById('minPrice').value) || 0;
       const maxVal = parseFloat(document.getElementById('maxPrice').value) || Infinity;
 
       const filtrados = catalogoGlobal.filter(j => {
         const matchTipo = tipoAtual === 'all' || j.type === tipoAtual;
         const matchGenero = generoAtual === 'Todos os Gêneros' || j.genre === generoAtual;
-        
-        // Lógica de preço
         const precoNumerico = parsePrice(j.saleFormatted);
         const matchPreco = precoNumerico >= minVal && precoNumerico <= maxVal;
 

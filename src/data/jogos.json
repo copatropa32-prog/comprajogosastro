@@ -1,5 +1,122 @@
 [
   {
+    "nome": "Star Wars: Galactic Racer Deluxe Edition",
+    "preco": "R$ 179,78",
+    "precoNormal": "R$ 240,00",
+    "desconto": 25,
+    "genre": "Racing / Sci-Fi",
+    "image": "/capas/star-wars-galactic-racer-deluxe-edition.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/22527-comprar-star-wars-galactic-racer-deluxe-edition-pc-steam/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Dynasty Warriors 3: Complete Edition Remastered",
+    "preco": "R$ 157,38",
+    "precoNormal": "R$ 199,00",
+    "desconto": 21,
+    "genre": "Action / Hack and Slash",
+    "image": "/capas/dynasty-warriors-3-complete-edition.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/23091-comprar-dynasty-warriors-3-complete-edition-remastered-pc-steam/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Minecraft Dungeons II - PC & Xbox Series X|S",
+    "preco": "R$ 141,46",
+    "precoNormal": "R$ 177,00",
+    "desconto": 20,
+    "genre": "Action / RPG",
+    "image": "/capas/minecraft-dungeons-ii-pc.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/18828-comprar-minecraft-dungeons-ii-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Farming Simulator 25: Beans & Alpacas",
+    "preco": "R$ 106,08",
+    "precoNormal": "R$ 132,00",
+    "desconto": 20,
+    "genre": "Simulation",
+    "image": "/capas/farming-simulator-25-beans-alpacas.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/23241-comprar-farming-simulator-25-beans-alpacas-pc-mac-steam/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Gears of War: E-Day Premium Edition",
+    "preco": "R$ 412,69",
+    "precoNormal": "R$ 590,00",
+    "desconto": 30,
+    "genre": "Action / Shooter",
+    "image": "/capas/gears-of-war-e-day-premium.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/22979-comprar-gears-of-war-e-day-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "NBA 2K27 Deluxe Edition",
+    "preco": "R$ 436,28",
+    "precoNormal": "R$ 590,00",
+    "desconto": 26,
+    "genre": "Sports / Simulation",
+    "image": "/capas/nba-2k27-deluxe-edition.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/23580-comprar-nba-2k27-deluxe-edition-pc-steam/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "MARVEL Tōkon: Fighting Souls",
+    "preco": "R$ 247,59",
+    "precoNormal": "R$ 340,00",
+    "desconto": 27,
+    "genre": "Action / Fighting",
+    "image": "/capas/marvel-tokon-fighting-souls.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/22627-comprar-marvel-tokon-fighting-souls-pc-steam/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Outbound",
+    "preco": "R$ 83,08",
+    "precoNormal": "R$ 83,08",
+    "desconto": 0,
+    "genre": "Adventure / Simulation",
+    "image": "/capas/outbound-pc.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/16817-comprar-outbound-pc-steam/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Pragmata",
+    "preco": "R$ 193,93",
+    "precoNormal": "R$ 259,00",
+    "desconto": 25,
+    "genre": "Action / Adventure",
+    "image": "/capas/pragmata-pc.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/21523-comprar-pragmata-pc-steam/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "DragonSword: Awakening",
+    "preco": "R$ 123,77",
+    "precoNormal": "R$ 123,77",
+    "desconto": 0,
+    "genre": "Action / RPG",
+    "image": "/capas/dragonsword-awakening.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/22405-comprar-dragonsword-awakening-pc-steam/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Resident Evil Requiem",
+    "preco": "R$ 182,73",
+    "precoNormal": "R$ 299,00",
+    "desconto": 39,
+    "genre": "Survival Horror / Action",
+    "image": "/capas/resident-evil-requiem.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/20992-comprar-resident-evil-requiem-pc-steam/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "No More Room In Hell 2",
+    "preco": "R$ 79,54",
+    "precoNormal": "R$ 89,00",
+    "desconto": 11,
+    "genre": "Survival / Action",
+    "image": "/capas/no-more-room-in-hell-2.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/12335-comprar-no-more-room-in-hell-2-pc-steam/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "HumanitZ",
+    "preco": "R$ 26,53",
+    "precoNormal": "R$ 58,00",
+    "desconto": 54,
+    "genre": "Survival / Action",
+    "image": "/capas/humanitz-pc.jpg",
+    "linkBase": "https://www.instant-gaming.com/pt/21754-comprar-humanitz-pc-steam/?igr=gamer-56c7016"
+  },
+  {
     "nome": "Grand Theft Auto V (Enhanced)",
     "preco": "R$ 57,73",
     "precoNormal": "R$ 150,00",
