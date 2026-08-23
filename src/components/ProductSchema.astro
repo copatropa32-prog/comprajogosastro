@@ -5,9 +5,11 @@ interface Props {
   sku: string;
   url: string;
   imagem: string;
+  descricao?: string;
+  brand?: string;
 }
 
-const { nome, preco, sku, url, imagem } = Astro.props;
+const { nome, preco, sku, url, imagem, descricao, brand } = Astro.props;
 
 // Limpa o preço para o formato numérico exigido pelo Schema.org (ex: "179.78")
 const cleanPrice = preco
@@ -22,12 +24,20 @@ const absoluteImage = imagem.startsWith('http')
   ? imagem 
   : `${siteUrl.replace(/\/$/, '')}${imagem}`;
 
+// Limpa o SKU: remove espaços extras e limita o tamanho para evitar erro de string longa no Google
+const cleanSku = sku ? sku.trim().slice(0, 50) : 'JOGO-SKU';
+
 const schema = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": nome,
   "image": absoluteImage,
-  "sku": sku,
+  "description": descricao ? descricao : `Compre ${nome} pelo melhor preço na Compra Jogos.`,
+  "sku": cleanSku,
+  "brand": {
+    "@type": "Brand",
+    "name": brand ? brand : "Compra Jogos"
+  },
   "offers": {
     "@type": "Offer",
     "url": url,
