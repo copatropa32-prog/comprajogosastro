@@ -49,14 +49,9 @@ const {
     <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur-md sticky top-0 z-40">
       <div class="container mx-auto px-4 h-16 flex items-center justify-between">
           
-        <!-- Logo -->
+        <!-- Logo com Imagem Oficial -->
         <a href="/" class="flex items-center gap-2 group">
-          <div class="flex flex-col">
-            <span class="text-xl font-black tracking-tight text-white flex items-center gap-1">
-              Compra<span class="text-emerald-400">Jogos</span><span class="text-xs text-slate-500 font-normal">.com.br</span>
-            </span>
-            <span class="text-[10px] tracking-widest uppercase font-bold text-slate-400">Keys & Ofertas</span>
-          </div>
+          <img src="/logo-comprajogos.png" alt="CompraJogos" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
         </a>
 
         <!-- Barra de Pesquisa Rápida -->
@@ -85,9 +80,9 @@ const {
         <!-- Bloco Principal do Rodapé -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-900">
           
-          <!-- Coluna 1: Sobre -->
+          <!-- Coluna 1: Sobre com Logotipo -->
           <div class="flex flex-col gap-3">
-            <span class="text-sm font-bold text-white uppercase tracking-wider">CompraJogos</span>
+            <img src="/logo-comprajogos.png" alt="CompraJogos" class="h-8 w-auto object-contain self-start mb-1" />
             <p class="text-xs text-slate-400 leading-relaxed">
               O seu portal definitivo para curadoria de keys, descontos em jogos pagos e as melhores novidades do mundo gamer.
             </p>
@@ -138,7 +133,7 @@ const {
     </footer>
 
     <script>
-      // Função global de busca rápida na navbar (Corrigida para exibir as capas e preços corretamente)
+      // Função global de busca rápida na navbar
       window.filtrarPorTexto = function(termo) {
         if (typeof catalogoGlobal === 'undefined') return;
         const container = document.getElementById('catalog');
