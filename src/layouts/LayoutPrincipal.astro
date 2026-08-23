@@ -18,7 +18,21 @@ const {
     <meta name="impact-site-verification" value="e47d836d-e695-47d6-b4f1-fa6895dd618b" />
     <title>{titulo}</title>
     <meta name="description" content={descricao} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Favicon e Logotipo Oficial da Marca -->
+    <link rel="icon" type="image/png" href="/logo-comprajogos.png" />
+    <link rel="apple-touch-icon" href="/logo-comprajogos.png" />
+
+    <!-- Schema de Organização para o Google reconhecer a marca e o logotipo -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CompraJogos",
+        "url": "https://www.comprajogos.com.br",
+        "logo": "https://www.comprajogos.com.br/logo-comprajogos.png"
+      }
+    </script>
       
     <!-- Google AdSense Script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9710931146430417" crossorigin="anonymous"></script>
