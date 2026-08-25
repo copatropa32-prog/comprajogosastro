@@ -86,7 +86,7 @@ const {
       <div class="container mx-auto px-4">
         
         <!-- Bloco Principal do Rodapé -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-900">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-900">
           
           <!-- Coluna 1: Sobre com Logotipo -->
           <div class="flex flex-col gap-3">
@@ -120,12 +120,22 @@ const {
             </div>
           </div>
 
-          <!-- Coluna 3: Links Rápidos -->
+          <!-- Coluna 3: Navegação -->
           <div class="flex flex-col gap-3">
             <span class="text-sm font-bold text-white uppercase tracking-wider">Navegação</span>
             <div class="flex flex-col gap-1.5 text-xs text-slate-400">
               <a href="/" class="hover:text-emerald-400 transition">Página Inicial</a>
               <a href="mailto:contato@comprajogos.com.br" class="hover:text-emerald-400 transition">Contato Comercial</a>
+            </div>
+          </div>
+
+          <!-- Coluna 4: Institucional (Exigido pelo Google AdSense) -->
+          <div class="flex flex-col gap-3">
+            <span class="text-sm font-bold text-white uppercase tracking-wider">Institucional</span>
+            <div class="flex flex-col gap-1.5 text-xs text-slate-400">
+              <button onclick="abrirModalInstitucional('sobre')" class="text-left hover:text-emerald-400 transition cursor-pointer">Sobre o CompraJogos</button>
+              <button onclick="abrirModalInstitucional('termos')" class="text-left hover:text-emerald-400 transition cursor-pointer">Termos de Uso</button>
+              <button onclick="abrirModalInstitucional('privacidade')" class="text-left hover:text-emerald-400 transition cursor-pointer">Política de Privacidade</button>
             </div>
           </div>
 
@@ -139,6 +149,68 @@ const {
 
       </div>
     </footer>
+
+    <!-- Modal Institucional Universal (Sobre, Termos, Privacidade) -->
+    <div id="modal-institucional" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden p-4">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+        <button onclick="fecharModalInstitucional()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2 rounded-lg bg-slate-800/50 hover:bg-slate-800 transition cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div id="conteudo-modal-institucional" class="text-slate-300 text-sm leading-relaxed space-y-4 text-left">
+          <!-- Conteúdo injetado via JS -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Textos completos exigidos pelo Google AdSense
+      const textosInstitucionais = {
+        sobre: `
+          <h2 class="text-xl font-bold text-white mb-2">Sobre o CompraJogos</h2>
+          <p>O <strong>CompraJogos</strong> nasceu da paixão pelo universo dos games e da missão de simplificar a busca por promoções, descontos e chaves de ativação digitais. Nosso portal é dedicado a ajudar jogadores de PC, PlayStation (PS4 e PS5) e outras plataformas a economizarem tempo e dinheiro, reunindo em um único lugar as melhores oportunidades do mercado.</p>
+          <p>Monitoramos constantemente plataformas oficiais e lojas parceiras autorizadas para trazer preços atualizados, alertas de jogos gratuitos (free-to-play) e ofertas imperdíveis. Nosso objetivo é ser o seu ponto de partida confiável antes de fechar qualquer compra gamer.</p>
+          <p>Para manter este projeto no ar e totalmente gratuito para a comunidade, o CompraJogos participa de programas de marketing de afiliados. Quando você clica em nossos links e realiza uma compra em uma loja parceira, podemos receber uma pequena comissão, <strong>sem nenhum custo adicional para você</strong>.</p>
+          <p class="text-xs text-slate-400 pt-2">Dúvidas ou sugestões? Entre em contato: <span class="text-indigo-400 font-medium">contato@comprajogos.com.br</span></p>
+        `,
+        termos: `
+          <h2 class="text-xl font-bold text-white mb-2">Termos de Uso</h2>
+          <p>Bem-vindo ao <strong>CompraJogos</strong> (comprajogos.com.br). Ao acessar e utilizar nosso site, você concorda expressamente com os presentes Termos de Uso.</p>
+          <p><strong>1. Natureza do Portal:</strong> O CompraJogos é um site informativo de curadoria de ofertas, descontos e chaves de jogos digitais para PC, PS4 e PS5. Não realizamos a venda direta de produtos em nosso domínio; direcionamos os usuários para lojas parceiras oficiais e plataformas autorizadas.</p>
+          <p><strong>2. Preços e Disponibilidade:</strong> Os preços, descontos, estoques e condições de pagamento exibidos são definidos exclusivamente pelas lojas parceiras e podem sofrer alterações a qualquer momento. Recomendamos sempre verificar o valor final no site da loja de destino antes de concluir a transação.</p>
+          <p><strong>3. Propriedade Intelectual:</strong> Todo o layout, identidade visual, logotipos e organização do conteúdo do CompraJogos são protegidos por leis de propriedade intelectual. É proibida a reprodução não autorizada do conteúdo para fins comerciais sem consentimento prévio.</p>
+        `,
+        privacidade: `
+          <h2 class="text-xl font-bold text-white mb-2">Política de Privacidade</h2>
+          <p>A sua privacidade é de suma importância para o <strong>CompraJogos</strong>. Esta Política de Privacidade explica de forma transparente como tratamos informações em nosso site.</p>
+          <p><strong>1. Coleta de Dados e Cookies:</strong> Utilizamos cookies e tecnologias semelhantes para otimizar sua experiência de navegação, analisar o tráfego do site e aprimorar nossos serviços de curadoria.</p>
+          <p><strong>2. Google AdSense e Anúncios:</strong> Exibimos anúncios fornecidos pelo Google AdSense. O Google utiliza cookies para veicular anúncios com base nas visitas anteriores dos usuários ao nosso site e a outros endereços na internet. Os usuários podem optar por desativar a publicidade personalizada acessando as Configurações de anúncios do Google.</p>
+          <p><strong>3. Links de Afiliados:</strong> Nosso site contém links de rastreamento para lojas parceiras. Ao clicar nesses links, um cookie é armazenado em seu navegador pelo parceiro para fins de atribuição de comissão de afiliado, sem comprometer seus dados pessoais ou de pagamento.</p>
+        `
+      };
+
+      window.abrirModalInstitucional = function(tipo) {
+        const modal = document.getElementById('modal-institucional');
+        const conteudo = document.getElementById('conteudo-modal-institucional');
+        if (modal && conteudo && textosInstitucionais[tipo]) {
+          conteudo.innerHTML = textosInstitucionais[tipo];
+          modal.classList.remove('hidden');
+        }
+      };
+
+      window.fecharModalInstitucional = function() {
+        const modal = document.getElementById('modal-institucional');
+        if (modal) {
+          modal.classList.add('hidden');
+        }
+      };
+
+      // Fechar modal ao clicar fora da caixa de conteúdo
+      document.getElementById('modal-institucional')?.addEventListener('click', (e) => {
+        if (e.target.id === 'modal-institucional') {
+          fecharModalInstitucional();
+        }
+      });
+    </script>
 
     <script>
       // Função global de busca rápida na navbar
