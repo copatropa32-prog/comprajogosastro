@@ -5,8 +5,8 @@ interface Props {
 }
 
 const { 
-  titulo = "CompraJogos - Keys, Ofertas e Jogos Gratuitos", 
-  descricao = "Explore centenas de jogos gratuitos (F2P) e descontos imbatíveis em chaves de PC." 
+  titulo = "CompraJogos - PC (Grátis e Pagos), PS4 e PS5", 
+  descricao = "Explore centenas de jogos de PC grátis e pagos, além de ofertas imperdíveis para PS4 e PS5." 
 } = Astro.props;
 ---
 
@@ -54,20 +54,20 @@ const {
           <img src="/logo-comprajogos.png" alt="CompraJogos" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
           <div class="flex flex-col">
             <span class="text-xs sm:text-sm font-black tracking-wider text-white uppercase group-hover:text-emerald-400 transition-colors">
-              COMPRAJOGOS <span class="text-emerald-400">FREE</span>
+              COMPRA<span class="text-emerald-400">JOGOS</span>
             </span>
             <span class="text-[10px] text-slate-400 font-medium tracking-wide">
-              compre e jogue grátis
+              PC grátis e pagos, PS4 e PS5
             </span>
           </div>
         </a>
 
-        <!-- Barra de Pesquisa Rápida -->
+        <!-- Barra de Pesquisa Rápida Atualizada para PS4 e PS5 -->
         <div class="relative max-w-xs w-full hidden sm:block">
           <input 
             type="text" 
             id="search-input" 
-            placeholder="Pesquisar jogos..." 
+            placeholder="Pesquisar jogos, PS4, PS5..." 
             class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition"
             oninput="filtrarPorTexto(this.value)"
           />
@@ -92,7 +92,7 @@ const {
           <div class="flex flex-col gap-3">
             <img src="/logo-comprajogos.png" alt="CompraJogos" class="h-8 w-auto object-contain self-start mb-1" />
             <p class="text-xs text-slate-400 leading-relaxed">
-              O seu portal definitivo para curadoria de keys, descontos em jogos pagos e as melhores novidades do mundo gamer.
+              O seu portal definitivo para curadoria de keys de PC grátis e pagos, além de ofertas imperdíveis para PS4 e PS5.
             </p>
           </div>
 
@@ -134,7 +134,7 @@ const {
         <!-- Copyright -->
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-xs text-slate-500">
           <p>&copy; 2026 CompraJogos.com.br. Todos os direitos reservados.</p>
-          <p class="text-[11px] text-slate-600">Desenvolvido com foco em ofertas de PC</p>
+          <p class="text-[11px] text-slate-600">Desenvolvido com foco em jogos de PC grátis e pagos, PS4 e PS5</p>
         </div>
 
       </div>
@@ -174,7 +174,7 @@ const {
                     <span class="text-xs text-slate-500 line-through block">${item.normalFormatted}</span>
                     <span class="text-lg font-black text-emerald-400">${item.saleFormatted}</span>
                   ` : `
-                    <span class="text-xs text-slate-500 block">Plataforma PC</span>
+                    <span class="text-xs text-slate-500 block">Plataforma</span>
                     <span class="text-sm font-extrabold text-indigo-400">Free-to-Play</span>
                   `}
                 </div>

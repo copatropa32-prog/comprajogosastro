@@ -5,7 +5,7 @@ import jogosLocais from '../data/jogos.json';
 import ProductSchema from '../components/ProductSchema.astro';
 ---
 
-<LayoutPrincipal titulo="CompraJogos - Top Jogos e Ofertas" descricao="Os jogos mais famosos do mundo, grátis e com os melhores preços.">
+<LayoutPrincipal titulo="CompraJogos - PC (Grátis e Pagos), PS4 e PS5" descricao="Explore centenas de jogos de PC grátis e pagos, além de ofertas imperdíveis para PS4 e PS5.">
   <head slot="head">
     <!-- Schema.org gerado no servidor para cada jogo do catálogo (perfeito para o Google) -->
     {jogosLocais.map((jogo) => (
@@ -25,9 +25,12 @@ import ProductSchema from '../components/ProductSchema.astro';
     <div class="bg-slate-900/85 backdrop-blur-md p-5 rounded-2xl border border-slate-800 shadow-xl mb-8 flex flex-col gap-4">
       <div class="flex items-center gap-3 flex-wrap">
         <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Filtrar por:</span>
-        <button onclick="mudarTipo('all', this)" class="filter-btn active bg-emerald-500 text-slate-950 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Todos</button>
-        <button onclick="mudarTipo('paid', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Promoções</button>
-        <button onclick="mudarTipo('free', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Jogos Gratuitos</button>
+        <button onclick="mudarFiltro('all', this)" class="filter-btn active bg-emerald-500 text-slate-950 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Todos</button>
+        <button onclick="mudarFiltro('promocoes', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Promoções</button>
+        <button onclick="mudarFiltro('gratuitos', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Jogos Gratuitos</button>
+        <button onclick="mudarFiltro('pc', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PC</button>
+        <button onclick="mudarFiltro('ps4', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PS4</button>
+        <button onclick="mudarFiltro('ps5', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PS5</button>
       </div>
 
       <!-- Filtro de Preço -->
@@ -71,7 +74,7 @@ import ProductSchema from '../components/ProductSchema.astro';
     <div class="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="flex flex-col gap-3">
         <h3 class="text-white font-bold text-base">Sobre o CompraJogos</h3>
-        <p class="text-xs leading-relaxed text-slate-400">O CompraJogos é um portal especializado em curadoria de chaves de PC e jogos gratuitos com os melhores preços do mercado.</p>
+        <p class="text-xs leading-relaxed text-slate-400">O CompraJogos é o seu portal definitivo para curadoria de keys de PC grátis e pagos, além de ofertas imperdíveis para PS4 e PS5.</p>
         <button onclick="abrirModalInstitucional('sobre')" class="text-emerald-400 hover:text-emerald-300 text-xs font-semibold text-left transition w-max cursor-pointer">Ler mais &rarr;</button>
       </div>
       <div class="flex flex-col gap-3">
@@ -98,7 +101,7 @@ import ProductSchema from '../components/ProductSchema.astro';
 
   <script define:vars={{ jogosLocais }}>
     let catalogoGlobal = [];
-    let tipoAtual = 'all';
+    let filtroAtual = 'all';
     let generoAtual = 'Todos os Gêneros';
 
     function parsePrice(priceStr) {
@@ -124,22 +127,33 @@ import ProductSchema from '../components/ProductSchema.astro';
             saleFormatted: 'Gratuito',
             normalFormatted: '',
             savings: 100,
-            url: item.game_url
+            url: item.game_url,
+            platform: 'PC'
           }));
         }
       } catch (e) {}
 
-      const meusJogos = jogosLocais.map((jogo, index) => ({
-        id: `custom-${index}`,
-        title: jogo.nome,
-        type: 'paid',
-        genre: jogo.genre || 'Destaque',
-        image: jogo.image,
-        saleFormatted: jogo.preco,
-        normalFormatted: jogo.precoNormal,
-        savings: jogo.desconto || 0,
-        url: jogo.linkBase
-      }));
+      const meusJogos = jogosLocais.map((jogo, index) => {
+        const nomeLower = (jogo.nome || '').toLowerCase();
+        const generoLower = (jogo.genre || '').toLowerCase();
+        
+        let plat = 'PC';
+        if (nomeLower.includes('ps5') || generoLower.includes('ps5')) plat = 'PS5';
+        else if (nomeLower.includes('ps4') || generoLower.includes('ps4')) plat = 'PS4';
+
+        return {
+          id: `custom-${index}`,
+          title: jogo.nome,
+          type: 'paid',
+          genre: jogo.genre || 'Destaque',
+          image: jogo.image,
+          saleFormatted: jogo.preco,
+          normalFormatted: jogo.precoNormal,
+          savings: jogo.desconto || 0,
+          url: jogo.linkBase,
+          platform: plat
+        };
+      });
 
       catalogoGlobal = [...meusJogos, ...freeFormatted];
       
@@ -166,8 +180,8 @@ import ProductSchema from '../components/ProductSchema.astro';
       });
     }
 
-    window.mudarTipo = function(tipo, el) {
-      tipoAtual = tipo;
+    window.mudarFiltro = function(filtro, el) {
+      filtroAtual = filtro;
       generoAtual = 'Todos os Gêneros';
       document.querySelectorAll('.filter-btn').forEach(b => {
         b.classList.remove('bg-emerald-500', 'text-slate-950', 'font-bold');
@@ -193,12 +207,24 @@ import ProductSchema from '../components/ProductSchema.astro';
       const maxVal = parseFloat(document.getElementById('maxPrice').value) || Infinity;
 
       const filtrados = catalogoGlobal.filter(j => {
-        const matchTipo = tipoAtual === 'all' || j.type === tipoAtual;
+        let matchFiltro = true;
+        if (filtroAtual === 'promocoes') {
+          matchFiltro = j.type === 'paid' && j.savings > 0;
+        } else if (filtroAtual === 'gratuitos') {
+          matchFiltro = j.type === 'free';
+        } else if (filtroAtual === 'pc') {
+          matchFiltro = j.platform === 'PC';
+        } else if (filtroAtual === 'ps4') {
+          matchFiltro = j.platform === 'PS4';
+        } else if (filtroAtual === 'ps5') {
+          matchFiltro = j.platform === 'PS5';
+        }
+
         const matchGenero = generoAtual === 'Todos os Gêneros' || j.genre === generoAtual;
         const precoNumerico = parsePrice(j.saleFormatted);
         const matchPreco = precoNumerico >= minVal && precoNumerico <= maxVal;
 
-        return matchTipo && matchGenero && matchPreco;
+        return matchFiltro && matchGenero && matchPreco;
       });
 
       if (filtrados.length === 0) {
@@ -267,7 +293,7 @@ import ProductSchema from '../components/ProductSchema.astro';
     }
 
     const textosModais = {
-      sobre: `<h3 class="text-lg font-bold text-white">Sobre o CompraJogos</h3><p>Portal especializado em curadoria de ofertas de chaves de PC e jogos gratuitos.</p>`,
+      sobre: `<h3 class="text-lg font-bold text-white">Sobre o CompraJogos</h3><p>Portal especializado em curadoria de ofertas de chaves de PC, PS4 e PS5.</p>`,
       privacidade: `<h3 class="text-lg font-bold text-white">Política de Privacidade</h3><p>Seus dados estão seguros. Utilizamos cookies para melhor experiência.</p>`,
       termos: `<h3 class="text-lg font-bold text-white">Termos de Uso</h3><p>Ao utilizar nosso site, você concorda com nossos termos de parceria e afiliados.</p>`
     };

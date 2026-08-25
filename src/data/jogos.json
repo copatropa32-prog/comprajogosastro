@@ -1,5 +1,125 @@
 [
   {
+    "nome": "UFC 6 - Xbox Series X|S",
+    "preco": "R$ 312,45",
+    "precoNormal": "R$ 472,00",
+    "desconto": 34,
+    "genre": "Sports / Fighting",
+    "image": "/capas/ufc-6-xbox-series-x-s.jpg",
+    "video": "/videos/ufc-6.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/22459-comprar-ufc-6-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Forza Horizon 6 Premium Edition - PC & Xbox Series X|S",
+    "preco": "R$ 437,46",
+    "precoNormal": "R$ 708,00",
+    "desconto": 38,
+    "genre": "Racing / Simulation",
+    "image": "/capas/forza-horizon-6-premium-edition-pc-xbox.jpg",
+    "video": "/videos/forza-horizon-6.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/21622-comprar-forza-horizon-6-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Final Fantasy VII Remake - PS4",
+    "preco": "R$ 176,30",
+    "precoNormal": "R$ 413,00",
+    "desconto": 57,
+    "genre": "Action / RPG",
+    "image": "/capas/final-fantasy-vii-remake-remake-playstation-4.jpg",
+    "video": "/videos/final-fantasy-vii-remake.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/4273-comprar-final-fantasy-vii-remake-remake-playstation-4-jogo-playstation-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Kentucky Route Zero: TV Edition - PS4 & PS5",
+    "preco": "R$ 129,07",
+    "precoNormal": "R$ 130,00",
+    "desconto": 1,
+    "genre": "Adventure / Indie",
+    "image": "/capas/kentucky-route-zero-tv-edition-tv-edition-playstation-4.jpg",
+    "video": "/videos/kentucky-route-zero.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/6127-comprar-kentucky-route-zero-tv-edition-tv-edition-playstation-4-playstation-5-jogo-playstation-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Assassin's Creed Shadows - PS5",
+    "preco": "R$ 224,00",
+    "precoNormal": "R$ 472,00",
+    "desconto": 53,
+    "genre": "Action / Adventure",
+    "image": "/capas/assassin-s-creed-shadows-playstation-5.jpg",
+    "video": "/videos/assassin-s-creed-shadows.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/20620-comprar-assassin-s-creed-shadows-playstation-5-playstation-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Deathloop - PS5",
+    "preco": "R$ 350,78",
+    "precoNormal": "R$ 354,00",
+    "desconto": 1,
+    "genre": "Action / Shooter",
+    "image": "/capas/deathloop-playstation-5.jpg",
+    "video": "/videos/deathloop.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/5977-comprar-deathloop-playstation-5-jogo-playstation-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Nioh 2: The Complete Edition - PS4 & PS5",
+    "preco": "R$ 235,80",
+    "precoNormal": "R$ 354,00",
+    "desconto": 33,
+    "genre": "Action / RPG",
+    "image": "/capas/nioh-2-the-complete-edition-complete-edition-playstation-4.jpg",
+    "video": "/videos/nioh-2.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/8195-comprar-nioh-2-the-complete-edition-complete-edition-playstation-4-playstation-5-jogo-playstation-store/?igr=gamer-56c7016"
+  },
+  {
+  "nome": "Horizon Forbidden West - PS4 & PS5",
+  "preco": "R$ 214,69",
+  "precoNormal": "R$ 472,00",
+  "desconto": 54,
+  "genre": "Action / Adventure",
+  "image": "/capas/horizon-forbidden-west.jpg",
+  "video": "/videos/horizon-forbidden-west.mp4",
+  "linkBase": "https://www.instant-gaming.com/pt/8893-comprar-horizon-forbidden-west-playstation-5-playstation-4-jogo-playstation-store/?igr=gamer-56c7016"
+},
+  {
+    "nome": "Yakuza Kiwami 2 - PS5",
+    "preco": "R$ 73,71",
+    "precoNormal": "R$ 118,00",
+    "desconto": 37,
+    "genre": "Action / Adventure",
+    "image": "/capas/yakuza-kiwami-2-playstation-5.jpg",
+    "video": "/videos/yakuza-kiwami-2.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/21331-comprar-yakuza-kiwami-2-playstation-5-playstation-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Street Fighter V: Champion Edition Upgrade Kit Bundle (PS4 & PS5)",
+    "preco": "R$ 38,86",
+    "precoNormal": "R$ 118,00",
+    "desconto": 67,
+    "genre": "Action / Fighting",
+    "image": "/capas/street-fighter-v-champion-edition-upgrade-kit-bundle-playstation-5.jpg",
+    "video": "/videos/street-fighter-v.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/23222-comprar-street-fighter-v-champion-edition-upgrade-kit-bundle-playstation-5-playstation-4-playstation-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Phantom Blade Zero (PS5)",
+    "preco": "R$ 254,12",
+    "precoNormal": "R$ 349,00",
+    "desconto": 27,
+    "genre": "Action / RPG",
+    "image": "/capas/phantom-blade-zero-playstation-5.jpg",
+    "video": "/videos/phantom-blade-zero.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/17041-comprar-phantom-blade-zero-playstation-5-playstation-store/?igr=gamer-56c7016"
+  },
+  {
+    "nome": "Grand Theft Auto VI (PS5)",
+    "preco": "R$ 371,42",
+    "precoNormal": "R$ 472,00",
+    "desconto": 21,
+    "genre": "AAA / Blockbuster",
+    "image": "/capas/grand-theft-auto-vi-playstation-5.jpg",
+    "video": "/videos/gta-6.mp4",
+    "linkBase": "https://www.instant-gaming.com/pt/15506-comprar-grand-theft-auto-vi-playstation-5-playstation-store/?igr=gamer-56c7016"
+  },
+  {
     "nome": "The Sims 4 Cats & Dogs - PC & Mac (EA App)",
     "preco": "R$ 71,88",
     "precoNormal": "R$ 179,00",
