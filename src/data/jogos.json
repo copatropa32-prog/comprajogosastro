@@ -1,5 +1,149 @@
 [
   {
+    "nome": "Dishonored",
+    "preco": "R$ 29,99",
+    "precoNormal": "R$ 29,99",
+    "desconto": 0,
+    "genre": "Action / Stealth",
+    "image": "/capas/dishonored.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796901&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fdishonored"
+  },
+  {
+    "nome": "Borderlands 2 Season Pass",
+    "preco": "R$ 44,99",
+    "precoNormal": "R$ 44,99",
+    "desconto": 0,
+    "genre": "Action / RPG",
+    "image": "/capas/borderlands2.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796930&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fborderlands-2-season-pass"
+  },
+  {
+    "nome": "Men of War: Red Tide",
+    "preco": "R$ 19,49",
+    "precoNormal": "R$ 19,49",
+    "desconto": 0,
+    "genre": "Strategy / RTS",
+    "image": "/capas/men-of-war-red-tide.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796904&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fmen-of-war-red-tide"
+  },
+  {
+    "nome": "Far Cry 3",
+    "preco": "R$ 59,99",
+    "precoNormal": "R$ 59,99",
+    "desconto": 0,
+    "genre": "Action / Shooter",
+    "image": "/capas/farcry3.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796927&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Ffar-cry-3"
+  },
+  {
+    "nome": "LEGO The Lord of the Rings",
+    "preco": "R$ 89,99",
+    "precoNormal": "R$ 89,99",
+    "desconto": 0,
+    "genre": "Action / Adventure",
+    "image": "/capas/lego-thelordoftherings.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796999&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-the-lord-of-the-rings"
+  },
+{
+    "nome": "Worms Revolution",
+    "preco": "R$ 15,97",
+    "precoNormal": "R$ 79,90",
+    "desconto": 80,
+    "genre": "Strategy / Artillery",
+    "image": "/capas/worms-revolution.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796979&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fworms-revolution"
+  },
+  {
+    "nome": "Minecraft: Java and Bedrock Edition",
+    "preco": "R$ 93,90",
+    "precoNormal": "R$ 93,90",
+    "desconto": 0,
+    "genre": "Sandbox / Survival",
+    "image": "/capas/minecraft-java.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679617878&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fminecraft-java-and-bedrock-edition"
+  },
+  {
+    "nome": "Puyo Puyo Tetris",
+    "preco": "R$ 36,99",
+    "precoNormal": "R$ 36,99",
+    "desconto": 0,
+    "genre": "Puzzle / Action",
+    "image": "/capas/tetris.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679619954&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fpuyo-puyo-tetris"
+  },
+  {
+    "nome": "LEGO Star Wars: The Force Awakens",
+    "preco": "R$ 89,99",
+    "precoNormal": "R$ 89,99",
+    "desconto": 0,
+    "genre": "Action / Adventure",
+    "image": "/capas/lego-starwars-the-forceawakens.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679612774&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-star-wars-force-awakens"
+  },
+  {
+    "nome": "LEGO Star Wars: The Skywalker Saga",
+    "preco": "R$ 199,99",
+    "precoNormal": "R$ 199,99",
+    "desconto": 0,
+    "genre": "Action / Adventure",
+    "image": "/capas/lego-starwars-the-skywalker.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679617139&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-star-wars-the-skywalker-saga"
+  },
+  {
+  "nome": "LEGO Batman Trilogy",
+  "preco": "R$ 20,00",
+  "precoNormal": "R$ 229,99",
+  "desconto": 91,
+  "genre": "Action / Adventure",
+  "image": "/capas/lego-batman-trilogy.jpg",
+  "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679621801&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-batman-trilogy"
+},
+{
+  "nome": "XCOM: Enemy Unknown",
+  "preco": "R$ 27,99",
+  "precoNormal": "R$ 69,99",
+  "desconto": 60,
+  "genre": "Strategy / Tactical",
+  "image": "/capas/xcom.jpg",
+  "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796940&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fxcom-enemy-unknown"
+},
+  {
+  "nome": "Grand Theft Auto VI - Xbox",
+  "preco": "R$ 450,00",
+  "precoNormal": "R$ 450,00",
+  "desconto": 0,
+  "genre": "AAA / Blockbuster",
+  "image": "/capas/gtavi-xbox.jpg",
+  "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.467963194&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fbundle%2Fgrand-theft-auto-6-xbox"
+},
+  {
+    "nome": "Viking: Battle for Asgard",
+    "preco": "R$ 39,99",
+    "precoNormal": "R$ 39,99",
+    "desconto": 0,
+    "genre": "Ação / RPG",
+    "image": "/capas/viking.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796993&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fviking-battle-for-asgard"
+  },
+  {
+    "nome": "Hearts of Iron III",
+    "preco": "R$ 39,99",
+    "precoNormal": "R$ 39,99",
+    "desconto": 0,
+    "genre": "Estratégia",
+    "image": "/capas/hearts-of-iron-iii.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796950&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fhearts-of-iron-3-their-finest-hour"
+  },
+  {
+    "nome": "Mount & Blade Warband: Napoleonic Wars",
+    "preco": "R$ 39,99",
+    "precoNormal": "R$ 39,99",
+    "desconto": 0,
+    "genre": "Estratégia / Ação",
+    "image": "/capas/mount-blade-napoleonic-wars.jpg",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796651&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fmount-blade-warband-napoleonic-wars"
+  },
+  {
     "nome": "UFC 6 - Xbox Series X|S",
     "preco": "R$ 312,45",
     "precoNormal": "R$ 472,00",

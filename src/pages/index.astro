@@ -2,12 +2,13 @@
 import '../styles/global.css';
 import LayoutPrincipal from '../layouts/LayoutPrincipal.astro';
 import jogosLocais from '../data/jogos.json'; 
+import notebooksLocais from '../data/notebooks.json';
 import ProductSchema from '../components/ProductSchema.astro';
 ---
 
-<LayoutPrincipal titulo="CompraJogos - PC (Grátis e Pagos), PS4 e PS5" descricao="Explore centenas de jogos de PC grátis e pagos, além de ofertas imperdíveis para PS4 e PS5.">
+<LayoutPrincipal titulo="CompraJogos - Notebooks, PC (Grátis e Pagos), PS4 e PS5" descricao="Explore centenas de jogos de PC grátis e pagos, ofertas para PS4 e PS5, além de notebooks de alta performance.">
   <head slot="head">
-    <!-- Schema.org gerado no servidor para cada jogo do catálogo (perfeito para o Google) -->
+    <!-- Schema.org gerado no servidor para cada jogo do catálogo -->
     {jogosLocais.map((jogo) => (
       <ProductSchema 
         nome={jogo.nome}
@@ -15,6 +16,16 @@ import ProductSchema from '../components/ProductSchema.astro';
         sku={jogo.nome}
         url={jogo.linkBase}
         imagem={jogo.image}
+      />
+    ))}
+    <!-- Schema.org gerado no servidor para cada notebook -->
+    {notebooksLocais.map((nb) => (
+      <ProductSchema 
+        nome={nb.nome}
+        preco={nb.preco}
+        sku={nb.nome}
+        url={nb.linkBase}
+        imagem={nb.image}
       />
     ))}
   </head>
@@ -28,6 +39,7 @@ import ProductSchema from '../components/ProductSchema.astro';
         <button onclick="mudarFiltro('all', this)" class="filter-btn active bg-emerald-500 text-slate-950 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Todos</button>
         <button onclick="mudarFiltro('promocoes', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Promoções</button>
         <button onclick="mudarFiltro('gratuitos', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Jogos Gratuitos</button>
+        <button onclick="mudarFiltro('notebooks', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Notebooks</button>
         <button onclick="mudarFiltro('pc', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PC</button>
         <button onclick="mudarFiltro('ps4', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PS4</button>
         <button onclick="mudarFiltro('ps5', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PS5</button>
@@ -60,11 +72,11 @@ import ProductSchema from '../components/ProductSchema.astro';
       </div>
     </div>
 
-    <!-- Grade de Jogos -->
+    <!-- Grade de Produtos -->
     <div id="catalog" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <div class="col-span-full bg-slate-900/50 border border-slate-800 p-12 rounded-2xl text-center text-slate-400 flex flex-col items-center justify-center gap-4">
         <div class="w-8 h-8 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
-        <span class="text-sm font-medium">Carregando jogos e ofertas selecionadas...</span>
+        <span class="text-sm font-medium">Carregando catálogo e ofertas selecionadas...</span>
       </div>
     </div>
 
@@ -74,7 +86,7 @@ import ProductSchema from '../components/ProductSchema.astro';
     <div class="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="flex flex-col gap-3">
         <h3 class="text-white font-bold text-base">Sobre o CompraJogos</h3>
-        <p class="text-xs leading-relaxed text-slate-400">O CompraJogos é o seu portal definitivo para curadoria de keys de PC grátis e pagos, além de ofertas imperdíveis para PS4 e PS5.</p>
+        <p class="text-xs leading-relaxed text-slate-400">O CompraJogos é o seu portal definitivo para curadoria de keys de PC, consoles e notebooks de alta performance.</p>
         <button onclick="abrirModalInstitucional('sobre')" class="text-emerald-400 hover:text-emerald-300 text-xs font-semibold text-left transition w-max cursor-pointer">Ler mais &rarr;</button>
       </div>
       <div class="flex flex-col gap-3">
@@ -99,7 +111,7 @@ import ProductSchema from '../components/ProductSchema.astro';
     </div>
   </div>
 
-  <script define:vars={{ jogosLocais }}>
+  <script define:vars={{ jogosLocais, notebooksLocais }}>
     let catalogoGlobal = [];
     let filtroAtual = 'all';
     let generoAtual = 'Todos os Gêneros';
@@ -155,10 +167,24 @@ import ProductSchema from '../components/ProductSchema.astro';
         };
       });
 
-      catalogoGlobal = [...meusJogos, ...freeFormatted];
+      const meusNotebooks = notebooksLocais.map((nb, index) => ({
+        id: `notebook-${index}`,
+        title: nb.nome,
+        type: 'notebook',
+        genre: nb.genre || 'Notebook',
+        image: nb.image,
+        saleFormatted: nb.preco,
+        normalFormatted: nb.precoNormal,
+        savings: nb.desconto || 0,
+        url: nb.linkBase,
+        descricao: nb.descricao || '',
+        platform: 'Hardware'
+      }));
+
+      catalogoGlobal = [...meusJogos, ...meusNotebooks, ...freeFormatted];
       
       if (catalogoGlobal.length === 0) {
-        container.innerHTML = `<div class="col-span-full bg-slate-900 border border-slate-800 p-8 rounded-xl text-center text-slate-400">Nenhum jogo cadastrado ou disponível no momento.</div>`;
+        container.innerHTML = `<div class="col-span-full bg-slate-900 border border-slate-800 p-8 rounded-xl text-center text-slate-400">Nenhum item cadastrado ou disponível no momento.</div>`;
         return;
       }
 
@@ -209,9 +235,11 @@ import ProductSchema from '../components/ProductSchema.astro';
       const filtrados = catalogoGlobal.filter(j => {
         let matchFiltro = true;
         if (filtroAtual === 'promocoes') {
-          matchFiltro = j.type === 'paid' && j.savings > 0;
+          matchFiltro = (j.type === 'paid' || j.type === 'notebook') && j.savings > 0;
         } else if (filtroAtual === 'gratuitos') {
           matchFiltro = j.type === 'free';
+        } else if (filtroAtual === 'notebooks') {
+          matchFiltro = j.type === 'notebook';
         } else if (filtroAtual === 'pc') {
           matchFiltro = j.platform === 'PC';
         } else if (filtroAtual === 'ps4') {
@@ -237,27 +265,27 @@ import ProductSchema from '../components/ProductSchema.astro';
           <div class="relative bg-slate-950 h-44 overflow-hidden flex items-center justify-center">
             <img src="${item.image}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
             <span class="absolute top-3 left-3 bg-slate-900/90 text-slate-300 text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider">${item.genre}</span>
-            ${item.savings > 0 && item.type === 'paid' ? `<span class="absolute top-3 right-3 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-1 rounded-md shadow">-${item.savings}%</span>` : ''}
+            ${item.savings > 0 && (item.type === 'paid' || item.type === 'notebook') ? `<span class="absolute top-3 right-3 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-1 rounded-md shadow">-${item.savings}%</span>` : ''}
             ${item.type === 'free' ? `<span class="absolute top-3 right-3 bg-indigo-600 text-white font-bold text-xs px-2 py-1 rounded-md shadow">Grátis</span>` : ''}
           </div>
           <div class="p-5 flex flex-col flex-1 justify-between gap-4">
             <h4 class="font-bold text-white text-sm line-clamp-2 leading-snug">${item.title}</h4>
             <div class="flex justify-between items-end border-t border-slate-800 pt-4">
               <div>
-                ${item.type === 'paid' ? `
+                ${item.type === 'paid' || item.type === 'notebook' ? `
                   ${item.normalFormatted ? `<span class="text-xs text-slate-500 line-through block">${item.normalFormatted}</span>` : ''}
                   <span class="text-lg font-black text-emerald-400">${item.saleFormatted}</span>
-                ` : `
+              ` : `
                   <span class="text-xs text-slate-500 block">Plataforma PC</span>
                   <span class="text-sm font-extrabold text-indigo-400">Free-to-Play</span>
-                `}
-              </div>
-              <button onclick="abrirModalJogo('${item.id}')" class="font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-lg cursor-pointer ${item.type === 'free' ? 'bg-indigo-600 hover:bg-indigo-500 text-white' : 'bg-emerald-500 hover:bg-emerald-400 text-slate-950'}">
-                ${item.type === 'paid' ? 'Ver Oferta' : 'Jogar Grátis'}
-              </button>
+            `}
             </div>
+            <button onclick="abrirModalJogo('${item.id}')" class="font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-lg cursor-pointer ${item.type === 'free' ? 'bg-indigo-600 hover:bg-indigo-500 text-white' : 'bg-emerald-500 hover:bg-emerald-400 text-slate-950'}">
+              ${item.type === 'free' ? 'Jogar Grátis' : item.type === 'notebook' ? 'Ver Notebook' : 'Ver Oferta'}
+            </button>
           </div>
         </div>
+      </div>
       `).join('');
     }
 
@@ -282,10 +310,16 @@ import ProductSchema from '../components/ProductSchema.astro';
               <span class="text-xs text-slate-400 block">${jogo.type === 'free' ? 'Tipo de Acesso' : 'Preço na Loja'}</span>
               <span class="text-xl font-black ${jogo.type === 'free' ? 'text-indigo-400' : 'text-emerald-400'} mt-1 block">${jogo.saleFormatted}</span>
             </div>
-            ${jogo.savings > 0 && jogo.type === 'paid' ? `<span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded-lg text-xs font-bold">-${jogo.savings}% OFF</span>` : ''}
+            ${jogo.savings > 0 && (jogo.type === 'paid' || jogo.type === 'notebook') ? `<span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded-lg text-xs font-bold">-${jogo.savings}% OFF</span>` : ''}
           </div>
+          ${jogo.descricao ? `
+            <div class="bg-slate-950/40 p-3.5 rounded-xl border border-slate-800 text-xs text-slate-300 leading-relaxed">
+              <span class="font-bold text-white block mb-1">Especificações Técnicas:</span>
+              ${jogo.descricao}
+            </div>
+          ` : ''}
           <a href="${jogo.url}" target="_blank" rel="noopener noreferrer" onclick="fecharModal()" class="w-full ${jogo.type === 'free' ? 'bg-indigo-600 hover:bg-indigo-500 text-white' : 'bg-emerald-500 hover:bg-emerald-400 text-slate-950'} font-bold py-3.5 px-4 rounded-xl text-xs text-center transition shadow-lg flex items-center justify-center gap-2 cursor-pointer">
-            ${jogo.type === 'free' ? 'Acessar Jogo Grátis' : 'Ir para a Loja Oficial'} &rarr;
+            ${jogo.type === 'free' ? 'Acessar Jogo Grátis' : jogo.type === 'notebook' ? 'Ver Notebook na Loja' : 'Ir para a Loja Oficial'} &rarr;
           </a>
         </div>
       `;
@@ -293,7 +327,7 @@ import ProductSchema from '../components/ProductSchema.astro';
     }
 
     const textosModais = {
-      sobre: `<h3 class="text-lg font-bold text-white">Sobre o CompraJogos</h3><p>Portal especializado em curadoria de ofertas de chaves de PC, PS4 e PS5.</p>`,
+      sobre: `<h3 class="text-lg font-bold text-white">Sobre o CompraJogos</h3><p>Portal especializado em curadoria de ofertas de chaves de PC, consoles e notebooks de alto desempenho.</p>`,
       privacidade: `<h3 class="text-lg font-bold text-white">Política de Privacidade</h3><p>Seus dados estão seguros. Utilizamos cookies para melhor experiência.</p>`,
       termos: `<h3 class="text-lg font-bold text-white">Termos de Uso</h3><p>Ao utilizar nosso site, você concorda com nossos termos de parceria e afiliados.</p>`
     };

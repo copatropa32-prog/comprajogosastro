@@ -1,0 +1,62 @@
+[
+  {
+    "nome": "Notebook VAIO FE16 AMD Ryzen 7-5825U (8GB / 256GB)",
+    "preco": "R$ 3.499",
+    "precoNormal": "R$ 4.116",
+    "desconto": 16,
+    "genre": "Notebook Produtividade",
+    "image": "/capas/notebook-vaio-16ryzen7.webp",
+    "descricao": "Processador AMD Ryzen 7-5825U, Sistema Linux, 8GB de RAM, 256GB SSD NVMe, Tela de 16 polegadas IPS WUXGA Antirreflexo, Design ultrafino na cor Cinza Grafite.",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1752475.451665593408319489321627&type=2&murl=https%3A%2F%2Fwww.br.vaio.com%2Fnotebook-vaio-fe16-amd-ryzen-7-5825u-linux-8gb-256gb-ssd-16-ips-wuxga-antirreflexo-cinza-grafite-3344921%2Fp"
+  },
+  {
+    "nome": "Notebook VAIO FE16 AMD Ryzen 5-5625U (16GB RAM)",
+    "preco": "R$ 3.899",
+    "precoNormal": "R$ 4.587",
+    "desconto": 28,
+    "genre": "Notebook Produtividade",
+    "image": "/capas/vaio-fe16-amd-ryzen5.webp",
+    "descricao": "Processador AMD Ryzen 5-5625U, Sistema Linux, 16GB de RAM, 512GB SSD NVMe, Tela de 16 polegadas IPS WUXGA, Acabamento premium em Cinza Grafite.",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1752475.451665593408319489321627&type=2&murl=https%3A%2F%2Fwww.br.vaio.com%2Fnotebook-vaio-fe16-amd-ryzen-5-5625u-linux-16gb-ram-512gb-ssd-16-wuxga-cinza-grafite-3344395%2Fp"
+  },
+  {
+    "nome": "Notebook VAIO FE16 AMD Ryzen 7-5825U (Win 11, 16GB)",
+    "preco": "R$ 4.799",
+    "precoNormal": "R$ 6.399",
+    "desconto": 25,
+    "genre": "Notebook Gamer / Produtividade",
+    "image": "/capas/NOTEBOOK-VAIOFE16AMD-RYZEN7-5825U.webp",
+    "descricao": "Processador AMD Ryzen 7-5825U, Windows 11 Home de fábrica, 16GB de RAM, 512GB SSD NVMe, Tela de 16 polegadas WUXGA de alta definição.",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1752475.4516613974251512532158670&type=2&murl=https%3A%2F%2Fwww.br.vaio.com%2Fnotebook-vaio-fe16-amd-ryzen-7-5825u-windows-11-home-16gb-ram-512gb-ssd-16-wuxga-cinza-grafite-16-3344214%2Fp"
+  },
+  {
+    "nome": "Notebook VAIO FE16 Intel Core i5-1334U (Win 11, 16GB)",
+    "preco": "R$ 4.399",
+    "precoNormal": "R$ 5.944",
+    "desconto": 26,
+    "genre": "Notebook Produtividade",
+    "image": "/capas/intelcore-i5-1334u.webp",
+    "descricao": "Processador Intel Core i5-1334U de 13ª Geração, Windows 11 Home, 16GB de RAM, 512GB SSD NVMe, Tela de 16 polegadas IPS WUXGA Antirreflexo na cor Cinza Grafite.",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1752475.4516613974251512532158670&type=2&murl=https%3A%2F%2Fwww.br.vaio.com%2Fnotebook-vaio-fe16-intel-core-i5-1334u-windows-11-home-16gb-ram-512gb-ssd-16-ips-wuxga-antirreflexo-cinza-grafite-3344434%2Fp"
+  },
+  {
+    "nome": "Notebook Gamer Lenovo LOQ 15IRX9",
+    "preco": "R$ 5.631,99",
+    "precoNormal": "R$ 6.999,00",
+    "desconto": 20,
+    "genre": "Notebook Gamer",
+    "image": "/capas/notebookgamer-lenovo-loo-15irx9.avif",
+    "descricao": "Processadores Intel Core HX rápidos e potentes, desempenho dedicado das GPUs NVIDIA GeForce RTX, ideal para alta performance em jogos e multitarefas pesadas.",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1943417.1133&type=2&murl=https%3A%2F%2Fwww.lenovo.com%2Fbr%2Fpt%2Fp%2Flaptops%2Floq-laptops%2F88lq3001926%2F88lq3001926"
+  },
+  {
+    "nome": "Notebook Gamer Lenovo LOQ Essential 15IRX11",
+    "preco": "R$ 7.743,99",
+    "precoNormal": "R$ 8.999,00",
+    "desconto": 14,
+    "genre": "Notebook Gamer",
+    "image": "/capas/lenovo-loq-essential-15irx11.avif",
+    "descricao": "Construído por mestres para alimentar seus jogos AAA com máximo desempenho, potência e eficiência gráfica.",
+    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1943417.1133&type=2&murl=https%3A%2F%2Fwww.lenovo.com%2Fbr%2Fpt%2Fp%2Flaptops%2Floq-laptops%2Flenovo-loq-essential-15irx11%2Flen101q0014"
+  }
+]
