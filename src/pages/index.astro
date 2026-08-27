@@ -6,7 +6,7 @@ import notebooksLocais from '../data/notebooks.json';
 import ProductSchema from '../components/ProductSchema.astro';
 ---
 
-<LayoutPrincipal titulo="CompraJogos - Notebooks, PC (Grátis e Pagos), PS4 e PS5" descricao="Explore centenas de jogos de PC grátis e pagos, ofertas para PS4 e PS5, além de notebooks de alta performance.">
+<LayoutPrincipal titulo="CompraJogos - Notebooks, PC (Grátis e Pagos), PS4, PS5, Xbox e Nintendo" descricao="Explore centenas de jogos de PC grátis e pagos, ofertas para PS4, PS5, Xbox, Nintendo, além de notebooks de alta performance.">
   <head slot="head">
     <!-- Schema.org gerado no servidor para cada jogo do catálogo -->
     {jogosLocais.map((jogo) => (
@@ -43,6 +43,8 @@ import ProductSchema from '../components/ProductSchema.astro';
         <button onclick="mudarFiltro('pc', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PC</button>
         <button onclick="mudarFiltro('ps4', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PS4</button>
         <button onclick="mudarFiltro('ps5', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PS5</button>
+        <button onclick="mudarFiltro('xbox', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Xbox</button>
+        <button onclick="mudarFiltro('nintendo', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Nintendo</button>
       </div>
 
       <!-- Filtro de Preço -->
@@ -152,6 +154,8 @@ import ProductSchema from '../components/ProductSchema.astro';
         let plat = 'PC';
         if (nomeLower.includes('ps5') || generoLower.includes('ps5')) plat = 'PS5';
         else if (nomeLower.includes('ps4') || generoLower.includes('ps4')) plat = 'PS4';
+        else if (nomeLower.includes('xbox') || generoLower.includes('xbox')) plat = 'Xbox';
+        else if (nomeLower.includes('nintendo') || generoLower.includes('nintendo') || nomeLower.includes('switch')) plat = 'Nintendo';
 
         return {
           id: `custom-${index}`,
@@ -246,6 +250,10 @@ import ProductSchema from '../components/ProductSchema.astro';
           matchFiltro = j.platform === 'PS4';
         } else if (filtroAtual === 'ps5') {
           matchFiltro = j.platform === 'PS5';
+        } else if (filtroAtual === 'xbox') {
+          matchFiltro = j.platform === 'Xbox';
+        } else if (filtroAtual === 'nintendo') {
+          matchFiltro = j.platform === 'Nintendo';
         }
 
         const matchGenero = generoAtual === 'Todos os Gêneros' || j.genre === generoAtual;
@@ -275,10 +283,10 @@ import ProductSchema from '../components/ProductSchema.astro';
                 ${item.type === 'paid' || item.type === 'notebook' ? `
                   ${item.normalFormatted ? `<span class="text-xs text-slate-500 line-through block">${item.normalFormatted}</span>` : ''}
                   <span class="text-lg font-black text-emerald-400">${item.saleFormatted}</span>
-              ` : `
+                ` : `
                   <span class="text-xs text-slate-500 block">Plataforma PC</span>
                   <span class="text-sm font-extrabold text-indigo-400">Free-to-Play</span>
-            `}
+                `}
             </div>
             <button onclick="abrirModalJogo('${item.id}')" class="font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-lg cursor-pointer ${item.type === 'free' ? 'bg-indigo-600 hover:bg-indigo-500 text-white' : 'bg-emerald-500 hover:bg-emerald-400 text-slate-950'}">
               ${item.type === 'free' ? 'Jogar Grátis' : item.type === 'notebook' ? 'Ver Notebook' : 'Ver Oferta'}
