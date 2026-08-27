@@ -20,7 +20,7 @@
   {
     "nome": "Dark Souls Remastered",
     "preco": "R$ 175,06",
-    "precoNormal": null,
+    "precoNormal": "",
     "desconto": 0,
     "genre": "Action / RPG",
     "image": "/capas/dark-souls-remastered-pc.jpg",
