@@ -30,12 +30,12 @@ import ProductSchema from '../components/ProductSchema.astro';
 
   <main class="container mx-auto px-4 py-8">
     
-    <!-- Carrossel Exclusivo com os 14 Jogos de Lançamento -->
+    <!-- Carrossel Exclusivo com os Jogos de Lançamento -->
     <div class="mb-10">
       <div class="flex items-center justify-between mb-4">
         <h3 class="text-white font-black text-lg flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          Destaques e Lançamentos em Destaque
+          Lançamentos
         </h3>
         <div class="flex gap-2">
           <button onclick="rolarCarrossel(-1)" class="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white p-2 rounded-xl transition cursor-pointer shadow">
@@ -49,7 +49,7 @@ import ProductSchema from '../components/ProductSchema.astro';
       
       <div id="carousel-track" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4 scroll-smooth">
         <div class="bg-slate-900/50 border border-slate-800 p-8 rounded-2xl text-center text-slate-400 min-w-[280px] flex items-center justify-center">
-          Carregando destaques...
+          Carregando lançamentos...
         </div>
       </div>
     </div>
@@ -436,7 +436,7 @@ import ProductSchema from '../components/ProductSchema.astro';
       });
 
       if (lancamentos.length === 0) {
-        track.innerHTML = `<div class="text-slate-400 text-xs p-4">Nenhum destaque encontrado.</div>`;
+        track.innerHTML = `<div class="text-slate-400 text-xs p-4">Nenhum lançamento encontrado.</div>`;
         return;
       }
 
@@ -468,7 +468,6 @@ import ProductSchema from '../components/ProductSchema.astro';
       const track = document.getElementById('carousel-track');
       if (!track) return;
 
-      // Aumentado para 7000ms (7 segundos) para ficar bem mais devagar e suave
       carouselInterval = setInterval(() => {
         const maxScrollLeft = track.scrollWidth - track.clientWidth;
         if (track.scrollLeft >= maxScrollLeft - 10) {
