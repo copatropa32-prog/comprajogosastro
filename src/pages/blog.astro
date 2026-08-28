@@ -1,54 +1,33 @@
 ---
-import LayoutPrincipal from '../layouts/LayoutPrincipal.astro';
+import '../../styles/global.css';
+import LayoutPrincipal from '../../layouts/LayoutPrincipal.astro';
+
+// Importa automaticamente todos os posts em Markdown da pasta posts
+const posts = await Astro.glob('./posts/*.md');
 ---
 
-<LayoutPrincipal titulo="Blog - CompraJogos | Guias, Notícias e Ofertas" descricao="Fique por dentro das últimas notícias, dicas de economia, guias de jogos e análises do mundo gamer.">
-  <main class="container mx-auto px-4 py-10 max-w-4xl">
-    
-    <!-- Cabeçalho da Página -->
-    <div class="mb-10 text-center sm:text-left border-b border-slate-900 pb-6">
-      <h1 class="text-3xl sm:text-4xl font-black text-white tracking-tight mb-2">
-        Blog do <span class="text-emerald-400">CompraJogos</span>
-      </h1>
-      <p class="text-slate-400 text-sm sm:text-base">
-        Guias, dicas para economizar e as principais novidades do universo dos games para PC, PS4 e PS5.
-      </p>
+<LayoutPrincipal titulo="Blog CompraJogos - Dicas, Guias e Análises" descricao="Fique por dentro das melhores dicas de economia, guias de jogos e análises de hardware para gamers.">
+  <main class="container mx-auto px-4 py-12 max-w-4xl">
+    <div class="mb-10 text-center">
+      <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Central de Conteúdo</span>
+      <h1 class="text-3xl sm:text-4xl font-black text-white mt-3 mb-2">Blog do CompraJogos</h1>
+      <p class="text-slate-400 text-sm max-w-xl mx-auto">Guias completos, dicas de otimização e análises para você economizar e aproveitar ao máximo o seu setup.</p>
     </div>
 
-    <!-- Lista de Artigos (Exemplo / Em breve) -->
-    <div class="grid grid-cols-1 gap-6">
-      
-      <!-- Card de Artigo Exemplo -->
-      <article class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 flex flex-col sm:flex-row gap-6 items-center hover:border-slate-700 transition">
-        <div class="w-full sm:w-48 h-32 bg-slate-950 rounded-xl overflow-hidden shrink-0 flex items-center justify-center border border-slate-800">
-          <img src="/logo-comprajogos.png" alt="CompraJogos" class="w-16 h-auto object-contain opacity-80" />
-        </div>
-        <div class="flex flex-col flex-1 justify-between gap-2">
-          <div class="flex items-center gap-2">
-            <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Guias & Dicas</span>
-            <span class="text-xs text-slate-500">Agosto, 2026</span>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {posts.map((post) => (
+        <a href={post.url} class="bg-slate-900/80 border border-slate-800 hover:border-slate-700 p-6 rounded-2xl transition shadow-xl flex flex-col justify-between group">
+          <div>
+            <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider block mb-2">{post.frontmatter.categoria || 'Guia'}</span>
+            <h2 class="text-lg font-bold text-white group-hover:text-emerald-400 transition mb-2 leading-snug">{post.frontmatter.title}</h2>
+            <p class="text-slate-400 text-xs leading-relaxed line-clamp-3">{post.frontmatter.description}</p>
           </div>
-          <h2 class="text-lg font-bold text-white hover:text-emerald-400 transition cursor-pointer">
-            Como encontrar as melhores promoções e keys de jogos com segurança em 2026
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-400 line-clamp-2">
-            Descubra as melhores práticas para monitorar preços de jogos de PC e consoles, evitando golpes e garantindo o menor preço nas principais lojas oficiais.
-          </p>
-        </div>
-      </article>
-
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-500">
+            <span>{post.frontmatter.data}</span>
+            <span class="text-emerald-400 font-bold group-hover:translate-x-1 transition-transform inline-block">Ler artigo &rarr;</span>
+          </div>
+        </a>
+      ))}
     </div>
-
-    <!-- Mensagem Informativa -->
-    <div class="mt-12 bg-slate-900/40 border border-slate-800/80 rounded-2xl p-8 text-center">
-      <h3 class="text-white font-bold text-base mb-2">Novos artigos em breve!</h3>
-      <p class="text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
-        Estamos preparando conteúdos exclusivos com dicas de otimização, análises e listas de jogos gratuitos. Acompanhe nossas redes sociais para não perder nada.
-      </p>
-      <a href="/" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs px-6 py-3 rounded-xl transition shadow-lg">
-        Voltar para a Página Inicial
-      </a>
-    </div>
-
   </main>
 </LayoutPrincipal>
