@@ -35,13 +35,13 @@ import ProductSchema from '../components/ProductSchema.astro';
       <div class="flex items-center justify-between mb-4">
         <h3 class="text-white font-black text-lg flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          Lançamentos
+          Lançamentos & Destaques
         </h3>
         <div class="flex gap-2">
-          <button onclick="rolarCarrossel(-1)" class="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white p-2 rounded-xl transition cursor-pointer shadow">
+          <button onclick="rolarCarrossel(-1)" class="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white p-2 rounded-xl transition cursor-pointer shadow" aria-label="Rolar para esquerda">
             &larr;
           </button>
-          <button onclick="rolarCarrossel(1)" class="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white p-2 rounded-xl transition cursor-pointer shadow">
+          <button onclick="rolarCarrossel(1)" class="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white p-2 rounded-xl transition cursor-pointer shadow" aria-label="Rolar para direita">
             &rarr;
           </button>
         </div>
@@ -105,31 +105,32 @@ import ProductSchema from '../components/ProductSchema.astro';
 
   </main>
 
-  <footer class="bg-slate-950 border-t border-slate-900 mt-16 text-slate-400 text-sm">
-    <div class="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="flex flex-col gap-3">
-        <h3 class="text-white font-bold text-base">Sobre o CompraJogos</h3>
-        <p class="text-xs leading-relaxed text-slate-400">O CompraJogos é o seu portal definitivo para curadoria de keys de PC, consoles e notebooks de alta performance.</p>
-        <button onclick="abrirModalInstitucional('sobre')" class="text-emerald-400 hover:text-emerald-300 text-xs font-semibold text-left transition w-max cursor-pointer">Ler mais &rarr;</button>
-      </div>
-      <div class="flex flex-col gap-3">
-        <h3 class="text-white font-bold text-base">Políticas e Termos</h3>
-        <ul class="flex flex-col gap-2 text-xs">
-          <li><button onclick="abrirModalInstitucional('privacidade')" class="hover:text-white transition text-left cursor-pointer">Política de Privacidade</button></li>
-          <li><button onclick="abrirModalInstitucional('termos')" class="hover:text-white transition text-left cursor-pointer">Termos de Uso</button></li>
-        </ul>
-      </div>
-      <div class="flex flex-col gap-3">
-        <h3 class="text-white font-bold text-base">Contato & Afiliados</h3>
-        <p class="text-xs">Suporte: <a href="mailto:contato@comprajogos.com.br" class="text-emerald-400 hover:underline">contato@comprajogos.com.br</a></p>
-      </div>
-    </div>
-  </footer>
+  <!-- Bloco de SEO de Cauda Longa -->
+  <section class="max-w-7xl mx-auto px-4 py-10 mt-12 border-t border-slate-800/80 text-slate-400 text-xs leading-relaxed">
+    <h2 class="text-slate-200 font-bold text-sm mb-3">Onde comprar jogos mais baratos para Steam, PS5, Xbox e Nintendo Switch?</h2>
+    <p class="mb-2">
+      Se você está procurando onde encontrar <strong>jogos baratos para Steam</strong>, chaves de ativação seguras (keys) ou promoções imperdíveis para PlayStation 5, Xbox Series X|S e Nintendo Switch, o <strong>CompraJogos</strong> é o seu agregador definitivo. Monitoramos diariamente os melhores descontos do mercado gamer para garantir que você economize em lançamentos e clássicos.
+    </p>
+    <p>
+      Além de keys e games digitais para PC, nossa curadoria também destaca notebooks gamers de alta performance, jogos gratuitos (Free-to-Play) e pacotes de expansão. Aproveite comparativos de preços transparentes e links diretos para as lojas oficiais mais confiáveis da internet.
+    </p>
+  </section>
+
+  <!-- Botão Flutuante do WhatsApp (Número Correto) -->
+  <a href="https://wa.me/5512991789256?text=Olá!%20Gostaria%20de%20tirar%20dúvidas%20sobre%20ofertas%20e%20jogos%20no%20CompraJogos." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Fale conosco no WhatsApp" 
+     class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-400 text-slate-950 p-4 rounded-full shadow-2xl transition-transform hover:scale-110 flex items-center justify-center">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
 
   <!-- Modal -->
   <div id="modal-container" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full p-6 relative shadow-2xl flex flex-col gap-4 text-slate-300">
-      <button onclick="fecharModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white bg-slate-800 p-1.5 rounded-full transition z-10 cursor-pointer">✕</button>
+      <button onclick="fecharModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white bg-slate-800 p-1.5 rounded-full transition z-10 cursor-pointer" aria-label="Fechar modal">✕</button>
       <div id="modal-content" class="text-sm leading-relaxed flex flex-col gap-3 max-h-[75vh] overflow-y-auto pr-2"></div>
     </div>
   </div>
@@ -139,6 +140,20 @@ import ProductSchema from '../components/ProductSchema.astro';
     let filtroAtual = 'all';
     let generoAtual = 'Todos os Gêneros';
     let carouselInterval = null;
+
+    const textosmodais = {
+      sobre: `<h3 class="text-lg font-bold text-white">Sobre o CompraJogos</h3><p>O CompraJogos nasceu com o objetivo de centralizar as melhores oportunidades, descontos e lançamentos do mercado gamer para PC, PlayStation, Xbox e Nintendo, além de indicações de notebooks potentes.</p>`,
+      privacidade: `<h3 class="text-lg font-bold text-white">Política de Privacidade</h3><p>Garantimos a segurança das suas informações. O CompraJogos utiliza links de afiliados parceiros para direcionamento de ofertas, não armazenando dados sensíveis de pagamento dos usuários.</p>`,
+      termos: `<h3 class="text-lg font-bold text-white">Termos de Uso</h3><p>Os preços e disponibilidades dos jogos e produtos exibidos no site estão sujeitos a alterações pelas lojas parceiras oficiais a qualquer momento.</p>`
+    };
+
+    window.abrirModalInstitucional = function(tipo) {
+      const modal = document.getElementById('modal-container');
+      const content = document.getElementById('modal-content');
+      if (!modal || !content) return;
+      content.innerHTML = textosmodais[tipo] || '<p>Conteúdo indisponível.</p>';
+      modal.classList.remove('hidden');
+    }
 
     function parsePrice(priceStr) {
         if (!priceStr) return 0;
@@ -629,22 +644,9 @@ import ProductSchema from '../components/ProductSchema.astro';
       modal.classList.remove('hidden');
     }
 
-    const textosModais = {
-      sobre: `<h3 class="text-lg font-bold text-white">Sobre o CompraJogos</h3><p>Portal especializado em curadoria de ofertas de chaves de PC, consoles e notebooks de alto desempenho.</p>`,
-      privacidade: `<h3 class="text-lg font-bold text-white">Política de Privacidade</h3><p>Seus dados estão seguros. Utilizamos cookies para melhor experiência.</p>`,
-      termos: `<h3 class="text-lg font-bold text-white">Termos de Uso</h3><p>Ao utilizar nosso site, você concorda com nossos termos de parceria e afiliados.</p>`
-    };
-
-    window.abrirModalInstitucional = function(tipo) {
-      const modal = document.getElementById('modal-container');
-      const content = document.getElementById('modal-content');
-      content.innerHTML = textosModais[tipo] || '';
-      modal.classList.remove('hidden');
-    }
-
     window.fecharModal = function() {
       const modal = document.getElementById('modal-container');
-      modal.classList.add('hidden');
+      if (modal) modal.classList.add('hidden');
     }
 
     document.addEventListener('DOMContentLoaded', () => {
