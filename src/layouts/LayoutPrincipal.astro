@@ -47,10 +47,10 @@ const {
       
     <!-- Cabeçalho / Navbar -->
     <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur-md sticky top-0 z-40">
-      <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="container mx-auto px-4 h-16 flex items-center justify-between gap-4">
           
         <!-- Logo com Imagem Oficial e Nome ao Lado -->
-        <a href="/" class="flex items-center gap-3 group">
+        <a href="/" class="flex items-center gap-3 group shrink-0">
           <img src="/logo-comprajogos.png" alt="CompraJogos" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
           <div class="flex flex-col">
             <span class="text-xs sm:text-sm font-black tracking-wider text-white uppercase group-hover:text-emerald-400 transition-colors">
@@ -62,15 +62,23 @@ const {
           </div>
         </a>
 
-        <!-- Barra de Pesquisa Rápida Atualizada para PS4 e PS5 -->
-        <div class="relative max-w-xs w-full hidden sm:block">
-          <input 
-            type="text" 
-            id="search-input" 
-            placeholder="Pesquisar jogos, PS4, PS5..." 
-            class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition"
-            oninput="filtrarPorTexto(this.value)"
-          />
+        <!-- Área Central / Direita: Barra de Pesquisa e Link do Blog -->
+        <div class="flex items-center gap-3 sm:gap-4 w-full max-w-md justify-end">
+          <div class="relative w-full hidden sm:block">
+            <input 
+              type="text" 
+              id="search-input" 
+              placeholder="Pesquisar jogos, PS4, PS5..." 
+              class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition"
+              oninput="filtrarPorTexto(this.value)"
+            />
+          </div>
+
+          <!-- Link do Blog -->
+          <a href="/blog" class="flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white text-xs font-bold px-3.5 py-2 rounded-xl transition shrink-0">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+            <span>Blog</span>
+          </a>
         </div>
 
       </div>
@@ -125,6 +133,7 @@ const {
             <span class="text-sm font-bold text-white uppercase tracking-wider">Navegação</span>
             <div class="flex flex-col gap-1.5 text-xs text-slate-400">
               <a href="/" class="hover:text-emerald-400 transition">Página Inicial</a>
+              <a href="/blog" class="hover:text-emerald-400 transition">Blog & Guias</a>
               <a href="mailto:contato@comprajogos.com.br" class="hover:text-emerald-400 transition">Contato Comercial</a>
             </div>
           </div>
