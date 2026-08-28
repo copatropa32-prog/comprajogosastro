@@ -1,5 +1,30 @@
 ---
 import LayoutPrincipal from '../../layouts/LayoutPrincipal.astro';
+
+// Lista dos 3 artigos do blog
+const artigos = [
+  {
+    slug: "como-encontrar-melhores-promocoes-jogos",
+    categoria: "Guia & Dicas",
+    titulo: "Como encontrar as melhores promoções de jogos com segurança",
+    descricao: "Descubra as melhores práticas para monitorar preços de jogos de PC e consoles nas principais lojas oficiais do mercado.",
+    data: "Agosto, 2026"
+  },
+  {
+    slug: "melhores-praticas-seo-para-gamers",
+    categoria: "Tecnologia & SEO",
+    titulo: "Melhores Práticas de SEO para Portais de Games e Conteúdo Digital",
+    descricao: "Entenda como otimizar seu site de jogos para alcançar mais leitores organicamente através de estratégias modernas de SEO.",
+    data: "Agosto, 2026"
+  },
+  {
+    slug: "jogos-gratuitos-pc-onde-encontrar",
+    categoria: "Economia Gamer",
+    titulo: "Onde encontrar jogos gratuitos de qualidade para PC toda semana",
+    descricao: "Um panorama completo sobre as plataformas que distribuem jogos grátis regularmente para você rechear sua biblioteca sem gastar nada.",
+    data: "Agosto, 2026"
+  }
+];
 ---
 
 <LayoutPrincipal titulo="Blog CompraJogos - Dicas e Guias" descricao="Fique por dentro das melhores dicas de economia, guias de jogos e análises para gamers.">
@@ -8,22 +33,27 @@ import LayoutPrincipal from '../../layouts/LayoutPrincipal.astro';
     <div class="mb-10 text-center">
       <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Central de Conteúdo</span>
       <h1 class="text-3xl sm:text-4xl font-black text-white mt-3 mb-2">Blog do CompraJogos</h1>
-      <p class="text-slate-400 text-sm max-w-xl mx-auto">Guias completos, dicas de otimização e análises para você economizar e aproveitar ao máximo o seu setup.</p>
+      <p class="text-slate-400 text-sm max-w-xl mx-auto">Guias completos, dicas de otimização e análises para economizar e aproveitar ao máximo o seu setup.</p>
     </div>
 
-    <!-- Lista de Artigos -->
+    <!-- Lista Dinâmica de Artigos (3 Posts) -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <article class="bg-slate-900/80 border border-slate-800 hover:border-slate-700 p-6 rounded-2xl transition shadow-xl flex flex-col justify-between group">
-        <div>
-          <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider block mb-2">Guia & Dicas</span>
-          <h2 class="text-lg font-bold text-white group-hover:text-emerald-400 transition mb-2 leading-snug">Como encontrar as melhores promoções de jogos com segurança</h2>
-          <p class="text-slate-400 text-xs leading-relaxed line-clamp-3">Descubra as melhores práticas para monitorar preços de jogos de PC e consoles nas principais lojas oficiais do mercado.</p>
-        </div>
-        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-500">
-          <span>Agosto, 2026</span>
-          <span class="text-emerald-400 font-bold group-hover:translate-x-1 transition-transform inline-block">Ler artigo &rarr;</span>
-        </div>
-      </article>
+      {artigos.map((artigo) => (
+        <a 
+          href={`/blog/${artigo.slug}`} 
+          class="bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 p-6 rounded-2xl transition shadow-xl flex flex-col justify-between group block"
+        >
+          <div>
+            <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider block mb-2">{artigo.categoria}</span>
+            <h2 class="text-lg font-bold text-white group-hover:text-emerald-400 transition mb-2 leading-snug">{artigo.titulo}</h2>
+            <p class="text-slate-400 text-xs leading-relaxed line-clamp-3">{artigo.descricao}</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-500">
+            <span>{artigo.data}</span>
+            <span class="text-emerald-400 font-bold group-hover:translate-x-1 transition-transform inline-block">Ler artigo &rarr;</span>
+          </div>
+        </a>
+      ))}
     </div>
 
   </main>
