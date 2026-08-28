@@ -1,0 +1,58 @@
+---
+import LayoutPrincipal from '../../layouts/LayoutPrincipal.astro';
+
+// Gera as rotas estáticas para cada artigo
+export async function getStaticPaths() {
+  const artigos = [
+    {
+      slug: "como-encontrar-melhores-promocoes-jogos",
+      categoria: "Guia & Dicas",
+      titulo: "Como encontrar as melhores promoções de jogos com segurança",
+      descricao: "Descubra as melhores práticas para monitorar preços de jogos de PC e consoles nas principais lojas oficiais do mercado.",
+      data: "Agosto, 2026",
+      conteudo: "Monitorar preços de jogos exige paciência e o uso de ferramentas confiáveis. Sempre verifique se as lojas são oficiais ou revendedoras autorizadas (como Steam, Epic Games, GOG e Kinguin) para garantir a segurança da sua compra e evitar chaves revogadas."
+    },
+    {
+      slug: "melhores-praticas-seo-para-gamers",
+      categoria: "Tecnologia & SEO",
+      titulo: "Melhores Práticas de SEO para Portais de Games e Conteúdo Digital",
+      descricao: "Entenda como otimizar seu site de jogos para alcançar mais leitores organicamente através de estratégias modernas de SEO.",
+      data: "Agosto, 2026",
+      conteudo: "O SEO em portais de jogos depende de uma boa estrutura de palavras-chave focadas em termos de busca frequentes, como 'jogos baratos', 'promoções steam' e guias de otimização de hardware. URLs limpas e tempos de carregamento rápidos são essenciais."
+    },
+    {
+      slug: "jogos-gratuitos-pc-onde-encontrar",
+      categoria: "Economia Gamer",
+      titulo: "Onde encontrar jogos gratuitos de qualidade para PC toda semana",
+      descricao: "Um panorama completo sobre as plataformas que distribuem jogos grátis regularmente para você rechear sua biblioteca sem gastar nada.",
+      data: "Agosto, 2026",
+      conteudo: "Lojas como a Epic Games Store oferecem jogos gratuitos semanalmente, enquanto a Steam conta com centenas de jogos free-to-play de alta qualidade. Ficar de olho nesses resgates é a melhor forma de economizar sem abrir mão da diversão."
+    }
+  ];
+
+  return artigos.map((artigo) => ({
+    params: { slug: artigo.slug },
+    props: { artigo },
+  }));
+}
+
+const { artigo } = Astro.props;
+---
+
+<LayoutPrincipal titulo={`${artigo.titulo} - Blog CompraJogos`} descricao={artigo.descricao}>
+  <main class="container mx-auto px-4 py-12 max-w-3xl">
+    
+    <div class="mb-8">
+      <a href="/blog" class="text-xs font-bold text-emerald-400 hover:underline mb-4 inline-block">&larr; Voltar para o Blog</a>
+      <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider block mb-2">{artigo.categoria}</span>
+      <h1 class="text-2xl sm:text-4xl font-black text-white mb-4 leading-tight">{artigo.titulo}</h1>
+      <p class="text-slate-400 text-xs">Publicado em {artigo.data}</p>
+    </div>
+
+    <div class="bg-slate-900/80 border border-slate-800 p-6 sm:p-8 rounded-2xl shadow-xl text-slate-300 text-sm leading-relaxed space-y-4">
+      <p>{artigo.conteudo}</p>
+      <p>Acompanhe sempre o CompraJogos para mais dicas exclusivas de economia, análises de hardware e as melhores ofertas do universo gamer!</p>
+    </div>
+
+  </main>
+</LayoutPrincipal>
