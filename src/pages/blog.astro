@@ -1,0 +1,54 @@
+---
+import LayoutPrincipal from '../layouts/LayoutPrincipal.astro';
+---
+
+<LayoutPrincipal titulo="Blog - CompraJogos | Guias, Notícias e Ofertas" descricao="Fique por dentro das últimas notícias, dicas de economia, guias de jogos e análises do mundo gamer.">
+  <main class="container mx-auto px-4 py-10 max-w-4xl">
+    
+    <!-- Cabeçalho da Página -->
+    <div class="mb-10 text-center sm:text-left border-b border-slate-900 pb-6">
+      <h1 class="text-3xl sm:text-4xl font-black text-white tracking-tight mb-2">
+        Blog do <span class="text-emerald-400">CompraJogos</span>
+      </h1>
+      <p class="text-slate-400 text-sm sm:text-base">
+        Guias, dicas para economizar e as principais novidades do universo dos games para PC, PS4 e PS5.
+      </p>
+    </div>
+
+    <!-- Lista de Artigos (Exemplo / Em breve) -->
+    <div class="grid grid-cols-1 gap-6">
+      
+      <!-- Card de Artigo Exemplo -->
+      <article class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 flex flex-col sm:flex-row gap-6 items-center hover:border-slate-700 transition">
+        <div class="w-full sm:w-48 h-32 bg-slate-950 rounded-xl overflow-hidden shrink-0 flex items-center justify-center border border-slate-800">
+          <img src="/logo-comprajogos.png" alt="CompraJogos" class="w-16 h-auto object-contain opacity-80" />
+        </div>
+        <div class="flex flex-col flex-1 justify-between gap-2">
+          <div class="flex items-center gap-2">
+            <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Guias & Dicas</span>
+            <span class="text-xs text-slate-500">Agosto, 2026</span>
+          </div>
+          <h2 class="text-lg font-bold text-white hover:text-emerald-400 transition cursor-pointer">
+            Como encontrar as melhores promoções e keys de jogos com segurança em 2026
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-400 line-clamp-2">
+            Descubra as melhores práticas para monitorar preços de jogos de PC e consoles, evitando golpes e garantindo o menor preço nas principais lojas oficiais.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Mensagem Informativa -->
+    <div class="mt-12 bg-slate-900/40 border border-slate-800/80 rounded-2xl p-8 text-center">
+      <h3 class="text-white font-bold text-base mb-2">Novos artigos em breve!</h3>
+      <p class="text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
+        Estamos preparando conteúdos exclusivos com dicas de otimização, análises e listas de jogos gratuitos. Acompanhe nossas redes sociais para não perder nada.
+      </p>
+      <a href="/" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs px-6 py-3 rounded-xl transition shadow-lg">
+        Voltar para a Página Inicial
+      </a>
+    </div>
+
+  </main>
+</LayoutPrincipal>
