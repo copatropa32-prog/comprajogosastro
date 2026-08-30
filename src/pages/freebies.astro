@@ -1,0 +1,120 @@
+---
+import LayoutPrincipal from '../layouts/LayoutPrincipal.astro';
+
+// Lista de jogos gratuitos e freebies em destaque
+const jogosGratuitos = [
+  {
+    id: 1,
+    title: "Epic Games Free Game da Semana",
+    type: "free",
+    description: "Resgate o jogo misterioso ou o título semanal gratuito diretamente na Epic Games Store antes que a oferta expire.",
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop",
+    url: "https://store.epicgames.com/en-US/free-games",
+    badge: "100% Grátis na Epic"
+  },
+  {
+    id: 2,
+    title: "Steam Free-to-Play em Alta",
+    type: "free",
+    description: "Explore os melhores jogos gratuitos para PC disponíveis na Steam, com atualizações recentes e milhares de jogadores ativos.",
+    image: "https://images.unsplash.com/photo-1612287233002-91d0f53f7c1e?q=80&w=800&auto=format&fit=crop",
+    url: "https://store.steampowered.com/genre/Free%20to%20Play/",
+    badge: "Steam F2P"
+  },
+  {
+    id: 3,
+    title: "Indie Game Giveaway (GOG / Itch.io)",
+    type: "free",
+    description: "Jogos independentes selecionados distribuídos gratuitamente por tempo limitado em plataformas parceiras.",
+    image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=800&auto=format&fit=crop",
+    url: "https://www.gog.com/en/partner/free_games",
+    badge: "Por Tempo Limitado"
+  }
+];
+---
+
+<LayoutPrincipal title="Jogos Gratuitos (Freebies) em Destaque">
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <div class="mb-8 text-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">🎮 Jogos Gratuitos & Freebies em Destaque</h1>
+      <p class="text-slate-400 max-w-2xl mx-auto">
+        Aqui estão reunidas as melhores oportunidades para resgatar jogos 100% gratuitos, promoções relâmpago e títulos Free-to-Play atualizados.
+      </p>
+    </div>
+
+    <!-- Grid de Jogos Gratuitos -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {jogosGratuitos.map((jogo) => (
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col hover:border-emerald-500/50 transition group">
+          <div class="relative h-48 overflow-hidden">
+            <img 
+              src={jogo.image} 
+              alt={jogo.title} 
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <span class="absolute top-3 right-3 bg-emerald-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              {jogo.badge}
+            </span>
+          </div>
+          
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition">
+                {jogo.title}
+              </h2>
+              <p class="text-slate-300 text-sm mb-4">
+                {jogo.description}
+              </p>
+            </div>
+
+            <button 
+              onclick={`abrirModal(${JSON.stringify(jogo)})`}
+              class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-2.5 px-4 rounded-xl text-center transition shadow-md block cursor-pointer"
+            >
+              Ver Detalhes & Resgatar
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modal-container" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center z-50 p-4">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full p-6 relative shadow-2xl">
+        <button 
+          onclick="fecharModal()" 
+          class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold cursor-pointer"
+        >
+          ✕
+        </button>
+        <div id="modal-content">
+          {/* Conteúdo injetado via script */}
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    window.abrirModal = function(jogo) {
+      const modal = document.getElementById('modal-container');
+      const content = document.getElementById('modal-content');
+      
+      content.innerHTML = `
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold text-white">${jogo.title}</h3>
+          <img src="${jogo.image}" alt="${jogo.title}" class="w-full h-48 object-cover rounded-xl" />
+          <p class="text-slate-300 text-sm">${jogo.description}</p>
+          <a href="${jogo.url}" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 px-4 rounded-xl text-center transition shadow-lg block mt-2">
+            Resgatar na Loja Oficial
+          </a>
+        </div>
+      `;
+      modal.classList.remove('hidden');
+    }
+
+    window.fecharModal = function() {
+      const modal = document.getElementById('modal-container');
+      if (modal) modal.classList.add('hidden');
+    }
+  </script>
+</LayoutPrincipal>

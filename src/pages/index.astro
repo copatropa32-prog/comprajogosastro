@@ -604,18 +604,28 @@ import ProductSchema from '../components/ProductSchema.astro';
               ${jogo.descricao}
             </div>
           ` : ''}
-          <a href="${jogo.url}" target="_blank" rel="noopener noreferrer" onclick="fecharModal()" class="w-full ${jogo.type === 'free' ? 'bg-indigo-600 hover:bg-indigo-500 text-white' : 'bg-emerald-500 hover:bg-emerald-400 text-slate-950'} font-bold py-3.5 px-4 rounded-xl text-xs text-center transition shadow-lg flex items-center justify-center gap-2 cursor-pointer">
-            ${jogo.type === 'free' ? 'Acessar Jogo Grátis' : jogo.type === 'notebook' ? 'Ver Notebook na Loja' : 'Ir para a Loja Oficial'} &rarr;
+          <a href="${jogo.url}" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 px-4 rounded-xl text-center transition shadow-lg mt-2 cursor-pointer block">
+            ${jogo.type === 'free' ? 'Acessar Jogo Grátis' : jogo.type === 'notebook' ? 'Ver Notebook na Loja' : 'Ir para a Loja Oficial'}
           </a>
         </div>
       `;
       modal.classList.remove('hidden');
+      modal.classList.add('flex');
     }
 
     window.fecharModal = function() {
       const modal = document.getElementById('modal-container');
-      if (modal) modal.classList.add('hidden');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
     }
+
+    document.getElementById('modal-container')?.addEventListener('click', (e) => {
+      if (e.target.id === 'modal-container') {
+        fecharModal();
+      }
+    });
 
     document.addEventListener('DOMContentLoaded', () => {
       carregarTudo();

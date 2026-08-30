@@ -1,0 +1,187 @@
+---
+import LayoutPrincipal from '../layouts/LayoutPrincipal.astro';
+
+// Dados simulados dos jogos 100% grátis ativos no momento (Você pode atualizar facilmente aqui ou puxar de uma API/Banco)
+const jogosGratis = [
+  {
+    id: 1,
+    title: "Fallout: New Vegas - Ultimate Edition",
+    platform: "Epic Games Store",
+    platformSlug: "epic",
+    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
+    genre: "RPG / Ação",
+    normalPrice: "R$ 49,99",
+    expiryDate: "Até 04/09/2026 às 12:00",
+    url: "https://store.epicgames.com",
+    descricao: "Explore as Ermidas de Mojave neste clássico aclamado da Bethesda. Resgate de graça para sua biblioteca da Epic Games permanentemente."
+  },
+  {
+    id: 2,
+    title: "Submerged: Hidden Depths",
+    platform: "Epic Games Store",
+    platformSlug: "epic",
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+    genre: "Aventura / Exploração",
+    normalPrice: "R$ 37,49",
+    expiryDate: "Até 04/09/2026 às 12:00",
+    url: "https://store.epicgames.com",
+    descricao: "Um jogo de aventura de exploração em terceira pessoa ambientado nas belas ruínas de uma cidade submersa."
+  },
+  {
+    id: 3,
+    title: "Mordhau (Chave Steam Limitada)",
+    platform: "Steam",
+    platformSlug: "steam",
+    image: "https://images.unsplash.com/photo-1612287233202-b51a3ed6168e?auto=format&fit=crop&w=800&q=80",
+    genre: "Medieval / Multiplayer",
+    normalPrice: "R$ 55,99",
+    expiryDate: "Enquanto durarem os estoques",
+    url: "https://store.steampowered.com",
+    descricao: "Slasher multijogador medieval. Lute em batalhas frenéticas com espada, cavaleiros e cercos a castelos."
+  },
+  {
+    id: 4,
+    title: "Deus Ex: Mankind Divided",
+    platform: "GOG.com",
+    platformSlug: "gog",
+    image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80",
+    genre: "Cyberpunk / Stealth",
+    normalPrice: "R$ 89,99",
+    expiryDate: "Até 07/09/2026",
+    url: "https://www.gog.com",
+    descricao: "Versão DRM-free disponibilizada por tempo limitado na GOG em parceria com a editora."
+  }
+];
+---
+
+<LayoutPrincipal 
+  titulo="Jogos Grátis para PC (Epic Games, Steam e GOG) - CompraJogos" 
+  descricao="Resgate jogos 100% gratuitos para PC toda semana. Confira a lista atualizada de brindes da Epic Games Store, Steam e GOG."
+>
+  <main class="container mx-auto px-4 py-8 max-w-7xl">
+    
+    <!-- Cabeçalho da Seção -->
+    <div class="bg-gradient-to-r from-indigo-950/80 via-slate-900 to-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 mb-10 shadow-2xl relative overflow-hidden">
+      <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="max-w-2xl relative z-10">
+        <span class="bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-xl inline-block mb-3">
+          100% Gratuitos • Atualizado Semanalmente
+        </span>
+        <h1 class="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+          Jogos Grátis e Brindes para PC
+        </h1>
+        <p class="text-slate-400 text-xs sm:text-sm mt-3 leading-relaxed">
+          Não gaste nada! Reunimos todos os jogos que estão sendo distribuídos gratuitamente por tempo limitado na Epic Games Store, Steam, GOG e outras plataformas oficiais. Resgate e fique com eles para sempre.
+        </p>
+      </div>
+
+      <!-- Filtros Rápidos por Plataforma -->
+      <div class="flex flex-wrap gap-2 mt-6 pt-6 border-t border-slate-800/80 relative z-10">
+        <button onclick="filtrarPlataforma('todos')" id="btn-todos" class="filtro-btn bg-indigo-600 text-white text-xs font-bold px-4 py-2 rounded-xl transition shadow cursor-pointer">
+          Todos os Brindes
+        </button>
+        <button onclick="filtrarPlataforma('epic')" id="btn-epic" class="filtro-btn bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold px-4 py-2 rounded-xl transition cursor-pointer">
+          Epic Games Store
+        </button>
+        <button onclick="filtrarPlataforma('steam')" id="btn-steam" class="filtro-btn bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold px-4 py-2 rounded-xl transition cursor-pointer">
+          Steam
+        </button>
+        <button onclick="filtrarPlataforma('gog')" id="btn-gog" class="filtro-btn bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold px-4 py-2 rounded-xl transition cursor-pointer">
+          GOG.com
+        </button>
+      </div>
+    </div>
+
+    <!-- Grid de Jogos Grátis -->
+    <div id="grid-jogos-gratis" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {jogosGratis.map((jogo) => (
+        <div data-platform={jogo.platformSlug} class="game-card bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-slate-700 hover:shadow-2xl hover:-translate-y-1">
+          
+          <!-- Imagem e Selos -->
+          <div class="relative bg-slate-950 h-48 overflow-hidden flex items-center justify-center">
+            <img src={jogo.image} alt={jogo.title} loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+            
+            <span class="absolute top-3 left-3 bg-indigo-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider shadow">
+              {jogo.platform}
+            </span>
+
+            <span class="absolute top-3 right-3 bg-slate-950/90 text-emerald-400 font-black text-xs px-2.5 py-1 rounded-md border border-slate-800 line-through">
+              {jogo.normalPrice}
+            </span>
+          </div>
+
+          <!-- Conteúdo do Card -->
+          <div class="p-5 flex flex-col flex-1 justify-between gap-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between text-[11px] text-slate-400 font-medium">
+                <span class="text-indigo-400">{jogo.genre}</span>
+                <span class="flex items-center gap-1 text-amber-400 font-semibold">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                  {jogo.expiryDate}
+                </span>
+              </div>
+
+              <h3 class="font-bold text-white text-base leading-snug">{jogo.title}</h3>
+              <p class="text-xs text-slate-400 leading-relaxed line-clamp-2">{jogo.descricao}</p>
+            </div>
+
+            <!-- Botão de Ação -->
+            <div class="border-t border-slate-800 pt-4 flex items-center justify-between">
+              <div class="flex flex-col">
+                <span class="text-[10px] text-slate-500 uppercase font-semibold">Preço Oficial</span>
+                <span class="text-sm font-black text-emerald-400">100% Grátis</span>
+              </div>
+
+              <a href={jogo.url} target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 px-5 rounded-xl text-xs transition shadow-lg flex items-center gap-2">
+                <span>Resgatar Grátis</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Bloco Informativo de SEO / Utilidade -->
+    <div class="mt-16 bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6 sm:p-8 text-slate-300 text-xs sm:text-sm leading-relaxed space-y-3">
+      <h3 class="text-white font-bold text-base">Como funcionam os Jogos Grátis na Epic Games e Steam?</h3>
+      <p>
+        Grandes plataformas de PC como a <strong>Epic Games Store</strong> oferecem um ou mais jogos completos de graça todas as semanas (geralmente às quintas-feiras). Uma vez resgatados para a sua conta dentro do prazo estipulado, o jogo permanece na sua biblioteca digital permanentemente para você baixar e jogar quando quiser.
+      </p>
+      <p>
+        Nesta página do <strong>CompraJogos</strong>, monitoramos diariamente essas oportunidades para que você não perca nenhum prazo de resgate. Acompanhe também nossas redes sociais (YouTube e Instagram) para alertas rápidos em tempo real!
+      </p>
+    </div>
+
+  </main>
+
+  <script>
+    // Script de Filtragem por Plataforma
+    window.filtrarPlataforma = function(slug) {
+      // Atualizar botões ativos
+      document.querySelectorAll('.filtro-btn').forEach(btn => {
+        btn.classList.remove('bg-indigo-600', 'text-white');
+        btn.classList.add('bg-slate-800', 'text-slate-300');
+      });
+
+      const btnAtivo = document.getElementById(`btn-${slug}`);
+      if (btnAtivo) {
+        btnAtivo.classList.remove('bg-slate-800', 'text-slate-300');
+        btnAtivo.classList.add('bg-indigo-600', 'text-white');
+      }
+
+      // Filtrar cards
+      const cards = document.querySelectorAll('.game-card');
+      cards.forEach(card => {
+        const platform = card.getAttribute('data-platform');
+        if (slug === 'todos' || platform === slug) {
+          (card as HTMLElement).style.display = 'flex';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    }
+  </script>
+</LayoutPrincipal>
