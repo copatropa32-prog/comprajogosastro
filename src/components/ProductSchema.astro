@@ -1,7 +1,7 @@
 ---
 interface Props {
   nome: string;
-  preco: string;
+  preco?: string;
   sku: string;
   url: string;
   imagem: string;
@@ -9,20 +9,28 @@ interface Props {
   brand?: string;
 }
 
-const { nome, preco, sku, url, imagem, descricao, brand } = Astro.props;
+const { nome, preco = '', sku, url, imagem, descricao, brand } = Astro.props;
 
-// Limpa o preço para o formato numérico exigido pelo Schema.org (ex: "179.78")
-const cleanPrice = preco
-  .replace('R$', '')
-  .trim()
-  .replace(/\./g, '')
-  .replace(',', '.');
+// Trata o preço de forma segura: verifica se é grátis, vazio ou texto inválido
+const precoLower = (preco || '').toLowerCase();
+const isGratuito = precoLower.includes('grátis') || precoLower.includes('gratuito') || preco.trim() === '';
+
+let cleanPrice: number = 0;
+if (!isGratuito) {
+  // Remove tudo que não for número, vírgula ou ponto, e converte para float
+  const numericString = preco
+    .replace(/[^\d,.-]/g, '')
+    .replace(/\./g, '')
+    .replace(',', '.');
+  
+  cleanPrice = parseFloat(numericString) || 0;
+}
 
 // Garante que a URL da imagem seja absoluta
 const siteUrl = Astro.site ? Astro.site.toString() : 'https://comprajogos.com.br/';
-const absoluteImage = imagem.startsWith('http') 
+const absoluteImage = imagem && imagem.startsWith('http') 
   ? imagem 
-  : `${siteUrl.replace(/\/$/, '')}${imagem}`;
+  : `${siteUrl.replace(/\/$/, '')}${imagem || ''}`;
 
 // Limpa o SKU: remove espaços extras e limita o tamanho para evitar erro de string longa no Google
 const cleanSku = sku ? sku.trim().slice(0, 50) : 'JOGO-SKU';
