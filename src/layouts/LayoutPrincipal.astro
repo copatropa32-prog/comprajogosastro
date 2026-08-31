@@ -8,7 +8,7 @@ interface Props {
   canonical?: string;
 }
 
-const {   
+const {    
   titulo = "CompraJogos - PC (Grátis e Pagos), PS4 e PS5",  
   descricao = "Explore centenas de jogos de PC grátis e pagos, além de ofertas imperdíveis para PS4 e PS5.",
   imagem = "https://www.comprajogos.com.br/logo-comprajogos.png",
@@ -259,6 +259,8 @@ const {
 
     <!-- Script de Autenticação do Google e Modais -->
     <script is:inline>
+      let googleButtonRendered = false;
+
       function handleCredentialResponse(response) {
         const responsePayload = decodeJwtResponse(response.credential);
         const userData = {
@@ -303,6 +305,23 @@ const {
           return;
         }
         document.getElementById('modal-login').classList.remove('hidden');
+
+        // Renderiza o botão do Google apenas quando o modal for aberto (evita container com width 0)
+        if (!googleButtonRendered && window.google && window.google.accounts) {
+          try {
+            google.accounts.id.initialize({
+              client_id: "75702393897-88uv9hvhqg0gi12muiqmv23n0vqk75m3.apps.googleusercontent.com",
+              callback: handleCredentialResponse
+            });
+            google.accounts.id.renderButton(
+              document.getElementById("buttonDiv"),
+              { theme: "filled_black", size: "large", width: "100%", locale: "pt-BR" }
+            );
+            googleButtonRendered = true;
+          } catch (e) {
+            console.error("Erro ao renderizar o botão do Google:", e);
+          }
+        }
       }
 
       function fecharModalLogin() {
@@ -342,23 +361,12 @@ const {
         document.getElementById('modal-institucional').classList.add('hidden');
       }
 
-      window.onload = function () {
-        google.accounts.id.initialize({
-          client_id: "75702393897-88uv9hvhqg0gi12muiqmv23n0vqk75m3.apps.googleusercontent.com",
-          callback: handleCredentialResponse
-        });
-
-        // Renderiza o botão oficial do Google dentro do modal de login
-        google.accounts.id.renderButton(
-          document.getElementById("buttonDiv"),
-          { theme: "filled_black", size: "large", width: "100%", locale: "pt-BR" }
-        );
-
+      document.addEventListener('DOMContentLoaded', function () {
         const savedUser = localStorage.getItem('compra_jogos_user');
         if (savedUser) {
           atualizarInterfaceUsuario(JSON.parse(savedUser));
         }
-      }
+      });
     </script>
   </body>
 </html>
