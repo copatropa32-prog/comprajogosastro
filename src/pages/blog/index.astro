@@ -1,8 +1,22 @@
 ---
 import LayoutPrincipal from '../../layouts/LayoutPrincipal.astro';
 
-// Lista dos 3 artigos do blog
+// Lista de artigos exibidos no índice do Blog
 const artigos = [
+  {
+    slug: "compra-jogos-2-inovacao-e-curadoria",
+    categoria: "Tecnologia & Inovação",
+    titulo: "CompraJogos 2.0: A Nova Era na Curadoria de Ofertas e Inovação Gamer",
+    descricao: "Descubra as novas funcionalidades do portal: botão Surpreenda-me, filtros inteligentes e experiência sem pop-ups.",
+    data: "Setembro, 2026"
+  },
+  {
+    slug: "gta-6-atualizacoes-lancamento-expectativas",
+    categoria: "Hype & Lançamentos",
+    titulo: "GTA VI: Novas Atualizações, Preços e Tudo o que Você Precisa Saber",
+    descricao: "Explore as últimas novidades sobre o lançamento de Grand Theft Auto VI, variação de preços nas plataformas e como garantir o seu na pré-venda.",
+    data: "Setembro, 2026"
+  },
   {
     slug: "como-encontrar-melhores-promocoes-jogos",
     categoria: "Guia & Dicas",
@@ -36,7 +50,7 @@ const artigos = [
       <p class="text-slate-400 text-sm max-w-xl mx-auto">Guias completos, dicas de otimização e análises para economizar e aproveitar ao máximo o seu setup.</p>
     </div>
 
-    <!-- Lista Dinâmica de Artigos (3 Posts) -->
+    <!-- Lista Dinâmica de Artigos -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       {artigos.map((artigo) => (
         <a 

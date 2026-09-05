@@ -14,6 +14,9 @@ const {
   imagem = "https://www.comprajogos.com.br/logo-comprajogos.png",
   canonical = Astro.url.href
 } = Astro.props;
+
+// Garante que a URL da imagem seja absoluta para os bots das redes sociais lerem sem erro
+const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.comprajogos.com.br${imagem}`;
 ---
 
 <!doctype html>
@@ -27,12 +30,16 @@ const {
     <meta name="description" content={descricao} />
     <link rel="canonical" href={canonical} />
     
-    <!-- Open Graph / Redes Sociais -->
+    <!-- Open Graph / Redes Sociais / WhatsApp -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={titulo} />
     <meta property="og:description" content={descricao} />
-    <meta property="og:image" content={imagem} />
+    <meta property="og:image" content={imagemAbsoluta} />
+    <meta property="og:image:secure_url" content={imagemAbsoluta} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="CompraJogos" />
 
@@ -41,7 +48,7 @@ const {
     <meta name="twitter:url" content={canonical} />
     <meta name="twitter:title" content={titulo} />
     <meta name="twitter:description" content={descricao} />
-    <meta name="twitter:image" content={imagem} />
+    <meta name="twitter:image" content={imagemAbsoluta} />
 
     <!-- Favicon e Logotipo Oficial da Marca -->
     <link rel="icon" type="image/png" href="/logo-comprajogos.png" />
@@ -58,7 +65,10 @@ const {
           "url": "https://www.comprajogos.com.br",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.comprajogos.com.br/logo-comprajogos.png"
+            "@id": "https://www.comprajogos.com.br/#logo",
+            "url": "https://www.comprajogos.com.br/logo-comprajogos.png",
+            "contentUrl": "https://www.comprajogos.com.br/logo-comprajogos.png",
+            "caption": "CompraJogos"
           },
           "sameAs": [
             "https://www.youtube.com/@comprajogosgratis",
@@ -110,8 +120,8 @@ const {
               COMPRA<span class="text-emerald-400">JOGOS</span>
             </span>
 
-            <span class="text-[10px] text-slate-400 font-medium tracking-wide">
-              PC grátis e pagos, PS4 e PS5
+            <span class="text-[10px] font-bold text-orange-400 flex items-center gap-1 tracking-wide mt-0.5">
+              Afiliados on fire 🔥
             </span>
 
           </div>

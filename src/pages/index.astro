@@ -30,18 +30,18 @@ import ProductSchema from '../components/ProductSchema.astro';
 
   <main class="container mx-auto px-4 py-8">
 
-    <!-- Seção de Destaque com o Botão Buraco Negro (IA Catálogo) -->
+    <!-- Seção de Destaque com o Botão Buraco Negro -->
     <div class="flex flex-col md:flex-row items-center justify-between bg-slate-900/60 border border-slate-800 p-6 rounded-2xl mb-8 gap-4 shadow-xl backdrop-blur-md">
       <div>
         <h2 class="text-lg font-bold text-white">Procurando algo específico?</h2>
-        <p class="text-xs text-slate-400">Deixe nossa Inteligência Artificial varrer o catálogo e encontrar as melhores ofertas para você.</p>
+        <p class="text-xs text-slate-400">Clique para ser levado instantaneamente a uma oferta aleatória incrível do nosso catálogo.</p>
       </div>
       
-      <!-- O Botão Buraco Negro com a Imagem Real -->
-      <div class="black-hole-btn" onclick="abrirPainelIA()">
+      <!-- O Botão Buraco Negro -->
+      <div class="black-hole-btn" onclick="abrirOfertaAleatoria()">
         <div class="event-horizon">
-          <span class="bh-icon">✨</span>
-          <span class="bh-text">IA Catálogo</span>
+          <span class="bh-icon">🔥</span>
+          <span class="bh-text">Surpreenda-me</span>
         </div>
       </div>
     </div>
@@ -95,19 +95,11 @@ import ProductSchema from '../components/ProductSchema.astro';
       <div id="genre-bar" class="flex gap-2 overflow-x-auto pb-2 scrollbar-thin"></div>
     </div>
 
-    <!-- Anúncio Google AdSense -->
-    <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-4 mb-8 text-center overflow-hidden flex flex-col items-center justify-center">
+    <!-- Anúncio Google AdSense (Lazy Loaded / Carregado apenas após a rolagem no mobile para otimizar Speed Index e aprovação) -->
+    <div id="ad-container" class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-4 mb-8 text-center overflow-hidden flex flex-col items-center justify-center min-h-[120px]">
       <span class="text-[10px] uppercase tracking-widest text-slate-500 mb-2 font-semibold">Anúncio Publicitário</span>
-      <div class="w-full min-h-[90px] flex items-center justify-center">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-9710931146430417"
-             data-ad-slot="SEU_ID_DO_SLOT"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script is:inline>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+      <div id="ad-slot-wrapper" class="w-full min-h-[90px] flex items-center justify-center">
+        <!-- Injetado dinamicamente via JS após a primeira rolagem -->
       </div>
     </div>
 
@@ -139,16 +131,7 @@ import ProductSchema from '../components/ProductSchema.astro';
     </svg>
   </a>
 
-  <!-- Modal -->
-  <div id="modal-container" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full p-6 relative shadow-2xl flex flex-col gap-4 text-slate-300">
-      <button onclick="fecharModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white bg-slate-800 p-1.5 rounded-full transition z-10 cursor-pointer">✕</button>
-      <div id="modal-content" class="text-sm leading-relaxed flex flex-col gap-3 max-h-[75vh] overflow-y-auto pr-2"></div>
-    </div>
-  </div>
-
   <style>
-    /* Estilos do Botão Buraco Negro com a Imagem Real */
     .black-hole-btn {
       position: relative;
       width: 180px;
@@ -207,6 +190,38 @@ import ProductSchema from '../components/ProductSchema.astro';
         let clean = priceStr.replace('R$', '').replace(/\./g, '').replace(',', '.').trim();
         return parseFloat(clean) || 0;
     }
+
+    // Lazy load rigoroso do AdSense ativado após a primeira rolagem
+    let adsCarregados = false;
+    function carregarGoogleAdSense() {
+      if (adsCarregados) return;
+      if (window.scrollY < 50) return;
+
+      adsCarregados = true;
+      const wrapper = document.getElementById('ad-slot-wrapper');
+      if (wrapper) {
+        wrapper.innerHTML = `
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-9710931146430417"
+               data-ad-slot="SEU_ID_DO_SLOT"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+        `;
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {}
+      }
+      window.removeEventListener('scroll', verificarRolagemParaAds);
+    }
+
+    function verificarRolagemParaAds() {
+      if (window.scrollY > 80) {
+        carregarGoogleAdSense();
+      }
+    }
+
+    window.addEventListener('scroll', verificarRolagemParaAds, { passive: true });
 
     async function carregarTudo() {
       const container = document.getElementById('catalog');
@@ -350,7 +365,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           url: 'https://www.instant-gaming.com/pt/442-comprar-minecraft-java-bedrock-edition-pc/?igr=gamer-56c7016',
           platform: 'PC',
           ano: 2026,
-          descricao: 'Explore mundos infinitos e construa tudo o que puder imaginar com las edições Java e Bedrock juntas.'
+          descricao: 'Explore mundos infinitos e construa tudo o que puder imaginar com as edições Java e Bedrock juntas.'
         },
         {
           id: 'bb-rdr2',
@@ -491,7 +506,7 @@ import ProductSchema from '../components/ProductSchema.astro';
       track.innerHTML = lancamentos.map(item => `
         <div class="min-w-[260px] sm:min-w-[280px] max-w-[280px] bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shrink-0 snap-start shadow-xl hover:border-slate-700 transition">
           <div class="relative bg-slate-950 h-36 overflow-hidden flex items-center justify-center">
-            <img src="${item.image}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
+            <img src="${item.image}" alt="${item.title}" loading="lazy" decoding="async" width="280" height="144" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
             <span class="absolute top-2 left-2 bg-emerald-500/90 text-slate-950 text-[9px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">${item.ano || '2026'}</span>
             ${item.id === 'bb-gta6' ? '<span class="absolute top-2 right-2 bg-indigo-600 text-white font-black text-[10px] px-2 py-0.5 rounded shadow">Mais Esperado</span>' : ''}
             ${item.savings > 0 && item.id !== 'bb-gta6' ? `<span class="absolute top-2 right-2 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-0.5 rounded shadow">-${item.savings}%</span>` : ''}
@@ -503,9 +518,9 @@ import ProductSchema from '../components/ProductSchema.astro';
                 ${item.normalFormatted ? `<span class="text-[10px] text-slate-500 line-through block">${item.normalFormatted}</span>` : ''}
                 <span class="text-base font-black text-emerald-400">${item.saleFormatted}</span>
               </div>
-              <button onclick="abrirModalJogo('${item.id}')" class="font-bold py-2 px-3 rounded-lg text-[11px] transition shadow bg-emerald-500 hover:bg-emerald-400 text-slate-950 cursor-pointer">
+              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="font-bold py-2 px-3 rounded-lg text-[11px] transition shadow bg-emerald-500 hover:bg-emerald-400 text-slate-950 cursor-pointer">
                 Ver Oferta
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -594,7 +609,7 @@ import ProductSchema from '../components/ProductSchema.astro';
         } else if (filtroAtual === 'ps5') {
           matchFiltro = j.platform === 'PS5';
         } else if (filtroAtual === 'xbox') {
-          matchFiltro = j.platform === 'Xbox';
+          matchFillto = j.platform === 'Xbox';
         } else if (filtroAtual === 'nintendo') {
           matchFiltro = j.platform === 'Nintendo';
         }
@@ -614,7 +629,7 @@ import ProductSchema from '../components/ProductSchema.astro';
       container.innerHTML = filtrados.map(item => `
         <div class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition-all duration-300 shadow-xl">
           <div class="relative bg-slate-950 h-44 overflow-hidden flex items-center justify-center">
-            <img src="${item.image}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
+            <img src="${item.image}" alt="${item.title}" loading="lazy" decoding="async" width="300" height="176" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
             <span class="absolute top-3 left-3 bg-slate-900/90 text-slate-300 text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider">${item.genre}</span>
             ${item.savings > 0 && (item.type === 'paid' || item.type === 'notebook') ? `<span class="absolute top-3 right-3 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-1 rounded-md shadow">-${item.savings}%</span>` : ''}
             ${item.type === 'free' ? `<span class="absolute top-3 right-3 bg-indigo-600 text-white font-bold text-xs px-2 py-1 rounded-md shadow">Grátis</span>` : ''}
@@ -630,91 +645,28 @@ import ProductSchema from '../components/ProductSchema.astro';
                   <span class="text-xs text-slate-500 block">Plataforma PC</span>
                   <span class="text-sm font-extrabold text-indigo-400">Free-to-Play</span>
                 `}
+              </div>
+              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-lg cursor-pointer bg-emerald-500 hover:bg-emerald-400 text-slate-950">
+                Ver Oferta
+              </a>
             </div>
-            <button onclick="abrirModalJogo('${item.id}')" class="font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-lg cursor-pointer ${item.type === 'free' ? 'bg-indigo-600 hover:bg-indigo-500 text-white' : 'bg-emerald-500 hover:bg-emerald-400 text-slate-950'}">
-              ${item.type === 'free' ? 'Jogar Grátis' : item.type === 'notebook' ? 'Ver Notebook' : 'Ver Oferta'}
-            </button>
           </div>
         </div>
-      </div>
       `).join('');
     }
 
-    window.abrirModalJogo = function(id) {
-      const jogo = catalogoGlobal.find(j => j.id === id);
-      if (!jogo) return;
-
-      const modal = document.getElementById('modal-container');
-      const content = document.getElementById('modal-content');
+    window.abrirOfertaAleatoria = function() {
+      if (!catalogoGlobal || catalogoGlobal.length === 0) return;
       
-      content.innerHTML = `
-        <div class="flex flex-col gap-4">
-          <div class="w-full h-48 rounded-xl overflow-hidden bg-slate-950 border border-slate-800">
-            <img src="${jogo.image}" alt="${jogo.title}" class="w-full h-full object-cover" />
-          </div>
-          <div>
-            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">${jogo.genre} (${jogo.ano || '2026'})</span>
-            <h3 class="text-xl font-bold text-white mt-1">${jogo.title}</h3>
-          </div>
-          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800 flex items-center justify-between">
-            <div>
-              <span class="text-xs text-slate-400 block">${jogo.type === 'free' ? 'Tipo de Acesso' : 'Preço na Loja'}</span>
-              <span class="text-xl font-black ${jogo.type === 'free' ? 'text-indigo-400' : 'text-emerald-400'} mt-1 block">${jogo.saleFormatted}</span>
-            </div>
-            ${jogo.savings > 0 && (jogo.type === 'paid' || jogo.type === 'notebook') ? `<span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded-lg text-xs font-bold">-${jogo.savings}% OFF</span>` : ''}
-          </div>
-          ${jogo.descricao ? `
-            <div class="bg-slate-950/40 p-3.5 rounded-xl border border-slate-800 text-xs text-slate-300 leading-relaxed">
-              <span class="font-bold text-white block mb-1">Sinopse / Detalhes:</span>
-              ${jogo.descricao}
-            </div>
-          ` : ''}
-          <a href="${jogo.url}" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 px-4 rounded-xl text-center transition shadow-lg mt-2 cursor-pointer block">
-            ${jogo.type === 'free' ? 'Acessar Jogo Grátis' : jogo.type === 'notebook' ? 'Ver Notebook na Loja' : 'Ir para a Loja Oficial'}
-          </a>
-        </div>
-      `;
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
+      const itensValidos = catalogoGlobal.filter(item => item && item.url && item.url.startsWith('http'));
+      if (itensValidos.length === 0) return;
+
+      const indiceAleatorio = Math.floor(Math.random() * itensValidos.length);
+      const itemSorteado = itensValidos[indiceAleatorio];
+
+      window.open(itemSorteado.url, '_blank', 'noopener,noreferrer');
     }
 
-    window.abrirPainelIA = function() {
-      const modal = document.getElementById('modal-container');
-      const content = document.getElementById('modal-content');
-      
-      content.innerHTML = `
-        <div class="flex flex-col gap-4 text-center py-6">
-          <div class="text-4xl">✨🕳️</div>
-          <h3 class="text-xl font-bold text-white">IA Catálogo CompraJogos</h3>
-          <p class="text-xs text-slate-400">O assistente gravitacional de busca está pronto para te ajudar a achar os melhores preços em nossa base de dados.</p>
-          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs text-slate-300">
-            Dica: Use os botões de filtro rápido acima (Promoções, Gratuitos, PS5, Xbox, etc.) para refinar sua busca instantaneamente.
-          </div>
-          <button onclick="fecharModal()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-2.5 rounded-xl transition cursor-pointer">
-            Voltar ao Catálogo
-          </button>
-        </div>
-      `;
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    }
-
-    window.fecharModal = function() {
-      const modal = document.getElementById('modal-container');
-      if (modal) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-      }
-    }
-
-    document.getElementById('modal-container')?.addEventListener('click', (e) => {
-      if (e.target.id === 'modal-container') {
-        fecharModal();
-      }
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-      carregarTudo();
-    });
+    carregarTudo();
   </script>
 </LayoutPrincipal>
