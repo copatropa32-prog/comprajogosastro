@@ -29,6 +29,22 @@ import ProductSchema from '../components/ProductSchema.astro';
   </head>
 
   <main class="container mx-auto px-4 py-8">
+
+    <!-- Seção de Destaque com o Botão Buraco Negro (IA Catálogo) -->
+    <div class="flex flex-col md:flex-row items-center justify-between bg-slate-900/60 border border-slate-800 p-6 rounded-2xl mb-8 gap-4 shadow-xl backdrop-blur-md">
+      <div>
+        <h2 class="text-lg font-bold text-white">Procurando algo específico?</h2>
+        <p class="text-xs text-slate-400">Deixe nossa Inteligência Artificial varrer o catálogo e encontrar as melhores ofertas para você.</p>
+      </div>
+      
+      <!-- O Botão Buraco Negro com a Imagem Real -->
+      <div class="black-hole-btn" onclick="abrirPainelIA()">
+        <div class="event-horizon">
+          <span class="bh-icon">✨</span>
+          <span class="bh-text">IA Catálogo</span>
+        </div>
+      </div>
+    </div>
     
     <!-- Carrossel Exclusivo com os Jogos de Lançamento -->
     <div class="mb-10">
@@ -130,6 +146,55 @@ import ProductSchema from '../components/ProductSchema.astro';
       <div id="modal-content" class="text-sm leading-relaxed flex flex-col gap-3 max-h-[75vh] overflow-y-auto pr-2"></div>
     </div>
   </div>
+
+  <style>
+    /* Estilos do Botão Buraco Negro com a Imagem Real */
+    .black-hole-btn {
+      position: relative;
+      width: 180px;
+      height: 55px;
+      border-radius: 30px;
+      background: url('/buraconegro.webp') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 120, 50, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(255, 150, 50, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .black-hole-btn .event-horizon {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(1px);
+    }
+
+    .black-hole-btn:hover {
+      transform: scale(1.06);
+      box-shadow: 0 0 30px rgba(255, 120, 50, 0.7), 0 0 50px rgba(0, 242, 254, 0.3);
+      border-color: rgba(255, 200, 100, 0.8);
+    }
+
+    .bh-icon {
+      font-size: 15px;
+    }
+  </style>
 
   <script define:vars={{ jogosLocais, notebooksLocais }}>
     let catalogoGlobal = [];
@@ -285,7 +350,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           url: 'https://www.instant-gaming.com/pt/442-comprar-minecraft-java-bedrock-edition-pc/?igr=gamer-56c7016',
           platform: 'PC',
           ano: 2026,
-          descricao: 'Explore mundos infinitos e construa tudo o que puder imaginar com as edições Java e Bedrock juntas.'
+          descricao: 'Explore mundos infinitos e construa tudo o que puder imaginar com las edições Java e Bedrock juntas.'
         },
         {
           id: 'bb-rdr2',
@@ -607,6 +672,27 @@ import ProductSchema from '../components/ProductSchema.astro';
           <a href="${jogo.url}" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 px-4 rounded-xl text-center transition shadow-lg mt-2 cursor-pointer block">
             ${jogo.type === 'free' ? 'Acessar Jogo Grátis' : jogo.type === 'notebook' ? 'Ver Notebook na Loja' : 'Ir para a Loja Oficial'}
           </a>
+        </div>
+      `;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    window.abrirPainelIA = function() {
+      const modal = document.getElementById('modal-container');
+      const content = document.getElementById('modal-content');
+      
+      content.innerHTML = `
+        <div class="flex flex-col gap-4 text-center py-6">
+          <div class="text-4xl">✨🕳️</div>
+          <h3 class="text-xl font-bold text-white">IA Catálogo CompraJogos</h3>
+          <p class="text-xs text-slate-400">O assistente gravitacional de busca está pronto para te ajudar a achar os melhores preços em nossa base de dados.</p>
+          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs text-slate-300">
+            Dica: Use os botões de filtro rápido acima (Promoções, Gratuitos, PS5, Xbox, etc.) para refinar sua busca instantaneamente.
+          </div>
+          <button onclick="fecharModal()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-2.5 rounded-xl transition cursor-pointer">
+            Voltar ao Catálogo
+          </button>
         </div>
       `;
       modal.classList.remove('hidden');
