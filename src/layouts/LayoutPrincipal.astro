@@ -92,15 +92,6 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
         }
       ]
     })} />
-      
-    <!-- Google AdSense Script -->
-    <script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9710931146430417" crossorigin="anonymous"></script>
-
-    <!-- Trackonomics / Impact Editor Tag -->
-    <script type="text/javascript">(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7635219-dac0-4d8a-8ef0-094adcd3d6ec1.js','script','impactStat',document,window);impactStat('trackImpression');</script>
-
-    <!-- Google Identity Services (GIS) SDK -->
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
 
     <slot name="head" />
   </head>
@@ -111,7 +102,7 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
       <div class="container mx-auto px-4 h-16 flex items-center justify-between gap-4">
         
         <a href="/" class="flex items-center gap-3 group shrink-0">
-          <img src="/logo-comprajogos.png" alt="CompraJogos" width="40" height="40" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+          <img src="/logo-comprajogos.png" alt="CompraJogos" width="40" height="40" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="eager" />
           <div class="flex flex-col">
             <span class="text-xs sm:text-sm font-black tracking-wider text-white uppercase group-hover:text-emerald-400 transition-colors">
               COMPRA<span class="text-emerald-400">JOGOS</span>
@@ -158,7 +149,7 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-900">
           
           <div class="flex flex-col gap-3">
-            <img src="/logo-comprajogos.png" alt="CompraJogos" width="120" height="32" class="h-8 w-auto object-contain self-start mb-1" />
+            <img src="/logo-comprajogos.png" alt="CompraJogos" width="120" height="32" class="h-8 w-auto object-contain self-start mb-1" loading="lazy" />
             <p class="text-xs text-slate-400 leading-relaxed">
               O seu portal definitivo para curadoria de keys de PC grátis e pagos, além de ofertas imperdíveis para PS4 e PS5.
             </p>
@@ -239,8 +230,35 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
       </div>
     </div>
 
+    <!-- Scripts de Terceiros Carregados sob Demanda (Lazy Load) para Acelerar o Desempenho Mobile -->
     <script is:inline>
       let googleButtonRendered = false;
+      let thirdPartyLoaded = false;
+
+      function carregarScriptsTerceiros() {
+        if (thirdPartyLoaded) return;
+        thirdPartyLoaded = true;
+
+        // AdSense
+        const adsense = document.createElement('script');
+        adsense.defer = true;
+        adsense.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9710931146430417";
+        adsense.crossOrigin = "anonymous";
+        document.head.appendChild(adsense);
+
+        // Impact / Trackonomics
+        const impact = document.createElement('script');
+        impact.type = "text/javascript";
+        impact.innerHTML = "(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7635219-dac0-4d8a-8ef0-094adcd3d6ec1.js','script','impactStat',document,window);impactStat('trackImpression');";
+        document.head.appendChild(impact);
+      }
+
+      // Dispara o carregamento dos scripts pesados após a página carregar ou ao primeiro toque/scroll
+      window.addEventListener('load', () => {
+        setTimeout(carregarScriptsTerceiros, 2000);
+      });
+      window.addEventListener('scroll', carregarScriptsTerceiros, { once: true });
+      window.addEventListener('pointerdown', carregarScriptsTerceiros, { once: true });
 
       function handleCredentialResponse(response) {
         const responsePayload = decodeJwtResponse(response.credential);
@@ -287,6 +305,21 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
         }
         document.getElementById('modal-login').classList.remove('hidden');
 
+        // Carrega o SDK do Google Identity sob demanda ao abrir o modal de login
+        if (!window.google) {
+          const gisScript = document.createElement('script5');
+          const scriptTag = document.createElement('script');
+          scriptTag.src = "https://accounts.google.com/gsi/client";
+          scriptTag.async = true;
+          scriptTag.defer = true;
+          scriptTag.onload = renderGoogleButton;
+          document.head.appendChild(scriptTag);
+        } else {
+          renderGoogleButton();
+        }
+      }
+
+      function renderGoogleButton() {
         if (!googleButtonRendered && window.google && window.google.accounts) {
           try {
             google.accounts.id.initialize({
@@ -308,7 +341,7 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
         document.getElementById('modal-login').classList.add('hidden');
       }
 
-      // Textos institucionais incluindo a página da desenvolvedora com WhatsApp
+      // Textos institucionais incluindo a página da desenvolvedora com WhatsApp correto
       const dadosInstitucionais = {
         sobre: {
           titulo: "Sobre o CompraJogos",
