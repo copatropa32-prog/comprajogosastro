@@ -9,12 +9,13 @@ interface Props {
 }
 
 const {    
-  titulo = "CompraJogos - Notebooks, PC (Grátis e Pagos), PS4, PS5, Xbox e Nintendo",  
-  descricao = "Explore centenas de jogos de PC grátis e pagos, ofertas para PS4, PS5, Xbox, Nintendo, além de notebooks de alta performance.",
+  titulo = "CompraJogos - PC (Grátis e Pagos), PS4 e PS5",  
+  descricao = "Explore centenas de jogos de PC grátis e pagos, além de ofertas imperdíveis para PS4 e PS5.",
   imagem = "https://www.comprajogos.com.br/logo-comprajogos.png",
   canonical = Astro.url.href
 } = Astro.props;
 
+// Garante que a URL da imagem seja absoluta para os bots das redes sociais lerem sem erro
 const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.comprajogos.com.br${imagem}`;
 ---
 
@@ -102,7 +103,6 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
     <!-- Google Identity Services (GIS) SDK -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-    <!-- SLOT PARA RECEBER SCHEMAS E TAGS EXTRAS -->
     <slot name="head" />
   </head>
   <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans selection:bg-emerald-500 selection:text-slate-950">
@@ -128,7 +128,7 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
             <input 
               type="text" 
               id="search-input" 
-              placeholder="Pesquisar jogos, notebooks, PS5, Xbox..." 
+              placeholder="Pesquisar jogos, PS4, PS5..." 
               class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition"
               oninput="filtrarPorTexto(this.value)"
             />
@@ -155,22 +155,35 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
     <!-- Rodapé -->
     <footer class="border-t border-slate-900 bg-slate-950 pt-12 pb-8 mt-16">
       <div class="container mx-auto px-4">
+        
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-900">
           
           <div class="flex flex-col gap-3">
             <img src="/logo-comprajogos.png" alt="CompraJogos" width="120" height="32" class="h-8 w-auto object-contain self-start mb-1" />
             <p class="text-xs text-slate-400 leading-relaxed">
-              O seu portal definitivo para curadoria de keys de PC grátis e pagos, notebooks de alta performance, além de ofertas para PlayStation e Xbox.
+              O seu portal definitivo para curadoria de keys de PC grátis e pagos, além de ofertas imperdíveis para PS4 e PS5.
             </p>
           </div>
 
           <div class="flex flex-col gap-3">
             <span class="text-sm font-bold text-white uppercase tracking-wider">Acompanhe o Canal</span>
             <div class="flex flex-wrap gap-2.5">
-              <a href="https://www.youtube.com/@comprajogosgratis" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-slate-900 hover:bg-red-950/40 border border-slate-800 hover:border-red-500/50 text-slate-300 hover:text-white text-xs font-semibold px-3.5 py-2 rounded-xl transition">YouTube</a>
-              <a href="https://www.instagram.com/comprajogos.com.br/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-slate-900 hover:bg-pink-950/40 border border-slate-800 hover:border-pink-500/50 text-slate-300 hover:text-white text-xs font-semibold px-3.5 py-2 rounded-xl transition">Instagram</a>
-              <a href="https://www.tiktok.com/@comprajogosaqui" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-600 text-slate-300 hover:text-white text-xs font-semibold px-3.5 py-2 rounded-xl transition">TikTok</a>
-              <a href="https://www.facebook.com/profile.php?id=61593639763404" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-slate-900 hover:bg-blue-950/40 border border-slate-800 hover:border-blue-500/50 text-slate-300 hover:text-white text-xs font-semibold px-3.5 py-2 rounded-xl transition">Facebook</a>
+              <a href="https://www.youtube.com/@comprajogosgratis" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-slate-900 hover:bg-red-950/40 border border-slate-800 hover:border-red-500/50 text-slate-300 hover:text-white text-xs font-semibold px-3.5 py-2 rounded-xl transition-all duration-300 shadow-sm">
+                <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                YouTube
+              </a>
+              <a href="https://www.instagram.com/comprajogos.com.br/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-slate-900 hover:bg-pink-950/40 border border-slate-800 hover:border-pink-500/50 text-slate-300 hover:text-white text-xs font-semibold px-3.5 py-2 rounded-xl transition-all duration-300 shadow-sm">
+                <svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                Instagram
+              </a>
+              <a href="https://www.tiktok.com/@comprajogosaqui" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-600 text-slate-300 hover:text-white text-xs font-semibold px-3.5 py-2 rounded-xl transition-all duration-300 shadow-sm">
+                <svg class="w-4 h-4 text-cyan-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                TikTok
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61593639763404" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-slate-900 hover:bg-blue-950/40 border border-slate-800 hover:border-blue-500/50 text-slate-300 hover:text-white text-xs font-semibold px-3.5 py-2 rounded-xl transition-all duration-300 shadow-sm">
+                <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                Facebook
+              </a>
             </div>
           </div>
 
@@ -196,22 +209,28 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
 
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-xs text-slate-500">
           <p>&copy; 2026 CompraJogos.com.br. Todos os direitos reservados.</p>
-          <p class="text-[11px] text-slate-600">Desenvolvido com foco em games e notebooks de alta performance</p>
+          <p class="text-[11px] text-slate-600">Desenvolvido com foco em jogos de PC grátis e pagos, PS4 e PS5</p>
         </div>
+
       </div>
     </footer>
 
-    <!-- Modais -->
+    <!-- Modal Institucional -->
     <div id="modal-institucional" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden p-4">
       <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
-        <button onclick="fecharModalInstitucional()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2 rounded-lg bg-slate-800/50 hover:bg-slate-800 transition cursor-pointer">✕</button>
+        <button onclick="fecharModalInstitucional()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2 rounded-lg bg-slate-800/50 hover:bg-slate-800 transition cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
         <div id="conteudo-modal-institucional" class="text-slate-300 text-sm leading-relaxed space-y-4 text-left"></div>
       </div>
     </div>
 
+    <!-- Modal de Login -->
     <div id="modal-login" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden p-4">
       <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 relative shadow-2xl flex flex-col gap-5 text-slate-300">
-        <button onclick="fecharModalLogin()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2 rounded-lg bg-slate-800/50 hover:bg-slate-800 transition cursor-pointer">✕</button>
+        <button onclick="fecharModalLogin()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2 rounded-lg bg-slate-800/50 hover:bg-slate-800 transition cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
         <div class="text-center pt-2">
           <h3 class="text-xl font-bold text-white">Acesse sua Conta</h3>
           <p class="text-xs text-slate-400 mt-1">Entre para salvar favoritos e acompanhar ofertas</p>
@@ -222,49 +241,110 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
 
     <script is:inline>
       let googleButtonRendered = false;
+
       function handleCredentialResponse(response) {
-        const responsePayload = JSON.parse(atob(response.credential.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')));
-        const userData = { name: responsePayload.name, email: responsePayload.email, picture: responsePayload.picture };
+        const responsePayload = decodeJwtResponse(response.credential);
+        const userData = {
+          name: responsePayload.name,
+          email: responsePayload.email,
+          picture: responsePayload.picture
+        };
         localStorage.setItem('compra_jogos_user', JSON.stringify(userData));
         atualizarInterfaceUsuario(userData);
         fecharModalLogin();
       }
+
+      function decodeJwtResponse(token) {
+        var base64Url = token.split('.')[1];
+        var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+            return '%' + ('0' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+        return JSON.parse(jsonPayload);
+      }
+
       function atualizarInterfaceUsuario(user) {
         const btnEntrar = document.getElementById('btn-entrar');
         if (btnEntrar && user) {
-          btnEntrar.innerHTML = `<div class="flex items-center gap-2"><img src="${user.picture}" alt="${user.name}" width="24" height="24" class="w-6 h-6 rounded-full object-cover" /><span>${user.name.split(' ')[0]}</span></div>`;
-          btnEntrar.onclick = () => { if (confirm(`Deseja sair da conta de ${user.name}?`)) { localStorage.removeItem('compra_jogos_user'); window.location.reload(); } };
+          btnEntrar.innerHTML = `
+            <div class="flex items-center gap-2">
+              <img src="${user.picture}" alt="${user.name}" width="24" height="24" class="w-6 h-6 rounded-full object-cover" />
+              <span>${user.name.split(' ')[0]}</span>
+            </div>
+          `;
+          btnEntrar.onclick = function() {
+            if (confirm(`Deseja sair da conta de ${user.name}?`)) {
+              localStorage.removeItem('compra_jogos_user');
+              window.location.reload();
+            }
+          };
         }
       }
+
       function abrirModalLogin() {
-        if (localStorage.getItem('compra_jogos_user')) return;
+        if (localStorage.getItem('compra_jogos_user')) {
+          return;
+        }
         document.getElementById('modal-login').classList.remove('hidden');
-        if (!googleButtonRendered && window.google?.accounts) {
+
+        if (!googleButtonRendered && window.google && window.google.accounts) {
           try {
-            google.accounts.id.initialize({ client_id: "75702393897-88uv9hvhqg0gi12muiqmv23n0vqk75m3.apps.googleusercontent.com", callback: handleCredentialResponse });
-            google.accounts.id.renderButton(document.getElementById("buttonDiv"), { theme: "filled_black", size: "large", width: "100%", locale: "pt-BR" });
+            google.accounts.id.initialize({
+              client_id: "75702393897-88uv9hvhqg0gi12muiqmv23n0vqk75m3.apps.googleusercontent.com",
+              callback: handleCredentialResponse
+            });
+            google.accounts.id.renderButton(
+              document.getElementById("buttonDiv"),
+              { theme: "filled_black", size: "large", width: "100%", locale: "pt-BR" }
+            );
             googleButtonRendered = true;
-          } catch (e) {}
+          } catch (e) {
+            console.error("Erro ao renderizar o botão do Google:", e);
+          }
         }
       }
-      function fecharModalLogin() { document.getElementById('modal-login').classList.add('hidden'); }
-      
+
+      function fecharModalLogin() {
+        document.getElementById('modal-login').classList.add('hidden');
+      }
+
       const dadosInstitucionais = {
-        sobre: { titulo: "Sobre o CompraJogos", texto: "O CompraJogos é o seu portal definitivo para encontrar chaves de jogos de PC grátis e pagos, notebooks gamers e ofertas para PlayStation e Xbox." },
-        termos: { titulo: "Termos de Uso", texto: "Ao utilizar o CompraJogos, você concorda com os termos e condições de uso do portal." },
-        privacidade: { titulo: "Política de Privacidade", texto: "Utilizamos armazenamento local (localStorage) apenas para manter sua sessão de login via Google ativa." }
+        sobre: {
+          titulo: "Sobre o CompraJogos",
+          texto: "O CompraJogos é o seu ecossistema digital definitivo para curadoria de ofertas, conectando você às melhores promoções de keys para PC, jogos gratuitos, hardwares de alta performance e descontos imperdíveis para as principais plataformas do mercado."
+        },
+        termos: {
+          titulo: "Termos de Uso",
+          texto: "Ao navegar e utilizar os recursos do CompraJogos, você concorda formalmente com as diretrizes, políticas de afiliados e condições gerais de uso estabelecidas por nossa plataforma. Atuamos como agregadores de links e parceiros oficiais de revendedores autorizados."
+        },
+        privacidade: {
+          titulo: "Política de Privacidade",
+          texto: "Prezamos rigorosamente pela sua privacidade. Utilizamos o armazenamento local (localStorage) exclusivamente para gerenciar a persistência da sua sessão de autenticação via Google com total segurança, sem o armazenamento indevido de dados sensíveis."
+        }
       };
+
       function abrirModalInstitucional(tipo) {
+        const modal = document.getElementById('modal-institucional');
+        const conteudo = document.getElementById('conteudo-modal-institucional');
         const info = dadosInstitucionais[tipo];
         if (info) {
-          document.getElementById('conteudo-modal-institucional').innerHTML = `<h3 class="text-xl font-bold text-white mb-2">${info.titulo}</h3><p>${info.texto}</p>`;
-          document.getElementById('modal-institucional').classList.remove('hidden');
+          conteudo.innerHTML = `
+            <h3 class="text-xl font-bold text-white mb-2">${info.titulo}</h3>
+            <p>${info.texto}</p>
+          `;
+          modal.classList.remove('hidden');
         }
       }
-      function fecharModalInstitucional() { document.getElementById('modal-institucional').classList.add('hidden'); }
-      document.addEventListener('DOMContentLoaded', () => {
+
+      function fecharModalInstitucional() {
+        document.getElementById('modal-institucional').classList.add('hidden');
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
         const savedUser = localStorage.getItem('compra_jogos_user');
-        if (savedUser) atualizarInterfaceUsuario(JSON.parse(savedUser));
+        if (savedUser) {
+          atualizarInterfaceUsuario(JSON.parse(savedUser));
+        }
       });
     </script>
   </body>
