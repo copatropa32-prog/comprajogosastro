@@ -6,7 +6,7 @@ import notebooksLocais from '../data/notebooks.json';
 import ProductSchema from '../components/ProductSchema.astro';
 ---
 
-<LayoutPrincipal titulo="CompraJogos - Notebooks, PC (Grátis e Pagos), PS4, PS5, Xbox e Nintendo" descricao="Explore centenas de jogos de PC grátis e pagos, ofertas para PS4, PS5, Xbox, Nintendo, além de notebooks de alta performance.">
+<LayoutPrincipal titulo="CompraJogos - Notebooks, PC (Grátis e Pagos), PS4, PS5, Xbox e Nintendo" descricao="Explore centenas de jogos de PC grátis e pagos, ofertas para PS4, PS5, Xbox, Nintendo, além de notebooks de alta performance.">[cite: 1]
   <head slot="head">
     {jogosLocais.map((jogo) => (
       <ProductSchema 
@@ -28,7 +28,7 @@ import ProductSchema from '../components/ProductSchema.astro';
     ))}
   </head>
 
-  <main class="container mx-auto px-4 py-8">
+  <main class="container mx-auto px-4 py-8">[cite: 1]
 
     <!-- Seção de Destaque com o Botão Buraco Negro -->
     <div class="flex flex-col md:flex-row items-center justify-between bg-slate-900/60 border border-slate-800 p-6 rounded-2xl mb-8 gap-4 shadow-xl backdrop-blur-md">
@@ -131,6 +131,24 @@ import ProductSchema from '../components/ProductSchema.astro';
     </svg>
   </a>
 
+  <!-- Botão Flutuante Moderno: Voltar ao Topo -->
+  <button
+    id="scrollToTopBtn"
+    aria-label="Voltar ao topo"
+    class="fixed bottom-22 right-6 z-40 flex items-center justify-center w-12 h-12 bg-slate-900/90 hover:bg-emerald-500 text-white rounded-full shadow-2xl backdrop-blur-md border border-slate-700 hover:border-emerald-400 opacity-0 invisible transition-all duration-300 transform translate-y-4 hover:scale-110 cursor-pointer"
+  >
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      class="w-5 h-5 transition-transform duration-300 hover:-translate-y-0.5" 
+      fill="none" 
+      viewBox="0 0 24 24" 
+      stroke="currentColor"
+      stroke-width="2.5"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
   <style>
     .black-hole-btn {
       position: relative;
@@ -178,6 +196,29 @@ import ProductSchema from '../components/ProductSchema.astro';
       font-size: 15px;
     }
   </style>
+
+  <script>
+    // Lógica para o Botão Voltar ao Topo
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    if (scrollBtn) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 350) {
+          scrollBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+          scrollBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+        } else {
+          scrollBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+          scrollBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+        }
+      });
+
+      scrollBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+  </script>
 
   <script define:vars={{ jogosLocais, notebooksLocais }}>
     let catalogoGlobal = [];
