@@ -37,7 +37,6 @@ import ProductSchema from '../components/ProductSchema.astro';
         <p class="text-xs text-slate-400">Clique para ser levado instantaneamente a uma oferta aleatória incrível do nosso catálogo.</p>
       </div>
       
-      <!-- O Botão Buraco Negro -->
       <div class="black-hole-btn" onclick="abrirOfertaAleatoria()">
         <div class="event-horizon">
           <span class="bh-icon">🔥</span>
@@ -46,7 +45,7 @@ import ProductSchema from '../components/ProductSchema.astro';
       </div>
     </div>
     
-    <!-- Carrossel Exclusivo com os Jogos de Lançamento -->
+    <!-- Carrossel Exclusivo com os Lançamentos -->
     <div class="mb-10">
       <div class="flex items-center justify-between mb-4">
         <h3 class="text-white font-black text-lg flex items-center gap-2">
@@ -54,12 +53,8 @@ import ProductSchema from '../components/ProductSchema.astro';
           Lançamentos
         </h3>
         <div class="flex gap-2">
-          <button onclick="rolarCarrossel(-1)" class="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white p-2 rounded-xl transition cursor-pointer shadow">
-            &larr;
-          </button>
-          <button onclick="rolarCarrossel(1)" class="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white p-2 rounded-xl transition cursor-pointer shadow">
-            &rarr;
-          </button>
+          <button onclick="rolarCarrossel(-1)" class="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white p-2 rounded-xl transition cursor-pointer shadow">&larr;</button>
+          <button onclick="rolarCarrossel(1)" class="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white p-2 rounded-xl transition cursor-pointer shadow">&rarr;</button>
         </div>
       </div>
       
@@ -95,12 +90,10 @@ import ProductSchema from '../components/ProductSchema.astro';
       <div id="genre-bar" class="flex gap-2 overflow-x-auto pb-2 scrollbar-thin"></div>
     </div>
 
-    <!-- Anúncio Google AdSense (Lazy Loaded / Carregado apenas após a rolagem no mobile para otimizar Speed Index e aprovação) -->
+    <!-- Anúncio Google AdSense -->
     <div id="ad-container" class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-4 mb-8 text-center overflow-hidden flex flex-col items-center justify-center min-h-[120px]">
       <span class="text-[10px] uppercase tracking-widest text-slate-500 mb-2 font-semibold">Anúncio Publicitário</span>
-      <div id="ad-slot-wrapper" class="w-full min-h-[90px] flex items-center justify-center">
-        <!-- Injetado dinamicamente via JS após a primeira rolagem -->
-      </div>
+      <div id="ad-slot-wrapper" class="w-full min-h-[90px] flex items-center justify-center"></div>
     </div>
 
     <!-- Grade de Produtos -->
@@ -115,86 +108,43 @@ import ProductSchema from '../components/ProductSchema.astro';
     <section class="seo-content mt-16 py-8 px-6 bg-slate-900/40 border border-slate-800/80 rounded-2xl text-slate-300">
       <h2 class="text-xl font-bold text-white mb-4">Onde comprar jogos mais baratos para Steam, PS5, Xbox e Nintendo Switch?</h2>
       <p class="mb-4 text-xs sm:text-sm leading-relaxed">
-        Se você está procurando onde encontrar <strong>jogos baratos para Steam</strong>, chaves de ativação seguras (keys) ou promoções imperdíveis para PlayStation 5, Xbox Series X|S e Nintendo Switch, o <strong>CompraJogos</strong> é o seu agregador definitivo. Monitoramos diariamente os melhores descontos do mercado gamer para garantir que você economize em lançamentos e clássicos.
+        Se você está procurando onde encontrar <strong>jogos baratos para Steam</strong>, chaves de ativação seguras ou promoções para PlayStation 5, Xbox Series X|S e Nintendo Switch, o <strong>CompraJogos</strong> é o seu agregador definitivo.
       </p>
       <p class="text-xs sm:text-sm leading-relaxed">
-        Além de keys e games digitais para PC, nossa curadoria também destaca notebooks gamers de alta performance, jogos gratuitos (Free-to-Play) e pacotes de expansão. Aproveite comparativos de preços transparentes e links diretos para as lojas oficiais mais confiáveis da internet.
+        Além de keys e games digitais, nossa curadoria destaca notebooks gamers de alta performance, jogos gratuitos (Free-to-Play) e pacotes de expansão com comparativos transparentes.
       </p>
     </section>
 
   </main>
 
-  <!-- Botão Flutuante do WhatsApp -->
+  <!-- Botão WhatsApp -->
   <a href="https://wa.me/5512991789256" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-400 text-slate-950 p-4 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center cursor-pointer" aria-label="Contato via WhatsApp">
-    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-    </svg>
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
   </a>
 
-  <!-- Botão Flutuante Moderno: Voltar ao Topo -->
-  <button
-    id="scrollToTopBtn"
-    aria-label="Voltar ao topo"
-    class="fixed bottom-22 right-6 z-40 flex items-center justify-center w-12 h-12 bg-slate-900/90 hover:bg-emerald-500 text-white rounded-full shadow-2xl backdrop-blur-md border border-slate-700 hover:border-emerald-400 opacity-0 invisible transition-all duration-300 transform translate-y-4 hover:scale-110 cursor-pointer"
-  >
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      class="w-5 h-5 transition-transform duration-300 hover:-translate-y-0.5" 
-      fill="none" 
-      viewBox="0 0 24 24" 
-      stroke="currentColor"
-      stroke-width="2.5"
-    >
-      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
-    </svg>
+  <!-- Botão Voltar ao Topo -->
+  <button id="scrollToTopBtn" aria-label="Voltar ao topo" class="fixed bottom-22 right-6 z-40 flex items-center justify-center w-12 h-12 bg-slate-900/90 hover:bg-emerald-500 text-white rounded-full shadow-2xl backdrop-blur-md border border-slate-700 hover:border-emerald-400 opacity-0 invisible transition-all duration-300 transform translate-y-4 hover:scale-110 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform duration-300 hover:-translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>
   </button>
 
   <style>
     .black-hole-btn {
-      position: relative;
-      width: 180px;
-      height: 55px;
-      border-radius: 30px;
-      background: url('/buraconegro.webp') no-repeat center center;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      overflow: hidden;
+      position: relative; width: 180px; height: 55px; border-radius: 30px;
+      background: url('/buraconegro.webp') no-repeat center center; background-size: cover;
+      display: flex; align-items: center; justify-content: center; cursor: pointer; overflow: hidden;
       box-shadow: 0 0 20px rgba(255, 120, 50, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.8);
-      border: 1px solid rgba(255, 150, 50, 0.4);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      flex-shrink: 0;
+      border: 1px solid rgba(255, 150, 50, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; flex-shrink: 0;
     }
-
     .black-hole-btn .event-horizon {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: #fff;
-      font-family: sans-serif;
-      font-size: 13px;
-      font-weight: bold;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
-      background: rgba(0, 0, 0, 0.4);
-      width: 100%;
-      height: 100%;
-      backdrop-filter: blur(1px);
+      position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 8px;
+      color: #fff; font-family: sans-serif; font-size: 13px; font-weight: bold; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+      background: rgba(0, 0, 0, 0.4); width: 100%; height: 100%; backdrop-filter: blur(1px);
     }
-
     .black-hole-btn:hover {
-      transform: scale(1.06);
-      box-shadow: 0 0 30px rgba(255, 120, 50, 0.7), 0 0 50px rgba(0, 242, 254, 0.3);
+      transform: scale(1.06); box-shadow: 0 0 30px rgba(255, 120, 50, 0.7), 0 0 50px rgba(0, 242, 254, 0.3);
       border-color: rgba(255, 200, 100, 0.8);
     }
-
-    .bh-icon {
-      font-size: 15px;
-    }
+    .bh-icon { font-size: 15px; }
   </style>
 
   <script>
@@ -209,13 +159,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           scrollBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
         }
       });
-
-      scrollBtn.addEventListener('click', () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      });
+      scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     }
   </script>
 
@@ -223,231 +167,39 @@ import ProductSchema from '../components/ProductSchema.astro';
     let catalogoGlobal = [];
     let filtroAtual = 'all';
     let generoAtual = 'Todos os Gêneros';
+    let textoBuscaAtual = '';
     let carouselInterval = null;
 
     function parsePrice(priceStr) {
-        if (!priceStr) return 0;
-        let clean = priceStr.replace('R$', '').replace(/\./g, '').replace(',', '.').trim();
-        return parseFloat(clean) || 0;
+      if (!priceStr) return 0;
+      let clean = priceStr.replace('R$', '').replace(/\./g, '').replace(',', '.').trim();
+      return parseFloat(clean) || 0;
     }
 
     let adsCarregados = false;
     function carregarGoogleAdSense() {
-      if (adsCarregados) return;
-      if (window.scrollY < 50) return;
-
+      if (adsCarregados || window.scrollY < 50) return;
       adsCarregados = true;
       const wrapper = document.getElementById('ad-slot-wrapper');
       if (wrapper) {
-        wrapper.innerHTML = `
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-9710931146430417"
-               data-ad-slot="SEU_ID_DO_SLOT"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
-        `;
-        try {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (e) {}
+        wrapper.innerHTML = `<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9710931146430417" data-ad-slot="SEU_ID_DO_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>`;
+        try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
       }
       window.removeEventListener('scroll', verificarRolagemParaAds);
     }
-
-    function verificarRolagemParaAds() {
-      if (window.scrollY > 80) {
-        carregarGoogleAdSense();
-      }
-    }
-
+    function verificarRolagemParaAds() { if (window.scrollY > 80) carregarGoogleAdSense(); }
     window.addEventListener('scroll', verificarRolagemParaAds, { passive: true });
 
     async function carregarTudo() {
-      const container = document.getElementById('catalog');
-
       const blockbustersFixos = [
-        {
-          id: 'bb-gta6',
-          title: 'Grand Theft Auto VI (PS5)',
-          type: 'paid',
-          genre: 'Action / Adventure',
-          image: '/capas/grand-theft-auto-vi-playstation-5.webp',
-          saleFormatted: 'R$ 371,42',
-          normalFormatted: 'R$ 472,00',
-          savings: 21,
-          url: 'https://www.instant-gaming.com/pt/15506-comprar-grand-theft-auto-vi-playstation-5-playstation-store/?igr=gamer-56c7016',
-          platform: 'PS5',
-          ano: 2026,
-          descricao: 'Explore Vice City e o estado de Leonida no maior lançamento da história dos videogames para PlayStation 5.'
-        },
-        {
-          id: 'bb-phantom-blade',
-          title: 'Phantom Blade Zero - PC (Steam)',
-          type: 'paid',
-          genre: 'Action RPG',
-          image: '/capas/phantom-blade-zero-playstation-5.webp',
-          saleFormatted: 'R$ 197,47',
-          normalFormatted: 'R$ 230,00',
-          savings: 14,
-          url: 'https://www.instant-gaming.com/pt/23616-comprar-phantom-blade-zero-pc-steam/?igr=gamer-56c7016',
-          platform: 'PC',
-          ano: 2026,
-          descricao: 'Mergulhe em um universo sombrio de artes marciais futuristas com combates velozes e cinematográficos na Steam.'
-        },
-        {
-          id: 'bb-gears-eday',
-          title: 'Gears of War: E-Day Premium Edition + Acesso avançado',
-          type: 'paid',
-          genre: 'Action / Shooter',
-          image: '/capas/gears-of-war-e-day-premium.webp',
-          saleFormatted: 'R$ 412,69',
-          normalFormatted: 'R$ 590,00',
-          savings: 30,
-          url: 'https://www.instant-gaming.com/pt/22979-comprar-gears-of-war-e-day-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016',
-          platform: 'Xbox',
-          ano: 2026,
-          descricao: 'Retorne ao Dia da Emergência e testemunhe o início da invasão Locust com gráficos de nova geração e acesso antecipado.'
-        },
-        {
-          id: 'bb-nba2k27',
-          title: 'NBA 2K27 Deluxe Edition',
-          type: 'paid',
-          genre: 'Sports / Simulation',
-          image: '/capas/nba-2k27-deluxe-edition.webp',
-          saleFormatted: 'R$ 430,38',
-          normalFormatted: 'R$ 550,00',
-          savings: 22,
-          url: 'https://www.instant-gaming.com/pt/23606-comprar-nba-2k27-deluxe-edition-pc-steam/?igr=gamer-56c7016',
-          platform: 'PC',
-          ano: 2026,
-          descricao: 'Viva a experiência definitiva do basquete com jogabilidade refinada e novas opções de gerenciamento.'
-        },
-        {
-          id: 'bb-ufc6',
-          title: 'UFC 6 - Xbox Series X|S',
-          type: 'paid',
-          genre: 'Fighting / Sports',
-          image: '/capas/ufc-6-xbox-series-x-s.webp',
-          saleFormatted: 'R$ 312,45',
-          normalFormatted: 'R$ 472,00',
-          savings: 34,
-          url: 'https://www.instant-gaming.com/pt/22459-comprar-ufc-6-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016',
-          platform: 'Xbox',
-          ano: 2026,
-          descricao: 'Sinta cada golpe no octógono com o sistema de dano e simulação mais realista da franquia.'
-        },
-        {
-          id: 'bb-forza6',
-          title: 'Forza Horizon 6 Premium Edition - PC & Xbox Series X|S',
-          type: 'paid',
-          genre: 'Racing / Open World',
-          image: '/capas/forza-horizon-6-premium-edition-pc-xbox.webp',
-          saleFormatted: 'R$ 437,46',
-          normalFormatted: 'R$ 708,00',
-          savings: 38,
-          url: 'https://www.instant-gaming.com/pt/21622-comprar-forza-horizon-6-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016',
-          platform: 'PC',
-          ano: 2026,
-          descricao: 'Explore novos horizontes em festivais automobilísticos dinâmicos com gráficos deslumbrantes.'
-        },
-        {
-          id: 'bb-re-requiem',
-          title: 'Resident Evil Requiem - PC (Steam)',
-          type: 'paid',
-          genre: 'Survival Horror',
-          image: '/capas/resident-evil-requiem.webp',
-          saleFormatted: 'R$ 182,73',
-          normalFormatted: 'R$ 299,00',
-          savings: 39,
-          url: 'https://www.instant-gaming.com/pt/20992-comprar-resident-evil-requiem-pc-steam/?igr=gamer-56c7016',
-          platform: 'PC',
-          ano: 2026,
-          descricao: 'Enfronte novos horrores viscerais em mais um capítulo aterrorizante da lendária saga da Capcom.'
-        },
-         {
-          id: 'bb-cod-mw4',
-          title: 'Call of Duty: Modern Warfare 4 - Edição Vault',
-          type: 'paid',
-          genre: 'Action / Shooter',
-          image: '/capas/call-of-duty-modern-warfare-4.webp',
-          saleFormatted: 'R$ 509,98',
-          normalFormatted: 'R$ 649,00',
-          savings: 21,
-          url: 'https://www.instant-gaming.com/pt/22745-comprar-call-of-duty-modern-warfare-4-edicao-vault-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016',
-          platform: 'PC',
-          ano: 2026,
-          descricao: 'A Edição Vault traz conteúdos exclusivos e campanhas épicas para a experiência definitiva de combate.'
-        },
-        {
-          id: 'bb-resonance',
-          title: 'Resonance: A Plague Tale Legacy - PC & Xbox Series X|S',
-          type: 'paid',
-          genre: 'Action / Adventure',
-          image: '/capas/resonance-a-plague-tale-legacy-pc.webp',
-          saleFormatted: 'R$ 218,11',
-          normalFormatted: 'R$ 279,99',
-          savings: 22,
-          url: 'https://www.instant-gaming.com/pt/19541-comprar-resonance-a-plague-tale-legacy-xbox-series-x-s-pc-microsoft-store/?igr=gamer-56c7016',
-          platform: 'PC',
-          ano: 2026,
-          descricao: 'Continue a emocionante jornada de sobrevivência e mistérios em um novo capítulo épico.'
-        },
-        {
-          id: 'bb-minecraft',
-          title: 'Minecraft: Java & Bedrock Edition',
-          type: 'paid',
-          genre: 'Sandbox / Survival',
-          image: '/capas/minecraft.webp',
-          saleFormatted: 'R$ 96,64',
-          normalFormatted: 'R$ 177,00',
-          savings: 45,
-          url: 'https://www.instant-gaming.com/pt/442-comprar-minecraft-java-bedrock-edition-pc/?igr=gamer-56c7016',
-          platform: 'PC',
-          ano: 2026,
-          descricao: 'Explore mundos infinitos e construa tudo o que puder imaginar com as edições Java e Bedrock juntas.'
-        },
-        {
-          id: 'bb-rdr2',
-          title: 'Red Dead Redemption 2: Ultimate Edition',
-          type: 'paid',
-          genre: 'Action / Adventure',
-          image: '/capas/red-dead-redemption-2-pc-jogo-rockstar.webp',
-          saleFormatted: 'R$ 106,67',
-          normalFormatted: 'R$ 500,00',
-          savings: 79,
-          url: 'https://www.instant-gaming.com/pt/5653-comprar-red-dead-redemption-2-ultimate-edition-ultimate-edition-pc-jogo-rockstar/?igr=gamer-56c7016',
-          platform: 'PC',
-          ano: 2026,
-          descricao: 'Viva a aclamada obra-prima da Rockstar com conteúdo extra exclusivo da Edição Ultimate.'
-        },
-        {
-          id: 'bb-ac-shadows',
-          title: "Assassin's Creed Shadows - PS5",
-          type: 'paid',
-          genre: 'Action / Adventure',
-          image: '/capas/assassin-s-creed-shadows-playstation-5.webp',
-          saleFormatted: 'R$ 247,59',
-          normalFormatted: 'R$ 472,00',
-          savings: 48,
-          url: 'https://www.instant-gaming.com/pt/20706-comprar-assassin-s-creed-shadows-switch-2-nintendo-eshop/?igr=gamer-56c7016',
-          platform: 'PS5',
-          ano: 2026,
-          descricao: 'Viva a jornada épica no Japão Feudal alternando entre a shinobi Naoe e o samurai Yasuke.'
-        },
-        {
-          id: 'bb-yakuza-kiwami-2',
-          title: 'Yakuza Kiwami 2 - PS5',
-          type: 'paid',
-          genre: 'Action / Adventure',
-          image: '/capas/yakuza-kiwami-2-playstation-5.webp',
-          saleFormatted: 'R$ 73,71',
-          normalFormatted: 'R$ 118,00',
-          savings: 37,
-          url: 'https://www.instant-gaming.com/pt/21331-comprar-yakuza-kiwami-2-playstation-5-playstation-store/?igr=gamer-56c7016',
-          platform: 'PlayStation',
-          ano: 2026,
-          descricao: 'Vivencie o aclamado drama de Kazuma Kiryu reconstruído com gráficos impressionantes no PS5.'
-        },
+        { id: 'bb-gta6', title: 'Grand Theft Auto VI (PS5)', type: 'paid', genre: 'Action / Adventure', image: '/capas/grand-theft-auto-vi-playstation-5.webp', saleFormatted: 'R$ 371,42', normalFormatted: 'R$ 472,00', savings: 21, url: 'https://www.instant-gaming.com/pt/15506-comprar-grand-theft-auto-vi-playstation-5-playstation-store/?igr=gamer-56c7016', platform: 'PS5', ano: 2026 },
+        { id: 'bb-phantom-blade', title: 'Phantom Blade Zero - PC (Steam)', type: 'paid', genre: 'Action RPG', image: '/capas/phantom-blade-zero-playstation-5.webp', saleFormatted: 'R$ 197,47', normalFormatted: 'R$ 230,00', savings: 14, url: 'https://www.instant-gaming.com/pt/23616-comprar-phantom-blade-zero-pc-steam/?igr=gamer-56c7016', platform: 'PC', ano: 2026 },
+        { id: 'bb-gears-eday', title: 'Gears of War: E-Day Premium Edition', type: 'paid', genre: 'Action / Shooter', image: '/capas/gears-of-war-e-day-premium.webp', saleFormatted: 'R$ 412,69', normalFormatted: 'R$ 590,00', savings: 30, url: 'https://www.instant-gaming.com/pt/22979-comprar-gears-of-war-e-day-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016', platform: 'Xbox', ano: 2026 },
+        { id: 'bb-nba2k27', title: 'NBA 2K27 Deluxe Edition', type: 'paid', genre: 'Sports / Simulation', image: '/capas/nba-2k27-deluxe-edition.webp', saleFormatted: 'R$ 430,38', normalFormatted: 'R$ 550,00', savings: 22, url: 'https://www.instant-gaming.com/pt/23606-comprar-nba-2k27-deluxe-edition-pc-steam/?igr=gamer-56c7016', platform: 'PC', ano: 2026 },
+        { id: 'bb-ufc6', title: 'UFC 6 - Xbox Series X|S', type: 'paid', genre: 'Fighting / Sports', image: '/capas/ufc-6-xbox-series-x-s.webp', saleFormatted: 'R$ 312,45', normalFormatted: 'R$ 472,00', savings: 34, url: 'https://www.instant-gaming.com/pt/22459-comprar-ufc-6-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016', platform: 'Xbox', ano: 2026 },
+        { id: 'bb-forza6', title: 'Forza Horizon 6 Premium Edition', type: 'paid', genre: 'Racing / Open World', image: '/capas/forza-horizon-6-premium-edition-pc-xbox.webp', saleFormatted: 'R$ 437,46', normalFormatted: 'R$ 708,00', savings: 38, url: 'https://www.instant-gaming.com/pt/21622-comprar-forza-horizon-6-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016', platform: 'PC', ano: 2026 },
+        { id: 'bb-minecraft', title: 'Minecraft: Java & Bedrock Edition', type: 'paid', genre: 'Sandbox / Survival', image: '/capas/minecraft.webp', saleFormatted: 'R$ 96,64', normalFormatted: 'R$ 177,00', savings: 45, url: 'https://www.instant-gaming.com/pt/442-comprar-minecraft-java-bedrock-edition-pc/?igr=gamer-56c7016', platform: 'PC', ano: 2026 },
+        { id: 'bb-rdr2', title: 'Red Dead Redemption 2: Ultimate Edition', type: 'paid', genre: 'Action / Adventure', image: '/capas/red-dead-redemption-2-pc-jogo-rockstar.webp', saleFormatted: 'R$ 106,67', normalFormatted: 'R$ 500,00', savings: 79, url: 'https://www.instant-gaming.com/pt/5653-comprar-red-dead-redemption-2-ultimate-edition-ultimate-edition-pc-jogo-rockstar/?igr=gamer-56c7016', platform: 'PC', ano: 2026 }
       ];
 
       let freeFormatted = [];
@@ -455,18 +207,9 @@ import ProductSchema from '../components/ProductSchema.astro';
         const resFree = await fetch('https://www.freetogame.com/api/games?sort-by=popularity');
         const freeData = await resFree.json();
         if (Array.isArray(freeData)) {
-          freeFormatted = freeData.slice(0, 60).map(item => ({
-            id: `free-${item.id}`,
-            title: item.title,
-            type: 'free',
-            genre: item.genre || 'Free-to-Play',
-            image: item.thumbnail,
-            saleFormatted: 'Gratuito',
-            normalFormatted: '',
-            savings: 100,
-            url: item.game_url,
-            platform: 'PC',
-            ano: 2026
+          freeFormatted = freeData.slice(0, 40).map(item => ({
+            id: `free-${item.id}`, title: item.title, type: 'free', genre: item.genre || 'Free-to-Play',
+            image: item.thumbnail, saleFormatted: 'Gratuito', normalFormatted: '', savings: 100, url: item.game_url, platform: 'PC', ano: 2026
           }));
         }
       } catch (e) {}
@@ -474,51 +217,27 @@ import ProductSchema from '../components/ProductSchema.astro';
       const meusJogos = jogosLocais.map((jogo, index) => {
         const nomeLower = (jogo.nome || '').toLowerCase();
         const generoLower = (jogo.genre || '').toLowerCase();
-        
         let plat = 'PC';
         if (nomeLower.includes('ps5') || generoLower.includes('ps5')) plat = 'PS5';
         else if (nomeLower.includes('ps4') || generoLower.includes('ps4')) plat = 'PS4';
         else if (nomeLower.includes('xbox') || generoLower.includes('xbox')) plat = 'Xbox';
-        else if (nomeLower.includes('nintendo') || generoLower.includes('nintendo') || nomeLower.includes('switch')) plat = 'Nintendo';
+        else if (nomeLower.includes('nintendo') || generoLower.includes('switch')) plat = 'Nintendo';
 
         return {
-          id: `custom-${index}`,
-          title: jogo.nome,
-          type: 'paid',
-          genre: jogo.genre || 'Destaque',
-          image: jogo.image,
-          saleFormatted: jogo.preco,
-          normalFormatted: jogo.precoNormal,
-          savings: jogo.desconto || 0,
-          url: jogo.linkBase,
-          platform: plat,
-          ano: jogo.ano || 2026,
-          descricao: jogo.descricao || ''
+          id: `custom-${index}`, title: jogo.nome, type: 'paid', genre: jogo.genre || 'Destaque',
+          image: jogo.image, saleFormatted: jogo.preco, normalFormatted: jogo.precoNormal, savings: jogo.desconto || 0,
+          url: jogo.linkBase, platform: plat, ano: jogo.ano || 2026
         };
       });
 
       const meusNotebooks = notebooksLocais.map((nb, index) => ({
-        id: `notebook-${index}`,
-        title: nb.nome,
-        type: 'notebook',
-        genre: nb.genre || 'Notebook',
-        image: nb.image,
-        saleFormatted: nb.preco,
-        normalFormatted: nb.precoNormal,
-        savings: nb.desconto || 0,
-        url: nb.linkBase,
-        descricao: nb.descricao || '',
-        platform: 'Hardware',
-        ano: 2026
+        id: `notebook-${index}`, title: nb.nome, type: 'notebook', genre: nb.genre || 'Notebook',
+        image: nb.image, saleFormatted: nb.preco, normalFormatted: nb.precoNormal, savings: nb.desconto || 0,
+        url: nb.linkBase, platform: 'Hardware', ano: 2026
       }));
 
       catalogoGlobal = [...blockbustersFixos, ...meusJogos, ...meusNotebooks, ...freeFormatted];
       
-      if (catalogoGlobal.length === 0) {
-        container.innerHTML = `<div class="col-span-full bg-slate-900 border border-slate-800 p-8 rounded-xl text-center text-slate-400">Nenhum item cadastrado ou disponível no momento.</div>`;
-        return;
-      }
-
       construirCarrossel2026();
       iniciarCarrosselAutomatico();
       construirBarraGeneros();
@@ -528,27 +247,13 @@ import ProductSchema from '../components/ProductSchema.astro';
     function construirCarrossel2026() {
       const track = document.getElementById('carousel-track');
       if (!track) return;
-
       let lancamentos = catalogoGlobal.filter(j => j.id.startsWith('bb-'));
-
-      lancamentos.sort((a, b) => {
-        if (a.id === 'bb-gta6') return -1;
-        if (b.id === 'bb-gta6') return 1;
-        return 0;
-      });
-
-      if (lancamentos.length === 0) {
-        track.innerHTML = `<div class="text-slate-400 text-xs p-4">Nenhum lançamento encontrado.</div>`;
-        return;
-      }
-
       track.innerHTML = lancamentos.map((item, index) => `
         <div class="min-w-[260px] sm:min-w-[280px] max-w-[280px] bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shrink-0 snap-start shadow-xl hover:border-slate-700 transition">
           <div class="relative bg-slate-950 h-36 overflow-hidden flex items-center justify-center">
-            <img src="${item.image}" alt="${item.title}" ${index === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy" decoding="async"'} width="280" height="144" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
-            <span class="absolute top-2 left-2 bg-emerald-500/90 text-slate-950 text-[9px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">${item.ano || '2026'}</span>
+            <img src="${item.image}" alt="${item.title}" loading="${index === 0 ? 'eager' : 'lazy'}" width="280" height="144" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
+            <span class="absolute top-2 left-2 bg-emerald-500/90 text-slate-950 text-[9px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">${item.ano}</span>
             ${item.id === 'bb-gta6' ? '<span class="absolute top-2 right-2 bg-indigo-600 text-white font-black text-[10px] px-2 py-0.5 rounded shadow">Mais Esperado</span>' : ''}
-            ${item.savings > 0 && item.id !== 'bb-gta6' ? `<span class="absolute top-2 right-2 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-0.5 rounded shadow">-${item.savings}%</span>` : ''}
           </div>
           <div class="p-4 flex flex-col flex-1 justify-between gap-3">
             <h4 class="font-bold text-white text-xs line-clamp-2 leading-snug">${item.title}</h4>
@@ -557,9 +262,7 @@ import ProductSchema from '../components/ProductSchema.astro';
                 ${item.normalFormatted ? `<span class="text-[10px] text-slate-500 line-through block">${item.normalFormatted}</span>` : ''}
                 <span class="text-base font-black text-emerald-400">${item.saleFormatted}</span>
               </div>
-              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="font-bold py-2 px-3 rounded-lg text-[11px] transition shadow bg-emerald-500 hover:bg-emerald-400 text-slate-950 cursor-pointer">
-                Ver Oferta
-              </a>
+              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="font-bold py-2 px-3 rounded-lg text-[11px] transition shadow bg-emerald-500 hover:bg-emerald-400 text-slate-950 cursor-pointer">Ver Oferta</a>
             </div>
           </div>
         </div>
@@ -569,30 +272,20 @@ import ProductSchema from '../components/ProductSchema.astro';
     function iniciarCarrosselAutomatico() {
       const track = document.getElementById('carousel-track');
       if (!track) return;
-
       carouselInterval = setInterval(() => {
-        const maxScrollLeft = track.scrollWidth - track.clientWidth;
-        if (track.scrollLeft >= maxScrollLeft - 10) {
+        if (track.scrollLeft >= track.scrollWidth - track.clientWidth - 10) {
           track.scrollTo({ left: 0, behavior: 'smooth' });
         } else {
           track.scrollBy({ left: 300, behavior: 'smooth' });
         }
       }, 7000);
-
-      track.addEventListener('mouseenter', () => {
-        clearInterval(carouselInterval);
-      });
-
-      track.addEventListener('mouseleave', () => {
-        iniciarCarrosselAutomatico();
-      });
+      track.addEventListener('mouseenter', () => clearInterval(carouselInterval));
+      track.addEventListener('mouseleave', () => iniciarCarrosselAutomatico());
     }
 
     window.rolarCarrossel = function(direcao) {
       const track = document.getElementById('carousel-track');
-      if (!track) return;
-      const scrollAmount = 300;
-      track.scrollBy({ left: direcao * scrollAmount, behavior: 'smooth' });
+      if (track) track.scrollBy({ left: direcao * 300, behavior: 'smooth' });
     }
 
     function construirBarraGeneros() {
@@ -604,7 +297,7 @@ import ProductSchema from '../components/ProductSchema.astro';
         const btn = document.createElement('button');
         btn.className = `px-3.5 py-1.5 rounded-full text-xs font-semibold transition whitespace-nowrap border cursor-pointer ${generoAtual === g ? 'bg-emerald-500 text-slate-950 border-emerald-500 font-bold shadow-lg shadow-emerald-500/20' : 'bg-slate-900 text-slate-400 border-slate-800 hover:bg-slate-800 hover:text-white'}`;
         btn.innerText = g;
-        btn.onclick = () => mudarGenero(g);
+        btn.onclick = () => { generoAtual = g; construirBarraGeneros(); filtrarJogos(); };
         bar.appendChild(btn);
       });
     }
@@ -622,9 +315,8 @@ import ProductSchema from '../components/ProductSchema.astro';
       filtrarJogos();
     }
 
-    function mudarGenero(genero) {
-      generoAtual = genero;
-      construirBarraGeneros();
+    window.filtrarPorTexto = function(termo) {
+      textoBuscaAtual = termo.toLowerCase().trim();
       filtrarJogos();
     }
 
@@ -637,27 +329,20 @@ import ProductSchema from '../components/ProductSchema.astro';
 
       const filtrados = catalogoGlobal.filter(j => {
         let matchFiltro = true;
-        if (filtroAtual === 'promocoes') {
-          matchFiltro = (j.type === 'paid' || j.type === 'notebook') && j.savings > 0;
-        } else if (filtroAtual === 'gratuitos') {
-          matchFiltro = j.type === 'free';
-        } else if (filtroAtual === 'notebooks') {
-          matchFiltro = j.type === 'notebook';
-        } else if (filtroAtual === 'pc') {
-          matchFiltro = j.platform === 'PC';
-        } else if (filtroAtual === 'ps5') {
-          matchFiltro = j.platform === 'PS5';
-        } else if (filtroAtual === 'xbox') {
-          matchFiltro = j.platform === 'Xbox';
-        } else if (filtroAtual === 'nintendo') {
-          matchFiltro = j.platform === 'Nintendo';
-        }
+        if (filtroAtual === 'promocoes') matchFiltro = (j.type === 'paid' || j.type === 'notebook') && j.savings > 0;
+        else if (filtroAtual === 'gratuitos') matchFiltro = j.type === 'free';
+        else if (filtroAtual === 'notebooks') matchFiltro = j.type === 'notebook';
+        else if (filtroAtual === 'pc') matchFiltro = j.platform === 'PC';
+        else if (filtroAtual === 'ps5') matchFiltro = j.platform === 'PS5' || j.platform === 'PS4';
+        else if (filtroAtual === 'xbox') matchFiltro = j.platform === 'Xbox';
+        else if (filtroAtual === 'nintendo') matchFiltro = j.platform === 'Nintendo';
 
         const matchGenero = generoAtual === 'Todos os Gêneros' || j.genre === generoAtual;
         const precoNumerico = parsePrice(j.saleFormatted);
         const matchPreco = precoNumerico >= minVal && precoNumerico <= maxVal;
+        const matchTexto = !textoBuscaAtual || j.title.toLowerCase().includes(textoBuscaAtual) || j.genre.toLowerCase().includes(textoBuscaAtual);
 
-        return matchFiltro && matchGenero && matchPreco;
+        return matchFiltro && matchGenero && matchPreco && matchTexto;
       });
 
       if (filtrados.length === 0) {
@@ -668,16 +353,16 @@ import ProductSchema from '../components/ProductSchema.astro';
       container.innerHTML = filtrados.map((item, index) => `
         <div class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition-all duration-300 shadow-xl">
           <div class="relative bg-slate-950 h-44 overflow-hidden flex items-center justify-center">
-            <img src="${item.image}" alt="${item.title}" ${index < 4 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy" decoding="async"'} width="300" height="176" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
+            <img src="${item.image}" alt="${item.title}" loading="${index < 4 ? 'eager' : 'lazy'}" width="300" height="176" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
             <span class="absolute top-3 left-3 bg-slate-900/90 text-slate-300 text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider">${item.genre}</span>
-            ${item.savings > 0 && (item.type === 'paid' || item.type === 'notebook') ? `<span class="absolute top-3 right-3 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-1 rounded-md shadow">-${item.savings}%</span>` : ''}
+            ${item.savings > 0 && item.type !== 'free' ? `<span class="absolute top-3 right-3 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-1 rounded-md shadow">-${item.savings}%</span>` : ''}
             ${item.type === 'free' ? `<span class="absolute top-3 right-3 bg-indigo-600 text-white font-bold text-xs px-2 py-1 rounded-md shadow">Grátis</span>` : ''}
           </div>
           <div class="p-5 flex flex-col flex-1 justify-between gap-4">
             <h4 class="font-bold text-white text-sm line-clamp-2 leading-snug">${item.title}</h4>
             <div class="flex justify-between items-end border-t border-slate-800 pt-4">
               <div>
-                ${item.type === 'paid' || item.type === 'notebook' ? `
+                ${item.type !== 'free' ? `
                   ${item.normalFormatted ? `<span class="text-xs text-slate-500 line-through block">${item.normalFormatted}</span>` : ''}
                   <span class="text-lg font-black text-emerald-400">${item.saleFormatted}</span>
                 ` : `
@@ -685,31 +370,18 @@ import ProductSchema from '../components/ProductSchema.astro';
                   <span class="text-sm font-extrabold text-indigo-400">Free-to-Play</span>
                 `}
               </div>
-              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-lg cursor-pointer bg-emerald-500 hover:bg-emerald-400 text-slate-950">
-                Ver Oferta
-              </a>
+              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-lg cursor-pointer bg-emerald-500 hover:bg-emerald-400 text-slate-950">Ver Oferta</a>
             </div>
           </div>
         </div>
       `).join('');
     }
 
-   window.abrirOfertaAleatoria = function() {
+    window.abrirOfertaAleatoria = function() {
       if (!catalogoGlobal || catalogoGlobal.length === 0) return;
-      
-      // Filtra apenas itens que possuem URLs válidas de parceiros e que não sejam domínios inativos
-      const itensValidos = catalogoGlobal.filter(item => {
-        if (!item || !item.url || !item.url.startsWith('http')) return false;
-        // Evita domínios que sabemos estarem fora do ar
-        if (item.url.includes('pso2.com')) return false;
-        return true;
-      });
-
+      const itensValidos = catalogoGlobal.filter(item => item?.url?.startsWith('http'));
       if (itensValidos.length === 0) return;
-
-      const indiceAleatorio = Math.floor(Math.random() * itensValidos.length);
-      const itemSorteado = itensValidos[indiceAleatorio];
-
+      const itemSorteado = itensValidos[Math.floor(Math.random() * itensValidos.length)];
       window.open(itemSorteado.url, '_blank', 'noopener,noreferrer');
     }
 
