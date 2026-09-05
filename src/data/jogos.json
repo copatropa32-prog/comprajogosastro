@@ -1,1844 +1,2040 @@
 [
-  {
-    "nome": "Doom: The Dark Ages Premium Edition - PC (Steam)",
-    "genre": "FPS / Action",
-    "preco": "R$ 175,06",
-    "precoNormal": "R$ 500",
-    "desconto": 65,
-    "image": "/capas/doom-the-dark-ages-premium-edition-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/18600-comprar-doom-the-dark-ages-premium-edition-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Fallout: New Vegas Ultimate - PC (Steam)",
-    "genre": "RPG / Open World",
-    "preco": "R$ 48,29",
-    "precoNormal": "R$ 79",
-    "desconto": 39,
-    "image": "/capas/fallout-new-vegas-ultimate-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/155-comprar-fallout-new-vegas-ultimate-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Planet of Lana - PC (Steam)",
-    "genre": "Cinematic Adventure",
-    "preco": "R$ 5,90",
-    "precoNormal": "R$ 60",
-    "desconto": 90,
-    "image": "/capas/planet-of-lana-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/9004-comprar-planet-of-lana-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Life is Strange: Double Exposure - PC (Steam)",
-    "genre": "Narrative Adventure",
-    "preco": "R$ 23,53",
-    "precoNormal": "R$ 220",
-    "desconto": 89,
-    "image": "/capas/life-is-strange-double.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/6829-comprar-life-is-strange-double-exposure-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "It Takes Two - PC (EA App)",
-    "genre": "Co-op / Platformer",
-    "preco": "R$ 67,81",
-    "precoNormal": "R$ 199",
-    "desconto": 66,
-    "image": "/capas/it-takes-two-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8103-comprar-it-takes-two-pc-jogo-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "God of War - PC (Steam)",
-    "genre": "Action / Adventure",
-    "preco": "R$ 75,42",
-    "precoNormal": "R$ 200",
-    "desconto": 62,
-    "image": "/capas/god-of-war-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/17355-comprar-god-of-war-pc-jogo-steam-latin-america/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Assassin's Creed: Unity - PC (Ubisoft Connect)",
-    "genre": "Action / Adventure",
-    "preco": "R$ 44,75",
-    "precoNormal": "R$ 177",
-    "desconto": 75,
-    "image": "/capas/assassin-s-creed-unity-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/400-comprar-assassin-s-creed-unity-pc-jogo-ubisoft-connect/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Office Professional Plus 2021 PC (1 User) - PC (Microsoft Store)",
-    "genre": "Productivity",
-    "preco": "R$ 176,83",
-    "precoNormal": "R$ 708",
-    "desconto": 75,
-    "image": "/capas/office-professional-plus-2021-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/10388-comprar-office-professional-plus-2021-pc-1-user-professional-plus-pc-jogo-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Final Fantasy VII Rebirth - PC (Steam)",
-    "genre": "Action RPG",
-    "preco": "R$ 117,87",
-    "precoNormal": "R$ 220",
-    "desconto": 46,
-    "image": "/capas/final-fantasy-vii-rebirth-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/10365-comprar-final-fantasy-vii-rebirth-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "LEGO: Batman Trilogy - PC (Steam)",
-    "genre": "Action / Adventure",
-    "preco": "R$ 19,99",
-    "precoNormal": "R$ 230",
-    "desconto": 91,
-    "image": "/capas/lego-batman-trilogy-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/1665-comprar-lego-batman-trilogy-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Warhammer 40,000: Darktide - Imperial Edition - PC (Steam)",
-    "genre": "Action / Co-op Shooter",
-    "preco": "R$ 70,70",
-    "precoNormal": "R$ 220",
-    "desconto": 68,
-    "image": "/capas/warhammer-40-000-darktide-imperial-edition-imperial-edition-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/13355-comprar-warhammer-40-000-darktide-imperial-edition-imperial-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Blasphemous - PC (Steam)",
-    "genre": "Metroidvania / Action Platformer",
-    "preco": "R$ 18,81",
-    "precoNormal": "R$ 134",
-    "desconto": 86,
-    "image": "/capas/blasphemous-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/4703-comprar-blasphemous-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Disco Elysium - The Final Cut - PC & Mac (Steam)",
-    "genre": "RPG / Detective",
-    "preco": "R$ 24,82",
-    "precoNormal": "R$ 120",
-    "desconto": 79,
-    "image": "/capas/disco-elysium-the-final-cut-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/9753-comprar-disco-elysium-the-final-cut-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Rust - PC & Mac (Steam)",
-    "genre": "Survival / Open World",
-    "preco": "R$ 176,83",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/rust-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/1230-comprar-rust-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Celeste - PC & Mac (Steam)",
-    "genre": "Platformer",
-    "preco": "R$ 15,27",
-    "precoNormal": "R$ 60",
-    "desconto": 75,
-    "image": "/capas/celeste-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8003-comprar-celeste-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Warhammer 40,000: Darktide - PC (Steam)",
-    "genre": "Action / Co-op Shooter",
-    "preco": "R$ 49,47",
-    "precoNormal": "R$ 236",
-    "desconto": 79,
-    "image": "/capas/warhammer-40-000-darktide-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/7368-comprar-warhammer-40-000-darktide-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "We Were Here Too - PC & Mac (Steam)",
-    "genre": "Adventure / Puzzle",
-    "preco": "R$ 12,91",
-    "precoNormal": "R$ 33",
-    "desconto": 61,
-    "image": "/capas/we-were-here-too-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/5369-comprar-we-were-here-too-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Hollow Knight: Silksong - PC & Mac (Steam)",
-    "genre": "Metroidvania / Action",
-    "preco": "R$ 77,77",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/hollow-knight-silksong-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/3952-comprar-hollow-knight-silksong-pc-mac-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Alien: Isolation - PC & Mac (Steam)",
-    "genre": "Survival Horror",
-    "preco": "R$ 27,65",
-    "precoNormal": "R$ 179",
-    "desconto": 85,
-    "image": "/capas/alien-isolation-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/305-comprar-alien-isolation-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Windrose - PC (Steam)",
-    "genre": "Action / Adventure",
-    "preco": "R$ 141,46",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/windrose-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/21876-comprar-windrose-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Forensics: Crime Scene Detective - PC (Steam)",
-    "genre": "Simulation / Investigation",
-    "preco": "R$ 103,13",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/forensics-crime-scene-detective-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/23229-comprar-forensics-crime-scene-detective-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Assassin's Creed Shadows - Switch 2",
-    "genre": "Action / Adventure",
-    "preco": "R$ 247,59",
-    "precoNormal": "R$ 472",
-    "desconto": 48,
-    "image": "/capas/assassin-s-creed-shadows-switch-2-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/20706-comprar-assassin-s-creed-shadows-switch-2-nintendo-eshop/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Grand Theft Auto VI - Switch 2",
-    "genre": "Action / Adventure",
-    "preco": "",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/grand-theft-auto-vi-switch-2-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/22593-comprar-grand-theft-auto-vi-switch-2-nintendo-eshop/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "No More Heroes 3 - Switch",
-    "genre": "Action / Hack and Slash",
-    "preco": "R$ 343,11",
-    "precoNormal": "R$ 354",
-    "desconto": 3,
-    "image": "/capas/no-more-heroes-3-switch-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/5955-comprar-no-more-heroes-3-switch-nintendo-eshop/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Max: The Curse of Brotherhood - Switch",
-    "genre": "Adventure / Platformer",
-    "preco": "R$ 74,83",
-    "precoNormal": "R$ 88",
-    "desconto": 15,
-    "image": "/capas/max-the-curse-of-brotherhood-switch-jogo-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8118-comprar-max-the-curse-of-brotherhood-switch-jogo-nintendo-eshop/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Fort Boyard - Switch",
-    "genre": "Party / Family",
-    "preco": "R$ 69,52",
-    "precoNormal": "R$ 147",
-    "desconto": 53,
-    "image": "/capas/fort-boyard-switch-jogo-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8338-comprar-fort-boyard-switch-jogo-nintendo-eshop/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "88 Heroes - 98 Heroes Edition - Switch",
-    "genre": "Action / Platformer",
-    "preco": "R$ 18,81",
-    "precoNormal": "R$ 177",
-    "desconto": 89,
-    "image": "/capas/88-heroes-98-heroes-edition-98-heroes-edition-switch-jogo-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/7812-comprar-88-heroes-98-heroes-edition-98-heroes-edition-switch-jogo-nintendo-eshop/?igr=gamer-56c7016"
-  },
-{
-    "nome": "Kotodama: The 7 Mysteries of Fujisawa - Switch",
-    "genre": "Visual Novel / Puzzle",
-    "preco": "R$ 57,73",
-    "precoNormal": "R$ 147",
-    "desconto": 61,
-    "image": "/capas/kotodama-the-7-mysteries-of-fujisawa-switch-jogo-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8078-comprar-kotodama-the-7-mysteries-of-fujisawa-switch-jogo-nintendo-eshop/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Close to the Sun - Switch",
-    "genre": "Adventure / Horror",
-    "preco": "R$ 74,83",
-    "precoNormal": "R$ 118",
-    "desconto": 37,
-    "image": "/capas/close-to-the-sun-switch-jogo-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8109-comprar-close-to-the-sun-switch-jogo-nintendo-eshop/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "PowerWash Simulator - Switch",
-    "genre": "Simulation",
-    "preco": "R$ 110,20",
-    "precoNormal": "R$ 147",
-    "desconto": 25,
-    "image": "/capas/powerwash-simulator-switch-jogo-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/14053-comprar-powerwash-simulator-switch-jogo-nintendo-eshop/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Red Dead Redemption - Switch 2",
-    "genre": "Action / Adventure",
-    "preco": "R$ 176,83",
-    "precoNormal": "R$ 295",
-    "desconto": 40,
-    "image": "/capas/red-dead-redemption-switch-2-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/21145-comprar-red-dead-redemption-switch-2-nintendo-eshop/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Splatoon Raiders - Switch 2",
-    "genre": "Action / Shooter",
-    "preco": "R$ 268,23",
-    "precoNormal": "R$ 295",
-    "desconto": 9,
-    "image": "/capas/splatoon-raiders-switch-2-nintendo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/19573-comprar-splatoon-raiders-switch-2-nintendo-eshop/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "DayZ Deluxe Edition - PC (Steam)",
-    "genre": "Action / Adventure",
-    "preco": "R$ 218,70",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/dayz-deluxe-edition-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/20949-comprar-dayz-deluxe-edition-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "DayZ Frostline - PC (Steam)",
-    "genre": "Action / Adventure",
-    "preco": "R$ 109,02",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/dayz-frostline-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/17820-comprar-dayz-frostline-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Mortal Shell II - PS5",
-    "genre": "ARPG",
-    "preco": "R$ 160,00",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/mortal-shell-ii.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679623444&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fbundle%2Fmortal-shell-ii-ps5"
-  },
-  {
-    "nome": "Mortal Shell II - Steam",
-    "genre": "ARPG",
-    "preco": "R$ 181,00",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/mortal-shell-ii.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679623454&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fbundle%2Fmortal-shell-ii-steam"
-  },
-  {
-    "nome": "Graveyard Keeper - PC & Mac (Steam)",
-    "genre": "Action / Indie",
-    "preco": "R$ 16,45",
-    "precoNormal": "R$ 60,00",
-    "desconto": 73,
-    "image": "/capas/graveyard-keeper-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/3121-comprar-graveyard-keeper-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "EA Sports FC 27 - Xbox One & Xbox Series X|S",
-    "genre": "Sports / Casual",
-    "preco": "R$ 318,35",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/23585-comprar-ea-sports-fc-27-xbox-series-x-s-xbox-one-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "EA Sports FC 27 - PC (EA App)",
-    "genre": "Sports / Casual",
-    "preco": "R$ 318,35",
-    "precoNormal": "",
-    "desconto": 0,
-    "image": "/capas/ea-sports-fc-27-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/21656-comprar-ea-sports-fc-27-pc-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Palworld - PC (Steam)",
-    "genre": "Action / Adventure",
-    "preco": "R$ 84,85",
-    "precoNormal": "R$ 89,00",
-    "desconto": 5,
-    "image": "/capas/palworld-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/23295-comprar-palworld-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Star Wars Zero Company - Xbox Series X|S",
-    "preco": "R$ 282,97",
-    "precoNormal": "R$ 354",
-    "desconto": 20,
-    "genre": "Action / Sci-Fi",
-    "image": "/capas/star-wars-zero-company-xbox-series-x-s.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/22799-comprar-star-wars-zero-company-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Dead by Daylight - Old Wounds Pack",
-    "preco": "R$ 58,91",
-    "precoNormal": "R$ 70",
-    "desconto": 16,
-    "genre": "Horror / Action",
-    "image": "/capas/dead-by-daylight-old-wounds-pack-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/19850-comprar-dead-by-daylight-old-wounds-pack-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Super Battle Golf",
-    "preco": "R$ 27,06",
-    "precoNormal": "R$ 40",
-    "desconto": 32,
-    "genre": "Sports / Casual",
-    "image": "/capas/super-battle-golf-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/21573-comprar-super-battle-golf-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Wreckfest",
-    "preco": "R$ 22,35",
-    "precoNormal": "R$ 82",
-    "desconto": 73,
-    "genre": "Racing / Action",
-    "image": "/capas/wreckfest-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/582-comprar-wreckfest-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Dark Souls Remastered",
-    "preco": "R$ 175,06",
-    "precoNormal": "",
-    "desconto": 0,
-    "genre": "Action / RPG",
-    "image": "/capas/dark-souls-remastered-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/2364-comprar-dark-souls-remastered-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Mad Max",
-    "preco": "R$ 13,50",
-    "precoNormal": "R$ 90",
-    "desconto": 85,
-    "genre": "Action / Open World",
-    "image": "/capas/mad-max-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/835-comprar-mad-max-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Destiny 2: Renegades",
-    "preco": "R$ 56,02",
-    "precoNormal": "R$ 160",
-    "desconto": 65,
-    "genre": "Action / Shooter",
-    "image": "/capas/destiny-2-renegades-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/20575-comprar-destiny-2-renegades-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Elder Scrolls V: Skyrim Legendary Edition",
-    "preco": "R$ 60,08",
-    "precoNormal": "R$ 149",
-    "desconto": 60,
-    "genre": "Action / RPG",
-    "image": "/capas/the-elder-scrolls-v-skyrim-legendary.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/209-comprar-the-elder-scrolls-v-skyrim-legendary-edition-legendary-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Saints Row: The Third Remastered",
-    "preco": "R$ 17,04",
-    "precoNormal": "R$ 149",
-    "desconto": 89,
-    "genre": "Action / Open World",
-    "image": "/capas/saints-row-the-third-remastered.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8820-comprar-saints-row-the-third-remastered-remastered-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "EA Sports FC 26 The World's Game Edition",
-    "preco": "R$ 149,12",
-    "precoNormal": "R$ 379",
-    "desconto": 61,
-    "genre": "Sports",
-    "image": "/capas/ea-sports-fc-26-the-world-s-game-edition.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/22947-comprar-ea-sports-fc-26-the-world-s-game-edition-pc-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Cities: Skylines II - Ultimate Edition",
-    "preco": "R$ 327,78",
-    "precoNormal": "R$ 341",
-    "desconto": 4,
-    "genre": "Simulation / Strategy",
-    "image": "/capas/cities-skylines-ii-ultimate.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/14364-comprar-cities-skylines-ii-ultimate-edition-ultimate-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Payday 3",
-    "preco": "R$ 76,59",
-    "precoNormal": "R$ 90",
-    "desconto": 15,
-    "genre": "Action / Shooter",
-    "image": "/capas/payday-3-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/6442-comprar-payday-3-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-{
-    "nome": "Age of Mythology: Retold Premium Edition",
-    "preco": "R$ 117,28",
-    "precoNormal": "R$ 169",
-    "desconto": 31,
-    "genre": "Strategy",
-    "image": "/capas/age-of-mytholog.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/17567-comprar-age-of-mythology-retold-premium-edition-premium-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Marvel's Avengers",
-    "preco": "R$ 152,07",
-    "precoNormal": "R$ 177",
-    "desconto": 14,
-    "genre": "Action / Adventure",
-    "image": "/capas/marvel-s-avengers-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/4836-comprar-marvel-s-avengers-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Dark Souls 3 Deluxe Edition",
-    "preco": "R$ 244,05",
-    "precoNormal": "R$ 328",
-    "desconto": 25,
-    "genre": "Action / RPG",
-    "image": "/capas/dark-souls-3-deluxe-edition-deluxe-edition-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/2060-comprar-dark-souls-3-deluxe-edition-deluxe-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Shape of Dreams",
-    "preco": "R$ 39,45",
-    "precoNormal": "R$ 72",
-    "desconto": 45,
-    "genre": "Action / Roguelike",
-    "image": "/capas/shape-of-dreams.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/19401-comprar-shape-of-dreams-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Cuphead",
-    "preco": "R$ 72,47",
-    "precoNormal": "R$ 72,47",
-    "desconto": 0,
-    "genre": "Action / Platformer",
-    "image": "/capas/cuphead-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/2310-comprar-cuphead-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Descenders",
-    "preco": "R$ 9,38",
-    "precoNormal": "R$ 47",
-    "desconto": 80,
-    "genre": "Sports / Racing",
-    "image": "/capas/descenders-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/6259-comprar-descenders-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Disney Dreamlight Valley",
-    "preco": "R$ 94,28",
-    "precoNormal": "R$ 215",
-    "desconto": 56,
-    "genre": "Simulation / Adventure",
-    "image": "/capas/disney-dreamlight-valley-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/10958-comprar-disney-dreamlight-valley-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Bus Simulator 21 Next Stop",
-    "preco": "R$ 8,79",
-    "precoNormal": "R$ 84",
-    "desconto": 90,
-    "genre": "Simulation",
-    "image": "/capas/bus-simulator-21-next-stop.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/9108-comprar-bus-simulator-21-next-stop-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Payday 2",
-    "preco": "R$ 27,06",
-    "precoNormal": "R$ 59",
-    "desconto": 54,
-    "genre": "Shooter / Action",
-    "image": "/capas/payday-2-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/223-comprar-payday-2-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Astroneer",
-    "preco": "R$ 35,91",
-    "precoNormal": "R$ 89",
-    "desconto": 60,
-    "genre": "Adventure / Sandbox",
-    "image": "/capas/astroneer-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/3298-comprar-astroneer-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "LEGO Jurassic World",
-    "preco": "R$ 8,20",
-    "precoNormal": "R$ 90",
-    "desconto": 91,
-    "genre": "Action / Adventure",
-    "image": "/capas/lego-jurassic-world-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/724-comprar-lego-jurassic-world-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Elder Scrolls Online",
-    "preco": "R$ 33,08",
-    "precoNormal": "R$ 62",
-    "desconto": 46,
-    "genre": "MMORPG / RPG",
-    "image": "/capas/the-elder-scrolls-online-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/16964-comprar-the-elder-scrolls-online-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Hunt: Showdown 1896",
-    "preco": "R$ 49,47",
-    "precoNormal": "R$ 88",
-    "desconto": 44,
-    "genre": "Shooter / Extraction",
-    "image": "/capas/hunt-showdown-1896-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/2464-comprar-hunt-showdown-1896-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Beyond: Two Souls",
-    "preco": "R$ 10,55",
-    "precoNormal": "R$ 117",
-    "desconto": 91,
-    "genre": "Interactive Drama / Adventure",
-    "image": "/capas/beyond-two-souls-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/7000-comprar-beyond-two-souls-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Middle-earth: Shadow of War Definitive Edition",
-    "preco": "R$ 23,53",
-    "precoNormal": "R$ 280",
-    "desconto": 92,
-    "genre": "Action / RPG",
-    "image": "/capas/middle-earth-shadow-of-war-definitive-edition-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/3155-comprar-middle-earth-shadow-of-war-definitive-edition-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Heavy Rain",
-    "preco": "R$ 8,79",
-    "precoNormal": "R$ 90",
-    "desconto": 90,
-    "genre": "Interactive Drama / Adventure",
-    "image": "/capas/heavy-rain-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/6999-comprar-heavy-rain-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Card Shop Simulator Multiplayer",
-    "preco": "R$ 23,53",
-    "precoNormal": "R$ 38",
-    "desconto": 39,
-    "genre": "Simulation / Management",
-    "image": "/capas/card-shop-simulator-multiplayer-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/20210-comprar-card-shop-simulator-multiplayer-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Assassin's Creed Shadows Premium Edition",
-    "preco": "R$ 208,67",
-    "precoNormal": "R$ 550",
-    "desconto": 62,
-    "genre": "Action / Adventure",
-    "image": "/capas/assassin-s-creed-shadows-premium-edition.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/21500-comprar-assassin-s-creed-shadows-premium-edition-pc-ubisoft-connect/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "7 Days to Die",
-    "preco": "R$ 96,64",
-    "precoNormal": "R$ 122",
-    "desconto": 21,
-    "genre": "Survival / Horror",
-    "image": "/capas/7-days-to-die-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/1028-comprar-7-days-to-die-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "DEVOUR",
-    "preco": "R$ 42,40",
-    "precoNormal": "R$ 42,40",
-    "desconto": 0,
-    "genre": "Horror / Co-op",
-    "image": "/capas/devour-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8688-comprar-devour-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "MENACE",
-    "preco": "R$ 101,95",
-    "precoNormal": "R$ 101,95",
-    "desconto": 0,
-    "genre": "Strategy / Tactical",
-    "image": "/capas/menace.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/19423-comprar-menace-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "No, I'm not a Human",
-    "preco": "R$ 35,32",
-    "precoNormal": "R$ 47",
-    "desconto": 25,
-    "genre": "Horror / Indie",
-    "image": "/capas/no-i-m-not-a-human-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/19144-comprar-no-i-m-not-a-human-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Tekken 8",
-    "preco": "R$ 107,37",
-    "precoNormal": "R$ 177",
-    "desconto": 39,
-    "genre": "Fighting / Action",
-    "image": "/capas/tekken-8-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/9579-comprar-tekken-8-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Sims 4 Adventure Awaits",
-    "preco": "R$ 131,43",
-    "precoNormal": "R$ 236",
-    "desconto": 44,
-    "genre": "Simulation",
-    "image": "/capas/the-sims-4-adventure-awaits.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/20257-comprar-the-sims-4-adventure-awaits-pc-mac-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Worms: W.M.D",
-    "preco": "R$ 17,63",
-    "precoNormal": "R$ 160",
-    "desconto": 89,
-    "genre": "Strategy / Artillery",
-    "image": "/capas/worms-w-m-d.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/970-comprar-worms-w-m-d-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Automobilista 2",
-    "preco": "R$ 49,47",
-    "precoNormal": "R$ 120",
-    "desconto": 59,
-    "genre": "Racing / Simulation",
-    "image": "/capas/automobilista-2-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8287-comprar-automobilista-2-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "LEGO Star Wars: The Force Awakens Deluxe Edition",
-    "preco": "R$ 6,43",
-    "precoNormal": "R$ 130",
-    "desconto": 95,
-    "genre": "Action / Adventure",
-    "image": "/capas/lego-starwars-the-forceawakens.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/5111-comprar-lego-star-wars-the-force-awakens-deluxe-edition-deluxe-edition-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "We Were Here Together",
-    "preco": "R$ 18,22",
-    "precoNormal": "R$ 42",
-    "desconto": 57,
-    "genre": "Adventure / Puzzle",
-    "image": "/capas/we-were-here-together.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8307-comprar-we-were-here-together-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Lies of P",
-    "preco": "R$ 123,18",
-    "precoNormal": "R$ 250",
-    "desconto": 51,
-    "genre": "Action / Souls-like",
-    "image": "/capas/lies-of-p-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/8855-comprar-lies-of-p-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Dying Light 2 Stay Human Reloaded Edition",
-    "preco": "R$ 76,59",
-    "precoNormal": "R$ 249",
-    "desconto": 69,
-    "genre": "Action / Survival",
-    "image": "/capas/dying-light-2-stay-human-reloaded.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/15968-comprar-dying-light-2-stay-human-reloaded-edition-reloaded-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Valheim",
-    "preco": "R$ 117,87",
-    "precoNormal": "R$ 117,87",
-    "desconto": 0,
-    "genre": "Survival / Open World",
-    "image": "/capas/valheim-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/7119-comprar-valheim-pc-mac-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Sims 4 Get To Work",
-    "preco": "R$ 71,29",
-    "precoNormal": "R$ 179",
-    "desconto": 60,
-    "genre": "Simulation",
-    "image": "/capas/the-sims-4-get-to-work-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/729-comprar-the-sims-4-get-to-work-pc-mac-jogo-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Terraria",
-    "preco": "R$ 43,57",
-    "precoNormal": "R$ 43,57",
-    "desconto": 0,
-    "genre": "Sandbox / Adventure",
-    "image": "/capas/terraria-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/932-comprar-terraria-pc-mac-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Overcooked! 2",
-    "preco": "R$ 26,47",
-    "precoNormal": "R$ 60",
-    "desconto": 56,
-    "genre": "Simulation / Arcade",
-    "image": "/capas/overcooked-2.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/2705-comprar-overcooked-2-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Sims 4 For Rent",
-    "preco": "R$ 68,93",
-    "precoNormal": "R$ 236",
-    "desconto": 71,
-    "genre": "Simulation",
-    "image": "/capas/the-sims-4-for-rent.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/15236-comprar-the-sims-4-for-rent-pc-mac-jogo-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Helldivers 2",
-    "preco": "R$ 117,87",
-    "precoNormal": "R$ 200",
-    "desconto": 41,
-    "genre": "Action / Shooter",
-    "image": "/capas/helldivers-2-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/15848-comprar-helldivers-2-pc-jogo-steam-latin-america/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Warhounds",
-    "preco": "R$ 70,70",
-    "precoNormal": "R$ 115",
-    "desconto": 39,
-    "genre": "Action / Shooter",
-    "image": "/capas/warhounds-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/21951-comprar-warhounds-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Sims 4 Horse Ranch",
-    "preco": "R$ 76,59",
-    "precoNormal": "R$ 236",
-    "desconto": 68,
-    "genre": "Simulation",
-    "image": "/capas/the-sims-4-horse-ranch.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/14273-comprar-the-sims-4-horse-ranch-pc-mac-jogo-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Battlefield 6",
-    "preco": "R$ 301,84",
-    "precoNormal": "R$ 413",
-    "desconto": 27,
-    "genre": "Action / Shooter",
-    "image": "/capas/battlefield-6-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/17306-comprar-battlefield-6-pc-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Chernobylite Premium Edition",
-    "preco": "R$ 9,96",
-    "precoNormal": "R$ 170",
-    "desconto": 94,
-    "genre": "Survival / RPG",
-    "image": "/capas/chernobylite-premium-edition.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/21863-comprar-chernobylite-premium-edition-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "MOUSE: P.I. For Hire",
-    "preco": "R$ 117,87",
-    "precoNormal": "R$ 117,87",
-    "desconto": 0,
-    "genre": "Action / FPS",
-    "image": "/capas/mouse-p-i-for-hire-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/15600-comprar-mouse-p-i-for-hire-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Garry's Mod",
-    "preco": "R$ 35,91",
-    "precoNormal": "R$ 59",
-    "desconto": 39,
-    "genre": "Sandbox / Simulation",
-    "image": "/capas/garry-s-mod-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/6401-comprar-garry-s-mod-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Satisfactory",
-    "preco": "R$ 162,68",
-    "precoNormal": "R$ 230",
-    "desconto": 29,
-    "genre": "Simulation / Open World",
-    "image": "/capas/satisfactory-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/4229-comprar-satisfactory-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Assetto Corsa",
-    "preco": "R$ 18,81",
-    "precoNormal": "R$ 60",
-    "desconto": 69,
-    "genre": "Simulation / Racing",
-    "image": "/capas/assetto-corsa-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/1263-comprar-assetto-corsa-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Microsoft Flight Simulator 2024",
-    "preco": "R$ 253,49",
-    "precoNormal": "R$ 300",
-    "desconto": 16,
-    "genre": "Simulation",
-    "image": "/capas/microsoft-flight-simulator-2024.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/14345-comprar-microsoft-flight-simulator-2024-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Indika",
-    "preco": "R$ 5,84",
-    "precoNormal": "R$ 74",
-    "desconto": 92,
-    "genre": "Adventure / Indie",
-    "image": "/capas/indika-pc-jogo.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/15204-comprar-indika-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Red Dead Redemption 2",
-    "preco": "R$ 78,95",
-    "precoNormal": "R$ 354",
-    "desconto": 78,
-    "genre": "Action / Adventure",
-    "image": "/capas/red-dead-redemption-2-pc-jogo-rockstar.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/5679-comprar-red-dead-redemption-2-pc-jogo-rockstar/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Roadside Research",
-    "preco": "R$ 22,94",
-    "precoNormal": "R$ 32",
-    "desconto": 28,
-    "genre": "Simulation / Indie",
-    "image": "/capas/roadside-research-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/20495-comprar-roadside-research-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "ReStory: Chill Electronics Repairs",
-    "preco": "R$ 36,50",
-    "precoNormal": "R$ 50",
-    "desconto": 27,
-    "genre": "Simulation / Casual",
-    "image": "/capas/restory-chill-electronics-repairs-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/23410-comprar-restory-chill-electronics-repairs-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Crimson Desert",
-    "preco": "R$ 174,47",
-    "precoNormal": "R$ 350",
-    "desconto": 50,
-    "genre": "Action / RPG",
-    "image": "/capas/crimson-desert-pc.jpg",
-    "linkBase": "https://www.instant-gaming.com/pt/22142-comprar-crimson-desert-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Dishonored",
-    "preco": "R$ 29,99",
-    "precoNormal": "R$ 29,99",
-    "desconto": 0,
-    "genre": "Action / Stealth",
-    "image": "/capas/dishonored.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796901&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fdishonored"
-  },
-  {
-    "nome": "Borderlands 2 Season Pass",
-    "preco": "R$ 44,99",
-    "precoNormal": "R$ 44,99",
-    "desconto": 0,
-    "genre": "Action / RPG",
-    "image": "/capas/borderlands2.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796930&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fborderlands-2-season-pass"
-  },
-  {
-    "nome": "Men of War: Red Tide",
-    "preco": "R$ 19,49",
-    "precoNormal": "R$ 19,49",
-    "desconto": 0,
-    "genre": "Strategy / RTS",
-    "image": "/capas/men-of-war-red-tide.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796904&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fmen-of-war-red-tide"
-  },
-  {
-    "nome": "Far Cry 3",
-    "preco": "R$ 59,99",
-    "precoNormal": "R$ 59,99",
-    "desconto": 0,
-    "genre": "Action / Shooter",
-    "image": "/capas/farcry3.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796927&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Ffar-cry-3"
-  },
-  {
-    "nome": "LEGO The Lord of the Rings",
-    "preco": "R$ 89,99",
-    "precoNormal": "R$ 89,99",
-    "desconto": 0,
-    "genre": "Action / Adventure",
-    "image": "/capas/lego-thelordoftherings.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796999&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-the-lord-of-the-rings"
-  },
-{
-    "nome": "Worms Revolution",
-    "preco": "R$ 15,97",
-    "precoNormal": "R$ 79,90",
-    "desconto": 80,
-    "genre": "Strategy / Artillery",
-    "image": "/capas/worms-revolution.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796979&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fworms-revolution"
-  },
-  {
-    "nome": "Minecraft: Java and Bedrock Edition",
-    "preco": "R$ 93,90",
-    "precoNormal": "R$ 93,90",
-    "desconto": 0,
-    "genre": "Sandbox / Survival",
-    "image": "/capas/minecraft-java.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679617878&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fminecraft-java-and-bedrock-edition"
-  },
-  {
-    "nome": "Puyo Puyo Tetris",
-    "preco": "R$ 36,99",
-    "precoNormal": "R$ 36,99",
-    "desconto": 0,
-    "genre": "Puzzle / Action",
-    "image": "/capas/tetris.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679619954&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fpuyo-puyo-tetris"
-  },
-  {
-    "nome": "LEGO Star Wars: The Force Awakens",
-    "preco": "R$ 89,99",
-    "precoNormal": "R$ 89,99",
-    "desconto": 0,
-    "genre": "Action / Adventure",
-    "image": "/capas/lego-starwars-the-forceawakens.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679612774&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-star-wars-force-awakens"
-  },
-  {
-    "nome": "LEGO Star Wars: The Skywalker Saga",
-    "preco": "R$ 199,99",
-    "precoNormal": "R$ 199,99",
-    "desconto": 0,
-    "genre": "Action / Adventure",
-    "image": "/capas/lego-starwars-the-skywalker.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679617139&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-star-wars-the-skywalker-saga"
-  },
-  {
-  "nome": "LEGO Batman Trilogy",
-  "preco": "R$ 20,00",
-  "precoNormal": "R$ 229,99",
-  "desconto": 91,
-  "genre": "Action / Adventure",
-  "image": "/capas/lego-batman-trilogy.jpg",
-  "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679621801&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-batman-trilogy"
-},
-{
-  "nome": "XCOM: Enemy Unknown",
-  "preco": "R$ 27,99",
-  "precoNormal": "R$ 69,99",
-  "desconto": 60,
-  "genre": "Strategy / Tactical",
-  "image": "/capas/xcom.jpg",
-  "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796940&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fxcom-enemy-unknown"
-},
-  {
-  "nome": "Grand Theft Auto VI - Xbox",
-  "preco": "R$ 450,00",
-  "precoNormal": "R$ 450,00",
-  "desconto": 0,
-  "genre": "AAA / Blockbuster",
-  "image": "/capas/gtavi-xbox.jpg",
-  "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.467963194&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fbundle%2Fgrand-theft-auto-6-xbox"
-},
-  {
-    "nome": "Viking: Battle for Asgard",
-    "preco": "R$ 39,99",
-    "precoNormal": "R$ 39,99",
-    "desconto": 0,
-    "genre": "Ação / RPG",
-    "image": "/capas/viking.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796993&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fviking-battle-for-asgard"
-  },
-  {
-    "nome": "Hearts of Iron III",
-    "preco": "R$ 39,99",
-    "precoNormal": "R$ 39,99",
-    "desconto": 0,
-    "genre": "Estratégia",
-    "image": "/capas/hearts-of-iron-iii.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796950&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fhearts-of-iron-3-their-finest-hour"
-  },
-  {
-    "nome": "Mount & Blade Warband: Napoleonic Wars",
-    "preco": "R$ 39,99",
-    "precoNormal": "R$ 39,99",
-    "desconto": 0,
-    "genre": "Estratégia / Ação",
-    "image": "/capas/mount-blade-napoleonic-wars.jpg",
-    "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796651&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fmount-blade-warband-napoleonic-wars"
-  },
-  {
-    "nome": "UFC 6 - Xbox Series X|S",
-    "preco": "R$ 312,45",
-    "precoNormal": "R$ 472,00",
-    "desconto": 34,
-    "genre": "Sports / Fighting",
-    "image": "/capas/ufc-6-xbox-series-x-s.jpg",
-    "video": "/videos/ufc-6.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/22459-comprar-ufc-6-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Forza Horizon 6 Premium Edition - PC & Xbox Series X|S",
-    "preco": "R$ 437,46",
-    "precoNormal": "R$ 708,00",
-    "desconto": 38,
-    "genre": "Racing / Simulation",
-    "image": "/capas/forza-horizon-6-premium-edition-pc-xbox.jpg",
-    "video": "/videos/forza-horizon-6.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/21622-comprar-forza-horizon-6-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Final Fantasy VII Remake - PS4",
-    "preco": "R$ 176,30",
-    "precoNormal": "R$ 413,00",
-    "desconto": 57,
-    "genre": "Action / RPG",
-    "image": "/capas/final-fantasy-vii-remake-remake-playstation-4.jpg",
-    "video": "/videos/final-fantasy-vii-remake.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/4273-comprar-final-fantasy-vii-remake-remake-playstation-4-jogo-playstation-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Kentucky Route Zero: TV Edition - PS4 & PS5",
-    "preco": "R$ 129,07",
-    "precoNormal": "R$ 130,00",
-    "desconto": 1,
-    "genre": "Adventure / Indie",
-    "image": "/capas/kentucky-route-zero-tv-edition-tv-edition-playstation-4.jpg",
-    "video": "/videos/kentucky-route-zero.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/6127-comprar-kentucky-route-zero-tv-edition-tv-edition-playstation-4-playstation-5-jogo-playstation-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Assassin's Creed Shadows - PS5",
-    "preco": "R$ 224,00",
-    "precoNormal": "R$ 472,00",
-    "desconto": 53,
-    "genre": "Action / Adventure",
-    "image": "/capas/assassin-s-creed-shadows-playstation-5.jpg",
-    "video": "/videos/assassin-s-creed-shadows.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/20620-comprar-assassin-s-creed-shadows-playstation-5-playstation-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Deathloop - PS5",
-    "preco": "R$ 350,78",
-    "precoNormal": "R$ 354,00",
-    "desconto": 1,
-    "genre": "Action / Shooter",
-    "image": "/capas/deathloop-playstation-5.jpg",
-    "video": "/videos/deathloop.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/5977-comprar-deathloop-playstation-5-jogo-playstation-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Nioh 2: The Complete Edition - PS4 & PS5",
-    "preco": "R$ 235,80",
-    "precoNormal": "R$ 354,00",
-    "desconto": 33,
-    "genre": "Action / RPG",
-    "image": "/capas/nioh-2-the-complete-edition-complete-edition-playstation-4.jpg",
-    "video": "/videos/nioh-2.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/8195-comprar-nioh-2-the-complete-edition-complete-edition-playstation-4-playstation-5-jogo-playstation-store/?igr=gamer-56c7016"
-  },
-  {
-  "nome": "Horizon Forbidden West - PS4 & PS5",
-  "preco": "R$ 214,69",
-  "precoNormal": "R$ 472,00",
-  "desconto": 54,
-  "genre": "Action / Adventure",
-  "image": "/capas/horizon-forbidden-west.jpg",
-  "video": "/videos/horizon-forbidden-west.mp4",
-  "linkBase": "https://www.instant-gaming.com/pt/8893-comprar-horizon-forbidden-west-playstation-5-playstation-4-jogo-playstation-store/?igr=gamer-56c7016"
-},
-  {
-    "nome": "Yakuza Kiwami 2 - PS5",
-    "preco": "R$ 73,71",
-    "precoNormal": "R$ 118,00",
-    "desconto": 37,
-    "genre": "Action / Adventure",
-    "image": "/capas/yakuza-kiwami-2-playstation-5.jpg",
-    "video": "/videos/yakuza-kiwami-2.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/21331-comprar-yakuza-kiwami-2-playstation-5-playstation-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Street Fighter V: Champion Edition Upgrade Kit Bundle (PS4 & PS5)",
-    "preco": "R$ 38,86",
-    "precoNormal": "R$ 118,00",
-    "desconto": 67,
-    "genre": "Action / Fighting",
-    "image": "/capas/street-fighter-v-champion-edition-upgrade-kit-bundle-playstation-5.jpg",
-    "video": "/videos/street-fighter-v.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/23222-comprar-street-fighter-v-champion-edition-upgrade-kit-bundle-playstation-5-playstation-4-playstation-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Phantom Blade Zero (PS5)",
-    "preco": "R$ 254,12",
-    "precoNormal": "R$ 349,00",
-    "desconto": 27,
-    "genre": "Action / RPG",
-    "image": "/capas/phantom-blade-zero-playstation-5.jpg",
-    "video": "/videos/phantom-blade-zero.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/17041-comprar-phantom-blade-zero-playstation-5-playstation-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Grand Theft Auto VI (PS5)",
-    "preco": "R$ 371,42",
-    "precoNormal": "R$ 472,00",
-    "desconto": 21,
-    "genre": "AAA / Blockbuster",
-    "image": "/capas/grand-theft-auto-vi-playstation-5.jpg",
-    "video": "/videos/gta-6.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/15506-comprar-grand-theft-auto-vi-playstation-5-playstation-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Sims 4 Cats & Dogs - PC & Mac (EA App)",
-    "preco": "R$ 71,88",
-    "precoNormal": "R$ 179,00",
-    "desconto": 60,
-    "genre": "Simulation",
-    "image": "/capas/the-sims-4-cats-dogs.jpg",
-    "video": "/videos/the-sims-4.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/2248-comprar-the-sims-4-cats-dogs-pc-mac-jogo-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Mortal Kombat 11 - PC (Steam)",
-    "preco": "R$ 18,81",
-    "precoNormal": "R$ 230,00",
-    "desconto": 92,
-    "genre": "Action / Fighting",
-    "image": "/capas/mortal-kombat-11-pc.jpg",
-    "video": "/videos/mortal-kombat-11.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/3339-comprar-mortal-kombat-11-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Remnant 2 - Ultimate Edition - PC (Steam)",
-    "preco": "R$ 76,59",
-    "precoNormal": "R$ 413,00",
-    "desconto": 81,
-    "genre": "Action / Shooter",
-    "image": "/capas/remnant-2-ultimate-edition-ultimate-edition.jpg",
-    "video": "/videos/remnant-2.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/14372-comprar-remnant-2-ultimate-edition-ultimate-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Hollow Knight - PC & Mac (Steam)",
-    "preco": "R$ 45,93",
-    "precoNormal": "R$ 47,00",
-    "desconto": 2,
-    "genre": "Action / Adventure",
-    "image": "/capas/hollow-knight.jpg",
-    "video": "/videos/hollow-knight.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/2198-comprar-hollow-knight-pc-mac-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "PlateUp! - PC (Steam)",
-    "preco": "R$ 13,50",
-    "precoNormal": "R$ 60,00",
-    "desconto": 78,
-    "genre": "Simulation / Strategy",
-    "image": "/capas/plateup-pc.jpg",
-    "video": "/videos/plateup.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/12605-comprar-plateup-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Lord of the Rings: Return to Moria - PC (Steam)",
-    "preco": "R$ 17,04",
-    "precoNormal": "R$ 144,00",
-    "desconto": 88,
-    "genre": "Survival / Crafting",
-    "image": "/capas/the-lord-of-the-rings-return-to-moria.jpg",
-    "video": "/videos/lotr-moria.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/14332-comprar-the-lord-of-the-rings-return-to-moria-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Assetto Corsa Competizione - PC (Steam)",
-    "preco": "R$ 22,35",
-    "precoNormal": "R$ 159,00",
-    "desconto": 86,
-    "genre": "Racing / Simulation",
-    "image": "/capas/assetto-corsa-competizione.jpg",
-    "video": "/videos/assetto-corsa.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/3153-comprar-assetto-corsa-competizione-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "IRON NEST: Heavy Turret Simulator - PC (Steam)",
-    "preco": "R$ 82,49",
-    "precoNormal": "R$ 82,49",
-    "desconto": 0,
-    "genre": "Simulation / Strategy",
-    "image": "/capas/iron-nest-heavy-turret-simulator.jpg",
-    "video": "/videos/iron-nest.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/21900-comprar-iron-nest-heavy-turret-simulator-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Outlast Trials - PC (Steam)",
-    "preco": "R$ 70,70",
-    "precoNormal": "R$ 108,00",
-    "desconto": 35,
-    "genre": "Survival Horror / Action",
-    "image": "/capas/the-outlast-trials.jpg",
-    "video": "/videos/the-outlast-trials.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/5895-comprar-the-outlast-trials-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Kingdom Hearts Integrum Masterpiece - PC (Steam)",
-    "preco": "R$ 220,47",
-    "precoNormal": "R$ 420,00",
-    "desconto": 48,
-    "genre": "Action / RPG",
-    "image": "/capas/kingdom-hearts-integrum-masterpiece.jpg",
-    "video": "/videos/kingdom-hearts.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/16875-comprar-kingdom-hearts-integrum-masterpiece-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Construction Simulator - PC (Steam)",
-    "preco": "R$ 15,86",
-    "precoNormal": "R$ 74,00",
-    "desconto": 79,
-    "genre": "Simulation",
-    "image": "/capas/construction-simulator-pc.jpg",
-    "video": "/videos/construction-simulator.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/12936-comprar-construction-simulator-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Human: Fall Flat - PC & Mac (Steam)",
-    "preco": "R$ 7,02",
-    "precoNormal": "R$ 38,00",
-    "desconto": 82,
-    "genre": "Puzzle / Platformer",
-    "image": "/capas/human-fall-flat-pc.jpg",
-    "video": "/videos/human-fall-flat.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/1611-comprar-human-fall-flat-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "PEAK - PC (Steam)",
-    "preco": "R$ 32,96",
-    "precoNormal": "R$ 45,00",
-    "desconto": 27,
-    "genre": "Adventure / Indie",
-    "image": "/capas/peak-pc.jpg",
-    "video": "/videos/peak.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/19648-comprar-peak-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Shift At Midnight - PC (Steam)",
-    "preco": "R$ 48,29",
-    "precoNormal": "R$ 60,00",
-    "desconto": 20,
-    "genre": "Horror / Indie",
-    "image": "/capas/shift-at-midnight-pc.jpg",
-    "video": "/videos/shift-at-midnight.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/22643-comprar-shift-at-midnight-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Hell Clock - PC (Steam)",
-    "preco": "R$ 5,84",
-    "precoNormal": "R$ 60,00",
-    "desconto": 90,
-    "genre": "Action / Indie",
-    "image": "/capas/hell-clock-pc.jpg",
-    "video": "/videos/hell-clock.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/19798-comprar-hell-clock-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Minecraft Dungeons II - PC & Xbox Series X|S",
-    "preco": "R$ 141,46",
-    "precoNormal": "R$ 177,00",
-    "desconto": 20,
-    "genre": "Action / RPG",
-    "image": "/capas/minecraft-dungeons-ii-pc.jpg",
-    "video": "/videos/minecraft-dungeons-ii.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/18828-comprar-minecraft-dungeons-ii-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Farming Simulator 25: Beans & Alpacas",
-    "preco": "R$ 106,08",
-    "precoNormal": "R$ 132,00",
-    "desconto": 20,
-    "genre": "Simulation",
-    "image": "/capas/farming-simulator-25-beans-alpacas.jpg",
-    "video": "/videos/farming-simulator-25.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/23241-comprar-farming-simulator-25-beans-alpacas-pc-mac-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Gears of War: E-Day Premium Edition",
-    "preco": "R$ 412,69",
-    "precoNormal": "R$ 590,00",
-    "desconto": 30,
-    "genre": "Action / Shooter",
-    "image": "/capas/gears-of-war-e-day-premium.jpg",
-    "video": "/videos/gears-of-war-e-day.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/22979-comprar-gears-of-war-e-day-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "NBA 2K27 Deluxe Edition",
-    "preco": "R$ 436,28",
-    "precoNormal": "R$ 590,00",
-    "desconto": 26,
-    "genre": "Sports / Simulation",
-    "image": "/capas/nba-2k27-deluxe-edition.jpg",
-    "video": "/videos/nba-2k27.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/23580-comprar-nba-2k27-deluxe-edition-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "MARVEL Tōkon: Fighting Souls",
-    "preco": "R$ 247,59",
-    "precoNormal": "R$ 340,00",
-    "desconto": 27,
-    "genre": "Action / Fighting",
-    "image": "/capas/marvel-tokon-fighting-souls.jpg",
-    "video": "/videos/marvel-tokon.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/22627-comprar-marvel-tokon-fighting-souls-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Outbound",
-    "preco": "R$ 83,08",
-    "precoNormal": "R$ 83,08",
-    "desconto": 0,
-    "genre": "Adventure / Simulation",
-    "image": "/capas/outbound-pc.jpg",
-    "video": "/videos/outbound.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/16817-comprar-outbound-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Pragmata",
-    "preco": "R$ 193,93",
-    "precoNormal": "R$ 259,00",
-    "desconto": 25,
-    "genre": "Action / Adventure",
-    "image": "/capas/pragmata-pc.jpg",
-    "video": "/videos/pragmata.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/21523-comprar-pragmata-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "DragonSword: Awakening",
-    "preco": "R$ 123,77",
-    "precoNormal": "R$ 123,77",
-    "desconto": 0,
-    "genre": "Action / RPG",
-    "image": "/capas/dragonsword-awakening.jpg",
-    "video": "/videos/dragonsword.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/22405-comprar-dragonsword-awakening-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Resident Evil Requiem",
-    "preco": "R$ 182,73",
-    "precoNormal": "R$ 299,00",
-    "desconto": 39,
-    "genre": "Survival Horror / Action",
-    "image": "/capas/resident-evil-requiem.jpg",
-    "video": "/videos/resident-evil-requiem.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/20992-comprar-resident-evil-requiem-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "No More Room In Hell 2",
-    "preco": "R$ 79,54",
-    "precoNormal": "R$ 89,00",
-    "desconto": 11,
-    "genre": "Survival / Action",
-    "image": "/capas/no-more-room-in-hell-2.jpg",
-    "video": "/videos/no-more-room-in-hell-2.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/12335-comprar-no-more-room-in-hell-2-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "HumanitZ",
-    "preco": "R$ 26,53",
-    "precoNormal": "R$ 58,00",
-    "desconto": 54,
-    "genre": "Survival / Action",
-    "image": "/capas/humanitz-pc.jpg",
-    "video": "/videos/humanitz.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/21754-comprar-humanitz-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Grand Theft Auto V (Enhanced)",
-    "preco": "R$ 57,73",
-    "precoNormal": "R$ 150,00",
-    "desconto": 61,
-    "genre": "AAA / Blockbuster",
-    "image": "/capas/gta-5.jpg",
-    "video": "/videos/gta-5.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/4211-comprar-grand-theft-auto-v-enhanced-pc-rockstar/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Roblox Card - 2000 Robux",
-    "preco": "R$ 129,66",
-    "precoNormal": "R$ 147,00",
-    "desconto": 12,
-    "genre": "Gift Card",
-    "image": "/capas/roblox-card-2000-robux-pc-cover.jpg",
-    "video": "/videos/roblox.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/15168-comprar-roblox-card-2000-robux-pc/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Minecraft: Java & Bedrock Edition",
-    "preco": "R$ 94,87",
-    "precoNormal": "R$ 177,00",
-    "desconto": 46,
-    "genre": "Sandbox",
-    "image": "/capas/minecraft.jpg",
-    "video": "/videos/minecraft.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/442-comprar-minecraft-java-bedrock-edition-pc-mac/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Marvel's Spider-Man: Miles Morales",
-    "preco": "R$ 91,93",
-    "precoNormal": "R$ 295,00",
-    "desconto": 69,
-    "genre": "AAA / Blockbuster",
-    "image": "/capas/marvel-s-spider-man.jpg",
-    "video": "/videos/spider-man-miles-morales.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/12953-comprar-marvel-s-spider-man-miles-morales-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Red Dead Redemption 2: Ultimate Edition",
-    "preco": "R$ 105,49",
-    "precoNormal": "R$ 500,00",
-    "desconto": 79,
-    "genre": "AAA / Blockbuster",
-    "image": "/capas/red-dead-redemption-2-ultimate.jpg",
-    "video": "/videos/red-dead-2.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/5653-comprar-red-dead-redemption-2-ultimate-edition-ultimate-edition-pc-jogo-rockstar/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Mount & Blade II: Bannerlord",
-    "preco": "R$ 92,51",
-    "precoNormal": "R$ 295,00",
-    "desconto": 69,
-    "genre": "RPG / Strategy",
-    "image": "/capas/mount-blade-ii-bannerlord.jpg",
-    "video": "/videos/bannerlord.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/761-comprar-mount-blade-ii-bannerlord-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Forza Horizon 6 - Xbox & PC",
-    "preco": "R$ 286,51",
-    "precoNormal": "R$ 413,00",
-    "desconto": 31,
-    "genre": "Racing / Blockbuster",
-    "image": "/capas/forza.jpg",
-    "video": "/videos/forza-horizon-6.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/19535-comprar-forza-horizon-6-xbox-series-x-s-pc-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Cyberpunk 2077: Ultimate Edition",
-    "preco": "R$ 173,30",
-    "precoNormal": "R$ 531,00",
-    "desconto": 67,
-    "genre": "RPG / Action",
-    "image": "/capas/cyberpunk-2077.jpg",
-    "video": "/videos/cyberpunk-2077.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/14769-comprar-cyberpunk-2077-ultimate-edition-ultimate-edition-pc-jogo-gog-com/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Warhammer 40,000: Space Marine 2",
-    "preco": "R$ 101,36",
-    "precoNormal": "R$ 200,00",
-    "desconto": 49,
-    "genre": "Action / Shooter",
-    "image": "/capas/warhammer-40-000.jpg",
-    "video": "/videos/space-marine-2.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/10140-comprar-warhammer-40-000-space-marine-2-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Arma Reforger",
-    "preco": "R$ 150,30",
-    "precoNormal": "R$ 177,00",
-    "desconto": 15,
-    "genre": "Simulation / Shooter",
-    "image": "/capas/arma-reforger-pc.jpg",
-    "video": "/videos/arma-reforger.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/11273-comprar-arma-reforger-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Mount & Blade II: Bannerlord - War Sails",
-    "preco": "R$ 79,54",
-    "precoNormal": "R$ 120,00",
-    "desconto": 34,
-    "genre": "RPG / Strategy",
-    "image": "/capas/mount-blade-ii-bannerlord-war-sails.jpg",
-    "video": "/videos/bannerlord-warsails.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/18942-comprar-mount-blade-ii-bannerlord-war-sails-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Squad",
-    "preco": "R$ 76,00",
-    "precoNormal": "R$ 289,00",
-    "desconto": 74,
-    "genre": "Shooter",
-    "image": "/capas/jogo-steam-squad.jpg",
-    "video": "/videos/squad.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/1309-comprar-jogo-steam-squad/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Crusader Kings III",
-    "preco": "R$ 68,34",
-    "precoNormal": "R$ 189,00",
-    "desconto": 64,
-    "genre": "Strategy",
-    "image": "/capas/crusader-kings-iii-pc.jpg",
-    "video": "/videos/crusader-kings-3.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/5692-comprar-crusader-kings-iii-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "V Rising",
-    "preco": "R$ 37,68",
-    "precoNormal": "R$ 102,00",
-    "desconto": 63,
-    "genre": "Action / RPG",
-    "image": "/capas/v-rising.jpg",
-    "video": "/videos/v-rising.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/11030-comprar-v-rising-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Sims 4 Businesses & Hobbies",
-    "preco": "R$ 109,02",
-    "precoNormal": "R$ 236,00",
-    "desconto": 54,
-    "genre": "Simulation",
-    "image": "/capas/the-sims-4-businesses-hobbies.jpg",
-    "video": "/videos/the-sims-4.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/18677-comprar-the-sims-4-businesses-hobbies-pc-mac-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Days Gone",
-    "preco": "R$ 76,00",
-    "precoNormal": "R$ 200,00",
-    "desconto": 62,
-    "genre": "Action / Adventure",
-    "image": "/capas/days-gone.jpg",
-    "video": "/videos/days-gone.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/6791-comprar-days-gone-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Age of Empires II: Definitive Edition",
-    "preco": "R$ 61,26",
-    "precoNormal": "R$ 90,00",
-    "desconto": 32,
-    "genre": "Strategy",
-    "image": "/capas/age-of-empires-ii.jpg",
-    "video": "/videos/age-of-empires-2.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/4820-comprar-age-of-empires-ii-definitive-edition-definitive-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "LEGO Marvel Super Heroes 2 Deluxe Edition",
-    "preco": "R$ 17,63",
-    "precoNormal": "R$ 160,00",
-    "desconto": 89,
-    "genre": "Action / Adventure",
-    "image": "/capas/lego-marvel-super-heroes-2.jpg",
-    "video": "/videos/lego-marvel-2.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/8453-comprar-lego-marvel-super-heroes-2-deluxe-edition-deluxe-edition-pc-mac-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Sims 3",
-    "preco": "R$ 9,96",
-    "precoNormal": "R$ 73,00",
-    "desconto": 86,
-    "genre": "Simulation",
-    "image": "/capas/os-sims-3-pc.jpg",
-    "video": "/videos/the-sims-3.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/51-comprar-os-sims-3-pc-ea-app/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Windows 11 Home - PC",
-    "preco": "R$ 147,35",
-    "precoNormal": "R$ 855,00",
-    "desconto": 83,
-    "genre": "Software",
-    "image": "/capas/windows-11-home-pc.jpg",
-    "video": "",
-    "linkBase": "https://www.instant-gaming.com/pt/13375-comprar-windows-11-home-pc-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Scum",
-    "preco": "R$ 57,73",
-    "precoNormal": "R$ 160,00",
-    "desconto": 64,
-    "genre": "Survival / Action",
-    "image": "/capas/scum-pc.jpg",
-    "video": "/videos/scum.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/2159-comprar-scum-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Green Hell",
-    "preco": "R$ 12,32",
-    "precoNormal": "R$ 124,00",
-    "desconto": 90,
-    "genre": "Survival",
-    "image": "/capas/green-hell-pc.jpg",
-    "video": "/videos/green-hell.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/5639-comprar-green-hell-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Call of Duty: Modern Warfare 4 - Edição Vault",
-    "preco": "R$ 509,98",
-    "precoNormal": "R$ 649,00",
-    "desconto": 21,
-    "genre": "AAA / Shooter",
-    "image": "/capas/call-of-duty-modern-warfare-4.jpg",
-    "video": "/videos/cod-mw.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/22745-comprar-call-of-duty-modern-warfare-4-edicao-vault-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Age of Empires IV: Anniversary Edition",
-    "preco": "R$ 83,67",
-    "precoNormal": "R$ 100,00",
-    "desconto": 16,
-    "genre": "Strategy",
-    "image": "/capas/age-of-empires-iv.jpg",
-    "video": "/videos/age-of-empires-4.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/2244-comprar-age-of-empires-iv-anniversary-edition-anniversary-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Dark Souls II: Scholar of the First Sin",
-    "preco": "R$ 86,62",
-    "precoNormal": "R$ 155,00",
-    "desconto": 44,
-    "genre": "Action / RPG",
-    "image": "/capas/dark-souls-ii.jpg",
-    "video": "/videos/dark-souls-2.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/697-comprar-dark-souls-ii-scholar-of-the-first-sin-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Medieval Dynasty",
-    "preco": "R$ 68,93",
-    "precoNormal": "R$ 129,00",
-    "desconto": 47,
-    "genre": "Simulation / Survival",
-    "image": "/capas/medieval-dynasty-pc.jpg",
-    "video": "/videos/medieval-dynasty.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/7590-comprar-medieval-dynasty-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Escape from Tarkov",
-    "preco": "R$ 235,80",
-    "precoNormal": "R$ 235,80",
-    "desconto": 0,
-    "genre": "Shooter / Survival",
-    "image": "/capas/escape-from-tarkov-pc.jpg",
-    "video": "/videos/escape-from-tarkov.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/20441-comprar-escape-from-tarkov-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Grand Theft Auto IV: The Complete Edition",
-    "preco": "R$ 46,52",
-    "precoNormal": "R$ 79,00",
-    "desconto": 41,
-    "genre": "AAA / Blockbuster",
-    "image": "/capas/grand-theft-auto-iv-the-complete.jpg",
-    "video": "/videos/gta-4.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/354-comprar-grand-theft-auto-iv-the-complete-edition-pc-rockstar/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Sniper Elite 4 Deluxe Edition",
-    "preco": "R$ 16,45",
-    "precoNormal": "R$ 153,00",
-    "desconto": 89,
-    "genre": "Action / Shooter",
-    "image": "/capas/sniper-elite-4-deluxe-edition-deluxe-edition-pc.jpg",
-    "video": "/videos/sniper-elite-4.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/6136-comprar-sniper-elite-4-deluxe-edition-deluxe-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Resonance: A Plague Tale Legacy",
-    "preco": "R$ 221,06",
-    "precoNormal": "R$ 221,06",
-    "desconto": 0,
-    "genre": "Action / Adventure",
-    "image": "/capas/resonance-a-plague-tale-legacy-pc.jpg",
-    "video": "/videos/plague-tale.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/19517-comprar-resonance-a-plague-tale-legacy-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Among Us",
-    "preco": "R$ 23,53",
-    "precoNormal": "R$ 23,53",
-    "desconto": 0,
-    "genre": "Casual / Party",
-    "image": "/capas/among-us-pc-steam-cover.jpg",
-    "video": "/videos/among-us.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/7522-comprar-among-us-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "SnowRunner",
-    "preco": "R$ 69,52",
-    "precoNormal": "R$ 100,00",
-    "desconto": 30,
-    "genre": "Simulation",
-    "image": "/capas/snowrunner-pc-mac-steam-cover.jpg",
-    "video": "/videos/snowrunner.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/8798-comprar-snowrunner-pc-mac-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Kenshi",
-    "preco": "R$ 44,75",
-    "precoNormal": "R$ 58,00",
-    "desconto": 23,
-    "genre": "RPG / Strategy",
-    "image": "/capas/kenshi-pc-jogo.jpg",
-    "video": "/videos/kenshi.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/3416-comprar-kenshi-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Zero Hour",
-    "preco": "R$ 5,90",
-    "precoNormal": "R$ 33,00",
-    "desconto": 82,
-    "genre": "Action / Shooter",
-    "image": "/capas/zero-hour-pc.jpg",
-    "video": "/videos/zero-hour.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/17187-comprar-zero-hour-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Mortal Kombat 1 Definitive Edition",
-    "preco": "R$ 86,03",
-    "precoNormal": "R$ 300,00",
-    "desconto": 71,
-    "genre": "Action / Fighting",
-    "image": "/capas/mortal-kombat-1-definitive-edition.jpg",
-    "video": "/videos/mortal-kombat-1.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/19340-comprar-mortal-kombat-1-definitive-edition-definitive-edition-pc-jogo-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Witcher 3: Wild Hunt - Game of the Year Edition",
-    "preco": "R$ 64,21",
-    "precoNormal": "R$ 160,00",
-    "desconto": 60,
-    "genre": "RPG / Action",
-    "image": "/capas/the-witcher-3-wild-hunt.jpg",
-    "video": "/videos/witcher-3.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/1497-comprar-the-witcher-3-wild-hunt-game-of-the-year-edition-pc-gog-com/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Assassin's Creed Shadows",
-    "preco": "R$ 148,53",
-    "precoNormal": "R$ 350,00",
-    "desconto": 58,
-    "genre": "Action / Adventure",
-    "image": "/capas/assassin-s-creed-shadows-pc.jpg",
-    "video": "/videos/ac-shadows.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/12831-comprar-assassin-s-creed-shadows-pc-ubisoft-connect/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "The Elder Scrolls IV: Oblivion Remastered - Deluxe Edition",
-    "preco": "R$ 226,95",
-    "precoNormal": "R$ 320,00",
-    "desconto": 29,
-    "genre": "Action / RPG",
-    "image": "/capas/the-elder-scrolls-iv-oblivion-remastered-deluxe.jpg",
-    "video": "/videos/oblivion.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/19152-comprar-the-elder-scrolls-iv-oblivion-remastered-deluxe-edition-pc-steam/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Halo: Campaign Evolved - PC & Xbox Series X|S",
-    "preco": "R$ 224,00",
-    "precoNormal": "R$ 354,00",
-    "desconto": 37,
-    "genre": "Action / Shooter",
-    "image": "/capas/halo-campaign-evolved-pc.jpg",
-    "video": "/videos/halo.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/20731-comprar-halo-campaign-evolved-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016"
-  },
-  {
-    "nome": "Batman: Arkham Origins",
-    "preco": "R$ 15,27",
-    "precoNormal": "R$ 90,00",
-    "desconto": 83,
-    "genre": "Action / Adventure",
-    "image": "/capas/batman-arkham-origins.jpg",
-    "video": "/videos/batman-origins.mp4",
-    "linkBase": "https://www.instant-gaming.com/pt/184-comprar-batman-arkham-origins-pc-jogo-steam/?igr=gamer-56c7016"
-  }
+    {
+        "nome": "Doom: The Dark Ages Premium Edition - PC (Steam)",
+        "genre": "FPS / Action",
+        "preco": "R$ 175,06",
+        "precoNormal": "R$ 500",
+        "desconto": 65,
+        "image": "/capas/doom-the-dark-ages-premium-edition-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/18600-comprar-doom-the-dark-ages-premium-edition-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/doom-the-dark-ages-premium-edition-pc.jpg"
+    },
+    {
+        "nome": "Fallout: New Vegas Ultimate - PC (Steam)",
+        "genre": "RPG / Open World",
+        "preco": "R$ 48,29",
+        "precoNormal": "R$ 79",
+        "desconto": 39,
+        "image": "/capas/fallout-new-vegas-ultimate-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/155-comprar-fallout-new-vegas-ultimate-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/fallout-new-vegas-ultimate-pc.jpg"
+    },
+    {
+        "nome": "Planet of Lana - PC (Steam)",
+        "genre": "Cinematic Adventure",
+        "preco": "R$ 5,90",
+        "precoNormal": "R$ 60",
+        "desconto": 90,
+        "image": "/capas/planet-of-lana-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/9004-comprar-planet-of-lana-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/planet-of-lana-pc.jpg"
+    },
+    {
+        "nome": "Life is Strange: Double Exposure - PC (Steam)",
+        "genre": "Narrative Adventure",
+        "preco": "R$ 23,53",
+        "precoNormal": "R$ 220",
+        "desconto": 89,
+        "image": "/capas/life-is-strange-double.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/6829-comprar-life-is-strange-double-exposure-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/life-is-strange-double.jpg"
+    },
+    {
+        "nome": "It Takes Two - PC (EA App)",
+        "genre": "Co-op / Platformer",
+        "preco": "R$ 67,81",
+        "precoNormal": "R$ 199",
+        "desconto": 66,
+        "image": "/capas/it-takes-two-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8103-comprar-it-takes-two-pc-jogo-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/it-takes-two-pc.jpg"
+    },
+    {
+        "nome": "God of War - PC (Steam)",
+        "genre": "Action / Adventure",
+        "preco": "R$ 75,42",
+        "precoNormal": "R$ 200",
+        "desconto": 62,
+        "image": "/capas/god-of-war-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/17355-comprar-god-of-war-pc-jogo-steam-latin-america/?igr=gamer-56c7016",
+        "capa": "/capas/god-of-war-pc.jpg"
+    },
+    {
+        "nome": "Assassin's Creed: Unity - PC (Ubisoft Connect)",
+        "genre": "Action / Adventure",
+        "preco": "R$ 44,75",
+        "precoNormal": "R$ 177",
+        "desconto": 75,
+        "image": "/capas/assassin-s-creed-unity-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/400-comprar-assassin-s-creed-unity-pc-jogo-ubisoft-connect/?igr=gamer-56c7016",
+        "capa": "/capas/assassin-s-creed-unity-pc.jpg"
+    },
+    {
+        "nome": "Office Professional Plus 2021 PC (1 User) - PC (Microsoft Store)",
+        "genre": "Productivity",
+        "preco": "R$ 176,83",
+        "precoNormal": "R$ 708",
+        "desconto": 75,
+        "image": "/capas/office-professional-plus-2021-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/10388-comprar-office-professional-plus-2021-pc-1-user-professional-plus-pc-jogo-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/office-professional-plus-2021-pc.jpg"
+    },
+    {
+        "nome": "Final Fantasy VII Rebirth - PC (Steam)",
+        "genre": "Action RPG",
+        "preco": "R$ 117,87",
+        "precoNormal": "R$ 220",
+        "desconto": 46,
+        "image": "/capas/final-fantasy-vii-rebirth-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/10365-comprar-final-fantasy-vii-rebirth-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/final-fantasy-vii-rebirth-pc.jpg"
+    },
+    {
+        "nome": "LEGO: Batman Trilogy - PC (Steam)",
+        "genre": "Action / Adventure",
+        "preco": "R$ 19,99",
+        "precoNormal": "R$ 230",
+        "desconto": 91,
+        "image": "/capas/lego-batman-trilogy-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/1665-comprar-lego-batman-trilogy-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/lego-batman-trilogy-pc.jpg"
+    },
+    {
+        "nome": "Warhammer 40,000: Darktide - Imperial Edition - PC (Steam)",
+        "genre": "Action / Co-op Shooter",
+        "preco": "R$ 70,70",
+        "precoNormal": "R$ 220",
+        "desconto": 68,
+        "image": "/capas/warhammer-40-000-darktide-imperial-edition-imperial-edition-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/13355-comprar-warhammer-40-000-darktide-imperial-edition-imperial-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/warhammer-40-000-darktide-imperial-edition-imperial-edition-pc.jpg"
+    },
+    {
+        "nome": "Blasphemous - PC (Steam)",
+        "genre": "Metroidvania / Action Platformer",
+        "preco": "R$ 18,81",
+        "precoNormal": "R$ 134",
+        "desconto": 86,
+        "image": "/capas/blasphemous-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/4703-comprar-blasphemous-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/blasphemous-pc.jpg"
+    },
+    {
+        "nome": "Disco Elysium - The Final Cut - PC & Mac (Steam)",
+        "genre": "RPG / Detective",
+        "preco": "R$ 24,82",
+        "precoNormal": "R$ 120",
+        "desconto": 79,
+        "image": "/capas/disco-elysium-the-final-cut-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/9753-comprar-disco-elysium-the-final-cut-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/disco-elysium-the-final-cut-pc.jpg"
+    },
+    {
+        "nome": "Rust - PC & Mac (Steam)",
+        "genre": "Survival / Open World",
+        "preco": "R$ 176,83",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/snowrunner-pc-mac-steam-cover.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/1230-comprar-rust-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/snowrunner-pc-mac-steam-cover.jpg"
+    },
+    {
+        "nome": "Celeste - PC & Mac (Steam)",
+        "genre": "Platformer",
+        "preco": "R$ 15,27",
+        "precoNormal": "R$ 60",
+        "desconto": 75,
+        "image": "/capas/celeste-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8003-comprar-celeste-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/celeste-pc.jpg"
+    },
+    {
+        "nome": "Warhammer 40,000: Darktide - PC (Steam)",
+        "genre": "Action / Co-op Shooter",
+        "preco": "R$ 49,47",
+        "precoNormal": "R$ 236",
+        "desconto": 79,
+        "image": "/capas/warhammer-40-000-darktide-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/7368-comprar-warhammer-40-000-darktide-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/warhammer-40-000-darktide-pc.jpg"
+    },
+    {
+        "nome": "We Were Here Too - PC & Mac (Steam)",
+        "genre": "Adventure / Puzzle",
+        "preco": "R$ 12,91",
+        "precoNormal": "R$ 33",
+        "desconto": 61,
+        "image": "/capas/we-were-here-too-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/5369-comprar-we-were-here-too-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/we-were-here-too-pc.jpg"
+    },
+    {
+        "nome": "Hollow Knight: Silksong - PC & Mac (Steam)",
+        "genre": "Metroidvania / Action",
+        "preco": "R$ 77,77",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/hollow-knight-silksong-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/3952-comprar-hollow-knight-silksong-pc-mac-steam/?igr=gamer-56c7016",
+        "capa": "/capas/hollow-knight-silksong-pc.jpg"
+    },
+    {
+        "nome": "Alien: Isolation - PC & Mac (Steam)",
+        "genre": "Survival Horror",
+        "preco": "R$ 27,65",
+        "precoNormal": "R$ 179",
+        "desconto": 85,
+        "image": "/capas/alien-isolation-pc.webp",
+        "linkBase": "https://www.instant-gaming.com/pt/305-comprar-alien-isolation-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/alien-isolation-pc.webp"
+    },
+    {
+        "nome": "Windrose - PC (Steam)",
+        "genre": "Action / Adventure",
+        "preco": "R$ 141,46",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/windrose-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/21876-comprar-windrose-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/windrose-pc.jpg"
+    },
+    {
+        "nome": "Forensics: Crime Scene Detective - PC (Steam)",
+        "genre": "Simulation / Investigation",
+        "preco": "R$ 103,13",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/forensics-crime-scene-detective-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/23229-comprar-forensics-crime-scene-detective-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/forensics-crime-scene-detective-pc.jpg"
+    },
+    {
+        "nome": "Assassin's Creed Shadows - Switch 2",
+        "genre": "Action / Adventure",
+        "preco": "R$ 247,59",
+        "precoNormal": "R$ 472",
+        "desconto": 48,
+        "image": "/capas/assassin-s-creed-shadows-switch-2-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/20706-comprar-assassin-s-creed-shadows-switch-2-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/assassin-s-creed-shadows-switch-2-nintendo.jpg"
+    },
+    {
+        "nome": "Grand Theft Auto VI - Switch 2",
+        "genre": "Action / Adventure",
+        "preco": "",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/grand-theft-auto-vi-switch-2-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/22593-comprar-grand-theft-auto-vi-switch-2-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/grand-theft-auto-vi-switch-2-nintendo.jpg"
+    },
+    {
+        "nome": "No More Heroes 3 - Switch",
+        "genre": "Action / Hack and Slash",
+        "preco": "R$ 343,11",
+        "precoNormal": "R$ 354",
+        "desconto": 3,
+        "image": "/capas/no-more-heroes-3-switch-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/5955-comprar-no-more-heroes-3-switch-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/no-more-heroes-3-switch-nintendo.jpg"
+    },
+    {
+        "nome": "Max: The Curse of Brotherhood - Switch",
+        "genre": "Adventure / Platformer",
+        "preco": "R$ 74,83",
+        "precoNormal": "R$ 88",
+        "desconto": 15,
+        "image": "/capas/max-the-curse-of-brotherhood-switch-jogo-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8118-comprar-max-the-curse-of-brotherhood-switch-jogo-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/max-the-curse-of-brotherhood-switch-jogo-nintendo.jpg"
+    },
+    {
+        "nome": "Fort Boyard - Switch",
+        "genre": "Party / Family",
+        "preco": "R$ 69,52",
+        "precoNormal": "R$ 147",
+        "desconto": 53,
+        "image": "/capas/fort-boyard-switch-jogo-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8338-comprar-fort-boyard-switch-jogo-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/fort-boyard-switch-jogo-nintendo.jpg"
+    },
+    {
+        "nome": "88 Heroes - 98 Heroes Edition - Switch",
+        "genre": "Action / Platformer",
+        "preco": "R$ 18,81",
+        "precoNormal": "R$ 177",
+        "desconto": 89,
+        "image": "/capas/88-heroes-98-heroes-edition-98-heroes-edition-switch-jogo-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/7812-comprar-88-heroes-98-heroes-edition-98-heroes-edition-switch-jogo-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/88-heroes-98-heroes-edition-98-heroes-edition-switch-jogo-nintendo.jpg"
+    },
+    {
+        "nome": "Kotodama: The 7 Mysteries of Fujisawa - Switch",
+        "genre": "Visual Novel / Puzzle",
+        "preco": "R$ 57,73",
+        "precoNormal": "R$ 147",
+        "desconto": 61,
+        "image": "/capas/kotodama-the-7-mysteries-of-fujisawa-switch-jogo-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8078-comprar-kotodama-the-7-mysteries-of-fujisawa-switch-jogo-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/kotodama-the-7-mysteries-of-fujisawa-switch-jogo-nintendo.jpg"
+    },
+    {
+        "nome": "Close to the Sun - Switch",
+        "genre": "Adventure / Horror",
+        "preco": "R$ 74,83",
+        "precoNormal": "R$ 118",
+        "desconto": 37,
+        "image": "/capas/close-to-the-sun-switch-jogo-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8109-comprar-close-to-the-sun-switch-jogo-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/close-to-the-sun-switch-jogo-nintendo.jpg"
+    },
+    {
+        "nome": "PowerWash Simulator - Switch",
+        "genre": "Simulation",
+        "preco": "R$ 110,20",
+        "precoNormal": "R$ 147",
+        "desconto": 25,
+        "image": "/capas/powerwash-simulator-switch-jogo-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/14053-comprar-powerwash-simulator-switch-jogo-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/powerwash-simulator-switch-jogo-nintendo.jpg"
+    },
+    {
+        "nome": "Red Dead Redemption - Switch 2",
+        "genre": "Action / Adventure",
+        "preco": "R$ 176,83",
+        "precoNormal": "R$ 295",
+        "desconto": 40,
+        "image": "/capas/red-dead-redemption-switch-2-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/21145-comprar-red-dead-redemption-switch-2-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/red-dead-redemption-switch-2-nintendo.jpg"
+    },
+    {
+        "nome": "Splatoon Raiders - Switch 2",
+        "genre": "Action / Shooter",
+        "preco": "R$ 268,23",
+        "precoNormal": "R$ 295",
+        "desconto": 9,
+        "image": "/capas/splatoon-raiders-switch-2-nintendo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/19573-comprar-splatoon-raiders-switch-2-nintendo-eshop/?igr=gamer-56c7016",
+        "capa": "/capas/splatoon-raiders-switch-2-nintendo.jpg"
+    },
+    {
+        "nome": "DayZ Deluxe Edition - PC (Steam)",
+        "genre": "Action / Adventure",
+        "preco": "R$ 218,70",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/dayz-deluxe-edition-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/20949-comprar-dayz-deluxe-edition-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/dayz-deluxe-edition-pc.jpg"
+    },
+    {
+        "nome": "DayZ Frostline - PC (Steam)",
+        "genre": "Action / Adventure",
+        "preco": "R$ 109,02",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/dayz-frostline-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/17820-comprar-dayz-frostline-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/dayz-frostline-pc.jpg"
+    },
+    {
+        "nome": "Mortal Shell II - PS5",
+        "genre": "ARPG",
+        "preco": "R$ 160,00",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/mortal-shell-ii.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679623444&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fbundle%2Fmortal-shell-ii-ps5",
+        "capa": "/capas/mortal-shell-ii.jpg"
+    },
+    {
+        "nome": "Mortal Shell II - Steam",
+        "genre": "ARPG",
+        "preco": "R$ 181,00",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/mortal-shell-ii.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679623454&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fbundle%2Fmortal-shell-ii-steam",
+        "capa": "/capas/mortal-shell-ii.jpg"
+    },
+    {
+        "nome": "Graveyard Keeper - PC & Mac (Steam)",
+        "genre": "Action / Indie",
+        "preco": "R$ 16,45",
+        "precoNormal": "R$ 60,00",
+        "desconto": 73,
+        "image": "/capas/graveyard-keeper-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/3121-comprar-graveyard-keeper-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/graveyard-keeper-pc.jpg"
+    },
+    {
+        "nome": "EA Sports FC 27 - Xbox One & Xbox Series X|S",
+        "genre": "Sports / Casual",
+        "preco": "R$ 318,35",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/23585-comprar-ea-sports-fc-27-xbox-series-x-s-xbox-one-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.jpg"
+    },
+    {
+        "nome": "EA Sports FC 27 - PC (EA App)",
+        "genre": "Sports / Casual",
+        "preco": "R$ 318,35",
+        "precoNormal": "",
+        "desconto": 0,
+        "image": "/capas/ea-sports-fc-27-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/21656-comprar-ea-sports-fc-27-pc-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/ea-sports-fc-27-pc.jpg"
+    },
+    {
+        "nome": "Palworld - PC (Steam)",
+        "genre": "Action / Adventure",
+        "preco": "R$ 84,85",
+        "precoNormal": "R$ 89,00",
+        "desconto": 5,
+        "image": "/capas/palworld-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/23295-comprar-palworld-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/palworld-pc.jpg"
+    },
+    {
+        "nome": "Star Wars Zero Company - Xbox Series X|S",
+        "preco": "R$ 282,97",
+        "precoNormal": "R$ 354",
+        "desconto": 20,
+        "genre": "Action / Sci-Fi",
+        "image": "/capas/star-wars-zero-company-xbox-series-x-s.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/22799-comprar-star-wars-zero-company-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/star-wars-zero-company-xbox-series-x-s.jpg"
+    },
+    {
+        "nome": "Dead by Daylight - Old Wounds Pack",
+        "preco": "R$ 58,91",
+        "precoNormal": "R$ 70",
+        "desconto": 16,
+        "genre": "Horror / Action",
+        "image": "/capas/dead-by-daylight-old-wounds-pack-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/19850-comprar-dead-by-daylight-old-wounds-pack-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/dead-by-daylight-old-wounds-pack-pc.jpg"
+    },
+    {
+        "nome": "Super Battle Golf",
+        "preco": "R$ 27,06",
+        "precoNormal": "R$ 40",
+        "desconto": 32,
+        "genre": "Sports / Casual",
+        "image": "/capas/super-battle-golf-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/21573-comprar-super-battle-golf-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/super-battle-golf-pc.jpg"
+    },
+    {
+        "nome": "Wreckfest",
+        "preco": "R$ 22,35",
+        "precoNormal": "R$ 82",
+        "desconto": 73,
+        "genre": "Racing / Action",
+        "image": "/capas/wreckfest-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/582-comprar-wreckfest-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/wreckfest-pc.jpg"
+    },
+    {
+        "nome": "Dark Souls Remastered",
+        "preco": "R$ 175,06",
+        "precoNormal": "",
+        "desconto": 0,
+        "genre": "Action / RPG",
+        "image": "/capas/dark-souls-remastered-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/2364-comprar-dark-souls-remastered-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/dark-souls-remastered-pc.jpg"
+    },
+    {
+        "nome": "Mad Max",
+        "preco": "R$ 13,50",
+        "precoNormal": "R$ 90",
+        "desconto": 85,
+        "genre": "Action / Open World",
+        "image": "/capas/mad-max-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/835-comprar-mad-max-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/mad-max-pc.jpg"
+    },
+    {
+        "nome": "Destiny 2: Renegades",
+        "preco": "R$ 56,02",
+        "precoNormal": "R$ 160",
+        "desconto": 65,
+        "genre": "Action / Shooter",
+        "image": "/capas/destiny-2-renegades-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/20575-comprar-destiny-2-renegades-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/destiny-2-renegades-pc.jpg"
+    },
+    {
+        "nome": "The Elder Scrolls V: Skyrim Legendary Edition",
+        "preco": "R$ 60,08",
+        "precoNormal": "R$ 149",
+        "desconto": 60,
+        "genre": "Action / RPG",
+        "image": "/capas/the-elder-scrolls-v-skyrim-legendary.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/209-comprar-the-elder-scrolls-v-skyrim-legendary-edition-legendary-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/the-elder-scrolls-v-skyrim-legendary.jpg"
+    },
+    {
+        "nome": "Saints Row: The Third Remastered",
+        "preco": "R$ 17,04",
+        "precoNormal": "R$ 149",
+        "desconto": 89,
+        "genre": "Action / Open World",
+        "image": "/capas/saints-row-the-third-remastered.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8820-comprar-saints-row-the-third-remastered-remastered-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/saints-row-the-third-remastered.jpg"
+    },
+    {
+        "nome": "EA Sports FC 26 The World's Game Edition",
+        "preco": "R$ 149,12",
+        "precoNormal": "R$ 379",
+        "desconto": 61,
+        "genre": "Sports",
+        "image": "/capas/ea-sports-fc-26-the-world-s-game-edition.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/22947-comprar-ea-sports-fc-26-the-world-s-game-edition-pc-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/ea-sports-fc-26-the-world-s-game-edition.jpg"
+    },
+    {
+        "nome": "Cities: Skylines II - Ultimate Edition",
+        "preco": "R$ 327,78",
+        "precoNormal": "R$ 341",
+        "desconto": 4,
+        "genre": "Simulation / Strategy",
+        "image": "/capas/cities-skylines-ii-ultimate.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/14364-comprar-cities-skylines-ii-ultimate-edition-ultimate-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/cities-skylines-ii-ultimate.jpg"
+    },
+    {
+        "nome": "Payday 3",
+        "preco": "R$ 76,59",
+        "precoNormal": "R$ 90",
+        "desconto": 15,
+        "genre": "Action / Shooter",
+        "image": "/capas/payday-3-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/6442-comprar-payday-3-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/payday-3-pc.jpg"
+    },
+    {
+        "nome": "Age of Mythology: Retold Premium Edition",
+        "preco": "R$ 117,28",
+        "precoNormal": "R$ 169",
+        "desconto": 31,
+        "genre": "Strategy",
+        "image": "/capas/chernobylite-premium-edition.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/17567-comprar-age-of-mythology-retold-premium-edition-premium-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/chernobylite-premium-edition.jpg"
+    },
+    {
+        "nome": "Marvel's Avengers",
+        "preco": "R$ 152,07",
+        "precoNormal": "R$ 177",
+        "desconto": 14,
+        "genre": "Action / Adventure",
+        "image": "/capas/marvel-s-avengers-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/4836-comprar-marvel-s-avengers-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/marvel-s-avengers-pc.jpg"
+    },
+    {
+        "nome": "Dark Souls 3 Deluxe Edition",
+        "preco": "R$ 244,05",
+        "precoNormal": "R$ 328",
+        "desconto": 25,
+        "genre": "Action / RPG",
+        "image": "/capas/dark-souls-3-deluxe-edition-deluxe-edition-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/2060-comprar-dark-souls-3-deluxe-edition-deluxe-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/dark-souls-3-deluxe-edition-deluxe-edition-pc.jpg"
+    },
+    {
+        "nome": "Shape of Dreams",
+        "preco": "R$ 39,45",
+        "precoNormal": "R$ 72",
+        "desconto": 45,
+        "genre": "Action / Roguelike",
+        "image": "/capas/shape-of-dreams.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/19401-comprar-shape-of-dreams-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/shape-of-dreams.jpg"
+    },
+    {
+        "nome": "Cuphead",
+        "preco": "R$ 72,47",
+        "precoNormal": "R$ 72,47",
+        "desconto": 0,
+        "genre": "Action / Platformer",
+        "image": "/capas/cuphead-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/2310-comprar-cuphead-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/cuphead-pc.jpg"
+    },
+    {
+        "nome": "Descenders",
+        "preco": "R$ 9,38",
+        "precoNormal": "R$ 47",
+        "desconto": 80,
+        "genre": "Sports / Racing",
+        "image": "/capas/descenders-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/6259-comprar-descenders-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/descenders-pc.jpg"
+    },
+    {
+        "nome": "Disney Dreamlight Valley",
+        "preco": "R$ 94,28",
+        "precoNormal": "R$ 215",
+        "desconto": 56,
+        "genre": "Simulation / Adventure",
+        "image": "/capas/disney-dreamlight-valley-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/10958-comprar-disney-dreamlight-valley-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/disney-dreamlight-valley-pc.jpg"
+    },
+    {
+        "nome": "Bus Simulator 21 Next Stop",
+        "preco": "R$ 8,79",
+        "precoNormal": "R$ 84",
+        "desconto": 90,
+        "genre": "Simulation",
+        "image": "/capas/bus-simulator-21-next-stop.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/9108-comprar-bus-simulator-21-next-stop-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/bus-simulator-21-next-stop.jpg"
+    },
+    {
+        "nome": "Payday 2",
+        "preco": "R$ 27,06",
+        "precoNormal": "R$ 59",
+        "desconto": 54,
+        "genre": "Shooter / Action",
+        "image": "/capas/payday-2-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/223-comprar-payday-2-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/payday-2-pc.jpg"
+    },
+    {
+        "nome": "Astroneer",
+        "preco": "R$ 35,91",
+        "precoNormal": "R$ 89",
+        "desconto": 60,
+        "genre": "Adventure / Sandbox",
+        "image": "/capas/astroneer-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/3298-comprar-astroneer-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/astroneer-pc.jpg"
+    },
+    {
+        "nome": "LEGO Jurassic World",
+        "preco": "R$ 8,20",
+        "precoNormal": "R$ 90",
+        "desconto": 91,
+        "genre": "Action / Adventure",
+        "image": "/capas/lego-jurassic-world-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/724-comprar-lego-jurassic-world-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/lego-jurassic-world-pc.jpg"
+    },
+    {
+        "nome": "The Elder Scrolls Online",
+        "preco": "R$ 33,08",
+        "precoNormal": "R$ 62",
+        "desconto": 46,
+        "genre": "MMORPG / RPG",
+        "image": "/capas/the-elder-scrolls-online-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/16964-comprar-the-elder-scrolls-online-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/the-elder-scrolls-online-pc.jpg"
+    },
+    {
+        "nome": "Hunt: Showdown 1896",
+        "preco": "R$ 49,47",
+        "precoNormal": "R$ 88",
+        "desconto": 44,
+        "genre": "Shooter / Extraction",
+        "image": "/capas/hunt-showdown-1896-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/2464-comprar-hunt-showdown-1896-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/hunt-showdown-1896-pc.jpg"
+    },
+    {
+        "nome": "Beyond: Two Souls",
+        "preco": "R$ 10,55",
+        "precoNormal": "R$ 117",
+        "desconto": 91,
+        "genre": "Interactive Drama / Adventure",
+        "image": "/capas/beyond-two-souls-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/7000-comprar-beyond-two-souls-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/beyond-two-souls-pc.jpg"
+    },
+    {
+        "nome": "Middle-earth: Shadow of War Definitive Edition",
+        "preco": "R$ 23,53",
+        "precoNormal": "R$ 280",
+        "desconto": 92,
+        "genre": "Action / RPG",
+        "image": "/capas/middle-earth-shadow-of-war-definitive-edition-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/3155-comprar-middle-earth-shadow-of-war-definitive-edition-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/middle-earth-shadow-of-war-definitive-edition-pc.jpg"
+    },
+    {
+        "nome": "Heavy Rain",
+        "preco": "R$ 8,79",
+        "precoNormal": "R$ 90",
+        "desconto": 90,
+        "genre": "Interactive Drama / Adventure",
+        "image": "/capas/heavy-rain-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/6999-comprar-heavy-rain-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/heavy-rain-pc.jpg"
+    },
+    {
+        "nome": "Card Shop Simulator Multiplayer",
+        "preco": "R$ 23,53",
+        "precoNormal": "R$ 38",
+        "desconto": 39,
+        "genre": "Simulation / Management",
+        "image": "/capas/card-shop-simulator-multiplayer-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/20210-comprar-card-shop-simulator-multiplayer-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/card-shop-simulator-multiplayer-pc.jpg"
+    },
+    {
+        "nome": "Assassin's Creed Shadows Premium Edition",
+        "preco": "R$ 208,67",
+        "precoNormal": "R$ 550",
+        "desconto": 62,
+        "genre": "Action / Adventure",
+        "image": "/capas/assassin-s-creed-shadows-premium-edition.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/21500-comprar-assassin-s-creed-shadows-premium-edition-pc-ubisoft-connect/?igr=gamer-56c7016",
+        "capa": "/capas/assassin-s-creed-shadows-premium-edition.jpg"
+    },
+    {
+        "nome": "7 Days to Die",
+        "preco": "R$ 96,64",
+        "precoNormal": "R$ 122",
+        "desconto": 21,
+        "genre": "Survival / Horror",
+        "image": "/capas/7-days-to-die-pc.webp",
+        "linkBase": "https://www.instant-gaming.com/pt/1028-comprar-7-days-to-die-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/7-days-to-die-pc.webp"
+    },
+    {
+        "nome": "DEVOUR",
+        "preco": "R$ 42,40",
+        "precoNormal": "R$ 42,40",
+        "desconto": 0,
+        "genre": "Horror / Co-op",
+        "image": "/capas/devour-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8688-comprar-devour-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/devour-pc.jpg"
+    },
+    {
+        "nome": "MENACE",
+        "preco": "R$ 101,95",
+        "precoNormal": "R$ 101,95",
+        "desconto": 0,
+        "genre": "Strategy / Tactical",
+        "image": "/capas/menace.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/19423-comprar-menace-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/menace.jpg"
+    },
+    {
+        "nome": "No, I'm not a Human",
+        "preco": "R$ 35,32",
+        "precoNormal": "R$ 47",
+        "desconto": 25,
+        "genre": "Horror / Indie",
+        "image": "/capas/no-i-m-not-a-human-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/19144-comprar-no-i-m-not-a-human-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/no-i-m-not-a-human-pc.jpg"
+    },
+    {
+        "nome": "Tekken 8",
+        "preco": "R$ 107,37",
+        "precoNormal": "R$ 177",
+        "desconto": 39,
+        "genre": "Fighting / Action",
+        "image": "/capas/tekken-8-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/9579-comprar-tekken-8-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/tekken-8-pc.jpg"
+    },
+    {
+        "nome": "The Sims 4 Adventure Awaits",
+        "preco": "R$ 131,43",
+        "precoNormal": "R$ 236",
+        "desconto": 44,
+        "genre": "Simulation",
+        "image": "/capas/the-sims-4-adventure-awaits.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/20257-comprar-the-sims-4-adventure-awaits-pc-mac-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/the-sims-4-adventure-awaits.jpg"
+    },
+    {
+        "nome": "Worms: W.M.D",
+        "preco": "R$ 17,63",
+        "precoNormal": "R$ 160",
+        "desconto": 89,
+        "genre": "Strategy / Artillery",
+        "image": "/capas/worms-w-m-d.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/970-comprar-worms-w-m-d-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/worms-w-m-d.jpg"
+    },
+    {
+        "nome": "Automobilista 2",
+        "preco": "R$ 49,47",
+        "precoNormal": "R$ 120",
+        "desconto": 59,
+        "genre": "Racing / Simulation",
+        "image": "/capas/automobilista-2-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8287-comprar-automobilista-2-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/automobilista-2-pc.jpg"
+    },
+    {
+        "nome": "LEGO Star Wars: The Force Awakens Deluxe Edition",
+        "preco": "R$ 6,43",
+        "precoNormal": "R$ 130",
+        "desconto": 95,
+        "genre": "Action / Adventure",
+        "image": "/capas/lego-starwars-the-forceawakens.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/5111-comprar-lego-star-wars-the-force-awakens-deluxe-edition-deluxe-edition-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/lego-starwars-the-forceawakens.jpg"
+    },
+    {
+        "nome": "We Were Here Together",
+        "preco": "R$ 18,22",
+        "precoNormal": "R$ 42",
+        "desconto": 57,
+        "genre": "Adventure / Puzzle",
+        "image": "/capas/we-were-here-together.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8307-comprar-we-were-here-together-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/we-were-here-together.jpg"
+    },
+    {
+        "nome": "Lies of P",
+        "preco": "R$ 123,18",
+        "precoNormal": "R$ 250",
+        "desconto": 51,
+        "genre": "Action / Souls-like",
+        "image": "/capas/lies-of-p-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/8855-comprar-lies-of-p-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/lies-of-p-pc.jpg"
+    },
+    {
+        "nome": "Dying Light 2 Stay Human Reloaded Edition",
+        "preco": "R$ 76,59",
+        "precoNormal": "R$ 249",
+        "desconto": 69,
+        "genre": "Action / Survival",
+        "image": "/capas/dying-light-2-stay-human-reloaded.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/15968-comprar-dying-light-2-stay-human-reloaded-edition-reloaded-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/dying-light-2-stay-human-reloaded.jpg"
+    },
+    {
+        "nome": "Valheim",
+        "preco": "R$ 117,87",
+        "precoNormal": "R$ 117,87",
+        "desconto": 0,
+        "genre": "Survival / Open World",
+        "image": "/capas/valheim-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/7119-comprar-valheim-pc-mac-steam/?igr=gamer-56c7016",
+        "capa": "/capas/valheim-pc.jpg"
+    },
+    {
+        "nome": "The Sims 4 Get To Work",
+        "preco": "R$ 71,29",
+        "precoNormal": "R$ 179",
+        "desconto": 60,
+        "genre": "Simulation",
+        "image": "/capas/the-sims-4-get-to-work-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/729-comprar-the-sims-4-get-to-work-pc-mac-jogo-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/the-sims-4-get-to-work-pc.jpg"
+    },
+    {
+        "nome": "Terraria",
+        "preco": "R$ 43,57",
+        "precoNormal": "R$ 43,57",
+        "desconto": 0,
+        "genre": "Sandbox / Adventure",
+        "image": "/capas/terraria-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/932-comprar-terraria-pc-mac-steam/?igr=gamer-56c7016",
+        "capa": "/capas/terraria-pc.jpg"
+    },
+    {
+        "nome": "Overcooked! 2",
+        "preco": "R$ 26,47",
+        "precoNormal": "R$ 60",
+        "desconto": 56,
+        "genre": "Simulation / Arcade",
+        "image": "/capas/overcooked-2.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/2705-comprar-overcooked-2-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/overcooked-2.jpg"
+    },
+    {
+        "nome": "The Sims 4 For Rent",
+        "preco": "R$ 68,93",
+        "precoNormal": "R$ 236",
+        "desconto": 71,
+        "genre": "Simulation",
+        "image": "/capas/the-sims-4-for-rent.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/15236-comprar-the-sims-4-for-rent-pc-mac-jogo-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/the-sims-4-for-rent.jpg"
+    },
+    {
+        "nome": "Helldivers 2",
+        "preco": "R$ 117,87",
+        "precoNormal": "R$ 200",
+        "desconto": 41,
+        "genre": "Action / Shooter",
+        "image": "/capas/helldivers-2-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/15848-comprar-helldivers-2-pc-jogo-steam-latin-america/?igr=gamer-56c7016",
+        "capa": "/capas/helldivers-2-pc.jpg"
+    },
+    {
+        "nome": "Warhounds",
+        "preco": "R$ 70,70",
+        "precoNormal": "R$ 115",
+        "desconto": 39,
+        "genre": "Action / Shooter",
+        "image": "/capas/warhounds-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/21951-comprar-warhounds-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/warhounds-pc.jpg"
+    },
+    {
+        "nome": "The Sims 4 Horse Ranch",
+        "preco": "R$ 76,59",
+        "precoNormal": "R$ 236",
+        "desconto": 68,
+        "genre": "Simulation",
+        "image": "/capas/the-sims-4-horse-ranch.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/14273-comprar-the-sims-4-horse-ranch-pc-mac-jogo-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/the-sims-4-horse-ranch.jpg"
+    },
+    {
+        "nome": "Battlefield 6",
+        "preco": "R$ 301,84",
+        "precoNormal": "R$ 413",
+        "desconto": 27,
+        "genre": "Action / Shooter",
+        "image": "/capas/battlefield-6-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/17306-comprar-battlefield-6-pc-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/battlefield-6-pc.jpg"
+    },
+    {
+        "nome": "Chernobylite Premium Edition",
+        "preco": "R$ 9,96",
+        "precoNormal": "R$ 170",
+        "desconto": 94,
+        "genre": "Survival / RPG",
+        "image": "/capas/chernobylite-premium-edition.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/21863-comprar-chernobylite-premium-edition-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/chernobylite-premium-edition.jpg"
+    },
+    {
+        "nome": "MOUSE: P.I. For Hire",
+        "preco": "R$ 117,87",
+        "precoNormal": "R$ 117,87",
+        "desconto": 0,
+        "genre": "Action / FPS",
+        "image": "/capas/mouse-p-i-for-hire-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/15600-comprar-mouse-p-i-for-hire-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/mouse-p-i-for-hire-pc.jpg"
+    },
+    {
+        "nome": "Garry's Mod",
+        "preco": "R$ 35,91",
+        "precoNormal": "R$ 59",
+        "desconto": 39,
+        "genre": "Sandbox / Simulation",
+        "image": "/capas/garry-s-mod-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/6401-comprar-garry-s-mod-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/garry-s-mod-pc.jpg"
+    },
+    {
+        "nome": "Satisfactory",
+        "preco": "R$ 162,68",
+        "precoNormal": "R$ 230",
+        "desconto": 29,
+        "genre": "Simulation / Open World",
+        "image": "/capas/satisfactory-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/4229-comprar-satisfactory-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/satisfactory-pc.jpg"
+    },
+    {
+        "nome": "Assetto Corsa",
+        "preco": "R$ 18,81",
+        "precoNormal": "R$ 60",
+        "desconto": 69,
+        "genre": "Simulation / Racing",
+        "image": "/capas/assetto-corsa-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/1263-comprar-assetto-corsa-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/assetto-corsa-pc.jpg"
+    },
+    {
+        "nome": "Microsoft Flight Simulator 2024",
+        "preco": "R$ 253,49",
+        "precoNormal": "R$ 300",
+        "desconto": 16,
+        "genre": "Simulation",
+        "image": "/capas/microsoft-flight-simulator-2024.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/14345-comprar-microsoft-flight-simulator-2024-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/microsoft-flight-simulator-2024.jpg"
+    },
+    {
+        "nome": "Indika",
+        "preco": "R$ 5,84",
+        "precoNormal": "R$ 74",
+        "desconto": 92,
+        "genre": "Adventure / Indie",
+        "image": "/capas/indika-pc-jogo.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/15204-comprar-indika-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/indika-pc-jogo.jpg"
+    },
+    {
+        "nome": "Red Dead Redemption 2",
+        "preco": "R$ 78,95",
+        "precoNormal": "R$ 354",
+        "desconto": 78,
+        "genre": "Action / Adventure",
+        "image": "/capas/red-dead-redemption-2-ultimate.webp",
+        "linkBase": "https://www.instant-gaming.com/pt/5679-comprar-red-dead-redemption-2-pc-jogo-rockstar/?igr=gamer-56c7016",
+        "capa": "/capas/red-dead-redemption-2-ultimate.webp"
+    },
+    {
+        "nome": "Roadside Research",
+        "preco": "R$ 22,94",
+        "precoNormal": "R$ 32",
+        "desconto": 28,
+        "genre": "Simulation / Indie",
+        "image": "/capas/roadside-research-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/20495-comprar-roadside-research-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/roadside-research-pc.jpg"
+    },
+    {
+        "nome": "ReStory: Chill Electronics Repairs",
+        "preco": "R$ 36,50",
+        "precoNormal": "R$ 50",
+        "desconto": 27,
+        "genre": "Simulation / Casual",
+        "image": "/capas/restory-chill-electronics-repairs-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/23410-comprar-restory-chill-electronics-repairs-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/restory-chill-electronics-repairs-pc.jpg"
+    },
+    {
+        "nome": "Crimson Desert",
+        "preco": "R$ 174,47",
+        "precoNormal": "R$ 350",
+        "desconto": 50,
+        "genre": "Action / RPG",
+        "image": "/capas/crimson-desert-pc.jpg",
+        "linkBase": "https://www.instant-gaming.com/pt/22142-comprar-crimson-desert-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/crimson-desert-pc.jpg"
+    },
+    {
+        "nome": "Dishonored",
+        "preco": "R$ 29,99",
+        "precoNormal": "R$ 29,99",
+        "desconto": 0,
+        "genre": "Action / Stealth",
+        "image": "/capas/dishonored.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796901&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fdishonored",
+        "capa": "/capas/dishonored.jpg"
+    },
+    {
+        "nome": "Borderlands 2 Season Pass",
+        "preco": "R$ 44,99",
+        "precoNormal": "R$ 44,99",
+        "desconto": 0,
+        "genre": "Action / RPG",
+        "image": "/capas/borderlands2.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796930&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fborderlands-2-season-pass",
+        "capa": "/capas/borderlands2.jpg"
+    },
+    {
+        "nome": "Men of War: Red Tide",
+        "preco": "R$ 19,49",
+        "precoNormal": "R$ 19,49",
+        "desconto": 0,
+        "genre": "Strategy / RTS",
+        "image": "/capas/men-of-war-red-tide.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796904&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fmen-of-war-red-tide",
+        "capa": "/capas/men-of-war-red-tide.jpg"
+    },
+    {
+        "nome": "Far Cry 3",
+        "preco": "R$ 59,99",
+        "precoNormal": "R$ 59,99",
+        "desconto": 0,
+        "genre": "Action / Shooter",
+        "image": "/capas/farcry3.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796927&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Ffar-cry-3",
+        "capa": "/capas/farcry3.jpg"
+    },
+    {
+        "nome": "LEGO The Lord of the Rings",
+        "preco": "R$ 89,99",
+        "precoNormal": "R$ 89,99",
+        "desconto": 0,
+        "genre": "Action / Adventure",
+        "image": "/capas/lego-thelordoftherings.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796999&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-the-lord-of-the-rings",
+        "capa": "/capas/lego-thelordoftherings.jpg"
+    },
+    {
+        "nome": "Worms Revolution",
+        "preco": "R$ 15,97",
+        "precoNormal": "R$ 79,90",
+        "desconto": 80,
+        "genre": "Strategy / Artillery",
+        "image": "/capas/worms-revolution.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796979&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fworms-revolution",
+        "capa": "/capas/worms-revolution.jpg"
+    },
+    {
+        "nome": "Minecraft: Java and Bedrock Edition",
+        "preco": "R$ 93,90",
+        "precoNormal": "R$ 93,90",
+        "desconto": 0,
+        "genre": "Sandbox / Survival",
+        "image": "/capas/minecraft.webp",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679617878&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fminecraft-java-and-bedrock-edition",
+        "capa": "/capas/minecraft.webp"
+    },
+    {
+        "nome": "Puyo Puyo Tetris",
+        "preco": "R$ 36,99",
+        "precoNormal": "R$ 36,99",
+        "desconto": 0,
+        "genre": "Puzzle / Action",
+        "image": "/capas/tetris.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679619954&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fpuyo-puyo-tetris",
+        "capa": "/capas/tetris.jpg"
+    },
+    {
+        "nome": "LEGO Star Wars: The Force Awakens",
+        "preco": "R$ 89,99",
+        "precoNormal": "R$ 89,99",
+        "desconto": 0,
+        "genre": "Action / Adventure",
+        "image": "/capas/lego-starwars-the-forceawakens.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679612774&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-star-wars-force-awakens",
+        "capa": "/capas/lego-starwars-the-forceawakens.jpg"
+    },
+    {
+        "nome": "LEGO Star Wars: The Skywalker Saga",
+        "preco": "R$ 199,99",
+        "precoNormal": "R$ 199,99",
+        "desconto": 0,
+        "genre": "Action / Adventure",
+        "image": "/capas/lego-starwars-the-skywalker.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679617139&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-star-wars-the-skywalker-saga",
+        "capa": "/capas/lego-starwars-the-skywalker.jpg"
+    },
+    {
+        "nome": "LEGO Batman Trilogy",
+        "preco": "R$ 20,00",
+        "precoNormal": "R$ 229,99",
+        "desconto": 91,
+        "genre": "Action / Adventure",
+        "image": "/capas/lego-batman-trilogy.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679621801&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-batman-trilogy",
+        "capa": "/capas/lego-batman-trilogy.jpg"
+    },
+    {
+        "nome": "XCOM: Enemy Unknown",
+        "preco": "R$ 27,99",
+        "precoNormal": "R$ 69,99",
+        "desconto": 60,
+        "genre": "Strategy / Tactical",
+        "image": "/capas/xcom.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796940&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fxcom-enemy-unknown",
+        "capa": "/capas/xcom.jpg"
+    },
+    {
+        "nome": "Grand Theft Auto VI - Xbox",
+        "preco": "R$ 450,00",
+        "precoNormal": "R$ 450,00",
+        "desconto": 0,
+        "genre": "AAA / Blockbuster",
+        "image": "/capas/grand-theft-auto-vi-playstation-5.webp",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.467963194&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fbundle%2Fgrand-theft-auto-6-xbox",
+        "capa": "/capas/grand-theft-auto-vi-playstation-5.webp"
+    },
+    {
+        "nome": "Viking: Battle for Asgard",
+        "preco": "R$ 39,99",
+        "precoNormal": "R$ 39,99",
+        "desconto": 0,
+        "genre": "Ação / RPG",
+        "image": "/capas/viking.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796993&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fviking-battle-for-asgard",
+        "capa": "/capas/viking.jpg"
+    },
+    {
+        "nome": "Hearts of Iron III",
+        "preco": "R$ 39,99",
+        "precoNormal": "R$ 39,99",
+        "desconto": 0,
+        "genre": "Estratégia",
+        "image": "/capas/hearts-of-iron-iii.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796950&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fhearts-of-iron-3-their-finest-hour",
+        "capa": "/capas/hearts-of-iron-iii.jpg"
+    },
+    {
+        "nome": "Mount & Blade Warband: Napoleonic Wars",
+        "preco": "R$ 39,99",
+        "precoNormal": "R$ 39,99",
+        "desconto": 0,
+        "genre": "Estratégia / Ação",
+        "image": "/capas/mount-blade-napoleonic-wars.jpg",
+        "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796651&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Fmount-blade-warband-napoleonic-wars",
+        "capa": "/capas/mount-blade-napoleonic-wars.jpg"
+    },
+    {
+        "nome": "UFC 6 - Xbox Series X|S",
+        "preco": "R$ 312,45",
+        "precoNormal": "R$ 472,00",
+        "desconto": 34,
+        "genre": "Sports / Fighting",
+        "image": "/capas/ufc-6-xbox-series-x-s.webp",
+        "video": "/videos/ufc-6.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/22459-comprar-ufc-6-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/ufc-6-xbox-series-x-s.webp"
+    },
+    {
+        "nome": "Forza Horizon 6 Premium Edition - PC & Xbox Series X|S",
+        "preco": "R$ 437,46",
+        "precoNormal": "R$ 708,00",
+        "desconto": 38,
+        "genre": "Racing / Simulation",
+        "image": "/capas/forza.jpg",
+        "video": "/videos/forza-horizon-6.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/21622-comprar-forza-horizon-6-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/forza.jpg"
+    },
+    {
+        "nome": "Final Fantasy VII Remake - PS4",
+        "preco": "R$ 176,30",
+        "precoNormal": "R$ 413,00",
+        "desconto": 57,
+        "genre": "Action / RPG",
+        "image": "/capas/final-fantasy-vii-remake-remake-playstation-4.jpg",
+        "video": "/videos/final-fantasy-vii-remake.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/4273-comprar-final-fantasy-vii-remake-remake-playstation-4-jogo-playstation-store/?igr=gamer-56c7016",
+        "capa": "/capas/final-fantasy-vii-remake-remake-playstation-4.jpg"
+    },
+    {
+        "nome": "Kentucky Route Zero: TV Edition - PS4 & PS5",
+        "preco": "R$ 129,07",
+        "precoNormal": "R$ 130,00",
+        "desconto": 1,
+        "genre": "Adventure / Indie",
+        "image": "/capas/kentucky-route-zero-tv-edition-tv-edition-playstation-4.jpg",
+        "video": "/videos/kentucky-route-zero.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/6127-comprar-kentucky-route-zero-tv-edition-tv-edition-playstation-4-playstation-5-jogo-playstation-store/?igr=gamer-56c7016",
+        "capa": "/capas/kentucky-route-zero-tv-edition-tv-edition-playstation-4.jpg"
+    },
+    {
+        "nome": "Assassin's Creed Shadows - PS5",
+        "preco": "R$ 224,00",
+        "precoNormal": "R$ 472,00",
+        "desconto": 53,
+        "genre": "Action / Adventure",
+        "image": "/capas/assassin-s-creed-shadows-pc.webp",
+        "video": "/videos/assassin-s-creed-shadows.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/20620-comprar-assassin-s-creed-shadows-playstation-5-playstation-store/?igr=gamer-56c7016",
+        "capa": "/capas/assassin-s-creed-shadows-pc.webp"
+    },
+    {
+        "nome": "Deathloop - PS5",
+        "preco": "R$ 350,78",
+        "precoNormal": "R$ 354,00",
+        "desconto": 1,
+        "genre": "Action / Shooter",
+        "image": "/capas/deathloop-playstation-5.jpg",
+        "video": "/videos/deathloop.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/5977-comprar-deathloop-playstation-5-jogo-playstation-store/?igr=gamer-56c7016",
+        "capa": "/capas/deathloop-playstation-5.jpg"
+    },
+    {
+        "nome": "Nioh 2: The Complete Edition - PS4 & PS5",
+        "preco": "R$ 235,80",
+        "precoNormal": "R$ 354,00",
+        "desconto": 33,
+        "genre": "Action / RPG",
+        "image": "/capas/nioh-2-the-complete-edition-complete-edition-playstation-4.jpg",
+        "video": "/videos/nioh-2.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/8195-comprar-nioh-2-the-complete-edition-complete-edition-playstation-4-playstation-5-jogo-playstation-store/?igr=gamer-56c7016",
+        "capa": "/capas/nioh-2-the-complete-edition-complete-edition-playstation-4.jpg"
+    },
+    {
+        "nome": "Horizon Forbidden West - PS4 & PS5",
+        "preco": "R$ 214,69",
+        "precoNormal": "R$ 472,00",
+        "desconto": 54,
+        "genre": "Action / Adventure",
+        "image": "/capas/horizon-forbidden-west.jpg",
+        "video": "/videos/horizon-forbidden-west.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/8893-comprar-horizon-forbidden-west-playstation-5-playstation-4-jogo-playstation-store/?igr=gamer-56c7016",
+        "capa": "/capas/horizon-forbidden-west.jpg"
+    },
+    {
+        "nome": "Yakuza Kiwami 2 - PS5",
+        "preco": "R$ 73,71",
+        "precoNormal": "R$ 118,00",
+        "desconto": 37,
+        "genre": "Action / Adventure",
+        "image": "/capas/yakuza-kiwami-2-playstation-5.webp",
+        "video": "/videos/yakuza-kiwami-2.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/21331-comprar-yakuza-kiwami-2-playstation-5-playstation-store/?igr=gamer-56c7016",
+        "capa": "/capas/yakuza-kiwami-2-playstation-5.webp"
+    },
+    {
+        "nome": "Street Fighter V: Champion Edition Upgrade Kit Bundle (PS4 & PS5)",
+        "preco": "R$ 38,86",
+        "precoNormal": "R$ 118,00",
+        "desconto": 67,
+        "genre": "Action / Fighting",
+        "image": "/capas/street-fighter-v-champion-edition-upgrade-kit-bundle-playstation-5.jpg",
+        "video": "/videos/street-fighter-v.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/23222-comprar-street-fighter-v-champion-edition-upgrade-kit-bundle-playstation-5-playstation-4-playstation-store/?igr=gamer-56c7016",
+        "capa": "/capas/street-fighter-v-champion-edition-upgrade-kit-bundle-playstation-5.jpg"
+    },
+    {
+        "nome": "Phantom Blade Zero (PS5)",
+        "preco": "R$ 254,12",
+        "precoNormal": "R$ 349,00",
+        "desconto": 27,
+        "genre": "Action / RPG",
+        "image": "/capas/phantom-blade-zero-playstation-5.webp",
+        "video": "/videos/phantom-blade-zero.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/17041-comprar-phantom-blade-zero-playstation-5-playstation-store/?igr=gamer-56c7016",
+        "capa": "/capas/phantom-blade-zero-playstation-5.webp"
+    },
+    {
+        "nome": "Grand Theft Auto VI (PS5)",
+        "preco": "R$ 371,42",
+        "precoNormal": "R$ 472,00",
+        "desconto": 21,
+        "genre": "AAA / Blockbuster",
+        "image": "/capas/grand-theft-auto-vi-playstation-5.webp",
+        "video": "/videos/gta-6.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/15506-comprar-grand-theft-auto-vi-playstation-5-playstation-store/?igr=gamer-56c7016",
+        "capa": "/capas/grand-theft-auto-vi-playstation-5.webp"
+    },
+    {
+        "nome": "The Sims 4 Cats & Dogs - PC & Mac (EA App)",
+        "preco": "R$ 71,88",
+        "precoNormal": "R$ 179,00",
+        "desconto": 60,
+        "genre": "Simulation",
+        "image": "/capas/the-sims-4-cats-dogs.jpg",
+        "video": "/videos/the-sims-4.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/2248-comprar-the-sims-4-cats-dogs-pc-mac-jogo-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/the-sims-4-cats-dogs.jpg"
+    },
+    {
+        "nome": "Mortal Kombat 11 - PC (Steam)",
+        "preco": "R$ 18,81",
+        "precoNormal": "R$ 230,00",
+        "desconto": 92,
+        "genre": "Action / Fighting",
+        "image": "/capas/mortal-kombat-11-pc.jpg",
+        "video": "/videos/mortal-kombat-11.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/3339-comprar-mortal-kombat-11-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/mortal-kombat-11-pc.jpg"
+    },
+    {
+        "nome": "Remnant 2 - Ultimate Edition - PC (Steam)",
+        "preco": "R$ 76,59",
+        "precoNormal": "R$ 413,00",
+        "desconto": 81,
+        "genre": "Action / Shooter",
+        "image": "/capas/remnant-2-ultimate-edition-ultimate-edition.jpg",
+        "video": "/videos/remnant-2.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/14372-comprar-remnant-2-ultimate-edition-ultimate-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/remnant-2-ultimate-edition-ultimate-edition.jpg"
+    },
+    {
+        "nome": "Hollow Knight - PC & Mac (Steam)",
+        "preco": "R$ 45,93",
+        "precoNormal": "R$ 47,00",
+        "desconto": 2,
+        "genre": "Action / Adventure",
+        "image": "/capas/hollow-knight.jpg",
+        "video": "/videos/hollow-knight.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/2198-comprar-hollow-knight-pc-mac-steam/?igr=gamer-56c7016",
+        "capa": "/capas/hollow-knight.jpg"
+    },
+    {
+        "nome": "PlateUp! - PC (Steam)",
+        "preco": "R$ 13,50",
+        "precoNormal": "R$ 60,00",
+        "desconto": 78,
+        "genre": "Simulation / Strategy",
+        "image": "/capas/plateup-pc.jpg",
+        "video": "/videos/plateup.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/12605-comprar-plateup-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/plateup-pc.jpg"
+    },
+    {
+        "nome": "The Lord of the Rings: Return to Moria - PC (Steam)",
+        "preco": "R$ 17,04",
+        "precoNormal": "R$ 144,00",
+        "desconto": 88,
+        "genre": "Survival / Crafting",
+        "image": "/capas/the-lord-of-the-rings-return-to-moria.jpg",
+        "video": "/videos/lotr-moria.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/14332-comprar-the-lord-of-the-rings-return-to-moria-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/the-lord-of-the-rings-return-to-moria.jpg"
+    },
+    {
+        "nome": "Assetto Corsa Competizione - PC (Steam)",
+        "preco": "R$ 22,35",
+        "precoNormal": "R$ 159,00",
+        "desconto": 86,
+        "genre": "Racing / Simulation",
+        "image": "/capas/assetto-corsa-competizione.jpg",
+        "video": "/videos/assetto-corsa.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/3153-comprar-assetto-corsa-competizione-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/assetto-corsa-competizione.jpg"
+    },
+    {
+        "nome": "IRON NEST: Heavy Turret Simulator - PC (Steam)",
+        "preco": "R$ 82,49",
+        "precoNormal": "R$ 82,49",
+        "desconto": 0,
+        "genre": "Simulation / Strategy",
+        "image": "/capas/iron-nest-heavy-turret-simulator.jpg",
+        "video": "/videos/iron-nest.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/21900-comprar-iron-nest-heavy-turret-simulator-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/iron-nest-heavy-turret-simulator.jpg"
+    },
+    {
+        "nome": "The Outlast Trials - PC (Steam)",
+        "preco": "R$ 70,70",
+        "precoNormal": "R$ 108,00",
+        "desconto": 35,
+        "genre": "Survival Horror / Action",
+        "image": "/capas/the-outlast-trials.jpg",
+        "video": "/videos/the-outlast-trials.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/5895-comprar-the-outlast-trials-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/the-outlast-trials.jpg"
+    },
+    {
+        "nome": "Kingdom Hearts Integrum Masterpiece - PC (Steam)",
+        "preco": "R$ 220,47",
+        "precoNormal": "R$ 420,00",
+        "desconto": 48,
+        "genre": "Action / RPG",
+        "image": "/capas/kingdom-hearts-integrum-masterpiece.jpg",
+        "video": "/videos/kingdom-hearts.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/16875-comprar-kingdom-hearts-integrum-masterpiece-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/kingdom-hearts-integrum-masterpiece.jpg"
+    },
+    {
+        "nome": "Construction Simulator - PC (Steam)",
+        "preco": "R$ 15,86",
+        "precoNormal": "R$ 74,00",
+        "desconto": 79,
+        "genre": "Simulation",
+        "image": "/capas/construction-simulator-pc.jpg",
+        "video": "/videos/construction-simulator.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/12936-comprar-construction-simulator-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/construction-simulator-pc.jpg"
+    },
+    {
+        "nome": "Human: Fall Flat - PC & Mac (Steam)",
+        "preco": "R$ 7,02",
+        "precoNormal": "R$ 38,00",
+        "desconto": 82,
+        "genre": "Puzzle / Platformer",
+        "image": "/capas/human-fall-flat-pc.jpg",
+        "video": "/videos/human-fall-flat.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/1611-comprar-human-fall-flat-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/human-fall-flat-pc.jpg"
+    },
+    {
+        "nome": "PEAK - PC (Steam)",
+        "preco": "R$ 32,96",
+        "precoNormal": "R$ 45,00",
+        "desconto": 27,
+        "genre": "Adventure / Indie",
+        "image": "/capas/peak-pc.jpg",
+        "video": "/videos/peak.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/19648-comprar-peak-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/peak-pc.jpg"
+    },
+    {
+        "nome": "Shift At Midnight - PC (Steam)",
+        "preco": "R$ 48,29",
+        "precoNormal": "R$ 60,00",
+        "desconto": 20,
+        "genre": "Horror / Indie",
+        "image": "/capas/shift-at-midnight-pc.jpg",
+        "video": "/videos/shift-at-midnight.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/22643-comprar-shift-at-midnight-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/shift-at-midnight-pc.jpg"
+    },
+    {
+        "nome": "Hell Clock - PC (Steam)",
+        "preco": "R$ 5,84",
+        "precoNormal": "R$ 60,00",
+        "desconto": 90,
+        "genre": "Action / Indie",
+        "image": "/capas/hell-clock-pc.jpg",
+        "video": "/videos/hell-clock.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/19798-comprar-hell-clock-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/hell-clock-pc.jpg"
+    },
+    {
+        "nome": "Minecraft Dungeons II - PC & Xbox Series X|S",
+        "preco": "R$ 141,46",
+        "precoNormal": "R$ 177,00",
+        "desconto": 20,
+        "genre": "Action / RPG",
+        "image": "/capas/minecraft.webp",
+        "video": "/videos/minecraft-dungeons-ii.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/18828-comprar-minecraft-dungeons-ii-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/minecraft.webp"
+    },
+    {
+        "nome": "Farming Simulator 25: Beans & Alpacas",
+        "preco": "R$ 106,08",
+        "precoNormal": "R$ 132,00",
+        "desconto": 20,
+        "genre": "Simulation",
+        "image": "/capas/farming-simulator-25-beans-alpacas.jpg",
+        "video": "/videos/farming-simulator-25.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/23241-comprar-farming-simulator-25-beans-alpacas-pc-mac-steam/?igr=gamer-56c7016",
+        "capa": "/capas/farming-simulator-25-beans-alpacas.jpg"
+    },
+    {
+        "nome": "Gears of War: E-Day Premium Edition",
+        "preco": "R$ 412,69",
+        "precoNormal": "R$ 590,00",
+        "desconto": 30,
+        "genre": "Action / Shooter",
+        "image": "/capas/gears-of-war-e-day-premium.webp",
+        "video": "/videos/gears-of-war-e-day.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/22979-comprar-gears-of-war-e-day-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/gears-of-war-e-day-premium.webp"
+    },
+    {
+        "nome": "NBA 2K27 Deluxe Edition",
+        "preco": "R$ 436,28",
+        "precoNormal": "R$ 590,00",
+        "desconto": 26,
+        "genre": "Sports / Simulation",
+        "image": "/capas/nba-2k27-deluxe-edition.webp",
+        "video": "/videos/nba-2k27.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/23580-comprar-nba-2k27-deluxe-edition-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/nba-2k27-deluxe-edition.webp"
+    },
+    {
+        "nome": "MARVEL Tōkon: Fighting Souls",
+        "preco": "R$ 247,59",
+        "precoNormal": "R$ 340,00",
+        "desconto": 27,
+        "genre": "Action / Fighting",
+        "image": "/capas/marvel-tokon-fighting-souls.jpg",
+        "video": "/videos/marvel-tokon.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/22627-comprar-marvel-tokon-fighting-souls-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/marvel-tokon-fighting-souls.jpg"
+    },
+    {
+        "nome": "Outbound",
+        "preco": "R$ 83,08",
+        "precoNormal": "R$ 83,08",
+        "desconto": 0,
+        "genre": "Adventure / Simulation",
+        "image": "/capas/outbound-pc.jpg",
+        "video": "/videos/outbound.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/16817-comprar-outbound-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/outbound-pc.jpg"
+    },
+    {
+        "nome": "Pragmata",
+        "preco": "R$ 193,93",
+        "precoNormal": "R$ 259,00",
+        "desconto": 25,
+        "genre": "Action / Adventure",
+        "image": "/capas/pragmata-pc.jpg",
+        "video": "/videos/pragmata.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/21523-comprar-pragmata-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/pragmata-pc.jpg"
+    },
+    {
+        "nome": "DragonSword: Awakening",
+        "preco": "R$ 123,77",
+        "precoNormal": "R$ 123,77",
+        "desconto": 0,
+        "genre": "Action / RPG",
+        "image": "/capas/dragonsword-awakening.jpg",
+        "video": "/videos/dragonsword.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/22405-comprar-dragonsword-awakening-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/dragonsword-awakening.jpg"
+    },
+    {
+        "nome": "Resident Evil Requiem",
+        "preco": "R$ 182,73",
+        "precoNormal": "R$ 299,00",
+        "desconto": 39,
+        "genre": "Survival Horror / Action",
+        "image": "/capas/resident-evil-requiem.webp",
+        "video": "/videos/resident-evil-requiem.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/20992-comprar-resident-evil-requiem-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/resident-evil-requiem.webp"
+    },
+    {
+        "nome": "No More Room In Hell 2",
+        "preco": "R$ 79,54",
+        "precoNormal": "R$ 89,00",
+        "desconto": 11,
+        "genre": "Survival / Action",
+        "image": "/capas/no-more-room-in-hell-2.jpg",
+        "video": "/videos/no-more-room-in-hell-2.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/12335-comprar-no-more-room-in-hell-2-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/no-more-room-in-hell-2.jpg"
+    },
+    {
+        "nome": "HumanitZ",
+        "preco": "R$ 26,53",
+        "precoNormal": "R$ 58,00",
+        "desconto": 54,
+        "genre": "Survival / Action",
+        "image": "/capas/humanitz-pc.jpg",
+        "video": "/videos/humanitz.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/21754-comprar-humanitz-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/humanitz-pc.jpg"
+    },
+    {
+        "nome": "Grand Theft Auto V (Enhanced)",
+        "preco": "R$ 57,73",
+        "precoNormal": "R$ 150,00",
+        "desconto": 61,
+        "genre": "AAA / Blockbuster",
+        "image": "/capas/grand-theft-auto-iv-the-complete.jpg",
+        "video": "/videos/gta-5.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/4211-comprar-grand-theft-auto-v-enhanced-pc-rockstar/?igr=gamer-56c7016",
+        "capa": "/capas/grand-theft-auto-iv-the-complete.jpg"
+    },
+    {
+        "nome": "Roblox Card - 2000 Robux",
+        "preco": "R$ 129,66",
+        "precoNormal": "R$ 147,00",
+        "desconto": 12,
+        "genre": "Gift Card",
+        "image": "/capas/roblox-card-2000-robux-pc-cover.jpg",
+        "video": "/videos/roblox.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/15168-comprar-roblox-card-2000-robux-pc/?igr=gamer-56c7016",
+        "capa": "/capas/roblox-card-2000-robux-pc-cover.jpg"
+    },
+    {
+        "nome": "Minecraft: Java & Bedrock Edition",
+        "preco": "R$ 94,87",
+        "precoNormal": "R$ 177,00",
+        "desconto": 46,
+        "genre": "Sandbox",
+        "image": "/capas/minecraft.webp",
+        "video": "/videos/minecraft.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/442-comprar-minecraft-java-bedrock-edition-pc-mac/?igr=gamer-56c7016",
+        "capa": "/capas/minecraft.webp"
+    },
+    {
+        "nome": "Marvel's Spider-Man: Miles Morales",
+        "preco": "R$ 91,93",
+        "precoNormal": "R$ 295,00",
+        "desconto": 69,
+        "genre": "AAA / Blockbuster",
+        "image": "/capas/marvel-s-spider-man.jpg",
+        "video": "/videos/spider-man-miles-morales.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/12953-comprar-marvel-s-spider-man-miles-morales-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/marvel-s-spider-man.jpg"
+    },
+    {
+        "nome": "Red Dead Redemption 2: Ultimate Edition",
+        "preco": "R$ 105,49",
+        "precoNormal": "R$ 500,00",
+        "desconto": 79,
+        "genre": "AAA / Blockbuster",
+        "image": "/capas/red-dead-redemption-2-ultimate.webp",
+        "video": "/videos/red-dead-2.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/5653-comprar-red-dead-redemption-2-ultimate-edition-ultimate-edition-pc-jogo-rockstar/?igr=gamer-56c7016",
+        "capa": "/capas/red-dead-redemption-2-ultimate.webp"
+    },
+    {
+        "nome": "Mount & Blade II: Bannerlord",
+        "preco": "R$ 92,51",
+        "precoNormal": "R$ 295,00",
+        "desconto": 69,
+        "genre": "RPG / Strategy",
+        "image": "/capas/mount-blade-ii-bannerlord.jpg",
+        "video": "/videos/bannerlord.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/761-comprar-mount-blade-ii-bannerlord-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/mount-blade-ii-bannerlord.jpg"
+    },
+    {
+        "nome": "Forza Horizon 6 - Xbox & PC",
+        "preco": "R$ 286,51",
+        "precoNormal": "R$ 413,00",
+        "desconto": 31,
+        "genre": "Racing / Blockbuster",
+        "image": "/capas/forza.jpg",
+        "video": "/videos/forza-horizon-6.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/19535-comprar-forza-horizon-6-xbox-series-x-s-pc-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/forza.jpg"
+    },
+    {
+        "nome": "Cyberpunk 2077: Ultimate Edition",
+        "preco": "R$ 173,30",
+        "precoNormal": "R$ 531,00",
+        "desconto": 67,
+        "genre": "RPG / Action",
+        "image": "/capas/cyberpunk-2077.jpg",
+        "video": "/videos/cyberpunk-2077.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/14769-comprar-cyberpunk-2077-ultimate-edition-ultimate-edition-pc-jogo-gog-com/?igr=gamer-56c7016",
+        "capa": "/capas/cyberpunk-2077.jpg"
+    },
+    {
+        "nome": "Warhammer 40,000: Space Marine 2",
+        "preco": "R$ 101,36",
+        "precoNormal": "R$ 200,00",
+        "desconto": 49,
+        "genre": "Action / Shooter",
+        "image": "/capas/warhammer-40-000-darktide-pc.jpg",
+        "video": "/videos/space-marine-2.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/10140-comprar-warhammer-40-000-space-marine-2-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/warhammer-40-000-darktide-pc.jpg"
+    },
+    {
+        "nome": "Arma Reforger",
+        "preco": "R$ 150,30",
+        "precoNormal": "R$ 177,00",
+        "desconto": 15,
+        "genre": "Simulation / Shooter",
+        "image": "/capas/arma-reforger-pc.webp",
+        "video": "/videos/arma-reforger.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/11273-comprar-arma-reforger-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/arma-reforger-pc.webp"
+    },
+    {
+        "nome": "Mount & Blade II: Bannerlord - War Sails",
+        "preco": "R$ 79,54",
+        "precoNormal": "R$ 120,00",
+        "desconto": 34,
+        "genre": "RPG / Strategy",
+        "image": "/capas/mount-blade-ii-bannerlord-war-sails.jpg",
+        "video": "/videos/bannerlord-warsails.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/18942-comprar-mount-blade-ii-bannerlord-war-sails-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/mount-blade-ii-bannerlord-war-sails.jpg"
+    },
+    {
+        "nome": "Squad",
+        "preco": "R$ 76,00",
+        "precoNormal": "R$ 289,00",
+        "desconto": 74,
+        "genre": "Shooter",
+        "image": "/capas/jogo-steam-squad.jpg",
+        "video": "/videos/squad.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/1309-comprar-jogo-steam-squad/?igr=gamer-56c7016",
+        "capa": "/capas/jogo-steam-squad.jpg"
+    },
+    {
+        "nome": "Crusader Kings III",
+        "preco": "R$ 68,34",
+        "precoNormal": "R$ 189,00",
+        "desconto": 64,
+        "genre": "Strategy",
+        "image": "/capas/crusader-kings-iii-pc.jpg",
+        "video": "/videos/crusader-kings-3.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/5692-comprar-crusader-kings-iii-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/crusader-kings-iii-pc.jpg"
+    },
+    {
+        "nome": "V Rising",
+        "preco": "R$ 37,68",
+        "precoNormal": "R$ 102,00",
+        "desconto": 63,
+        "genre": "Action / RPG",
+        "image": "/capas/v-rising.jpg",
+        "video": "/videos/v-rising.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/11030-comprar-v-rising-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/v-rising.jpg"
+    },
+    {
+        "nome": "The Sims 4 Businesses & Hobbies",
+        "preco": "R$ 109,02",
+        "precoNormal": "R$ 236,00",
+        "desconto": 54,
+        "genre": "Simulation",
+        "image": "/capas/the-sims-4-businesses-hobbies.jpg",
+        "video": "/videos/the-sims-4.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/18677-comprar-the-sims-4-businesses-hobbies-pc-mac-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/the-sims-4-businesses-hobbies.jpg"
+    },
+    {
+        "nome": "Days Gone",
+        "preco": "R$ 76,00",
+        "precoNormal": "R$ 200,00",
+        "desconto": 62,
+        "genre": "Action / Adventure",
+        "image": "/capas/days-gone.jpg",
+        "video": "/videos/days-gone.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/6791-comprar-days-gone-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/days-gone.jpg"
+    },
+    {
+        "nome": "Age of Empires II: Definitive Edition",
+        "preco": "R$ 61,26",
+        "precoNormal": "R$ 90,00",
+        "desconto": 32,
+        "genre": "Strategy",
+        "image": "/capas/mortal-kombat-1-definitive-edition.jpg",
+        "video": "/videos/age-of-empires-2.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/4820-comprar-age-of-empires-ii-definitive-edition-definitive-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/mortal-kombat-1-definitive-edition.jpg"
+    },
+    {
+        "nome": "LEGO Marvel Super Heroes 2 Deluxe Edition",
+        "preco": "R$ 17,63",
+        "precoNormal": "R$ 160,00",
+        "desconto": 89,
+        "genre": "Action / Adventure",
+        "image": "/capas/lego-marvel-super-heroes-2.jpg",
+        "video": "/videos/lego-marvel-2.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/8453-comprar-lego-marvel-super-heroes-2-deluxe-edition-deluxe-edition-pc-mac-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/lego-marvel-super-heroes-2.jpg"
+    },
+    {
+        "nome": "The Sims 3",
+        "preco": "R$ 9,96",
+        "precoNormal": "R$ 73,00",
+        "desconto": 86,
+        "genre": "Simulation",
+        "image": "/capas/tetris.jpg",
+        "video": "/videos/the-sims-3.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/51-comprar-os-sims-3-pc-ea-app/?igr=gamer-56c7016",
+        "capa": "/capas/tetris.jpg"
+    },
+    {
+        "nome": "Windows 11 Home - PC",
+        "preco": "R$ 147,35",
+        "precoNormal": "R$ 855,00",
+        "desconto": 83,
+        "genre": "Software",
+        "image": "/capas/windows-11-home-pc.jpg",
+        "video": "",
+        "linkBase": "https://www.instant-gaming.com/pt/13375-comprar-windows-11-home-pc-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/windows-11-home-pc.jpg"
+    },
+    {
+        "nome": "Scum",
+        "preco": "R$ 57,73",
+        "precoNormal": "R$ 160,00",
+        "desconto": 64,
+        "genre": "Survival / Action",
+        "image": "/capas/scum-pc.jpg",
+        "video": "/videos/scum.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/2159-comprar-scum-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/scum-pc.jpg"
+    },
+    {
+        "nome": "Green Hell",
+        "preco": "R$ 12,32",
+        "precoNormal": "R$ 124,00",
+        "desconto": 90,
+        "genre": "Survival",
+        "image": "/capas/green-hell-pc.jpg",
+        "video": "/videos/green-hell.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/5639-comprar-green-hell-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/green-hell-pc.jpg"
+    },
+    {
+        "nome": "Call of Duty: Modern Warfare 4 - Edição Vault",
+        "preco": "R$ 509,98",
+        "precoNormal": "R$ 649,00",
+        "desconto": 21,
+        "genre": "AAA / Shooter",
+        "image": "/capas/call-of-duty-modern-warfare-4.webp",
+        "video": "/videos/cod-mw.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/22745-comprar-call-of-duty-modern-warfare-4-edicao-vault-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/call-of-duty-modern-warfare-4.webp"
+    },
+    {
+        "nome": "Age of Empires IV: Anniversary Edition",
+        "preco": "R$ 83,67",
+        "precoNormal": "R$ 100,00",
+        "desconto": 16,
+        "genre": "Strategy",
+        "image": "/capas/age-of-empires-iv.jpg",
+        "video": "/videos/age-of-empires-4.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/2244-comprar-age-of-empires-iv-anniversary-edition-anniversary-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/age-of-empires-iv.jpg"
+    },
+    {
+        "nome": "Dark Souls II: Scholar of the First Sin",
+        "preco": "R$ 86,62",
+        "precoNormal": "R$ 155,00",
+        "desconto": 44,
+        "genre": "Action / RPG",
+        "image": "/capas/dark-souls-ii.jpg",
+        "video": "/videos/dark-souls-2.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/697-comprar-dark-souls-ii-scholar-of-the-first-sin-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/dark-souls-ii.jpg"
+    },
+    {
+        "nome": "Medieval Dynasty",
+        "preco": "R$ 68,93",
+        "precoNormal": "R$ 129,00",
+        "desconto": 47,
+        "genre": "Simulation / Survival",
+        "image": "/capas/medieval-dynasty-pc.jpg",
+        "video": "/videos/medieval-dynasty.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/7590-comprar-medieval-dynasty-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/medieval-dynasty-pc.jpg"
+    },
+    {
+        "nome": "Escape from Tarkov",
+        "preco": "R$ 235,80",
+        "precoNormal": "R$ 235,80",
+        "desconto": 0,
+        "genre": "Shooter / Survival",
+        "image": "/capas/escape-from-tarkov-pc.jpg",
+        "video": "/videos/escape-from-tarkov.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/20441-comprar-escape-from-tarkov-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/escape-from-tarkov-pc.jpg"
+    },
+    {
+        "nome": "Grand Theft Auto IV: The Complete Edition",
+        "preco": "R$ 46,52",
+        "precoNormal": "R$ 79,00",
+        "desconto": 41,
+        "genre": "AAA / Blockbuster",
+        "image": "/capas/grand-theft-auto-iv-the-complete.jpg",
+        "video": "/videos/gta-4.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/354-comprar-grand-theft-auto-iv-the-complete-edition-pc-rockstar/?igr=gamer-56c7016",
+        "capa": "/capas/grand-theft-auto-iv-the-complete.jpg"
+    },
+    {
+        "nome": "Sniper Elite 4 Deluxe Edition",
+        "preco": "R$ 16,45",
+        "precoNormal": "R$ 153,00",
+        "desconto": 89,
+        "genre": "Action / Shooter",
+        "image": "/capas/sniper-elite-4-deluxe-edition-deluxe-edition-pc.jpg",
+        "video": "/videos/sniper-elite-4.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/6136-comprar-sniper-elite-4-deluxe-edition-deluxe-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/sniper-elite-4-deluxe-edition-deluxe-edition-pc.jpg"
+    },
+    {
+        "nome": "Resonance: A Plague Tale Legacy",
+        "preco": "R$ 221,06",
+        "precoNormal": "R$ 221,06",
+        "desconto": 0,
+        "genre": "Action / Adventure",
+        "image": "/capas/resonance-a-plague-tale-legacy-pc.webp",
+        "video": "/videos/plague-tale.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/19517-comprar-resonance-a-plague-tale-legacy-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/resonance-a-plague-tale-legacy-pc.webp"
+    },
+    {
+        "nome": "Among Us",
+        "preco": "R$ 23,53",
+        "precoNormal": "R$ 23,53",
+        "desconto": 0,
+        "genre": "Casual / Party",
+        "image": "/capas/blasphemous-pc.jpg",
+        "video": "/videos/among-us.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/7522-comprar-among-us-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/blasphemous-pc.jpg"
+    },
+    {
+        "nome": "SnowRunner",
+        "preco": "R$ 69,52",
+        "precoNormal": "R$ 100,00",
+        "desconto": 30,
+        "genre": "Simulation",
+        "image": "/capas/snowrunner-pc-mac-steam-cover.jpg",
+        "video": "/videos/snowrunner.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/8798-comprar-snowrunner-pc-mac-steam/?igr=gamer-56c7016",
+        "capa": "/capas/snowrunner-pc-mac-steam-cover.jpg"
+    },
+    {
+        "nome": "Kenshi",
+        "preco": "R$ 44,75",
+        "precoNormal": "R$ 58,00",
+        "desconto": 23,
+        "genre": "RPG / Strategy",
+        "image": "/capas/kenshi-pc-jogo.jpg",
+        "video": "/videos/kenshi.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/3416-comprar-kenshi-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/kenshi-pc-jogo.jpg"
+    },
+    {
+        "nome": "Zero Hour",
+        "preco": "R$ 5,90",
+        "precoNormal": "R$ 33,00",
+        "desconto": 82,
+        "genre": "Action / Shooter",
+        "image": "/capas/zero-hour-pc.jpg",
+        "video": "/videos/zero-hour.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/17187-comprar-zero-hour-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/zero-hour-pc.jpg"
+    },
+    {
+        "nome": "Mortal Kombat 1 Definitive Edition",
+        "preco": "R$ 86,03",
+        "precoNormal": "R$ 300,00",
+        "desconto": 71,
+        "genre": "Action / Fighting",
+        "image": "/capas/mortal-kombat-1-definitive-edition.jpg",
+        "video": "/videos/mortal-kombat-1.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/19340-comprar-mortal-kombat-1-definitive-edition-definitive-edition-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/mortal-kombat-1-definitive-edition.jpg"
+    },
+    {
+        "nome": "The Witcher 3: Wild Hunt - Game of the Year Edition",
+        "preco": "R$ 64,21",
+        "precoNormal": "R$ 160,00",
+        "desconto": 60,
+        "genre": "RPG / Action",
+        "image": "/capas/the-witcher-3-wild-hunt.jpg",
+        "video": "/videos/witcher-3.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/1497-comprar-the-witcher-3-wild-hunt-game-of-the-year-edition-pc-gog-com/?igr=gamer-56c7016",
+        "capa": "/capas/the-witcher-3-wild-hunt.jpg"
+    },
+    {
+        "nome": "Assassin's Creed Shadows",
+        "preco": "R$ 148,53",
+        "precoNormal": "R$ 350,00",
+        "desconto": 58,
+        "genre": "Action / Adventure",
+        "image": "/capas/assassin-s-creed-shadows-pc.webp",
+        "video": "/videos/ac-shadows.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/12831-comprar-assassin-s-creed-shadows-pc-ubisoft-connect/?igr=gamer-56c7016",
+        "capa": "/capas/assassin-s-creed-shadows-pc.webp"
+    },
+    {
+        "nome": "The Elder Scrolls IV: Oblivion Remastered - Deluxe Edition",
+        "preco": "R$ 226,95",
+        "precoNormal": "R$ 320,00",
+        "desconto": 29,
+        "genre": "Action / RPG",
+        "image": "/capas/the-elder-scrolls-iv-oblivion-remastered-deluxe.jpg",
+        "video": "/videos/oblivion.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/19152-comprar-the-elder-scrolls-iv-oblivion-remastered-deluxe-edition-pc-steam/?igr=gamer-56c7016",
+        "capa": "/capas/the-elder-scrolls-iv-oblivion-remastered-deluxe.jpg"
+    },
+    {
+        "nome": "Halo: Campaign Evolved - PC & Xbox Series X|S",
+        "preco": "R$ 224,00",
+        "precoNormal": "R$ 354,00",
+        "desconto": 37,
+        "genre": "Action / Shooter",
+        "image": "/capas/halo-campaign-evolved-pc.jpg",
+        "video": "/videos/halo.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/20731-comprar-halo-campaign-evolved-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
+        "capa": "/capas/halo-campaign-evolved-pc.jpg"
+    },
+    {
+        "nome": "Batman: Arkham Origins",
+        "preco": "R$ 15,27",
+        "precoNormal": "R$ 90,00",
+        "desconto": 83,
+        "genre": "Action / Adventure",
+        "image": "/capas/batman-arkham-origins.jpg",
+        "video": "/videos/batman-origins.mp4",
+        "linkBase": "https://www.instant-gaming.com/pt/184-comprar-batman-arkham-origins-pc-jogo-steam/?igr=gamer-56c7016",
+        "capa": "/capas/batman-arkham-origins.jpg"
+    }
 ]
