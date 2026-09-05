@@ -6,7 +6,7 @@ import notebooksLocais from '../data/notebooks.json';
 import ProductSchema from '../components/ProductSchema.astro';
 ---
 
-<LayoutPrincipal titulo="CompraJogos - Notebooks, PC (Grátis e Pagos), PS4, PS5, Xbox e Nintendo" descricao="Explore centenas de jogos de PC grátis e pagos, ofertas para PS4, PS5, Xbox, Nintendo, além de notebooks de alta performance.">[cite: 1]
+<LayoutPrincipal titulo="CompraJogos - Notebooks, PC (Grátis e Pagos), PS4, PS5, Xbox e Nintendo" descricao="Explore centenas de jogos de PC grátis e pagos, ofertas para PS4, PS5, Xbox, Nintendo, além de notebooks de alta performance.">
   <head slot="head">
     {jogosLocais.map((jogo) => (
       <ProductSchema 
@@ -28,7 +28,7 @@ import ProductSchema from '../components/ProductSchema.astro';
     ))}
   </head>
 
-  <main class="container mx-auto px-4 py-8">[cite: 1]
+  <main class="container mx-auto px-4 py-8">
 
     <!-- Seção de Destaque com o Botão Buraco Negro -->
     <div class="flex flex-col md:flex-row items-center justify-between bg-slate-900/60 border border-slate-800 p-6 rounded-2xl mb-8 gap-4 shadow-xl backdrop-blur-md">
@@ -198,7 +198,6 @@ import ProductSchema from '../components/ProductSchema.astro';
   </style>
 
   <script>
-    // Lógica para o Botão Voltar ao Topo
     const scrollBtn = document.getElementById('scrollToTopBtn');
     if (scrollBtn) {
       window.addEventListener('scroll', () => {
