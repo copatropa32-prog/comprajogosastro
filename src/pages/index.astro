@@ -191,7 +191,6 @@ import ProductSchema from '../components/ProductSchema.astro';
         return parseFloat(clean) || 0;
     }
 
-    // Lazy load rigoroso do AdSense ativado após a primeira rolagem
     let adsCarregados = false;
     function carregarGoogleAdSense() {
       if (adsCarregados) return;
@@ -232,7 +231,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'Grand Theft Auto VI (PS5)',
           type: 'paid',
           genre: 'Action / Adventure',
-          image: '/capas/grand-theft-auto-vi-playstation-5.jpg',
+          image: '/capas/grand-theft-auto-vi-playstation-5.webp',
           saleFormatted: 'R$ 371,42',
           normalFormatted: 'R$ 472,00',
           savings: 21,
@@ -246,7 +245,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'Phantom Blade Zero - PC (Steam)',
           type: 'paid',
           genre: 'Action RPG',
-          image: '/capas/phantom-blade-zero-playstation-5.jpg',
+          image: '/capas/phantom-blade-zero-playstation-5.webp',
           saleFormatted: 'R$ 197,47',
           normalFormatted: 'R$ 230,00',
           savings: 14,
@@ -260,7 +259,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'Gears of War: E-Day Premium Edition + Acesso avançado',
           type: 'paid',
           genre: 'Action / Shooter',
-          image: '/capas/gears-of-war-e-day-premium.jpg',
+          image: '/capas/gears-of-war-e-day-premium.webp',
           saleFormatted: 'R$ 412,69',
           normalFormatted: 'R$ 590,00',
           savings: 30,
@@ -274,7 +273,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'NBA 2K27 Deluxe Edition',
           type: 'paid',
           genre: 'Sports / Simulation',
-          image: '/capas/nba-2k27-deluxe-edition.jpg',
+          image: '/capas/nba-2k27-deluxe-edition.webp',
           saleFormatted: 'R$ 430,38',
           normalFormatted: 'R$ 550,00',
           savings: 22,
@@ -288,7 +287,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'UFC 6 - Xbox Series X|S',
           type: 'paid',
           genre: 'Fighting / Sports',
-          image: '/capas/ufc-6-xbox-series-x-s.jpg',
+          image: '/capas/ufc-6-xbox-series-x-s.webp',
           saleFormatted: 'R$ 312,45',
           normalFormatted: 'R$ 472,00',
           savings: 34,
@@ -302,7 +301,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'Forza Horizon 6 Premium Edition - PC & Xbox Series X|S',
           type: 'paid',
           genre: 'Racing / Open World',
-          image: '/capas/forza-horizon-6-premium-edition-pc-xbox.jpg',
+          image: '/capas/forza-horizon-6-premium-edition-pc-xbox.webp',
           saleFormatted: 'R$ 437,46',
           normalFormatted: 'R$ 708,00',
           savings: 38,
@@ -316,7 +315,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'Resident Evil Requiem - PC (Steam)',
           type: 'paid',
           genre: 'Survival Horror',
-          image: '/capas/resident-evil-requiem.jpg',
+          image: '/capas/resident-evil-requiem.webp',
           saleFormatted: 'R$ 182,73',
           normalFormatted: 'R$ 299,00',
           savings: 39,
@@ -330,7 +329,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'Call of Duty: Modern Warfare 4 - Edição Vault',
           type: 'paid',
           genre: 'Action / Shooter',
-          image: '/capas/call-of-duty-modern-warfare-4.jpg',
+          image: '/capas/call-of-duty-modern-warfare-4.webp',
           saleFormatted: 'R$ 509,98',
           normalFormatted: 'R$ 649,00',
           savings: 21,
@@ -344,7 +343,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'Resonance: A Plague Tale Legacy - PC & Xbox Series X|S',
           type: 'paid',
           genre: 'Action / Adventure',
-          image: '/capas/resonance-a-plague-tale-legacy-pc.jpg',
+          image: '/capas/resonance-a-plague-tale-legacy-pc.webp',
           saleFormatted: 'R$ 218,11',
           normalFormatted: 'R$ 279,99',
           savings: 22,
@@ -358,7 +357,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'Minecraft: Java & Bedrock Edition',
           type: 'paid',
           genre: 'Sandbox / Survival',
-          image: '/capas/minecraft.jpg',
+          image: '/capas/minecraft.webp',
           saleFormatted: 'R$ 96,64',
           normalFormatted: 'R$ 177,00',
           savings: 45,
@@ -372,7 +371,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'Red Dead Redemption 2: Ultimate Edition',
           type: 'paid',
           genre: 'Action / Adventure',
-          image: '/capas/red-dead-redemption-2-pc-jogo-rockstar.jpg',
+          image: '/capas/red-dead-redemption-2-pc-jogo-rockstar.webp',
           saleFormatted: 'R$ 106,67',
           normalFormatted: 'R$ 500,00',
           savings: 79,
@@ -386,7 +385,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: "Assassin's Creed Shadows - PS5",
           type: 'paid',
           genre: 'Action / Adventure',
-          image: '/capas/assassin-s-creed-shadows-playstation-5.jpg',
+          image: '/capas/assassin-s-creed-shadows-playstation-5.webp',
           saleFormatted: 'R$ 247,59',
           normalFormatted: 'R$ 472,00',
           savings: 48,
@@ -400,7 +399,7 @@ import ProductSchema from '../components/ProductSchema.astro';
           title: 'Yakuza Kiwami 2 - PS5',
           type: 'paid',
           genre: 'Action / Adventure',
-          image: '/capas/yakuza-kiwami-2-playstation-5.jpg',
+          image: '/capas/yakuza-kiwami-2-playstation-5.webp',
           saleFormatted: 'R$ 73,71',
           normalFormatted: 'R$ 118,00',
           savings: 37,
@@ -503,10 +502,10 @@ import ProductSchema from '../components/ProductSchema.astro';
         return;
       }
 
-      track.innerHTML = lancamentos.map(item => `
+      track.innerHTML = lancamentos.map((item, index) => `
         <div class="min-w-[260px] sm:min-w-[280px] max-w-[280px] bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shrink-0 snap-start shadow-xl hover:border-slate-700 transition">
           <div class="relative bg-slate-950 h-36 overflow-hidden flex items-center justify-center">
-            <img src="${item.image}" alt="${item.title}" loading="lazy" decoding="async" width="280" height="144" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
+            <img src="${item.image}" alt="${item.title}" ${index === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy" decoding="async"'} width="280" height="144" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
             <span class="absolute top-2 left-2 bg-emerald-500/90 text-slate-950 text-[9px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">${item.ano || '2026'}</span>
             ${item.id === 'bb-gta6' ? '<span class="absolute top-2 right-2 bg-indigo-600 text-white font-black text-[10px] px-2 py-0.5 rounded shadow">Mais Esperado</span>' : ''}
             ${item.savings > 0 && item.id !== 'bb-gta6' ? `<span class="absolute top-2 right-2 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-0.5 rounded shadow">-${item.savings}%</span>` : ''}
@@ -609,7 +608,7 @@ import ProductSchema from '../components/ProductSchema.astro';
         } else if (filtroAtual === 'ps5') {
           matchFiltro = j.platform === 'PS5';
         } else if (filtroAtual === 'xbox') {
-          matchFillto = j.platform === 'Xbox';
+          matchFiltro = j.platform === 'Xbox';
         } else if (filtroAtual === 'nintendo') {
           matchFiltro = j.platform === 'Nintendo';
         }
@@ -626,10 +625,10 @@ import ProductSchema from '../components/ProductSchema.astro';
         return;
       }
 
-      container.innerHTML = filtrados.map(item => `
+      container.innerHTML = filtrados.map((item, index) => `
         <div class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition-all duration-300 shadow-xl">
           <div class="relative bg-slate-950 h-44 overflow-hidden flex items-center justify-center">
-            <img src="${item.image}" alt="${item.title}" loading="lazy" decoding="async" width="300" height="176" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
+            <img src="${item.image}" alt="${item.title}" ${index < 4 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy" decoding="async"'} width="300" height="176" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
             <span class="absolute top-3 left-3 bg-slate-900/90 text-slate-300 text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider">${item.genre}</span>
             ${item.savings > 0 && (item.type === 'paid' || item.type === 'notebook') ? `<span class="absolute top-3 right-3 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-1 rounded-md shadow">-${item.savings}%</span>` : ''}
             ${item.type === 'free' ? `<span class="absolute top-3 right-3 bg-indigo-600 text-white font-bold text-xs px-2 py-1 rounded-md shadow">Grátis</span>` : ''}
