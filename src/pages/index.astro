@@ -694,10 +694,17 @@ import ProductSchema from '../components/ProductSchema.astro';
       `).join('');
     }
 
-    window.abrirOfertaAleatoria = function() {
+   window.abrirOfertaAleatoria = function() {
       if (!catalogoGlobal || catalogoGlobal.length === 0) return;
       
-      const itensValidos = catalogoGlobal.filter(item => item && item.url && item.url.startsWith('http'));
+      // Filtra apenas itens que possuem URLs válidas de parceiros e que não sejam domínios inativos
+      const itensValidos = catalogoGlobal.filter(item => {
+        if (!item || !item.url || !item.url.startsWith('http')) return false;
+        // Evita domínios que sabemos estarem fora do ar
+        if (item.url.includes('pso2.com')) return false;
+        return true;
+      });
+
       if (itensValidos.length === 0) return;
 
       const indiceAleatorio = Math.floor(Math.random() * itensValidos.length);
