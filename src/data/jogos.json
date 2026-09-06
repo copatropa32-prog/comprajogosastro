@@ -145,9 +145,9 @@
         "preco": "R$ 15,27",
         "precoNormal": "R$ 60",
         "desconto": 75,
-        "image": "/capas/celeste-pc.webp",
+        "image": "/capas/snowrunner-pc-mac-steam-cover.webp",
         "linkBase": "https://www.instant-gaming.com/pt/8003-comprar-celeste-pc-mac-jogo-steam/?igr=gamer-56c7016",
-        "capa": "/capas/celeste-pc.webp"
+        "capa": "/capas/snowrunner-pc-mac-steam-cover.webp"
     },
     {
         "nome": "Warhammer 40,000: Darktide - PC (Steam)",
@@ -155,9 +155,9 @@
         "preco": "R$ 49,47",
         "precoNormal": "R$ 236",
         "desconto": 79,
-        "image": "/capas/warhammer-40-000-darktide-pc.webp",
+        "image": "/capas/warhammer-40-000-darktide-imperial-edition-imperial-edition-pc.webp",
         "linkBase": "https://www.instant-gaming.com/pt/7368-comprar-warhammer-40-000-darktide-pc-jogo-steam/?igr=gamer-56c7016",
-        "capa": "/capas/warhammer-40-000-darktide-pc.webp"
+        "capa": "/capas/warhammer-40-000-darktide-imperial-edition-imperial-edition-pc.webp"
     },
     {
         "nome": "We Were Here Too - PC & Mac (Steam)",
@@ -195,9 +195,9 @@
         "preco": "R$ 141,46",
         "precoNormal": "",
         "desconto": 0,
-        "image": "/capas/windrose-pc.webp",
+        "image": "/capas/snowrunner-pc-mac-steam-cover.webp",
         "linkBase": "https://www.instant-gaming.com/pt/21876-comprar-windrose-pc-steam/?igr=gamer-56c7016",
-        "capa": "/capas/windrose-pc.webp"
+        "capa": "/capas/snowrunner-pc-mac-steam-cover.webp"
     },
     {
         "nome": "Forensics: Crime Scene Detective - PC (Steam)",
@@ -525,9 +525,9 @@
         "precoNormal": "R$ 169",
         "desconto": 31,
         "genre": "Strategy",
-        "image": "/capas/chernobylite-premium-edition.webp",
+        "image": "/capas/age-of-mytholog.webp",
         "linkBase": "https://www.instant-gaming.com/pt/17567-comprar-age-of-mythology-retold-premium-edition-premium-edition-pc-jogo-steam/?igr=gamer-56c7016",
-        "capa": "/capas/chernobylite-premium-edition.webp"
+        "capa": "/capas/age-of-mytholog.webp"
     },
     {
         "nome": "Marvel's Avengers",
@@ -695,9 +695,9 @@
         "precoNormal": "R$ 550",
         "desconto": 62,
         "genre": "Action / Adventure",
-        "image": "/capas/assassin-s-creed-shadows-playstation-5 (2).webp",
+        "image": "/capas/assassin-s-creed-shadows-playstation-5.webp",
         "linkBase": "https://www.instant-gaming.com/pt/21500-comprar-assassin-s-creed-shadows-premium-edition-pc-ubisoft-connect/?igr=gamer-56c7016",
-        "capa": "/capas/assassin-s-creed-shadows-playstation-5 (2).webp"
+        "capa": "/capas/assassin-s-creed-shadows-playstation-5.webp"
     },
     {
         "nome": "7 Days to Die",
@@ -785,9 +785,9 @@
         "precoNormal": "R$ 130",
         "desconto": 95,
         "genre": "Action / Adventure",
-        "image": "/capas/lego-starwars-the-forceawakens.webp",
+        "image": "/capas/lego-star-wars-the-force-awakens.webp",
         "linkBase": "https://www.instant-gaming.com/pt/5111-comprar-lego-star-wars-the-force-awakens-deluxe-edition-deluxe-edition-pc-mac-jogo-steam/?igr=gamer-56c7016",
-        "capa": "/capas/lego-starwars-the-forceawakens.webp"
+        "capa": "/capas/lego-star-wars-the-force-awakens.webp"
     },
     {
         "nome": "We Were Here Together",
@@ -955,9 +955,9 @@
         "precoNormal": "R$ 60",
         "desconto": 69,
         "genre": "Simulation / Racing",
-        "image": "/capas/assetto-corsa-pc.webp",
+        "image": "/capas/assetto-corsa-competizione.webp",
         "linkBase": "https://www.instant-gaming.com/pt/1263-comprar-assetto-corsa-pc-steam/?igr=gamer-56c7016",
-        "capa": "/capas/assetto-corsa-pc.webp"
+        "capa": "/capas/assetto-corsa-competizione.webp"
     },
     {
         "nome": "Microsoft Flight Simulator 2024",
@@ -985,9 +985,9 @@
         "precoNormal": "R$ 354",
         "desconto": 78,
         "genre": "Action / Adventure",
-        "image": "/capas/red-dead-redemption-2-ultimate (1).webp",
+        "image": "/capas/red-dead-redemption-2-pc-jogo-rockstar.webp",
         "linkBase": "https://www.instant-gaming.com/pt/5679-comprar-red-dead-redemption-2-pc-jogo-rockstar/?igr=gamer-56c7016",
-        "capa": "/capas/red-dead-redemption-2-ultimate (1).webp"
+        "capa": "/capas/red-dead-redemption-2-pc-jogo-rockstar.webp"
     },
     {
         "nome": "Roadside Research",
@@ -1055,9 +1055,9 @@
         "precoNormal": "R$ 59,99",
         "desconto": 0,
         "genre": "Action / Shooter",
-        "image": "/capas/farcry3.webp",
+        "image": "/capas/dark-souls-3-deluxe-edition-deluxe-edition-pc.webp",
         "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796927&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Ffar-cry-3",
-        "capa": "/capas/farcry3.webp"
+        "capa": "/capas/dark-souls-3-deluxe-edition-deluxe-edition-pc.webp"
     },
     {
         "nome": "LEGO The Lord of the Rings",
@@ -1065,9 +1065,9 @@
         "precoNormal": "R$ 89,99",
         "desconto": 0,
         "genre": "Action / Adventure",
-        "image": "/capas/lego-thelordoftherings.webp",
+        "image": "/capas/the-lord-of-the-rings-return-to-moria.webp",
         "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.46796999&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-the-lord-of-the-rings",
-        "capa": "/capas/lego-thelordoftherings.webp"
+        "capa": "/capas/the-lord-of-the-rings-return-to-moria.webp"
     },
     {
         "nome": "Worms Revolution",
@@ -1105,9 +1105,9 @@
         "precoNormal": "R$ 89,99",
         "desconto": 0,
         "genre": "Action / Adventure",
-        "image": "/capas/lego-starwars-the-forceawakens.webp",
+        "image": "/capas/lego-star-wars-the-force-awakens.webp",
         "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679612774&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-star-wars-force-awakens",
-        "capa": "/capas/lego-starwars-the-forceawakens.webp"
+        "capa": "/capas/lego-star-wars-the-force-awakens.webp"
     },
     {
         "nome": "LEGO Star Wars: The Skywalker Saga",
@@ -1115,9 +1115,9 @@
         "precoNormal": "R$ 199,99",
         "desconto": 0,
         "genre": "Action / Adventure",
-        "image": "/capas/lego-starwars-the-skywalker.webp",
+        "image": "/capas/lego-star-wars-the-force-awakens.webp",
         "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.4679617139&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fitem%2Flego-star-wars-the-skywalker-saga",
-        "capa": "/capas/lego-starwars-the-skywalker.webp"
+        "capa": "/capas/lego-star-wars-the-force-awakens.webp"
     },
     {
         "nome": "LEGO Batman Trilogy",
@@ -1145,9 +1145,9 @@
         "precoNormal": "R$ 450,00",
         "desconto": 0,
         "genre": "AAA / Blockbuster",
-        "image": "/capas/grand-theft-auto-vi-switch-2-nintendo.webp",
+        "image": "/capas/grand-theft-auto-vi-playstation-5.webp",
         "linkBase": "https://click.linksynergy.com/link?id=PCHmxcPp2Dk&offerid=1692636.467963194&type=2&murl=https%3A%2F%2Fwww.nuuvem.com%2Fbr-pt%2Fbundle%2Fgrand-theft-auto-6-xbox",
-        "capa": "/capas/grand-theft-auto-vi-switch-2-nintendo.webp"
+        "capa": "/capas/grand-theft-auto-vi-playstation-5.webp"
     },
     {
         "nome": "Viking: Battle for Asgard",
@@ -1185,10 +1185,10 @@
         "precoNormal": "R$ 472,00",
         "desconto": 34,
         "genre": "Sports / Fighting",
-        "image": "/capas/ufc-6-xbox-series-x-s (1).webp",
+        "image": "/capas/ufc-6-xbox-series-x-s.webp",
         "video": "/videos/ufc-6.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/22459-comprar-ufc-6-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
-        "capa": "/capas/ufc-6-xbox-series-x-s (1).webp"
+        "capa": "/capas/ufc-6-xbox-series-x-s.webp"
     },
     {
         "nome": "Forza Horizon 6 Premium Edition - PC & Xbox Series X|S",
@@ -1196,10 +1196,10 @@
         "precoNormal": "R$ 708,00",
         "desconto": 38,
         "genre": "Racing / Simulation",
-        "image": "/capas/forza.webp",
+        "image": "/capas/forza-horizon-6-premium-edition-pc-xbox.webp",
         "video": "/videos/forza-horizon-6.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/21622-comprar-forza-horizon-6-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
-        "capa": "/capas/forza.webp"
+        "capa": "/capas/forza-horizon-6-premium-edition-pc-xbox.webp"
     },
     {
         "nome": "Final Fantasy VII Remake - PS4",
@@ -1229,10 +1229,10 @@
         "precoNormal": "R$ 472,00",
         "desconto": 53,
         "genre": "Action / Adventure",
-        "image": "/capas/assassin-s-creed-shadows-playstation-5 (2).webp",
+        "image": "/capas/assassin-s-creed-shadows-playstation-5.webp",
         "video": "/videos/assassin-s-creed-shadows.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/20620-comprar-assassin-s-creed-shadows-playstation-5-playstation-store/?igr=gamer-56c7016",
-        "capa": "/capas/assassin-s-creed-shadows-playstation-5 (2).webp"
+        "capa": "/capas/assassin-s-creed-shadows-playstation-5.webp"
     },
     {
         "nome": "Deathloop - PS5",
@@ -1295,10 +1295,10 @@
         "precoNormal": "R$ 349,00",
         "desconto": 27,
         "genre": "Action / RPG",
-        "image": "/capas/phantom-blade-zero-playstation-5 (2).webp",
+        "image": "/capas/phantom-blade-zero-playstation-5.webp",
         "video": "/videos/phantom-blade-zero.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/17041-comprar-phantom-blade-zero-playstation-5-playstation-store/?igr=gamer-56c7016",
-        "capa": "/capas/phantom-blade-zero-playstation-5 (2).webp"
+        "capa": "/capas/phantom-blade-zero-playstation-5.webp"
     },
     {
         "nome": "Grand Theft Auto VI (PS5)",
@@ -1306,10 +1306,10 @@
         "precoNormal": "R$ 472,00",
         "desconto": 21,
         "genre": "AAA / Blockbuster",
-        "image": "/capas/grand-theft-auto-vi-playstation-5 (1).webp",
+        "image": "/capas/grand-theft-auto-vi-playstation-5.webp",
         "video": "/videos/gta-6.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/15506-comprar-grand-theft-auto-vi-playstation-5-playstation-store/?igr=gamer-56c7016",
-        "capa": "/capas/grand-theft-auto-vi-playstation-5 (1).webp"
+        "capa": "/capas/grand-theft-auto-vi-playstation-5.webp"
     },
     {
         "nome": "The Sims 4 Cats & Dogs - PC & Mac (EA App)",
@@ -1350,10 +1350,10 @@
         "precoNormal": "R$ 47,00",
         "desconto": 2,
         "genre": "Action / Adventure",
-        "image": "/capas/hollow-knight.webp",
+        "image": "/capas/hollow-knight-silksong-pc.webp",
         "video": "/videos/hollow-knight.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/2198-comprar-hollow-knight-pc-mac-steam/?igr=gamer-56c7016",
-        "capa": "/capas/hollow-knight.webp"
+        "capa": "/capas/hollow-knight-silksong-pc.webp"
     },
     {
         "nome": "PlateUp! - PC (Steam)",
@@ -1482,10 +1482,10 @@
         "precoNormal": "R$ 177,00",
         "desconto": 20,
         "genre": "Action / RPG",
-        "image": "/capas/minecraft-dungeons-ii-pc.webp",
+        "image": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.webp",
         "video": "/videos/minecraft-dungeons-ii.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/18828-comprar-minecraft-dungeons-ii-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
-        "capa": "/capas/minecraft-dungeons-ii-pc.webp"
+        "capa": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.webp"
     },
     {
         "nome": "Farming Simulator 25: Beans & Alpacas",
@@ -1504,10 +1504,10 @@
         "precoNormal": "R$ 590,00",
         "desconto": 30,
         "genre": "Action / Shooter",
-        "image": "/capas/gears-of-war-e-day-premium (1).webp",
+        "image": "/capas/gears-of-war-e-day-premium.webp",
         "video": "/videos/gears-of-war-e-day.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/22979-comprar-gears-of-war-e-day-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
-        "capa": "/capas/gears-of-war-e-day-premium (1).webp"
+        "capa": "/capas/gears-of-war-e-day-premium.webp"
     },
     {
         "nome": "NBA 2K27 Deluxe Edition",
@@ -1515,10 +1515,10 @@
         "precoNormal": "R$ 590,00",
         "desconto": 26,
         "genre": "Sports / Simulation",
-        "image": "/capas/nba-2k27-deluxe-edition (1).webp",
+        "image": "/capas/nba-2k27-deluxe-edition.webp",
         "video": "/videos/nba-2k27.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/23580-comprar-nba-2k27-deluxe-edition-pc-steam/?igr=gamer-56c7016",
-        "capa": "/capas/nba-2k27-deluxe-edition (1).webp"
+        "capa": "/capas/nba-2k27-deluxe-edition.webp"
     },
     {
         "nome": "MARVEL Tōkon: Fighting Souls",
@@ -1570,10 +1570,10 @@
         "precoNormal": "R$ 299,00",
         "desconto": 39,
         "genre": "Survival Horror / Action",
-        "image": "/capas/resident-evil-requiem (1).webp",
+        "image": "/capas/resident-evil-requiem.webp",
         "video": "/videos/resident-evil-requiem.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/20992-comprar-resident-evil-requiem-pc-steam/?igr=gamer-56c7016",
-        "capa": "/capas/resident-evil-requiem (1).webp"
+        "capa": "/capas/resident-evil-requiem.webp"
     },
     {
         "nome": "No More Room In Hell 2",
@@ -1647,10 +1647,10 @@
         "precoNormal": "R$ 500,00",
         "desconto": 79,
         "genre": "AAA / Blockbuster",
-        "image": "/capas/red-dead-redemption-2-ultimate (1).webp",
+        "image": "/capas/red-dead-redemption-2-ultimate.webp",
         "video": "/videos/red-dead-2.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/5653-comprar-red-dead-redemption-2-ultimate-edition-ultimate-edition-pc-jogo-rockstar/?igr=gamer-56c7016",
-        "capa": "/capas/red-dead-redemption-2-ultimate (1).webp"
+        "capa": "/capas/red-dead-redemption-2-ultimate.webp"
     },
     {
         "nome": "Mount & Blade II: Bannerlord",
@@ -1669,10 +1669,10 @@
         "precoNormal": "R$ 413,00",
         "desconto": 31,
         "genre": "Racing / Blockbuster",
-        "image": "/capas/forza.webp",
+        "image": "/capas/forza-horizon-6-premium-edition-pc-xbox.webp",
         "video": "/videos/forza-horizon-6.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/19535-comprar-forza-horizon-6-xbox-series-x-s-pc-microsoft-store/?igr=gamer-56c7016",
-        "capa": "/capas/forza.webp"
+        "capa": "/capas/forza-horizon-6-premium-edition-pc-xbox.webp"
     },
     {
         "nome": "Cyberpunk 2077: Ultimate Edition",
@@ -1691,10 +1691,10 @@
         "precoNormal": "R$ 200,00",
         "desconto": 49,
         "genre": "Action / Shooter",
-        "image": "/capas/warhammer-40-000-darktide-pc.webp",
+        "image": "/capas/warhammer-40-000-darktide-imperial-edition-imperial-edition-pc.webp",
         "video": "/videos/space-marine-2.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/10140-comprar-warhammer-40-000-space-marine-2-pc-steam/?igr=gamer-56c7016",
-        "capa": "/capas/warhammer-40-000-darktide-pc.webp"
+        "capa": "/capas/warhammer-40-000-darktide-imperial-edition-imperial-edition-pc.webp"
     },
     {
         "nome": "Arma Reforger",
@@ -1779,10 +1779,10 @@
         "precoNormal": "R$ 90,00",
         "desconto": 32,
         "genre": "Strategy",
-        "image": "/capas/mortal-kombat-1-definitive-edition.webp",
+        "image": "/capas/age-of-empires-ii.webp",
         "video": "/videos/age-of-empires-2.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/4820-comprar-age-of-empires-ii-definitive-edition-definitive-edition-pc-jogo-steam/?igr=gamer-56c7016",
-        "capa": "/capas/mortal-kombat-1-definitive-edition.webp"
+        "capa": "/capas/age-of-empires-ii.webp"
     },
     {
         "nome": "LEGO Marvel Super Heroes 2 Deluxe Edition",
@@ -1801,10 +1801,10 @@
         "precoNormal": "R$ 73,00",
         "desconto": 86,
         "genre": "Simulation",
-        "image": "/capas/tetris.webp",
+        "image": "/capas/os-sims-3-pc.webp",
         "video": "/videos/the-sims-3.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/51-comprar-os-sims-3-pc-ea-app/?igr=gamer-56c7016",
-        "capa": "/capas/tetris.webp"
+        "capa": "/capas/os-sims-3-pc.webp"
     },
     {
         "nome": "Windows 11 Home - PC",
@@ -1845,10 +1845,10 @@
         "precoNormal": "R$ 649,00",
         "desconto": 21,
         "genre": "AAA / Shooter",
-        "image": "/capas/call-of-duty-modern-warfare-4 (2).webp",
+        "image": "/capas/call-of-duty-modern-warfare-4.webp",
         "video": "/videos/cod-mw.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/22745-comprar-call-of-duty-modern-warfare-4-edicao-vault-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
-        "capa": "/capas/call-of-duty-modern-warfare-4 (2).webp"
+        "capa": "/capas/call-of-duty-modern-warfare-4.webp"
     },
     {
         "nome": "Age of Empires IV: Anniversary Edition",
@@ -1922,10 +1922,10 @@
         "precoNormal": "R$ 221,06",
         "desconto": 0,
         "genre": "Action / Adventure",
-        "image": "/capas/resonance-a-plague-tale-legacy-pc (1).webp",
+        "image": "/capas/resonance-a-plague-tale-legacy-pc.webp",
         "video": "/videos/plague-tale.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/19517-comprar-resonance-a-plague-tale-legacy-pc-steam/?igr=gamer-56c7016",
-        "capa": "/capas/resonance-a-plague-tale-legacy-pc (1).webp"
+        "capa": "/capas/resonance-a-plague-tale-legacy-pc.webp"
     },
     {
         "nome": "Among Us",
@@ -1999,10 +1999,10 @@
         "precoNormal": "R$ 350,00",
         "desconto": 58,
         "genre": "Action / Adventure",
-        "image": "/capas/assassin-s-creed-shadows-switch-2-nintendo.webp",
+        "image": "/capas/assassin-s-creed-shadows-playstation-5.webp",
         "video": "/videos/ac-shadows.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/12831-comprar-assassin-s-creed-shadows-pc-ubisoft-connect/?igr=gamer-56c7016",
-        "capa": "/capas/assassin-s-creed-shadows-switch-2-nintendo.webp"
+        "capa": "/capas/assassin-s-creed-shadows-playstation-5.webp"
     },
     {
         "nome": "The Elder Scrolls IV: Oblivion Remastered - Deluxe Edition",
@@ -2021,10 +2021,10 @@
         "precoNormal": "R$ 354,00",
         "desconto": 37,
         "genre": "Action / Shooter",
-        "image": "/capas/halo-campaign-evolved-pc.webp",
+        "image": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.webp",
         "video": "/videos/halo.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/20731-comprar-halo-campaign-evolved-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
-        "capa": "/capas/halo-campaign-evolved-pc.webp"
+        "capa": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.webp"
     },
     {
         "nome": "Batman: Arkham Origins",
