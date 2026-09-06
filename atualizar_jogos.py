@@ -7,8 +7,10 @@ ARQUIVO_JSON = 'src/data/jogos.json'
 PASTA_CAPAS = 'public/capas'
 
 def normalizar(texto):
-    nfkd = unicodedata.normalize('NFKD', texto)
-    return "".join([c for c in nfkd if not unicodedata.combining(c)]).lower()
+    if not texto:
+        return ""
+    nfkd = unicodedata.normalize('NFKD', str(texto))
+    return "".join([c for c in nfkd if not unicodedata.combining(c)]).lower().strip()
 
 def atualizar_base_jogos():
     if not os.path.exists(ARQUIVO_JSON):
@@ -26,12 +28,18 @@ def atualizar_base_jogos():
         print(f"Pasta {PASTA_CAPAS} não encontrada.")
         return
 
-    # Mapeia os arquivos reais que existem na pasta public/capas
+    # Mapeia os arquivos reais na pasta public/capas
     arquivos_reais = os.listdir(PASTA_CAPAS)
-    mapa_arquivos = {normalizar(os.path.splitext(arq)[0]): arq for arq in arquivos_reais}
-    chaves_arquivos = list(mapa_arquivos.keys())
+    mapa_arquivos = {}
+    for arq in arquivos_reais:
+        nome_base, ext = os.path.splitext(arq)
+        if ext.lower() in ['.webp', '.jpg', '.png', '.avif']:
+            mapa_arquivos[normalizar(nome_base)] = arq
 
+    chaves_arquivos = list(mapa_arquivos.keys())
     alteracoes = 0
+    chaves_imagem = ['image', 'capa', 'banner', 'carrossel', 'blockbuster', 'imagem']
+
     for jogo in jogos:
         nome_jogo = jogo.get('nome', '')
         if not nome_jogo:
@@ -40,40 +48,36 @@ def atualizar_base_jogos():
         nome_norm = normalizar(nome_jogo)
         capa_encontrada = None
         
-        # 1. Procura correspondência direta
+        # 1. Procura correspondência exata ou parcial
         for chave in chaves_arquivos:
-            if chave in nome_norm or nome_norm in chave:
+            if nome_norm == chave or nome_norm in chave or chave in nome_norm:
                 capa_encontrada = f"/capas/{mapa_arquivos[chave]}"
                 break
         
-        # 2. Procura por aproximação
+        # 2. Procura por aproximação via difflib
         if not capa_encontrada and chaves_arquivos:
-            matches = get_close_matches(nome_norm, chaves_arquivos, n=1, cutoff=0.35)
+            matches = get_close_matches(nome_norm, chaves_arquivos, n=1, cutoff=0.4)
             if matches:
                 melhor_match = matches[0]
                 capa_encontrada = f"/capas/{mapa_arquivos[melhor_match]}"
 
-        # Se encontrou o arquivo real, padroniza as chaves 'image' e 'capa'
-        if capa_encontrada:
-            if jogo.get('image') != capa_encontrada:
-                jogo['image'] = capa_encontrada
-                alteracoes += 1
-            if jogo.get('capa') != capa_encontrada:
-                jogo['capa'] = capa_encontrada
-                alteracoes += 1
-        else:
-            # Se não achou arquivo correspondente, limpa os campos para evitar 404
-            if jogo.get('image') and "public/" in jogo.get('image', ''):
-                jogo['image'] = ""
-                alteracoes += 1
-            if jogo.get('capa') and "public/" in jogo.get('capa', ''):
-                jogo['capa'] = ""
-                alteracoes += 1
+        # Aplica ou limpa as chaves de imagem
+        for campo in chaves_imagem:
+            if campo in jogo:
+                valor_atual = jogo.get(campo, '')
+                if capa_encontrada:
+                    if valor_atual != capa_encontrada:
+                        jogo[campo] = capa_encontrada
+                        alteracoes += 1
+                else:
+                    if valor_atual:
+                        jogo[campo] = ""  # Evita string suja/URL quebrada gerando 404
+                        alteracoes += 1
 
     if alteracoes > 0:
         with open(ARQUIVO_JSON, 'w', encoding='utf-8') as f:
             json.dump(jogos, f, ensure_ascii=False, indent=4)
-        print(f"Sucesso! {alteracoes} ajustes aplicados nos caminhos de imagens do jogos.json.")
+        print(f"Sucesso! {alteracoes} ajustes aplicados no {ARQUIVO_JSON}.")
     else:
         print("Nenhuma alteração necessária.")
 
