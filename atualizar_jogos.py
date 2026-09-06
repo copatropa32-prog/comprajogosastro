@@ -1,7 +1,6 @@
 import json
 import os
 import unicodedata
-from difflib import get_close_matches
 
 ARQUIVO_JSON = 'src/data/jogos.json'
 PASTA_CAPAS = 'public/capas'
@@ -36,7 +35,6 @@ def atualizar_base_jogos():
         if ext.lower() in ['.webp', '.jpg', '.png', '.avif']:
             mapa_arquivos[normalizar(nome_base)] = arq
 
-    chaves_arquivos = list(mapa_arquivos.keys())
     alteracoes = 0
     chaves_imagem = ['image', 'capa', 'banner', 'carrossel', 'blockbuster', 'imagem']
 
@@ -46,32 +44,33 @@ def atualizar_base_jogos():
             continue
 
         nome_norm = normalizar(nome_jogo)
+        palavras_jogo = set(nome_norm.split())
         capa_encontrada = None
         
-        # 1. Procura correspondência exata ou parcial
-        for chave in chaves_arquivos:
-            if nome_norm == chave or nome_norm in chave or chave in nome_norm:
-                capa_encontrada = f"/capas/{mapa_arquivos[chave]}"
+        # 1. Procura correspondência exata ou por inclusão exata
+        for chave_norm, nome_arq in mapa_arquivos.items():
+            if nome_norm == chave_norm or nome_norm in chave_norm or chave_norm in nome_norm:
+                capa_encontrada = f"/capas/{nome_arq}"
                 break
         
-        # 2. Procura por aproximação via difflib
-        if not capa_encontrada and chaves_arquivos:
-            matches = get_close_matches(nome_norm, chaves_arquivos, n=1, cutoff=0.4)
-            if matches:
-                melhor_match = matches[0]
-                capa_encontrada = f"/capas/{mapa_arquivos[melhor_match]}"
+        # 2. Procura por interseção de palavras relevantes (evita falsos positivos)
+        if not capa_encontrada and palavras_jogo:
+            melhor_qtd = 0
+            for chave_norm, nome_arq in mapa_arquivos.items():
+                palavras_chave = set(chave_norm.split())
+                comuns = palavras_jogo.intersection(palavras_chave)
+                # Se houver pelo menos 2 palavras em comum (ou 1 se o nome for curto)
+                if len(comuns) > melhor_qtd and (len(comuns) >= 2 or len(palavras_jogo) == 1):
+                    melhor_qtd = len(comuns)
+                    capa_encontrada = f"/capas/{nome_arq}"
 
-        # Aplica ou limpa as chaves de imagem
-        for campo in chaves_imagem:
-            if campo in jogo:
-                valor_atual = jogo.get(campo, '')
-                if capa_encontrada:
+        # Aplica a imagem encontrada apenas se houver sucesso
+        if capa_encontrada:
+            for campo in chaves_imagem:
+                if campo in jogo:
+                    valor_atual = jogo.get(campo, '')
                     if valor_atual != capa_encontrada:
                         jogo[campo] = capa_encontrada
-                        alteracoes += 1
-                else:
-                    if valor_atual:
-                        jogo[campo] = ""  # Evita string suja/URL quebrada gerando 404
                         alteracoes += 1
 
     if alteracoes > 0:
