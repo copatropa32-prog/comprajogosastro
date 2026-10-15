@@ -189,10 +189,10 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
           <div class="flex flex-col gap-3">
             <span class="text-sm font-bold text-white uppercase tracking-wider">Institucional</span>
             <div class="flex flex-col gap-1.5 text-xs text-slate-400">
-              <button onclick="abrirModalInstitucional('sobre')" class="text-left hover:text-emerald-400 transition cursor-pointer">Sobre o CompraJogos</button>
-              <button onclick="abrirModalInstitucional('desenvolvedora')" class="text-left hover:text-emerald-400 transition cursor-pointer text-emerald-400 font-medium">✨ Desenvolvedora</button>
-              <button onclick="abrirModalInstitucional('termos')" class="text-left hover:text-emerald-400 transition cursor-pointer">Termos de Uso</button>
-              <button onclick="abrirModalInstitucional('privacidade')" class="text-left hover:text-emerald-400 transition cursor-pointer">Política de Privacidade</button>
+              <a href="/sobre" class="hover:text-emerald-400 transition">Sobre o CompraJogos</a>
+              <a href="/desenvolvedora" class="hover:text-emerald-400 transition text-emerald-400 font-medium">✨ Desenvolvedora</a>
+              <a href="/termos-de-uso" class="hover:text-emerald-400 transition">Termos de Uso</a>
+              <a href="/politica-de-privacidade" class="hover:text-emerald-400 transition">Política de Privacidade</a>
             </div>
           </div>
 
@@ -205,16 +205,6 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
 
       </div>
     </footer>
-
-    <!-- Modal Institucional -->
-    <div id="modal-institucional" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden p-4">
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
-        <button onclick="fecharModalInstitucional()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2 rounded-lg bg-slate-800/50 hover:bg-slate-800 transition cursor-pointer">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-        </button>
-        <div id="conteudo-modal-institucional" class="text-slate-300 text-sm leading-relaxed space-y-4 text-left"></div>
-      </div>
-    </div>
 
     <!-- Modal de Login -->
     <div id="modal-login" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden p-4">
@@ -230,7 +220,7 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
       </div>
     </div>
 
-    <!-- Scripts de Terceiros Carregados sob Demanda (Lazy Load) para Acelerar o Desempenho Mobile -->
+    <!-- Scripts de Terceiros Carregados sob Demanda -->
     <script is:inline>
       let googleButtonRendered = false;
       let thirdPartyLoaded = false;
@@ -239,34 +229,25 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
         if (thirdPartyLoaded) return;
         thirdPartyLoaded = true;
 
-        // AdSense
         const adsense = document.createElement('script');
         adsense.defer = true;
         adsense.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9710931146430417";
         adsense.crossOrigin = "anonymous";
         document.head.appendChild(adsense);
 
-        // Impact / Trackonomics
         const impact = document.createElement('script');
         impact.type = "text/javascript";
         impact.innerHTML = "(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7635219-dac0-4d8a-8ef0-094adcd3d6ec1.js','script','impactStat',document,window);impactStat('trackImpression');";
         document.head.appendChild(impact);
       }
 
-      // Dispara o carregamento dos scripts pesados após a página carregar ou ao primeiro toque/scroll
-      window.addEventListener('load', () => {
-        setTimeout(carregarScriptsTerceiros, 2000);
-      });
+      window.addEventListener('load', () => { setTimeout(carregarScriptsTerceiros, 2000); });
       window.addEventListener('scroll', carregarScriptsTerceiros, { once: true });
       window.addEventListener('pointerdown', carregarScriptsTerceiros, { once: true });
 
       function handleCredentialResponse(response) {
         const responsePayload = decodeJwtResponse(response.credential);
-        const userData = {
-          name: responsePayload.name,
-          email: responsePayload.email,
-          picture: responsePayload.picture
-        };
+        const userData = { name: responsePayload.name, email: responsePayload.email, picture: responsePayload.picture };
         localStorage.setItem('compra_jogos_user', JSON.stringify(userData));
         atualizarInterfaceUsuario(userData);
         fecharModalLogin();
@@ -300,14 +281,10 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
       }
 
       function abrirModalLogin() {
-        if (localStorage.getItem('compra_jogos_user')) {
-          return;
-        }
+        if (localStorage.getItem('compra_jogos_user')) return;
         document.getElementById('modal-login').classList.remove('hidden');
 
-        // Carrega o SDK do Google Identity sob demanda ao abrir o modal de login
         if (!window.google) {
-          const gisScript = document.createElement('script5');
           const scriptTag = document.createElement('script');
           scriptTag.src = "https://accounts.google.com/gsi/client";
           scriptTag.async = true;
@@ -331,9 +308,7 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
               { theme: "filled_black", size: "large", width: "100%", locale: "pt-BR" }
             );
             googleButtonRendered = true;
-          } catch (e) {
-            console.error("Erro ao renderizar o botão do Google:", e);
-          }
+          } catch (e) {}
         }
       }
 
@@ -341,59 +316,9 @@ const imagemAbsoluta = imagem.startsWith('http') ? imagem : `https://www.compraj
         document.getElementById('modal-login').classList.add('hidden');
       }
 
-      // Textos institucionais incluindo a página da desenvolvedora com WhatsApp correto
-      const dadosInstitucionais = {
-        sobre: {
-          titulo: "Sobre o CompraJogos",
-          texto: "O CompraJogos é o seu ecossistema digital definitivo para curadoria de ofertas, conectando você às melhores promoções de keys para PC, jogos gratuitos, hardwares de alta performance e descontos imperdíveis para as principais plataformas do mercado."
-        },
-        desenvolvedora: {
-          titulo: "Sobre a Desenvolvedora & Criação de Sites",
-          texto: `
-            <p class="leading-relaxed">Olá! Eu sou a desenvolvedora por trás da criação, arquitetura e estruturação de alta performance do <strong>CompraJogos</strong>.</p>
-            <p class="leading-relaxed mt-3">Trabalho com desenvolvimento web moderno (focado em velocidade, design responsivo e otimização para motores de busca como o Google) e crio sites personalizados para o seu negócio, portfólio ou loja virtual com excelente custo-benefício.</p>
-            <p class="leading-relaxed mt-3 font-semibold text-white">Precisa de um site profissional para o seu projeto? Estou à total disposição para tirar sua ideia do papel!</p>
-            <div class="mt-6 pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <span class="text-xs text-slate-400">Entre em contato direto pelo WhatsApp:</span>
-              <a href="https://wa.me/5512991789256?text=Olá!%20Vi%20seu%20trabalho%20no%20CompraJogos%20e%20gostaria%20de%20fazer%20um%20orçamento%20para%20criação%20de%20site." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-5 py-3 rounded-xl transition shadow-lg shadow-emerald-950/50">
-                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                Chamar no WhatsApp
-              </a>
-            </div>
-          `
-        },
-        termos: {
-          titulo: "Termos de Uso",
-          texto: "Ao navegar e utilizar os recursos do CompraJogos, você concorda formalmente com as diretrizes, políticas de afiliados e condições gerais de uso estabelecidas por nossa plataforma. Atuamos como agregadores de links e parceiros oficiais de revendedores autorizados."
-        },
-        privacidade: {
-          titulo: "Política de Privacidade",
-          texto: "Prezamos rigorosamente pela sua privacidade. Utilizamos o armazenamento local (localStorage) exclusivamente para gerenciar a persistência da sua sessão de autenticação via Google com total segurança, sem o armazenamento indevido de dados sensíveis."
-        }
-      };
-
-      function abrirModalInstitucional(tipo) {
-        const modal = document.getElementById('modal-institucional');
-        const conteudo = document.getElementById('conteudo-modal-institucional');
-        const info = dadosInstitucionais[tipo];
-        if (info) {
-          conteudo.innerHTML = `
-            <h3 class="text-xl font-bold text-white mb-2">${info.titulo}</h3>
-            <div>${info.texto}</div>
-          `;
-          modal.classList.remove('hidden');
-        }
-      }
-
-      function fecharModalInstitucional() {
-        document.getElementById('modal-institucional').classList.add('hidden');
-      }
-
       document.addEventListener('DOMContentLoaded', function () {
         const savedUser = localStorage.getItem('compra_jogos_user');
-        if (savedUser) {
-          atualizarInterfaceUsuario(JSON.parse(savedUser));
-        }
+        if (savedUser) atualizarInterfaceUsuario(JSON.parse(savedUser));
       });
     </script>
   </body>

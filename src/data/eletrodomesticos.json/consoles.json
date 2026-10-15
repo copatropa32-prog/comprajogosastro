@@ -1,0 +1,21 @@
+{
+  "id": "produto-13",
+  "nome": "Console Nintendo Switch 2, Modelo Nacional de Tomada",
+  "preco": "R$ 4.199",
+  "precoNormal": "R$ 5.111",
+  "desconto": 17,
+  "images": [
+        "/consoles/console-nintendo-switch-2-modelo-nacional-de-tomada-1.webp",
+        "/consoles/console-nintendo-switch-2-modelo-nacional-de-tomada-2.webp",
+        "/consoles/console-nintendo-switch-2-modelo-nacional-de-tomada-3.webp",
+        "/consoles/console-nintendo-switch-2-modelo-nacional-de-tomada-4.webp",
+        "/consoles/console-nintendo-switch-2-modelo-nacional-de-tomada-5.webp",
+        "/consoles/console-nintendo-switch-2-modelo-nacional-de-tomada-6.webp"
+  ],
+  "previewVideo": "",
+  "modalVideo": "",
+  "linkBase": "https://meli.la/1uKKeLP",
+  "genre": "Consoles",
+  "ano": 2026,
+  "marketplace": "Mercado Livre"
+}

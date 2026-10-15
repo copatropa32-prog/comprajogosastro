@@ -105,9 +105,9 @@
         "preco": "R$ 70,70",
         "precoNormal": "R$ 220",
         "desconto": 68,
-        "image": "/capas/warhammer-40-000-darktide-imperial-edition-imperial-edition-pc.webp",
+        "image": "/capas/warhammer-40-000.webp",
         "linkBase": "https://www.instant-gaming.com/pt/13355-comprar-warhammer-40-000-darktide-imperial-edition-imperial-edition-pc-jogo-steam/?igr=gamer-56c7016",
-        "capa": "/capas/warhammer-40-000-darktide-imperial-edition-imperial-edition-pc.webp"
+        "capa": "/capas/warhammer-40-000.webp"
     },
     {
         "nome": "Blasphemous - PC (Steam)",
@@ -135,9 +135,9 @@
         "preco": "R$ 176,83",
         "precoNormal": "",
         "desconto": 0,
-        "image": "/capas/snowrunner-pc-mac-steam-cover.webp",
+        "image": "/capas/rust-pc.webp",
         "linkBase": "https://www.instant-gaming.com/pt/1230-comprar-rust-pc-mac-jogo-steam/?igr=gamer-56c7016",
-        "capa": "/capas/snowrunner-pc-mac-steam-cover.webp"
+        "capa": "/capas/rust-pc.webp"
     },
     {
         "nome": "Celeste - PC & Mac (Steam)",
@@ -145,9 +145,9 @@
         "preco": "R$ 15,27",
         "precoNormal": "R$ 60",
         "desconto": 75,
-        "image": "/capas/snowrunner-pc-mac-steam-cover.webp",
+        "image": "/capas/celeste-pc.webp",
         "linkBase": "https://www.instant-gaming.com/pt/8003-comprar-celeste-pc-mac-jogo-steam/?igr=gamer-56c7016",
-        "capa": "/capas/snowrunner-pc-mac-steam-cover.webp"
+        "capa": "/capas/celeste-pc.webp"
     },
     {
         "nome": "Warhammer 40,000: Darktide - PC (Steam)",
@@ -175,9 +175,9 @@
         "preco": "R$ 77,77",
         "precoNormal": "",
         "desconto": 0,
-        "image": "/capas/hollow-knight-silksong-pc.webp",
+        "image": "/capas/hollow-knight.webp",
         "linkBase": "https://www.instant-gaming.com/pt/3952-comprar-hollow-knight-silksong-pc-mac-steam/?igr=gamer-56c7016",
-        "capa": "/capas/hollow-knight-silksong-pc.webp"
+        "capa": "/capas/hollow-knight.webp"
     },
     {
         "nome": "Alien: Isolation - PC & Mac (Steam)",
@@ -195,9 +195,9 @@
         "preco": "R$ 141,46",
         "precoNormal": "",
         "desconto": 0,
-        "image": "/capas/snowrunner-pc-mac-steam-cover.webp",
+        "image": "/capas/windrose-pc.webp",
         "linkBase": "https://www.instant-gaming.com/pt/21876-comprar-windrose-pc-steam/?igr=gamer-56c7016",
-        "capa": "/capas/snowrunner-pc-mac-steam-cover.webp"
+        "capa": "/capas/windrose-pc.webp"
     },
     {
         "nome": "Forensics: Crime Scene Detective - PC (Steam)",
@@ -1383,10 +1383,10 @@
         "precoNormal": "R$ 159,00",
         "desconto": 86,
         "genre": "Racing / Simulation",
-        "image": "/capas/assetto-corsa-competizione.webp",
+        "image": "/capas/assetto-corsa-pc.webp",
         "video": "/videos/assetto-corsa.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/3153-comprar-assetto-corsa-competizione-pc-steam/?igr=gamer-56c7016",
-        "capa": "/capas/assetto-corsa-competizione.webp"
+        "capa": "/capas/assetto-corsa-pc.webp"
     },
     {
         "nome": "IRON NEST: Heavy Turret Simulator - PC (Steam)",
@@ -1482,10 +1482,10 @@
         "precoNormal": "R$ 177,00",
         "desconto": 20,
         "genre": "Action / RPG",
-        "image": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.webp",
+        "image": "/capas/minecraft-dungeons-ii-pc.webp",
         "video": "/videos/minecraft-dungeons-ii.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/18828-comprar-minecraft-dungeons-ii-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
-        "capa": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.webp"
+        "capa": "/capas/minecraft-dungeons-ii-pc.webp"
     },
     {
         "nome": "Farming Simulator 25: Beans & Alpacas",
@@ -2021,10 +2021,10 @@
         "precoNormal": "R$ 354,00",
         "desconto": 37,
         "genre": "Action / Shooter",
-        "image": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.webp",
+        "image": "/capas/halo-campaign-evolved-pc.webp",
         "video": "/videos/halo.mp4",
         "linkBase": "https://www.instant-gaming.com/pt/20731-comprar-halo-campaign-evolved-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016",
-        "capa": "/capas/ea-sports-fc-27-xbox-series-x-s-xbox-one.webp"
+        "capa": "/capas/halo-campaign-evolved-pc.webp"
     },
     {
         "nome": "Batman: Arkham Origins",

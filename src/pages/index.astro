@@ -3,10 +3,11 @@ import '../styles/global.css';
 import LayoutPrincipal from '../layouts/LayoutPrincipal.astro';
 import jogosLocais from '../data/jogos.json'; 
 import notebooksLocais from '../data/notebooks.json';
+import tvsLocais from '../data/eletrodomesticos.json/tvs.json';
 import ProductSchema from '../components/ProductSchema.astro';
 ---
 
-<LayoutPrincipal titulo="CompraJogos - Notebooks, PC (Grátis e Pagos), PS4, PS5, Xbox e Nintendo" descricao="Explore centenas de jogos de PC grátis e pagos, ofertas para PS4, PS5, Xbox, Nintendo, além de notebooks de alta performance.">
+<LayoutPrincipal titulo="CompraJogos - Notebooks, PC (Grátis e Pagos), PS4, PS5, Xbox e Nintendo" descricao="Explore centenas de jogos de PC grátis e pagos, ofertas para PS4, PS5, Xbox, Nintendo, além de notebooks e eletrodomésticos de alta performance.">
   <head slot="head">
     {jogosLocais.map((jogo) => (
       <ProductSchema 
@@ -26,21 +27,30 @@ import ProductSchema from '../components/ProductSchema.astro';
         imagem={nb.image}
       />
     ))}
+    {tvsLocais.map((tv) => (
+      <ProductSchema 
+        nome={tv.nome}
+        preco={tv.preco}
+        sku={tv.nome}
+        url={tv.linkBase}
+        imagem={tv.images ? tv.images[0] : tv.image}
+      />
+    ))}
   </head>
 
   <main class="container mx-auto px-4 py-8">
 
-    <!-- Seção de Destaque com o Botão Buraco Negro -->
+    <!-- Seção de Destaque com o Botão Buraco Negro Quântico -->
     <div class="flex flex-col md:flex-row items-center justify-between bg-slate-900/60 border border-slate-800 p-6 rounded-2xl mb-8 gap-4 shadow-xl backdrop-blur-md">
       <div>
-        <h2 class="text-lg font-bold text-white">Procurando algo específico?</h2>
-        <p class="text-xs text-slate-400">Clique para ser levado instantaneamente a uma oferta aleatória incrível do nosso catálogo.</p>
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">🌀 Portal Quântico de Ofertas</h2>
+        <p class="text-xs text-slate-400">Clique no buraco negro para colapsar o universo e sortear uma oferta aleatória exclusiva.</p>
       </div>
       
-      <div class="black-hole-btn" onclick="abrirOfertaAleatoria()">
+      <div class="black-hole-btn" onclick="abrirPortalQuantico()">
         <div class="event-horizon">
-          <span class="bh-icon">🔥</span>
-          <span class="bh-text">Surpreenda-me</span>
+          <span class="bh-icon">✨</span>
+          <span class="bh-text">Ativar Buraco Negro</span>
         </div>
       </div>
     </div>
@@ -60,7 +70,7 @@ import ProductSchema from '../components/ProductSchema.astro';
       
       <div id="carousel-track" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4 scroll-smooth">
         <div class="bg-slate-900/50 border border-slate-800 p-8 rounded-2xl text-center text-slate-400 min-w-[280px] flex items-center justify-center">
-          Carregando lançamentos...
+          A carregar lançamentos...
         </div>
       </div>
     </div>
@@ -73,6 +83,7 @@ import ProductSchema from '../components/ProductSchema.astro';
         <button onclick="mudarFiltro('promocoes', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Promoções</button>
         <button onclick="mudarFiltro('gratuitos', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Jogos Gratuitos</button>
         <button onclick="mudarFiltro('notebooks', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Notebooks</button>
+        <button onclick="mudarFiltro('tvs', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">TVs e Eletro</button>
         <button onclick="mudarFiltro('pc', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PC</button>
         <button onclick="mudarFiltro('ps5', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">PS5</button>
         <button onclick="mudarFiltro('xbox', this)" class="filter-btn bg-slate-800 text-slate-300 hover:bg-slate-700 px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer">Xbox</button>
@@ -100,7 +111,7 @@ import ProductSchema from '../components/ProductSchema.astro';
     <div id="catalog" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <div class="col-span-full bg-slate-900/50 border border-slate-800 p-12 rounded-2xl text-center text-slate-400 flex flex-col items-center justify-center gap-4">
         <div class="w-8 h-8 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
-        <span class="text-sm font-medium">Carregando catálogo e principais ofertas...</span>
+        <span class="text-sm font-medium">A carregar catálogo e principais ofertas...</span>
       </div>
     </div>
 
@@ -111,11 +122,69 @@ import ProductSchema from '../components/ProductSchema.astro';
         Se você está procurando onde encontrar <strong>jogos baratos para Steam</strong>, chaves de ativação seguras ou promoções para PlayStation 5, Xbox Series X|S e Nintendo Switch, o <strong>CompraJogos</strong> é o seu agregador definitivo.
       </p>
       <p class="text-xs sm:text-sm leading-relaxed">
-        Além de keys e games digitais, nossa curadoria destaca notebooks gamers de alta performance, jogos gratuitos (Free-to-Play) e pacotes de expansão com comparativos transparentes.
+        Além de keys e games digitais, nossa curadoria destaca notebooks gamers de alta performance, Smart TVs 4K, jogos gratuitos (Free-to-Play) e pacotes de expansão com comparativos transparentes.
       </p>
     </section>
 
   </main>
+
+  <!-- Modal do Portal Quântico (Buraco Negro) -->
+  <div id="quantumModal" class="fixed inset-0 bg-black/85 z-50 flex items-center justify-center p-4 backdrop-blur-sm" style="display: none;">
+    <div class="bg-slate-900 border-2 border-purple-500 p-6 sm:p-8 rounded-2xl max-w-md w-full text-center text-white relative shadow-[0_0_50px_rgba(168,85,247,0.4)]">
+      <button onclick="fecharPortalQuantico()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-2xl font-bold cursor-pointer">&times;</button>
+      
+      <div id="quantumLoading" class="py-8">
+        <div class="w-12 h-12 border-4 border-purple-500/30 border-t-purple-500 rounded-full animate-spin mx-auto mb-4"></div>
+        <p class="text-sm text-purple-300 font-medium">🌀 A calcular probabilidades quânticas no horizonte de eventos...</p>
+      </div>
+
+      <div id="quantumResult" class="hidden space-y-4">
+        <h3 class="text-lg font-black text-purple-400">✨ Oferta Materializada pelo Buraco Negro!</h3>
+        <div id="productCardContent" class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col items-center gap-3">
+          <!-- O produto sorteado será injetado aqui dinamicamente -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Ampliação de Imagem (Lightbox Galeria) -->
+  <div id="imageModal" class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 backdrop-blur-md" style="display: none;" onwheel="rolarMouseModal(event)">
+    <div class="relative bg-slate-900 border border-slate-800 rounded-2xl max-w-4xl w-full p-6 flex flex-col items-center shadow-2xl overflow-hidden">
+      <button onclick="fecharModalImagem()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-3xl font-bold z-50 cursor-pointer transition">&times;</button>
+      
+      <!-- Título do Produto no Modal -->
+      <h3 id="modalProductTitle" class="text-base sm:text-lg font-bold text-white mb-4 text-center px-8 line-clamp-1"></h3>
+
+      <!-- Container da Imagem Ampliada com Navegação Lateral -->
+      <div class="relative w-full h-[320px] sm:h-[420px] bg-slate-950 rounded-xl overflow-hidden flex items-center justify-center group border border-slate-800/80">
+        <img id="modalMainImage" src="" alt="Imagem Ampliada" class="max-w-full max-h-full object-contain transition-all duration-300" />
+        
+        <!-- Botão Anterior -->
+        <button id="modalPrevBtn" onclick="navegarImagemModal(-1)" class="absolute left-3 top-1/2 -translate-y-1/2 bg-slate-900/80 border border-slate-700 hover:bg-emerald-500 hover:text-slate-950 text-white p-3 rounded-full transition shadow-lg cursor-pointer z-20">
+          &#10094;
+        </button>
+
+        <!-- Botão Próximo -->
+        <button id="modalNextBtn" onclick="navegarImagemModal(1)" class="absolute right-3 top-1/2 -translate-y-1/2 bg-slate-900/80 border border-slate-700 hover:bg-emerald-500 hover:text-slate-950 text-white p-3 rounded-full transition shadow-lg cursor-pointer z-20">
+          &#10095;
+        </button>
+      </div>
+
+      <!-- Carrossel de Miniaturas Abaixo da Foto -->
+      <div id="modalThumbnails" class="flex gap-2.5 mt-4 overflow-x-auto max-w-full pb-2"></div>
+
+      <!-- Rodapé com Preço e Botão para Oferta -->
+      <div class="flex items-center justify-between w-full mt-4 pt-4 border-t border-slate-800">
+        <div>
+          <span id="modalNormalPrice" class="text-xs text-slate-500 line-through block"></span>
+          <span id="modalSalePrice" class="text-xl font-black text-emerald-400"></span>
+        </div>
+        <a id="modalOfferLink" href="#" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-2.5 rounded-xl text-xs sm:text-sm transition shadow-lg cursor-pointer flex items-center gap-2">
+          Ver Oferta 🚀
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- Botão WhatsApp -->
   <a href="https://wa.me/5512991789256" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-400 text-slate-950 p-4 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center cursor-pointer" aria-label="Contato via WhatsApp">
@@ -132,8 +201,8 @@ import ProductSchema from '../components/ProductSchema.astro';
       position: relative; width: 180px; height: 55px; border-radius: 30px;
       background: url('/buraconegro.webp') no-repeat center center; background-size: cover;
       display: flex; align-items: center; justify-content: center; cursor: pointer; overflow: hidden;
-      box-shadow: 0 0 20px rgba(255, 120, 50, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.8);
-      border: 1px solid rgba(255, 150, 50, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; flex-shrink: 0;
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(168, 85, 247, 0.6); transition: transform 0.3s ease, box-shadow 0.3s ease; flex-shrink: 0;
     }
     .black-hole-btn .event-horizon {
       position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 8px;
@@ -141,8 +210,8 @@ import ProductSchema from '../components/ProductSchema.astro';
       background: rgba(0, 0, 0, 0.4); width: 100%; height: 100%; backdrop-filter: blur(1px);
     }
     .black-hole-btn:hover {
-      transform: scale(1.06); box-shadow: 0 0 30px rgba(255, 120, 50, 0.7), 0 0 50px rgba(0, 242, 254, 0.3);
-      border-color: rgba(255, 200, 100, 0.8);
+      transform: scale(1.06); box-shadow: 0 0 30px rgba(168, 85, 247, 0.8);
+      border-color: rgba(168, 85, 247, 1);
     }
     .bh-icon { font-size: 15px; }
   </style>
@@ -161,9 +230,172 @@ import ProductSchema from '../components/ProductSchema.astro';
       });
       scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     }
+
+    // --- Lógica do Card ---
+    window.mudarImagemCard = function(el, index, event) {
+      if (event) event.stopPropagation();
+      const cardContainer = el.closest('.img-card-wrapper');
+      if (!cardContainer) return;
+      cardContainer.dataset.currentIndex = index;
+      atualizarImagensCard(cardContainer, index);
+    }
+
+    window.atualizarImagensCard = function(cardContainer, index) {
+      const imagens = cardContainer.querySelectorAll('img[data-img-index]');
+      const miniaturas = cardContainer.querySelectorAll('[data-indicator]');
+      
+      imagens.forEach((img, i) => {
+        if (i === index) {
+          img.classList.remove('opacity-0');
+          img.classList.add('opacity-100');
+        } else {
+          img.classList.remove('opacity-100');
+          img.classList.add('opacity-0');
+        }
+      });
+
+      miniaturas.forEach((mini, i) => {
+        if (i === index) {
+          mini.classList.remove('border-slate-700', 'opacity-60');
+          mini.classList.add('border-emerald-400', 'scale-105', 'opacity-100', 'shadow-md');
+        } else {
+          mini.classList.remove('border-emerald-400', 'scale-105', 'shadow-md');
+          mini.classList.add('border-slate-700', 'opacity-60');
+        }
+      });
+    }
+
+    window.rolarMouseCard = function(e, el) {
+      e.preventDefault();
+      const cardContainer = el.closest('.img-card-wrapper');
+      if (!cardContainer) return;
+      const total = parseInt(cardContainer.dataset.totalImages) || 1;
+      let current = parseInt(cardContainer.dataset.currentIndex) || 0;
+      
+      if (e.deltaY > 0) {
+        current = (current + 1) % total;
+      } else {
+        current = (current - 1 + total) % total;
+      }
+      
+      cardContainer.dataset.currentIndex = current;
+      atualizarImagensCard(cardContainer, current);
+    }
+
+    // --- Lógica do Modal de Ampliação de Imagem ---
+    let modalImagensAtuais = [];
+    let modalIndexAtual = 0;
+
+    window.abrirModalCard = function(el, event) {
+      if (event) event.stopPropagation();
+      const cardContainer = el.closest('.img-card-wrapper') || el;
+      const itemRaw = cardContainer.dataset.itemData;
+      const currentIndex = parseInt(cardContainer.dataset.currentIndex) || 0;
+      if (itemRaw) {
+        window.abrirModalImagem(itemRaw, currentIndex);
+      }
+    }
+
+    window.abrirModalImagem = function(itemString, initialIndex = 0) {
+      try {
+        const item = JSON.parse(decodeURIComponent(itemString));
+        modalImagensAtuais = item.images && item.images.length > 0 ? item.images : [item.image || '/buraconegro.webp'];
+        modalIndexAtual = initialIndex;
+
+        document.getElementById('modalProductTitle').innerText = item.title;
+        document.getElementById('modalSalePrice').innerText = item.saleFormatted;
+        document.getElementById('modalNormalPrice').innerText = item.normalFormatted || '';
+        document.getElementById('modalOfferLink').href = item.url;
+
+        construirMiniaturasModal();
+        exibirImagemModal(modalIndexAtual);
+
+        const modal = document.getElementById('imageModal');
+        if (modal) modal.style.display = 'flex';
+      } catch (e) {}
+    }
+
+    window.fecharModalImagem = function() {
+      const modal = document.getElementById('imageModal');
+      if (modal) modal.style.display = 'none';
+    }
+
+    function exibirImagemModal(index) {
+      if (modalImagensAtuais.length === 0) return;
+      modalIndexAtual = (index + modalImagensAtuais.length) % modalImagensAtuais.length;
+      
+      const imgEl = document.getElementById('modalMainImage');
+      if (imgEl) imgEl.src = modalImagensAtuais[modalIndexAtual];
+
+      const thumbs = document.querySelectorAll('#modalThumbnails [data-modal-thumb]');
+      thumbs.forEach((t, i) => {
+        if (i === modalIndexAtual) {
+          t.classList.remove('border-slate-700', 'opacity-60');
+          t.classList.add('border-emerald-400', 'scale-105', 'opacity-100', 'shadow-lg');
+        } else {
+          t.classList.remove('border-emerald-400', 'scale-105', 'shadow-lg');
+          t.classList.add('border-slate-700', 'opacity-60');
+        }
+      });
+    }
+
+    function construirMiniaturasModal() {
+      const container = document.getElementById('modalThumbnails');
+      const prevBtn = document.getElementById('modalPrevBtn');
+      const nextBtn = document.getElementById('modalNextBtn');
+
+      if (!container) return;
+
+      if (modalImagensAtuais.length <= 1) {
+        container.innerHTML = '';
+        if (prevBtn) prevBtn.style.display = 'none';
+        if (nextBtn) nextBtn.style.display = 'none';
+        return;
+      }
+
+      if (prevBtn) prevBtn.style.display = 'block';
+      if (nextBtn) nextBtn.style.display = 'block';
+
+      container.innerHTML = modalImagensAtuais.map((img, i) => `
+        <div 
+          onclick="exibirImagemModal(${i})" 
+          onmouseenter="exibirImagemModal(${i})"
+          data-modal-thumb="${i}"
+          class="h-12 w-16 rounded-lg border ${i === modalIndexAtual ? 'border-emerald-400 scale-105 opacity-100' : 'border-slate-700 opacity-60'} overflow-hidden cursor-pointer bg-slate-950 transition-all flex items-center justify-center shrink-0">
+          <img src="${img}" alt="Thumb ${i}" class="w-full h-full object-cover pointer-events-none" />
+        </div>
+      `).join('');
+    }
+
+    window.navegarImagemModal = function(direcao) {
+      exibirImagemModal(modalIndexAtual + direcao);
+    }
+
+    window.rolarMouseModal = function(e) {
+      e.preventDefault();
+      if (e.deltaY > 0) {
+        navegarImagemModal(1);
+      } else {
+        navegarImagemModal(-1);
+      }
+    }
+
+    window.addEventListener('keydown', (e) => {
+      const modal = document.getElementById('imageModal');
+      if (modal && modal.style.display === 'flex') {
+        if (e.key === 'Escape') fecharModalImagem();
+        if (e.key === 'ArrowRight') navegarImagemModal(1);
+        if (e.key === 'ArrowLeft') navegarImagemModal(-1);
+      }
+    });
+
+    window.addEventListener('click', (e) => {
+      const modalImg = document.getElementById('imageModal');
+      if (e.target === modalImg) fecharModalImagem();
+    });
   </script>
 
-  <script define:vars={{ jogosLocais, notebooksLocais }}>
+  <script define:vars={{ jogosLocais, notebooksLocais, tvsLocais }}>
     let catalogoGlobal = [];
     let filtroAtual = 'all';
     let generoAtual = 'Todos os Gêneros';
@@ -192,14 +424,14 @@ import ProductSchema from '../components/ProductSchema.astro';
 
     async function carregarTudo() {
       const blockbustersFixos = [
-        { id: 'bb-gta6', title: 'Grand Theft Auto VI (PS5)', type: 'paid', genre: 'Action / Adventure', image: '/capas/grand-theft-auto-vi-playstation-5.webp', saleFormatted: 'R$ 371,42', normalFormatted: 'R$ 472,00', savings: 21, url: 'https://www.instant-gaming.com/pt/15506-comprar-grand-theft-auto-vi-playstation-5-playstation-store/?igr=gamer-56c7016', platform: 'PS5', ano: 2026 },
-        { id: 'bb-phantom-blade', title: 'Phantom Blade Zero - PC (Steam)', type: 'paid', genre: 'Action RPG', image: '/capas/phantom-blade-zero-playstation-5.webp', saleFormatted: 'R$ 197,47', normalFormatted: 'R$ 230,00', savings: 14, url: 'https://www.instant-gaming.com/pt/23616-comprar-phantom-blade-zero-pc-steam/?igr=gamer-56c7016', platform: 'PC', ano: 2026 },
-        { id: 'bb-gears-eday', title: 'Gears of War: E-Day Premium Edition', type: 'paid', genre: 'Action / Shooter', image: '/capas/gears-of-war-e-day-premium.webp', saleFormatted: 'R$ 412,69', normalFormatted: 'R$ 590,00', savings: 30, url: 'https://www.instant-gaming.com/pt/22979-comprar-gears-of-war-e-day-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016', platform: 'Xbox', ano: 2026 },
-        { id: 'bb-valheim', title: 'Valheim - PC', type: 'paid', genre: 'Survival / Crafting', image: '/capas/valheim-pc.webp', saleFormatted: 'R$ 45,00', normalFormatted: 'R$ 88,00', savings: 49, url: 'https://www.instant-gaming.com/pt/', platform: 'PC', ano: 2026 },
-        { id: 'bb-viking', title: 'Viking - PC', type: 'paid', genre: 'Action / Strategy', image: '/capas/viking.webp', saleFormatted: 'R$ 35,00', normalFormatted: 'R$ 70,00', savings: 50, url: 'https://www.instant-gaming.com/pt/', platform: 'PC', ano: 2026 },
-        { id: 'bb-warhammer', title: 'Warhammer 40.000 - PC', type: 'paid', genre: 'Sci-Fi / Action', image: '/capas/warhammer-40-000.webp', saleFormatted: 'R$ 120,00', normalFormatted: 'R$ 199,00', savings: 40, url: 'https://www.instant-gaming.com/pt/', platform: 'PC', ano: 2026 },
-        { id: 'bb-wreckfest', title: 'Wreckfest - PC', type: 'paid', genre: 'Racing / Action', image: '/capas/wreckfest-pc.webp', saleFormatted: 'R$ 39,90', normalFormatted: 'R$ 99,00', savings: 60, url: 'https://www.instant-gaming.com/pt/', platform: 'PC', ano: 2026 },
-        { id: 'bb-xcom', title: 'XCOM - PC', type: 'paid', genre: 'Strategy / Tactical', image: '/capas/xcom.webp', saleFormatted: 'R$ 29,90', normalFormatted: 'R$ 99,00', savings: 70, url: 'https://www.instant-gaming.com/pt/', platform: 'PC', ano: 2026 }
+        { id: 'bb-gta6', title: 'Grand Theft Auto VI (PS5)', type: 'paid', genre: 'Action / Adventure', images: ['/capas/grand-theft-auto-vi-playstation-5.webp'], saleFormatted: 'R$ 371,42', normalFormatted: 'R$ 472,00', savings: 21, url: 'https://www.instant-gaming.com/pt/15506-comprar-grand-theft-auto-vi-playstation-5-playstation-store/?igr=gamer-56c7016', platform: 'PS5', ano: 2026 },
+        { id: 'bb-phantom-blade', title: 'Phantom Blade Zero - PC (Steam)', type: 'paid', genre: 'Action RPG', images: ['/capas/phantom-blade-zero-playstation-5.webp'], saleFormatted: 'R$ 197,47', normalFormatted: 'R$ 230,00', savings: 14, url: 'https://www.instant-gaming.com/pt/23616-comprar-phantom-blade-zero-pc-steam/?igr=gamer-56c7016', platform: 'PC', ano: 2026 },
+        { id: 'bb-gears-eday', title: 'Gears of War: E-Day Premium Edition', type: 'paid', genre: 'Action / Shooter', images: ['/capas/gears-of-war-e-day-premium.webp'], saleFormatted: 'R$ 412,69', normalFormatted: 'R$ 590,00', savings: 30, url: 'https://www.instant-gaming.com/pt/22979-comprar-gears-of-war-e-day-premium-edition-pc-xbox-series-x-s-microsoft-store/?igr=gamer-56c7016', platform: 'Xbox', ano: 2026 },
+        { id: 'bb-valheim', title: 'Valheim - PC', type: 'paid', genre: 'Survival / Crafting', images: ['/capas/valheim-pc.webp'], saleFormatted: 'R$ 45,00', normalFormatted: 'R$ 88,00', savings: 49, url: 'https://www.instant-gaming.com/pt/', platform: 'PC', ano: 2026 },
+        { id: 'bb-viking', title: 'Viking - PC', type: 'paid', genre: 'Action / Strategy', images: ['/capas/viking.webp'], saleFormatted: 'R$ 35,00', normalFormatted: 'R$ 70,00', savings: 50, url: 'https://www.instant-gaming.com/pt/', platform: 'PC', ano: 2026 },
+        { id: 'bb-warhammer', title: 'Warhammer 40.000 - PC', type: 'paid', genre: 'Sci-Fi / Action', images: ['/capas/warhammer-40-000.webp'], saleFormatted: 'R$ 120,00', normalFormatted: 'R$ 199,00', savings: 40, url: 'https://www.instant-gaming.com/pt/', platform: 'PC', ano: 2026 },
+        { id: 'bb-wreckfest', title: 'Wreckfest - PC', type: 'paid', genre: 'Racing / Action', images: ['/capas/wreckfest-pc.webp'], saleFormatted: 'R$ 39,90', normalFormatted: 'R$ 99,00', savings: 60, url: 'https://www.instant-gaming.com/pt/', platform: 'PC', ano: 2026 },
+        { id: 'bb-xcom', title: 'XCOM - PC', type: 'paid', genre: 'Strategy / Tactical', images: ['/capas/xcom.webp'], saleFormatted: 'R$ 29,90', normalFormatted: 'R$ 99,00', savings: 70, url: 'https://www.instant-gaming.com/pt/', platform: 'PC', ano: 2026 }
       ];
 
       let freeFormatted = [];
@@ -209,7 +441,7 @@ import ProductSchema from '../components/ProductSchema.astro';
         if (Array.isArray(freeData)) {
           freeFormatted = freeData.slice(0, 40).map(item => ({
             id: `free-${item.id}`, title: item.title, type: 'free', genre: item.genre || 'Free-to-Play',
-            image: item.thumbnail, saleFormatted: 'Gratuito', normalFormatted: '', savings: 100, url: item.game_url, platform: 'PC', ano: 2026
+            images: [item.thumbnail], saleFormatted: 'Gratuito', normalFormatted: '', savings: 100, url: item.game_url, platform: 'PC', ano: 2026
           }));
         }
       } catch (e) {}
@@ -225,18 +457,24 @@ import ProductSchema from '../components/ProductSchema.astro';
 
         return {
           id: `custom-${index}`, title: jogo.nome, type: 'paid', genre: jogo.genre || 'Destaque',
-          image: jogo.image, saleFormatted: jogo.preco, normalFormatted: jogo.precoNormal, savings: jogo.desconto || 0,
+          images: jogo.images || [jogo.image], saleFormatted: jogo.preco, normalFormatted: jogo.precoNormal, savings: jogo.desconto || 0,
           url: jogo.linkBase, platform: plat, ano: jogo.ano || 2026
         };
       });
 
       const meusNotebooks = notebooksLocais.map((nb, index) => ({
         id: `notebook-${index}`, title: nb.nome, type: 'notebook', genre: nb.genre || 'Notebook',
-        image: nb.image, saleFormatted: nb.preco, normalFormatted: nb.precoNormal, savings: nb.desconto || 0,
+        images: nb.images || [nb.image], saleFormatted: nb.preco, normalFormatted: nb.precoNormal, savings: nb.desconto || 0,
         url: nb.linkBase, platform: 'Hardware', ano: 2026
       }));
 
-      catalogoGlobal = [...blockbustersFixos, ...meusJogos, ...meusNotebooks, ...freeFormatted];
+      const minhasTvs = tvsLocais.map((tv, index) => ({
+        id: tv.id || `tv-${index}`, title: tv.nome, type: 'tv', genre: tv.genre || 'TVs / 4K',
+        images: tv.images || [tv.image], saleFormatted: tv.preco, normalFormatted: tv.precoNormal, savings: tv.desconto || 0,
+        url: tv.linkBase, platform: 'Eletro', ano: tv.ano || 2026
+      }));
+
+      catalogoGlobal = [...blockbustersFixos, ...meusJogos, ...meusNotebooks, ...minhasTvs, ...freeFormatted];
       
       construirCarrossel2026();
       iniciarCarrosselAutomatico();
@@ -248,10 +486,13 @@ import ProductSchema from '../components/ProductSchema.astro';
       const track = document.getElementById('carousel-track');
       if (!track) return;
       let lancamentos = catalogoGlobal.filter(j => j.id.startsWith('bb-'));
-      track.innerHTML = lancamentos.map((item, index) => `
+      track.innerHTML = lancamentos.map((item, index) => {
+        const imgCapa = item.images ? item.images[0] : item.image;
+        const jsonEncoded = encodeURIComponent(JSON.stringify(item));
+        return `
         <div class="min-w-[260px] sm:min-w-[280px] max-w-[280px] bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shrink-0 snap-start shadow-xl hover:border-slate-700 transition">
-          <div class="relative bg-slate-950 h-36 overflow-hidden flex items-center justify-center">
-            <img src="${item.image}" alt="${item.title}" loading="${index === 0 ? 'eager' : 'lazy'}" width="280" height="144" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
+          <div class="relative bg-slate-950 h-36 overflow-hidden flex items-center justify-center cursor-pointer" onclick="abrirModalImagem('${jsonEncoded}', 0)">
+            <img src="${imgCapa}" alt="${item.title}" loading="${index === 0 ? 'eager' : 'lazy'}" width="280" height="144" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
             <span class="absolute top-2 left-2 bg-emerald-500/90 text-slate-950 text-[9px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">${item.ano}</span>
             ${item.id === 'bb-gta6' ? '<span class="absolute top-2 right-2 bg-indigo-600 text-white font-black text-[10px] px-2 py-0.5 rounded shadow">Mais Esperado</span>' : ''}
           </div>
@@ -266,7 +507,7 @@ import ProductSchema from '../components/ProductSchema.astro';
             </div>
           </div>
         </div>
-      `).join('');
+      `;}).join('');
     }
 
     function iniciarCarrosselAutomatico() {
@@ -329,9 +570,10 @@ import ProductSchema from '../components/ProductSchema.astro';
 
       const filtrados = catalogoGlobal.filter(j => {
         let matchFiltro = true;
-        if (filtroAtual === 'promocoes') matchFiltro = (j.type === 'paid' || j.type === 'notebook') && j.savings > 0;
+        if (filtroAtual === 'promocoes') matchFiltro = (j.type === 'paid' || j.type === 'notebook' || j.type === 'tv') && j.savings > 0;
         else if (filtroAtual === 'gratuitos') matchFiltro = j.type === 'free';
         else if (filtroAtual === 'notebooks') matchFiltro = j.type === 'notebook';
+        else if (filtroAtual === 'tvs') matchFiltro = j.type === 'tv';
         else if (filtroAtual === 'pc') matchFiltro = j.platform === 'PC';
         else if (filtroAtual === 'ps5') matchFiltro = j.platform === 'PS5' || j.platform === 'PS4';
         else if (filtroAtual === 'xbox') matchFiltro = j.platform === 'Xbox';
@@ -350,14 +592,59 @@ import ProductSchema from '../components/ProductSchema.astro';
         return;
       }
 
-      container.innerHTML = filtrados.map((item, index) => `
+      container.innerHTML = filtrados.map((item, index) => {
+        const imagens = item.images && item.images.length > 0 ? item.images : [item.image || 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'];
+        const jsonEncoded = encodeURIComponent(JSON.stringify(item));
+
+        return `
         <div class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition-all duration-300 shadow-xl">
-          <div class="relative bg-slate-950 h-44 overflow-hidden flex items-center justify-center">
-            <img src="${item.image}" alt="${item.title}" loading="${index < 4 ? 'eager' : 'lazy'}" width="300" height="176" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
-            <span class="absolute top-3 left-3 bg-slate-900/90 text-slate-300 text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider">${item.genre}</span>
-            ${item.savings > 0 && item.type !== 'free' ? `<span class="absolute top-3 right-3 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-1 rounded-md shadow">-${item.savings}%</span>` : ''}
-            ${item.type === 'free' ? `<span class="absolute top-3 right-3 bg-indigo-600 text-white font-bold text-xs px-2 py-1 rounded-md shadow">Grátis</span>` : ''}
+          
+          <!-- Container de Imagens Interativo com clique para ampliar -->
+          <div class="img-card-wrapper relative bg-slate-950 h-44 overflow-hidden flex items-center justify-center cursor-zoom-in" data-current-index="0" data-total-images="${imagens.length}" data-item-data="${jsonEncoded}" onclick="abrirModalCard(this, event)" onwheel="rolarMouseCard(event, this)">
+            
+            <!-- Miniaturas projetadas logo acima da imagem principal -->
+            ${imagens.length > 1 ? `
+              <div class="absolute top-2 inset-x-2 flex gap-1.5 z-30 justify-center">
+                ${imagens.map((thumbUrl, thumbIdx) => `
+                  <div 
+                    onmouseenter="mudarImagemCard(this, ${thumbIdx}, event)" 
+                    onclick="mudarImagemCard(this, ${thumbIdx}, event)"
+                    data-indicator="${thumbIdx}"
+                    class="h-7 w-10 rounded overflow-hidden border ${thumbIdx === 0 ? 'border-emerald-400 scale-105 shadow-md opacity-100' : 'border-slate-700 opacity-60 hover:opacity-100'} transition-all bg-slate-900 cursor-pointer flex items-center justify-center">
+                    <img src="${thumbUrl}" alt="Miniatura ${thumbIdx}" class="w-full h-full object-cover pointer-events-none" />
+                  </div>
+                `).join('')}
+              </div>
+            ` : ''}
+
+            <!-- Imagens principais do produto -->
+            ${imagens.map((imgUrl, imgIdx) => `
+              <img 
+                src="${imgUrl}" 
+                alt="${item.title}" 
+                loading="${index < 4 && imgIdx === 0 ? 'eager' : 'lazy'}" 
+                width="300" height="176" 
+                data-img-index="${imgIdx}"
+                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${imgIdx === 0 ? 'opacity-100' : 'opacity-0'}" 
+                onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" 
+              />
+            `).join('')}
+
+            <!-- Zonas invisíveis divididas dinamicamente -->
+            ${imagens.length > 1 ? `
+              <div class="absolute inset-0 grid z-20 pointer-events-none" style="grid-template-columns: repeat(${imagens.length}, minmax(0, 1fr));">
+                ${imagens.map((_, zIdx) => `
+                  <div onmouseenter="mudarImagemCard(this, ${zIdx}, event)" class="h-full cursor-pointer pointer-events-auto"></div>
+                `).join('')}
+              </div>
+            ` : ''}
+
+            <!-- Tags e Selos -->
+            <span class="absolute bottom-2 left-2 bg-slate-900/90 text-slate-300 text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider z-10 pointer-events-none">${item.genre}</span>
+            ${item.savings > 0 && item.type !== 'free' ? `<span class="absolute bottom-2 right-2 bg-emerald-500 text-slate-950 font-black text-xs px-2 py-1 rounded-md shadow z-10 pointer-events-none">-${item.savings}%</span>` : ''}
+            ${item.type === 'free' ? `<span class="absolute bottom-2 right-2 bg-indigo-600 text-white font-bold text-xs px-2 py-1 rounded-md shadow z-10 pointer-events-none">Grátis</span>` : ''}
           </div>
+
           <div class="p-5 flex flex-col flex-1 justify-between gap-4">
             <h4 class="font-bold text-white text-sm line-clamp-2 leading-snug">${item.title}</h4>
             <div class="flex justify-between items-end border-t border-slate-800 pt-4">
@@ -374,16 +661,67 @@ import ProductSchema from '../components/ProductSchema.astro';
             </div>
           </div>
         </div>
-      `).join('');
+      `;}).join('');
     }
 
-    window.abrirOfertaAleatoria = function() {
-      if (!catalogoGlobal || catalogoGlobal.length === 0) return;
+    // Lógica do Portal Quântico (Buraco Negro) vinculada ao catálogo global
+    window.abrirPortalQuantico = function() {
+      if (!catalogoGlobal || catalogoGlobal.length === 0) {
+        alert('O catálogo ainda está a carregar, aguarde um instante!');
+        return;
+      }
       const itensValidos = catalogoGlobal.filter(item => item?.url?.startsWith('http'));
       if (itensValidos.length === 0) return;
-      const itemSorteado = itensValidos[Math.floor(Math.random() * itensValidos.length)];
-      window.open(itemSorteado.url, '_blank', 'noopener,noreferrer');
+
+      const modal = document.getElementById('quantumModal');
+      const loading = document.getElementById('quantumLoading');
+      const result = document.getElementById('quantumResult');
+      const content = document.getElementById('productCardContent');
+
+      if (!modal) return;
+
+      modal.style.display = 'flex';
+      loading.style.display = 'block';
+      result.classList.add('hidden');
+
+      setTimeout(() => {
+        const sorteado = itensValidos[Math.floor(Math.random() * itensValidos.length)];
+        loading.style.display = 'none';
+        result.classList.remove('hidden');
+
+        const preco = sorteado.saleFormatted || sorteado.preco || 'Consultar';
+        const precoAntigo = sorteado.normalFormatted ? `<span class="text-[10px] text-slate-500 line-through block text-left">${sorteado.normalFormatted}</span>` : '';
+        const imagem = (sorteado.images && sorteado.images[0]) || sorteado.image || '/buraconegro.webp';
+        const titulo = sorteado.title || sorteado.nome || 'Oferta Quântica';
+        const link = sorteado.url || '#';
+        const genero = sorteado.genre || 'Oferta';
+
+        content.innerHTML = `
+          <div class="w-full h-36 bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center relative">
+            <img src="${imagem}" alt="${titulo}" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
+            <span class="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">${genero}</span>
+          </div>
+          <h4 class="font-bold text-sm text-white line-clamp-2 text-left w-full">${titulo}</h4>
+          <div class="flex items-center justify-between w-full pt-2 border-t border-slate-800">
+            <div>
+              ${precoAntigo}
+              <span class="text-base font-black text-emerald-400">${preco}</span>
+            </div>
+            <a href="${link}" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs transition shadow-lg cursor-pointer">Ver Oferta 🚀</a>
+          </div>
+        `;
+      }, 1600);
     }
+
+    window.fecharPortalQuantico = function() {
+      const modal = document.getElementById('quantumModal');
+      if (modal) modal.style.display = 'none';
+    }
+
+    window.addEventListener('click', (e) => {
+      const modal = document.getElementById('quantumModal');
+      if (e.target === modal) modal.style.display = 'none';
+    });
 
     carregarTudo();
   </script>
