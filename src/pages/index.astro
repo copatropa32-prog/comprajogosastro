@@ -9,6 +9,16 @@ import ProductSchema from '../components/ProductSchema.astro';
 
 <LayoutPrincipal titulo="CompraJogos - Notebooks, PC (Grátis e Pagos), PS4, PS5, Xbox e Nintendo" descricao="Explore centenas de jogos de PC grátis e pagos, ofertas para PS4, PS5, Xbox, Nintendo, além de notebooks e eletrodomésticos de alta performance.">
   <head slot="head">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18414488529"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-18414488529');
+    </script>
+
     {jogosLocais.map((jogo) => (
       <ProductSchema 
         nome={jogo.nome}
@@ -29,9 +39,9 @@ import ProductSchema from '../components/ProductSchema.astro';
     ))}
     {tvsLocais.map((tv) => (
       <ProductSchema 
-        nome={tv.nome}
+        nome={tv.id || tv.nome}
         preco={tv.preco}
-        sku={tv.nome}
+        sku={tv.id || tv.nome}
         url={tv.linkBase}
         imagem={tv.images ? tv.images[0] : tv.image}
       />
